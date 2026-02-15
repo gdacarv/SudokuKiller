@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__UnityMCP__script_apply_edits|mcp__UnityMCP__create_script",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'REMINDER: Check Unity console for compile errors'"
+          }
+        ]
+      }
+    ]
+  }
+}
