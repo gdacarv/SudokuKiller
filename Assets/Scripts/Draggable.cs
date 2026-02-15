@@ -45,14 +45,43 @@ public class Draggable : MonoBehaviour
         if (_isDragging)
         {
             if (inputProvider.IsHeld)
-            {
-                transform.position = inputProvider.PointerWorldPosition + _dragOffset;
-            }
+                UpdateDrag();
             else
-            {
                 EndDrag();
-            }
         }
+    }
+
+    private void UpdateDrag()
+    {
+        Vector3 pointerPos = inputProvider.PointerWorldPosition;
+        Vector2Int? cell = gridManager != null ? gridManager.WorldToCell(pointerPos) : null;
+
+        if (cell.HasValue && gridManager != null)
+            transform.position = gridManager.GetCellCenter(cell.Value.y, cell.Value.x);
+        else
+            transform.position = pointerPos + _dragOffset;
+
+        UpdateDragTint(cell);
+    }
+
+    private void UpdateDragTint(Vector2Int? cell)
+    {
+        if (_spriteRenderer == null) return;
+
+        bool isBlocked = false;
+        if (cell.HasValue && gridManager != null)
+        {
+            bool rulesPass = true;
+            foreach (var rule in rules)
+                if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
+                { rulesPass = false; break; }
+
+            isBlocked = !rulesPass || !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x);
+        }
+
+        _spriteRenderer.color = isBlocked
+            ? new Color(1f, 0.3f, 0.3f, 0.6f)
+            : new Color(0.8f, 0.8f, 0.8f, 0.6f);
     }
 
     private void BeginDrag(Vector3 pointerPos)
@@ -82,12 +111,15 @@ public class Draggable : MonoBehaviour
         }
     }
 
-private void EndDrag()
+    private void EndDrag()
     {
         _isDragging = false;
 
         if (_spriteRenderer != null)
+        {
             _spriteRenderer.sortingOrder = _originalSortingOrder;
+            _spriteRenderer.color = Color.white;
+        }
 
         if (gridManager == null) return;
 
@@ -105,11 +137,25 @@ private void EndDrag()
         {
             transform.position = gridManager.GetCellCenter(cell.Value.y, cell.Value.x);
         }
-        else
+        else if (!cell.HasValue)
         {
+            // Dropped outside the grid — return to spawn position
             transform.position = _spawnPosition;
             if (_hadOriginCell)
                 gridManager.TryPlace(this, _originCell.y, _originCell.x);
+        }
+        else
+        {
+            // Dropped inside the grid but on a blocked/occupied cell — return to previous cell
+            if (_hadOriginCell)
+            {
+                gridManager.TryPlace(this, _originCell.y, _originCell.x);
+                transform.position = gridManager.GetCellCenter(_originCell.y, _originCell.x);
+            }
+            else
+            {
+                transform.position = _spawnPosition;
+            }
         }
     }
 }
