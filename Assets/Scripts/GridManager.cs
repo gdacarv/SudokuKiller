@@ -118,7 +118,24 @@ public void HideGridCell(int row, int col)
         return true;
     }
 
-    public void Release(Draggable obj)
+    public bool HasTagInRow(int row, string tag, Draggable exclude)
+    {
+        for (int c = 0; c < gridOverlay.cols; c++)
+            if (_occupants[row, c] != null && _occupants[row, c] != exclude && _occupants[row, c].CompareTag(tag))
+                return true;
+        return false;
+    }
+
+    public bool HasTagInCol(int col, string tag, Draggable exclude)
+    {
+        for (int r = 0; r < gridOverlay.rows; r++)
+            if (_occupants[r, col] != null && _occupants[r, col] != exclude && _occupants[r, col].CompareTag(tag))
+                return true;
+        return false;
+    }
+
+    
+public void Release(Draggable obj)
     {
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)

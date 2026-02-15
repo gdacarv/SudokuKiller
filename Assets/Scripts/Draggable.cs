@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -5,6 +6,9 @@ public class Draggable : MonoBehaviour
 {
     [Header("References")]
     public GridManager gridManager;
+    [Header("Rules")]
+    public List<DraggableRule> rules = new();
+
     public DragInputProvider inputProvider;
 
     private Vector3 _spawnPosition;
@@ -78,7 +82,7 @@ public class Draggable : MonoBehaviour
         }
     }
 
-    private void EndDrag()
+private void EndDrag()
     {
         _isDragging = false;
 
@@ -89,7 +93,15 @@ public class Draggable : MonoBehaviour
 
         Vector2Int? cell = gridManager.WorldToCell(transform.position);
 
-        if (cell.HasValue && gridManager.TryPlace(this, cell.Value.y, cell.Value.x))
+        bool rulesPass = true;
+        if (cell.HasValue)
+        {
+            foreach (var rule in rules)
+                if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
+                { rulesPass = false; break; }
+        }
+
+        if (cell.HasValue && rulesPass && gridManager.TryPlace(this, cell.Value.y, cell.Value.x))
         {
             transform.position = gridManager.GetCellCenter(cell.Value.y, cell.Value.x);
         }
