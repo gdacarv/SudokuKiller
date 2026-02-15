@@ -22,6 +22,7 @@ public class GridOverlay : MonoBehaviour
     public Vector2 offset = Vector2.zero;
 
     private List<LineRenderer> _lines = new List<LineRenderer>();
+    private HashSet<Vector2Int> _hiddenCells = new HashSet<Vector2Int>();
     private GameObject _linesRoot;
 
     void OnEnable()   => BuildGrid();
@@ -53,23 +54,47 @@ void BuildGrid()
         Vector3 origin = transform.position + new Vector3(offset.x, offset.y, 0f);
 
         float left   = origin.x - totalW * 0.5f;
-        float right  = origin.x + totalW * 0.5f;
         float bottom = origin.y - totalH * 0.5f;
-        float top    = origin.y + totalH * 0.5f;
         float z      = origin.z;
 
+        // Vertical segments: boundary c (0..cols), row r (0..rows-1)
         for (int c = 0; c <= cols; c++)
         {
             float x = left + c * cellWidth;
-            CreateLine(new Vector3(x, bottom, z), new Vector3(x, top, z));
+            for (int r = 0; r < rows; r++)
+            {
+                bool leftVisible  = c > 0    && !_hiddenCells.Contains(new Vector2Int(c - 1, r));
+                bool rightVisible = c < cols && !_hiddenCells.Contains(new Vector2Int(c, r));
+                if (leftVisible || rightVisible)
+                {
+                    float y0 = bottom + r * cellHeight;
+                    float y1 = bottom + (r + 1) * cellHeight;
+                    CreateLine(new Vector3(x, y0, z), new Vector3(x, y1, z));
+                }
+            }
         }
 
+        // Horizontal segments: boundary r (0..rows), col c (0..cols-1)
         for (int r = 0; r <= rows; r++)
         {
             float y = bottom + r * cellHeight;
-            CreateLine(new Vector3(left, y, z), new Vector3(right, y, z));
+            for (int c = 0; c < cols; c++)
+            {
+                bool bottomVisible = r > 0    && !_hiddenCells.Contains(new Vector2Int(c, r - 1));
+                bool topVisible    = r < rows && !_hiddenCells.Contains(new Vector2Int(c, r));
+                if (bottomVisible || topVisible)
+                {
+                    float x0 = left + c * cellWidth;
+                    float x1 = left + (c + 1) * cellWidth;
+                    CreateLine(new Vector3(x0, y, z), new Vector3(x1, y, z));
+                }
+            }
         }
     }
+
+    public void HideCell(int row, int col) => _hiddenCells.Add(new Vector2Int(col, row));
+
+    public void RefreshGrid() => BuildGrid();
 
     void CreateLine(Vector3 start, Vector3 end)
     {

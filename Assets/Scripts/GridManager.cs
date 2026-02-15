@@ -93,6 +93,7 @@ private void ApplyEntityMarkers()
             Debug.Log($"[GridManager] Applying marker '{marker.name}' row={marker.row} col={marker.col}");
             marker.ApplyRule(this);
         }
+        gridOverlay.RefreshGrid();
     }
 
     public void MarkBlocked(int row, int col)
@@ -100,6 +101,12 @@ private void ApplyEntityMarkers()
         if (row >= 0 && row < gridOverlay.rows && col >= 0 && col < gridOverlay.cols)
             _blockedByMarker[row, col] = true;
     }
+
+public void HideGridCell(int row, int col)
+    {
+        gridOverlay.HideCell(row, col);
+    }
+
 
     
     public bool TryPlace(Draggable obj, int row, int col)

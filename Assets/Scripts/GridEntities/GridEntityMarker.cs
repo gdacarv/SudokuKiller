@@ -3,12 +3,13 @@ using UnityEngine;
 [ExecuteAlways]
 public abstract class GridEntityMarker : MonoBehaviour
 {
+    public GridManager gridManager;
+
     public bool hideAtRuntime = true;
 
     [HideInInspector] public int row;
     [HideInInspector] public int col;
 
-    public GridManager gridManager;
 
     protected virtual void Awake()
     {
