@@ -76,7 +76,9 @@ public class Draggable : MonoBehaviour
                 if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
                 { rulesPass = false; break; }
 
-            isBlocked = !rulesPass || !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x);
+            isBlocked = !rulesPass
+                || !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x)
+                || !gridManager.CheckAllOccupantRules(this, cell.Value.y, cell.Value.x);
         }
 
         _spriteRenderer.color = isBlocked
@@ -131,6 +133,8 @@ public class Draggable : MonoBehaviour
             foreach (var rule in rules)
                 if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
                 { rulesPass = false; break; }
+            if (rulesPass)
+                rulesPass = gridManager.CheckAllOccupantRules(this, cell.Value.y, cell.Value.x);
         }
 
         if (cell.HasValue && rulesPass && gridManager.TryPlace(this, cell.Value.y, cell.Value.x))

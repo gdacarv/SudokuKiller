@@ -10,6 +10,7 @@ public class GridManager : MonoBehaviour
 
     private Draggable[,] _occupants;
     private bool[,] _blockedByMarker;
+    private int[,] _cellSection;
 
 void Awake()
     {
@@ -24,6 +25,10 @@ void Awake()
 
         _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
         _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
+        _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+                _cellSection[r, c] = -1;
         ApplyEntityMarkers();
         Debug.Log($"[GridManager] Awake: rows={gridOverlay.rows}, cols={gridOverlay.cols}");
     }
@@ -102,6 +107,52 @@ private void ApplyEntityMarkers()
             _blockedByMarker[row, col] = true;
     }
 
+public void RegisterSection(int row, int col, int sectionId)
+    {
+        if (row >= 0 && row < gridOverlay.rows && col >= 0 && col < gridOverlay.cols)
+            _cellSection[row, col] = sectionId;
+    }
+
+    public int GetSection(int row, int col)
+    {
+        if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
+            return -1;
+        return _cellSection[row, col];
+    }
+
+    // Checks whether placing 'incoming' at (row,col) would violate any existing occupant's rules.
+public bool CheckAllOccupantRules(Draggable incoming, int row, int col)
+    {
+        var previous = _occupants[row, col];
+        _occupants[row, col] = incoming;
+        bool ok = true;
+        for (int r = 0; r < gridOverlay.rows && ok; r++)
+            for (int c = 0; c < gridOverlay.cols && ok; c++)
+            {
+                var occ = _occupants[r, c];
+                if (occ == null || occ == incoming) continue;
+                foreach (var rule in occ.rules)
+                    if (!rule.CanPlace(this, occ, r, c))
+                    { ok = false; break; }
+            }
+        _occupants[row, col] = previous;
+        return ok;
+    }
+
+    
+public bool HasTagInSection(int sectionId, string tag, Draggable exclude)
+    {
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+                if (_cellSection[r, c] == sectionId &&
+                    _occupants[r, c] != null &&
+                    _occupants[r, c] != exclude &&
+                    _occupants[r, c].CompareTag(tag))
+                    return true;
+        return false;
+    }
+
+    
 public void HideGridCell(int row, int col)
     {
         gridOverlay.HideCell(row, col);
