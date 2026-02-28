@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GridManager : MonoBehaviour
@@ -5,8 +6,8 @@ public class GridManager : MonoBehaviour
     [Header("Grid Reference")]
     public GridOverlay gridOverlay;
 
-    [Header("Blocked Cells (flat row-major array, length rows x cols)")]
-    public bool[] blockedCells = new bool[0];
+    [Header("Board Rules")]
+    public List<BoardRule> boardRules = new();
 
     private Draggable[,] _occupants;
     private bool[,] _blockedByMarker;
@@ -36,10 +37,6 @@ void Awake()
 public bool IsCellAvailable(int row, int col)
     {
         if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
-            return false;
-
-        int flatIndex = row * gridOverlay.cols + col;
-        if (flatIndex < blockedCells.Length && blockedCells[flatIndex])
             return false;
 
         if (_blockedByMarker != null && _blockedByMarker[row, col])
@@ -118,6 +115,14 @@ public void RegisterSection(int row, int col, int sectionId)
         if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
             return -1;
         return _cellSection[row, col];
+    }
+
+    public bool CheckBoardRules(Draggable incoming, int row, int col)
+    {
+        foreach (var rule in boardRules)
+            if (!rule.CanPlace(this, incoming, row, col))
+                return false;
+        return true;
     }
 
     // Checks whether placing 'incoming' at (row,col) would violate any existing occupant's rules.
