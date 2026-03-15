@@ -18,6 +18,7 @@ public class Draggable : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Collider2D _collider;
     private bool _isDragging;
+    public bool IsDragging => _isDragging;
     private Vector3 _dragOffset;
 
     void Awake()

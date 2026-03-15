@@ -29436,38 +29436,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_1_48x48_1229
+      name: Modern_UI_Style_1_48x48_Tooltip
       rect:
         serializedVersion: 2
-        x: 0
+        x: 38
         y: 912
-        width: 48
+        width: 66
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a97e496528bb40ffbea59f018f9f86e
-      internalID: 1305033422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Modern_UI_Style_1_48x48_1230
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 912
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 12, y: 15, z: 10, w: 17}
       customData: 
       outline: []
       physicsShape: []
@@ -29475,28 +29453,6 @@ TextureImporter:
       bones: []
       spriteID: 904adaf713c8b43f4b22759196f20476
       internalID: -1085400535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Modern_UI_Style_1_48x48_1231
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 912
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 684c1eb48d7e840ef96d7dc01f54e46b
-      internalID: -246731268
       vertices: []
       indices: 
       edges: []
@@ -42274,7 +42230,6 @@ TextureImporter:
       Modern_UI_Style_1_48x48_1228: 1152308880
       Modern_UI_Style_1_48x48_1229: 1305033422
       Modern_UI_Style_1_48x48_123: -5436037077650211497
-      Modern_UI_Style_1_48x48_1230: -1085400535
       Modern_UI_Style_1_48x48_1231: -246731268
       Modern_UI_Style_1_48x48_1232: -1304223230
       Modern_UI_Style_1_48x48_1233: 1949336439
@@ -43816,6 +43771,7 @@ TextureImporter:
       Modern_UI_Style_1_48x48_997: 726427999
       Modern_UI_Style_1_48x48_998: -758998509
       Modern_UI_Style_1_48x48_999: 286936449
+      Modern_UI_Style_1_48x48_Tooltip: -1085400535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
