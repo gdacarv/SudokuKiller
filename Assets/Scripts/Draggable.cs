@@ -147,10 +147,8 @@ public class Draggable : MonoBehaviour
         }
         else if (!cell.HasValue)
         {
-            // Dropped outside the grid — return to spawn position
+            // Dropped outside the grid — return to spawn position, not placed in grid
             transform.position = _spawnPosition;
-            if (_hadOriginCell)
-                gridManager.TryPlace(this, _originCell.y, _originCell.x);
         }
         else
         {
