@@ -30,6 +30,13 @@ public class Draggable : MonoBehaviour
     void Start()
     {
         _spawnPosition = transform.position;
+
+        var solution = GetComponent<SolutionPosition>();
+        if (solution != null)
+        {
+            _spawnPosition = solution.uiPosition;
+            transform.position = _spawnPosition;
+        }
     }
 
     void Update()

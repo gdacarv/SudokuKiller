@@ -97,6 +97,13 @@ public class IdentifyKillerButton : MonoBehaviour
 
     private void OnClicked()
     {
+        if (!AreAllDraggablesInSolutionCells())
+        {
+            Debug.Log("[IdentifyKillerButton] Wrong arrangement — not the killer!");
+            StartCoroutine(WrongAnswerFlash());
+            return;
+        }
+
         _wasClicked = true;
         StopAllCoroutines();
         _spriteRenderer.transform.localScale = Vector3.one;
@@ -104,6 +111,25 @@ public class IdentifyKillerButton : MonoBehaviour
         if (pressedSprite != null)
             _spriteRenderer.sprite = pressedSprite;
         Debug.Log("[IdentifyKillerButton] Killer identified!");
+    }
+
+    private bool AreAllDraggablesInSolutionCells()
+    {
+        var draggables = FindObjectsByType<Draggable>(FindObjectsSortMode.None);
+        foreach (var d in draggables)
+        {
+            var solution = d.GetComponent<SolutionPosition>();
+            if (solution == null) continue;
+            if (!solution.IsInSolutionCell()) return false;
+        }
+        return true;
+    }
+
+    private IEnumerator WrongAnswerFlash()
+    {
+        _spriteRenderer.color = new Color(1f, 0.3f, 0.3f, 1f);
+        yield return new WaitForSeconds(0.5f);
+        _spriteRenderer.color = Color.white;
     }
 
     private IEnumerator PulseCoroutine()

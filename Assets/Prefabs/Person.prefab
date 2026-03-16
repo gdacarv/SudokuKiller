@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5824487254868341983}
   - component: {fileID: 2619917107855281601}
   - component: {fileID: 757144604920681236}
+  - component: {fileID: 109610372693376296}
   m_Layer: 0
   m_Name: Person
   m_TagString: Person
@@ -193,6 +194,22 @@ MonoBehaviour:
   inputProvider: {fileID: 0}
   tooltipUI: {fileID: 0}
   lines: []
+--- !u!114 &109610372693376296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875278182876665019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9318704bfeaee4f46ab9f3b5925f8558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SolutionPosition
+  gridManager: {fileID: 0}
+  uiPosition: {x: 0, y: 0, z: 0}
+  solutionRow: 0
+  solutionCol: 0
 --- !u!1 &7208888844455596130
 GameObject:
   m_ObjectHideFlags: 0
