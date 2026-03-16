@@ -7,6 +7,15 @@ public class TooltipUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
 
+    public void SetText(string content)
+    {
+        if (text == null) return;
+        text.text = content ?? "";
+        text.ForceMeshUpdate();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
+    }
+
     public void SetLines(List<string> lines)
     {
         if (text == null) return;

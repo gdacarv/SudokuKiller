@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2066006038807832617}
   - component: {fileID: 403783733533006872}
   - component: {fileID: 5824487254868341983}
+  - component: {fileID: 6667097287794317257}
   - component: {fileID: 2619917107855281601}
-  - component: {fileID: 757144604920681236}
   m_Layer: 0
-  m_Name: Person
+  m_Name: Victim
   m_TagString: Person
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2141901776, guid: 1dc3f8e439597435495e5f65dfe5c947, type: 3}
+  m_Sprite: {fileID: 3251562249449152932, guid: f688c48b20e684a2089710f1e49c1ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,8 +132,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.15957642}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.25}
-    oldSize: {x: 0.48, y: 0.7}
+    pivot: {x: 0.5, y: 0.13}
+    oldSize: {x: 0.48, y: 0.48}
     newSize: {x: 0.48, y: 0.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -158,6 +158,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5cfeb21a6eb0545eb9ef1aac58986e4b, type: 2}
   - {fileID: 11400000, guid: 956570d07481a4ebb879181d8dac0399, type: 2}
   inputProvider: {fileID: 0}
+--- !u!114 &6667097287794317257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875278182876665019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb2455e9cf0243d9a45f9bb9ed5226d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverTooltip
+  lines:
+  - Lives on Floor 1
+  - Is not next to Bruno for sure I'm telling you!!!
+  hoverDelay: 0
+  tooltipOffset: {x: 0, y: 60}
+  inputProvider: {fileID: 0}
+  tooltipUI: {fileID: 0}
 --- !u!114 &2619917107855281601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,27 +191,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NameLabel
   _offset: {x: 0, y: 0.63, z: 0}
   _fontSize: 2
-  _color: {r: 1, g: 1, b: 1, a: 1}
+  _color: {r: 1, g: 0.23113209, b: 0.23113209, a: 1}
   _alignment: 514
-  _fontStyle: 0
---- !u!114 &757144604920681236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3875278182876665019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 856c77f5615cf428b981b2987041e947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CluesTooltip
-  message: 
-  hoverDelay: 0.5
-  tooltipOffset: {x: 0, y: 60}
-  inputProvider: {fileID: 0}
-  tooltipUI: {fileID: 0}
-  lines: []
+  _fontStyle: 5
 --- !u!1 &7208888844455596130
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +229,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.63}
-  m_SizeDelta: {x: 0.64, y: 0.23}
+  m_SizeDelta: {x: 0.53, y: 0.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1572826340931408289
 MeshRenderer:
@@ -298,7 +299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Person
+  m_text: Adam
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

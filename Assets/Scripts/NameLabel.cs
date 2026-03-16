@@ -8,6 +8,7 @@ public class NameLabel : MonoBehaviour
     [SerializeField] private float _fontSize = 2f;
     [SerializeField] private Color _color = Color.white;
     [SerializeField] private TextAlignmentOptions _alignment = TextAlignmentOptions.Center;
+    [SerializeField] private FontStyles _fontStyle = FontStyles.Normal;
 
     private GameObject _labelObject;
     private TextMeshPro _textMesh;
@@ -50,5 +51,7 @@ public class NameLabel : MonoBehaviour
         _textMesh.color = _color;
         _textMesh.alignment = _alignment;
         _textMesh.autoSizeTextContainer = true;
+
+        _textMesh.fontStyle = _fontStyle;
     }
 }

@@ -1,11 +1,10 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class HoverTooltip : MonoBehaviour
 {
     [Header("Tooltip Content")]
-    public List<string> lines = new();
+    public string message = "";
 
     [Header("Behaviour")]
     public float hoverDelay = 0.5f;
@@ -15,9 +14,9 @@ public class HoverTooltip : MonoBehaviour
     public DragInputProvider inputProvider;
     public TooltipUI tooltipUI;
 
-    private Collider2D _collider;
+    protected Collider2D _collider;
     private float _hoverTimer;
-    private bool _isShowing;
+    protected bool _isShowing;
     private Canvas _tooltipCanvas;
     private RectTransform _tooltipRect;
 
@@ -62,11 +61,11 @@ public class HoverTooltip : MonoBehaviour
         }
     }
 
-    private void ShowTooltip()
+    protected virtual void ShowTooltip()
     {
         _isShowing = true;
         tooltipUI.gameObject.SetActive(true);
-        tooltipUI.SetLines(lines);
+        tooltipUI.SetText(message);
         PositionTooltip();
     }
 
@@ -76,7 +75,7 @@ public class HoverTooltip : MonoBehaviour
         tooltipUI.gameObject.SetActive(false);
     }
 
-    private void PositionTooltip()
+    protected void PositionTooltip()
     {
         if (_tooltipCanvas == null || _tooltipRect == null) return;
 
