@@ -23,7 +23,7 @@ public class IdentifyKillerButton : MonoBehaviour
     private const float CheckInterval = 0.25f;
 
     private const string InactiveTooltip =
-        "You need to place all the suspects, objects and victim on the map before being able to identify the killer";
+        "You need to place all the suspects, objects and victim\non the map before being able to identify the killer";
     private const string ActiveTooltip = "Click to identify the killer";
 
     void Awake()

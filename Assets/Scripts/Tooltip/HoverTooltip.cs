@@ -83,6 +83,10 @@ public class HoverTooltip : MonoBehaviour
         screenPos.x += tooltipOffset.x;
         screenPos.y += tooltipOffset.y;
 
+        // Flip horizontal alignment when object is on the right half of screen
+        float pivotX = screenPos.x > Screen.width * 0.5f ? 1f : 0f;
+        _tooltipRect.pivot = new Vector2(pivotX, _tooltipRect.pivot.y);
+
         // Overlay canvas: pass null as camera for RectTransformUtility
         Camera uiCam = _tooltipCanvas.renderMode == RenderMode.ScreenSpaceOverlay
             ? null
