@@ -1,4 +1,7 @@
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 [ExecuteAlways]
 public class SolutionPosition : MonoBehaviour
@@ -24,8 +27,17 @@ public class SolutionPosition : MonoBehaviour
         var cell = gridManager.WorldToCell(transform.position);
         if (cell == null) return;
 
-        solutionCol = cell.Value.x;
-        solutionRow = cell.Value.y;
+        int newRow = cell.Value.y;
+        int newCol = cell.Value.x;
+
+        if (newRow != solutionRow || newCol != solutionCol)
+        {
+            solutionRow = newRow;
+            solutionCol = newCol;
+#if UNITY_EDITOR
+            EditorUtility.SetDirty(this);
+#endif
+        }
 
         transform.position = gridManager.GetCellCenter(solutionRow, solutionCol);
     }
@@ -34,6 +46,9 @@ public class SolutionPosition : MonoBehaviour
     public void SaveCurrentAsUIPosition()
     {
         uiPosition = transform.position;
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(this);
+#endif
     }
 
     public bool IsInSolutionCell()

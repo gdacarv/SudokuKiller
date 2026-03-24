@@ -9,6 +9,7 @@ public class NameLabel : MonoBehaviour
     [SerializeField] private Color _color = Color.white;
     [SerializeField] private TextAlignmentOptions _alignment = TextAlignmentOptions.Center;
     [SerializeField] private FontStyles _fontStyle = FontStyles.Normal;
+    [SerializeField] private int _sortingOrder = 10;
 
     private GameObject _labelObject;
     private TextMeshPro _textMesh;
@@ -53,5 +54,6 @@ public class NameLabel : MonoBehaviour
         _textMesh.autoSizeTextContainer = true;
 
         _textMesh.fontStyle = _fontStyle;
+        _textMesh.sortingOrder = _sortingOrder;
     }
 }

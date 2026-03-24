@@ -7814,6 +7814,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: solutionCol
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: solutionRow
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.x
       value: -6.24
       objectReference: {fileID: 0}
@@ -7831,7 +7839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Offset.y
-      value: 0.14
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -7865,13 +7873,21 @@ PrefabInstance:
       propertyPath: 'lines.Array.data[0]'
       value: Carla was the only person in his row and column
       objectReference: {fileID: 0}
+    - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_SortingOrder
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2110923469, guid: 892217fb4e0344bf2ad4577ecbdd280c, type: 3}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _sortingOrder
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3875278182876665019, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Name
@@ -7884,6 +7900,10 @@ PrefabInstance:
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_fontStyle
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_fontColor.b
@@ -7964,6 +7984,10 @@ PrefabInstance:
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208888844455596130, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19643,7 +19667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SolutionPosition
   gridManager: {fileID: 368987998}
   uiPosition: {x: -6.53, y: -4.16, z: 0}
-  solutionRow: 3
+  solutionRow: 4
   solutionCol: 6
 --- !u!4 &1067155605 stripped
 Transform:
@@ -19843,6 +19867,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: solutionCol
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: solutionRow
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.x
       value: -5.2799997
       objectReference: {fileID: 0}
@@ -19898,13 +19930,21 @@ PrefabInstance:
       propertyPath: 'lines.Array.data[1]'
       value: Bruno was alone in the room
       objectReference: {fileID: 0}
+    - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_SortingOrder
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 303217107290155614, guid: 7674ff9b5e78748ac8c33d051b1c6bc6, type: 3}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _sortingOrder
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3875278182876665019, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Name
@@ -19913,6 +19953,10 @@ PrefabInstance:
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_text
       value: Bruno
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
@@ -35970,6 +36014,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1572826340931408289, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2619917107855281601, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: _color.b
       value: 0.014818435
@@ -35990,6 +36042,10 @@ PrefabInstance:
       propertyPath: _fontStyle
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: _sortingOrder
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 3875278182876665019, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_Name
       value: Victim
@@ -36001,6 +36057,10 @@ PrefabInstance:
     - target: {fileID: 5292073538780746938, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_fontStyle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292073538780746938, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: _SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5292073538780746938, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_fontColor.b
@@ -36048,7 +36108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1999999
+      value: -0.7199999
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39930,12 +39990,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: solutionCol
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: solutionRow
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.x
       value: -6.24
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.y
       value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: tooltipUI
@@ -39957,6 +40029,18 @@ PrefabInstance:
       propertyPath: 'lines.Array.data[0]'
       value: Adam was the only person in his row and column
       objectReference: {fileID: 0}
+    - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_SortingOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _sortingOrder
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 3875278182876665019, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Name
       value: Adam
@@ -39964,6 +40048,10 @@ PrefabInstance:
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_text
       value: Adam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
@@ -39995,11 +40083,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.71000016
+      value: 2.15
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23999994
+      value: -1.1999999
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.z
@@ -40032,6 +40120,10 @@ PrefabInstance:
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208888844455596130, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

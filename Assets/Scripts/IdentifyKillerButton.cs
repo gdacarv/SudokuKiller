@@ -120,7 +120,16 @@ public class IdentifyKillerButton : MonoBehaviour
         {
             var solution = d.GetComponent<SolutionPosition>();
             if (solution == null) continue;
-            if (!solution.IsInSolutionCell()) return false;
+
+            bool inCell = solution.IsInSolutionCell();
+            if (!inCell)
+            {
+                var cell = gridManager != null ? gridManager.WorldToCell(d.transform.position) : null;
+                Debug.Log($"[IdentifyKillerButton] {d.name}: solution=({solution.SolutionRow},{solution.SolutionCol}), " +
+                          $"current={( cell.HasValue ? $"({cell.Value.y},{cell.Value.x})" : "off-grid")}, " +
+                          $"gridManager={(solution.gridManager != null ? "ok" : "NULL")}");
+                return false;
+            }
         }
         return true;
     }

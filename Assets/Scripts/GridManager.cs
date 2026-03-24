@@ -13,7 +13,7 @@ public class GridManager : MonoBehaviour
     private bool[,] _blockedByMarker;
     private int[,] _cellSection;
 
-void Awake()
+    void Awake()
     {
         if (gridOverlay == null)
             gridOverlay = GetComponent<GridOverlay>();
@@ -34,7 +34,7 @@ void Awake()
         Debug.Log($"[GridManager] Awake: rows={gridOverlay.rows}, cols={gridOverlay.cols}");
     }
 
-public bool IsCellAvailable(int row, int col)
+    public bool IsCellAvailable(int row, int col)
     {
         if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
             return false;
@@ -78,7 +78,7 @@ public bool IsCellAvailable(int row, int col)
         return new Vector2Int(col, row);
     }
 
-private void ApplyEntityMarkers()
+    private void ApplyEntityMarkers()
     {
         var markers = GetComponentsInChildren<GridEntityMarker>(includeInactive: true);
         Debug.Log($"[GridManager] Found {markers.Length} entity marker(s).");
@@ -104,7 +104,7 @@ private void ApplyEntityMarkers()
             _blockedByMarker[row, col] = true;
     }
 
-public void RegisterSection(int row, int col, int sectionId)
+    public void RegisterSection(int row, int col, int sectionId)
     {
         if (row >= 0 && row < gridOverlay.rows && col >= 0 && col < gridOverlay.cols)
             _cellSection[row, col] = sectionId;
@@ -126,7 +126,7 @@ public void RegisterSection(int row, int col, int sectionId)
     }
 
     // Checks whether placing 'incoming' at (row,col) would violate any existing occupant's rules.
-public bool CheckAllOccupantRules(Draggable incoming, int row, int col)
+    public bool CheckAllOccupantRules(Draggable incoming, int row, int col)
     {
         var previous = _occupants[row, col];
         _occupants[row, col] = incoming;
@@ -145,7 +145,7 @@ public bool CheckAllOccupantRules(Draggable incoming, int row, int col)
     }
 
     
-public bool HasTagInSection(int sectionId, string tag, Draggable exclude)
+    public bool HasTagInSection(int sectionId, string tag, Draggable exclude)
     {
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
@@ -158,7 +158,7 @@ public bool HasTagInSection(int sectionId, string tag, Draggable exclude)
     }
 
     
-public void HideGridCell(int row, int col)
+    public void HideGridCell(int row, int col)
     {
         gridOverlay.HideCell(row, col);
     }
@@ -191,7 +191,7 @@ public void HideGridCell(int row, int col)
     }
 
     
-public void Release(Draggable obj)
+    public void Release(Draggable obj)
     {
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
