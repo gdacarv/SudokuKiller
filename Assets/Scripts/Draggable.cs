@@ -59,7 +59,7 @@ public class Draggable : MonoBehaviour
         }
     }
 
-    private void UpdateDrag()
+private void UpdateDrag()
     {
         Vector3 pointerPos = inputProvider.PointerWorldPosition;
         Vector2Int? cell = gridManager != null ? gridManager.WorldToCell(pointerPos) : null;
@@ -70,24 +70,34 @@ public class Draggable : MonoBehaviour
             transform.position = pointerPos + _dragOffset;
 
         UpdateDragTint(cell);
+        gridManager?.UpdateDragHighlights(this, cell);
     }
 
-    private void UpdateDragTint(Vector2Int? cell)
+private void UpdateDragTint(Vector2Int? cell)
     {
         if (_spriteRenderer == null) return;
 
         bool isBlocked = false;
         if (cell.HasValue && gridManager != null)
         {
-            bool rulesPass = true;
-            foreach (var rule in rules)
-                if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
-                { rulesPass = false; break; }
+            bool cellUnavailable = !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x);
 
-            isBlocked = !rulesPass
-                || !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x)
-                || !gridManager.CheckAllOccupantRules(this, cell.Value.y, cell.Value.x)
-                || !gridManager.CheckBoardRules(this, cell.Value.y, cell.Value.x);
+            if (gridManager.preventInvalidPlacement)
+            {
+                bool rulesPass = true;
+                foreach (var rule in rules)
+                    if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
+                    { rulesPass = false; break; }
+
+                isBlocked = !rulesPass
+                    || cellUnavailable
+                    || !gridManager.CheckAllOccupantRules(this, cell.Value.y, cell.Value.x)
+                    || !gridManager.CheckBoardRules(this, cell.Value.y, cell.Value.x);
+            }
+            else
+            {
+                isBlocked = cellUnavailable;
+            }
         }
 
         _spriteRenderer.color = isBlocked
@@ -95,7 +105,7 @@ public class Draggable : MonoBehaviour
             : new Color(0.8f, 0.8f, 0.8f, 0.6f);
     }
 
-    private void BeginDrag(Vector3 pointerPos)
+private void BeginDrag(Vector3 pointerPos)
     {
         _isDragging = true;
         _dragOffset = transform.position - pointerPos;
@@ -108,6 +118,7 @@ public class Draggable : MonoBehaviour
                 _originCell = cell.Value;
                 _hadOriginCell = true;
                 gridManager.Release(this);
+                gridManager.RefreshViolationHighlights();
             }
             else
             {
@@ -122,7 +133,7 @@ public class Draggable : MonoBehaviour
         }
     }
 
-    private void EndDrag()
+private void EndDrag()
     {
         _isDragging = false;
 
@@ -137,7 +148,7 @@ public class Draggable : MonoBehaviour
         Vector2Int? cell = gridManager.WorldToCell(transform.position);
 
         bool rulesPass = true;
-        if (cell.HasValue)
+        if (cell.HasValue && gridManager.preventInvalidPlacement)
         {
             foreach (var rule in rules)
                 if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
@@ -154,12 +165,12 @@ public class Draggable : MonoBehaviour
         }
         else if (!cell.HasValue)
         {
-            // Dropped outside the grid — return to spawn position, not placed in grid
+            // Dropped outside the grid — return to spawn position
             transform.position = _spawnPosition;
         }
         else
         {
-            // Dropped inside the grid but on a blocked/occupied cell — return to previous cell
+            // Dropped inside the grid but on a blocked/occupied/invalid cell — return to previous cell
             if (_hadOriginCell)
             {
                 gridManager.TryPlace(this, _originCell.y, _originCell.x);
@@ -170,5 +181,7 @@ public class Draggable : MonoBehaviour
                 transform.position = _spawnPosition;
             }
         }
+
+        gridManager.RefreshViolationHighlights();
     }
 }

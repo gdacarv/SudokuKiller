@@ -9,6 +9,10 @@ public class GridManager : MonoBehaviour
     [Header("Board Rules")]
     public List<BoardRule> boardRules = new();
 
+    [Header("Validation Settings")]
+    public bool preventInvalidPlacement = true;
+    public bool highlightRuleViolations = false;
+
     private Draggable[,] _occupants;
     private bool[,] _blockedByMarker;
     private int[,] _cellSection;
@@ -198,4 +202,81 @@ public class GridManager : MonoBehaviour
                 if (_occupants[r, c] == obj)
                     _occupants[r, c] = null;
     }
+
+
+public void RefreshViolationHighlights()
+    {
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+            {
+                var occ = _occupants[r, c];
+                if (occ == null) continue;
+
+                var sr = occ.GetComponent<SpriteRenderer>();
+                if (sr == null) continue;
+
+                if (!highlightRuleViolations)
+                {
+                    sr.color = Color.white;
+                    continue;
+                }
+
+                bool valid = true;
+                foreach (var rule in occ.rules)
+                    if (!rule.CanPlace(this, occ, r, c))
+                    { valid = false; break; }
+                if (valid)
+                    valid = CheckBoardRules(occ, r, c);
+
+                sr.color = valid ? Color.white : new Color(1f, 0.3f, 0.3f, 1f);
+            }
+    }
+
+public void UpdateDragHighlights(Draggable incoming, Vector2Int? targetCell)
+    {
+        if (!highlightRuleViolations)
+        {
+            RefreshViolationHighlights();
+            return;
+        }
+
+        // Simulate incoming at targetCell so occupant rule checks see it as a neighbour
+        bool simulated = false;
+        int simRow = -1, simCol = -1;
+        Draggable previous = null;
+        if (targetCell.HasValue)
+        {
+            simRow = targetCell.Value.y;
+            simCol = targetCell.Value.x;
+            if (simRow >= 0 && simRow < gridOverlay.rows && simCol >= 0 && simCol < gridOverlay.cols)
+            {
+                previous = _occupants[simRow, simCol];
+                _occupants[simRow, simCol] = incoming;
+                simulated = true;
+            }
+        }
+
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+            {
+                var occ = _occupants[r, c];
+                if (occ == null || occ == incoming) continue;
+
+                var sr = occ.GetComponent<SpriteRenderer>();
+                if (sr == null) continue;
+
+                bool valid = true;
+                foreach (var rule in occ.rules)
+                    if (!rule.CanPlace(this, occ, r, c))
+                    { valid = false; break; }
+                if (valid)
+                    valid = CheckBoardRules(occ, r, c);
+
+                sr.color = valid ? Color.white : new Color(1f, 0.3f, 0.3f, 1f);
+            }
+
+        if (simulated)
+            _occupants[simRow, simCol] = previous;
+    }
+
 }
