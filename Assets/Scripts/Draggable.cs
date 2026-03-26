@@ -78,31 +78,30 @@ private void UpdateDragTint(Vector2Int? cell)
         if (_spriteRenderer == null) return;
 
         bool isBlocked = false;
+        bool isViolating = false;
         if (cell.HasValue && gridManager != null)
         {
-            bool cellUnavailable = !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x);
+            isBlocked = !gridManager.IsCellAvailable(cell.Value.y, cell.Value.x);
 
-            if (gridManager.preventInvalidPlacement)
+            if (!isBlocked && (gridManager.preventInvalidPlacement || gridManager.highlightRuleViolations))
             {
                 bool rulesPass = true;
                 foreach (var rule in rules)
                     if (!rule.CanPlace(gridManager, this, cell.Value.y, cell.Value.x))
                     { rulesPass = false; break; }
+                if (rulesPass)
+                    rulesPass = gridManager.CheckBoardRules(this, cell.Value.y, cell.Value.x);
 
-                isBlocked = !rulesPass
-                    || cellUnavailable
-                    || !gridManager.CheckAllOccupantRules(this, cell.Value.y, cell.Value.x)
-                    || !gridManager.CheckBoardRules(this, cell.Value.y, cell.Value.x);
-            }
-            else
-            {
-                isBlocked = cellUnavailable;
+                isViolating = !rulesPass;
             }
         }
 
-        _spriteRenderer.color = isBlocked
-            ? new Color(1f, 0.3f, 0.3f, 0.6f)
-            : new Color(0.8f, 0.8f, 0.8f, 0.6f);
+        if (isBlocked)
+            _spriteRenderer.color = new Color(1f, 0.3f, 0.3f, 0.6f);   // red — cell unavailable
+        else if (isViolating)
+            _spriteRenderer.color = new Color(1f, 0.6f, 0.1f, 0.6f);   // orange — rule violation
+        else
+            _spriteRenderer.color = new Color(0.8f, 0.8f, 0.8f, 0.6f); // normal drag tint
     }
 
 private void BeginDrag(Vector3 pointerPos)
