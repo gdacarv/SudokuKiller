@@ -18,7 +18,12 @@ public class IdentifyKillerButton : MonoBehaviour
     private Sprite _defaultSprite;
 
     private bool _isActive;
+    private bool _isInIdentifyMode;
     private bool _wasClicked;
+    public bool IsActive => _isActive;
+    public bool IsInIdentifyMode => _isInIdentifyMode;
+    public bool WasClicked => _wasClicked;
+
     private float _checkTimer;
     private const float CheckInterval = 0.25f;
 
@@ -50,7 +55,10 @@ public class IdentifyKillerButton : MonoBehaviour
             if (allPlaced && !_isActive)
                 SetActive();
             else if (!allPlaced && _isActive)
+            {
+                if (_isInIdentifyMode) ExitIdentifyMode();
                 SetInactive();
+            }
         }
 
         if (_isActive && inputProvider != null && inputProvider.IsPressed)
@@ -80,6 +88,7 @@ public class IdentifyKillerButton : MonoBehaviour
     {
         _isActive = true;
         _spriteRenderer.color = Color.white;
+        _spriteRenderer.sprite = _defaultSprite;
         if (hoverTooltip != null)
             hoverTooltip.message = ActiveTooltip;
         StartCoroutine(PulseCoroutine());
@@ -90,6 +99,7 @@ public class IdentifyKillerButton : MonoBehaviour
         _isActive = false;
         StopAllCoroutines();
         _spriteRenderer.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+        _spriteRenderer.sprite = _defaultSprite;
         _spriteRenderer.transform.localScale = Vector3.one;
         if (hoverTooltip != null)
             hoverTooltip.message = InactiveTooltip;
@@ -97,39 +107,29 @@ public class IdentifyKillerButton : MonoBehaviour
 
     private void OnClicked()
     {
-        // Check 1: all draggables must be placed on the grid
-        var draggables = FindObjectsByType<Draggable>(FindObjectsSortMode.None);
-        bool anyUnplaced = false;
-        foreach (var d in draggables)
+        if (_isInIdentifyMode)
         {
-            if (d.IsDragging || !gridManager.WorldToCell(d.transform.position).HasValue)
-            {
-                d.Flash();
-                anyUnplaced = true;
-            }
-        }
-        if (anyUnplaced)
-        {
-            Debug.Log("[IdentifyKillerButton] Some draggables are not placed on the grid.");
+            ExitIdentifyMode();
             return;
         }
 
-        // Check 2: all rules must be valid
-        if (!gridManager.AreAllRulesValid())
-        {
-            Debug.Log("[IdentifyKillerButton] Rule violations detected.");
-            foreach (var d in gridManager.GetInvalidDraggables())
-                d.Flash();
-            return;
-        }
+        EnterIdentifyMode();
+    }
 
-        _wasClicked = true;
+    private void EnterIdentifyMode()
+    {
+        _isInIdentifyMode = true;
         StopAllCoroutines();
         _spriteRenderer.transform.localScale = Vector3.one;
         _spriteRenderer.color = Color.white;
         if (pressedSprite != null)
             _spriteRenderer.sprite = pressedSprite;
-        Debug.Log("[IdentifyKillerButton] Killer identified!");
+    }
+
+    private void ExitIdentifyMode()
+    {
+        _isInIdentifyMode = false;
+        SetActive();
     }
 
     private IEnumerator PulseCoroutine()
