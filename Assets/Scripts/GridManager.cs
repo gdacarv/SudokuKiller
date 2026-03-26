@@ -204,7 +204,56 @@ public class GridManager : MonoBehaviour
     }
 
 
-public void RefreshViolationHighlights()
+public bool AreAllDraggablesInSolutionCells()
+    {
+        var draggables = Object.FindObjectsByType<Draggable>(FindObjectsSortMode.None);
+        foreach (var d in draggables)
+        {
+            var solution = d.GetComponent<SolutionPosition>();
+            if (solution == null) continue;
+            if (!solution.IsInSolutionCell())
+                return false;
+        }
+        return true;
+    }
+
+    public bool AreAllRulesValid()
+    {
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+            {
+                var occ = _occupants[r, c];
+                if (occ == null) continue;
+                foreach (var rule in occ.rules)
+                    if (!rule.CanPlace(this, occ, r, c))
+                        return false;
+                if (!CheckBoardRules(occ, r, c))
+                    return false;
+            }
+        return true;
+    }
+
+    public List<Draggable> GetInvalidDraggables()
+    {
+        var result = new List<Draggable>();
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+            {
+                var occ = _occupants[r, c];
+                if (occ == null) continue;
+                bool valid = true;
+                foreach (var rule in occ.rules)
+                    if (!rule.CanPlace(this, occ, r, c))
+                    { valid = false; break; }
+                if (valid)
+                    valid = CheckBoardRules(occ, r, c);
+                if (!valid)
+                    result.Add(occ);
+            }
+        return result;
+    }
+
+    public void RefreshViolationHighlights()
     {
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)

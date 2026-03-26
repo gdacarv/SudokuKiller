@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -132,7 +133,24 @@ private void BeginDrag(Vector3 pointerPos)
         }
     }
 
-private void EndDrag()
+public void Flash()
+    {
+        StartCoroutine(FlashCoroutine());
+    }
+
+    private IEnumerator FlashCoroutine()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            _spriteRenderer.color = new Color(1f, 0.3f, 0.3f, 1f);
+            yield return new WaitForSeconds(0.1f);
+            _spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
+        gridManager?.RefreshViolationHighlights();
+    }
+
+    private void EndDrag()
     {
         _isDragging = false;
 

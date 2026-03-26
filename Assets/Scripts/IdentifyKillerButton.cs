@@ -97,10 +97,29 @@ public class IdentifyKillerButton : MonoBehaviour
 
     private void OnClicked()
     {
-        if (!AreAllDraggablesInSolutionCells())
+        // Check 1: all draggables must be placed on the grid
+        var draggables = FindObjectsByType<Draggable>(FindObjectsSortMode.None);
+        bool anyUnplaced = false;
+        foreach (var d in draggables)
         {
-            Debug.Log("[IdentifyKillerButton] Wrong arrangement — not the killer!");
-            StartCoroutine(WrongAnswerFlash());
+            if (d.IsDragging || !gridManager.WorldToCell(d.transform.position).HasValue)
+            {
+                d.Flash();
+                anyUnplaced = true;
+            }
+        }
+        if (anyUnplaced)
+        {
+            Debug.Log("[IdentifyKillerButton] Some draggables are not placed on the grid.");
+            return;
+        }
+
+        // Check 2: all rules must be valid
+        if (!gridManager.AreAllRulesValid())
+        {
+            Debug.Log("[IdentifyKillerButton] Rule violations detected.");
+            foreach (var d in gridManager.GetInvalidDraggables())
+                d.Flash();
             return;
         }
 
@@ -111,34 +130,6 @@ public class IdentifyKillerButton : MonoBehaviour
         if (pressedSprite != null)
             _spriteRenderer.sprite = pressedSprite;
         Debug.Log("[IdentifyKillerButton] Killer identified!");
-    }
-
-    private bool AreAllDraggablesInSolutionCells()
-    {
-        var draggables = FindObjectsByType<Draggable>(FindObjectsSortMode.None);
-        foreach (var d in draggables)
-        {
-            var solution = d.GetComponent<SolutionPosition>();
-            if (solution == null) continue;
-
-            bool inCell = solution.IsInSolutionCell();
-            if (!inCell)
-            {
-                var cell = gridManager != null ? gridManager.WorldToCell(d.transform.position) : null;
-                Debug.Log($"[IdentifyKillerButton] {d.name}: solution=({solution.SolutionRow},{solution.SolutionCol}), " +
-                          $"current={( cell.HasValue ? $"({cell.Value.y},{cell.Value.x})" : "off-grid")}, " +
-                          $"gridManager={(solution.gridManager != null ? "ok" : "NULL")}");
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private IEnumerator WrongAnswerFlash()
-    {
-        _spriteRenderer.color = new Color(1f, 0.3f, 0.3f, 1f);
-        yield return new WaitForSeconds(0.5f);
-        _spriteRenderer.color = Color.white;
     }
 
     private IEnumerator PulseCoroutine()

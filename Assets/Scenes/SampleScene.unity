@@ -7284,7 +7284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GridManager
   gridOverlay: {fileID: 368987999}
   boardRules: []
-  preventInvalidPlacement: 1
+  preventInvalidPlacement: 0
   highlightRuleViolations: 1
 --- !u!114 &368987999
 MonoBehaviour:

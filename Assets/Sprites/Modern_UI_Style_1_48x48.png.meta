@@ -41953,6 +41953,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Modern_UI_Style_1_48x48_1229
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1128
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108d8cfa2d9514858880b2a390371719
+      internalID: 1305033422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_UI_Style_1_48x48_1230
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1128
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f85e234e08844b4a45557fbba0775f
+      internalID: 1093821347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_UI_Style_1_48x48_1231
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1128
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c1970bcc4754421b4deb669e771971
+      internalID: -246731268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_UI_Style_1_48x48_1800
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1032
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5461d8e7e0b0b44b59221bf11f158fcd
+      internalID: -469879477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -42230,6 +42318,7 @@ TextureImporter:
       Modern_UI_Style_1_48x48_1228: 1152308880
       Modern_UI_Style_1_48x48_1229: 1305033422
       Modern_UI_Style_1_48x48_123: -5436037077650211497
+      Modern_UI_Style_1_48x48_1230: 1093821347
       Modern_UI_Style_1_48x48_1231: -246731268
       Modern_UI_Style_1_48x48_1232: -1304223230
       Modern_UI_Style_1_48x48_1233: 1949336439
