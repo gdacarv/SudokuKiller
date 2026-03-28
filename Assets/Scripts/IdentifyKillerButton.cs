@@ -113,6 +113,32 @@ public class IdentifyKillerButton : MonoBehaviour
             return;
         }
 
+        // Check 1: all draggables must be placed on the grid
+        var draggables = FindObjectsByType<Draggable>(FindObjectsSortMode.None);
+        bool anyUnplaced = false;
+        foreach (var d in draggables)
+        {
+            if (d.IsDragging || !gridManager.WorldToCell(d.transform.position).HasValue)
+            {
+                d.Flash();
+                anyUnplaced = true;
+            }
+        }
+        if (anyUnplaced)
+        {
+            PopupMessage.Show("All suspects must be placed on the board!");
+            return;
+        }
+
+        // Check 2: all rules must be valid
+        if (!gridManager.AreAllRulesValid())
+        {
+            PopupMessage.Show("Some clues are not being respected!");
+            foreach (var d in gridManager.GetInvalidDraggables())
+                d.Flash();
+            return;
+        }
+
         EnterIdentifyMode();
     }
 
