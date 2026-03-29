@@ -10,6 +10,8 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.SmartFormat.Extensions;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using UnityEngine.Localization.Tables;
 using UnityEngine.SceneManagement;
 
@@ -41,23 +43,181 @@ public static class LocalizationSetupTool
 
         var puzzle = CreateStringTableCollection("Puzzle", enLocale, new Dictionary<string, string>
         {
-            ["clue.carla.0"]         = "Carla was the only person in his row and column",
-            ["clue.carla.tooltip.0"] = "There was no other person in the same row and column of Carla",
-            ["clue.bruno.0"]         = "Bruno was the only person in his row and column",
-            ["clue.bruno.1"]         = "Bruno was alone in the room",
-            ["clue.bruno.tooltip.0"] = "There was no other person in the same row and column of Bruno",
-            ["clue.bruno.tooltip.1"] = "Bruno was the only person in the room",
-            ["clue.adam.0"]          = "Adam was the only person in his row and column",
-            ["clue.adam.tooltip.0"]  = "There was no other person in the same row and column of Adam",
-            ["name.victim"]          = "Victim",
+            ["clue.carla.0"]  = "{char.carla} was the only person in his row and column",
+            ["clue.bruno.0"]  = "{char.bruno} was the only person in his row and column",
+            ["clue.bruno.1"]  = "{char.bruno} was alone in the room",
+            ["clue.adam.0"]   = "{char.adam} was the only person in his row and column",
+            ["name.victim"]   = "Victim",
+            ["name.adam"]     = "Adam",
+            ["name.bruno"]    = "Bruno",
+            ["name.carla"]    = "Carla",
         });
+
+        // Enable Smart Strings on clue entries
+        var enTable = puzzle.GetTable(enLocale.Identifier) as StringTable;
+        if (enTable != null) SetSmartOnClueEntries(enTable);
 
         AssetDatabase.SaveAssets();
         WireSceneObjects(ui, puzzle);
+        SetupCharacterNameVariables(puzzle);
         AssetDatabase.SaveAssets();
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         AssetDatabase.Refresh();
         Debug.Log("[LocalizationSetup] Done! Check Console for any warnings.");
+    }
+
+    // ─── Smart Name Variables ──────────────────────────────────────────────────
+
+    public static void SetupSmartNames()
+    {
+        var puzzle = LocalizationEditorSettings.GetStringTableCollection("Puzzle");
+        if (puzzle == null) { Debug.LogError("[LocalizationSetup] Puzzle table not found. Run Setup first."); return; }
+
+        var enTable = puzzle.GetTable(new LocaleIdentifier("en")) as StringTable;
+        if (enTable != null)
+        {
+            AddOrUpdateEntry(enTable, "name.adam",  "Adam");
+            AddOrUpdateEntry(enTable, "name.bruno", "Bruno");
+            AddOrUpdateEntry(enTable, "name.carla", "Carla");
+
+            UpdateEntryAsSmart(enTable, "clue.adam.0",  "{char.adam} was the only person in his row and column");
+            UpdateEntryAsSmart(enTable, "clue.bruno.0", "{char.bruno} was the only person in his row and column");
+            UpdateEntryAsSmart(enTable, "clue.bruno.1", "{char.bruno} was alone in the room");
+            UpdateEntryAsSmart(enTable, "clue.carla.0", "{char.carla} was the only person in his row and column");
+            EditorUtility.SetDirty(enTable);
+        }
+
+        var ptTable = puzzle.GetTable(new LocaleIdentifier("pt-BR")) as StringTable;
+        if (ptTable != null)
+        {
+            AddOrUpdateEntry(ptTable, "name.adam",  "Adam");
+            AddOrUpdateEntry(ptTable, "name.bruno", "Bruno");
+            AddOrUpdateEntry(ptTable, "name.carla", "Carla");
+
+            UpdateEntryAsSmart(ptTable, "clue.adam.0",  "{char.adam} era a única pessoa em sua linha e coluna");
+            UpdateEntryAsSmart(ptTable, "clue.bruno.0", "{char.bruno} era a única pessoa em sua linha e coluna");
+            UpdateEntryAsSmart(ptTable, "clue.bruno.1", "{char.bruno} estava sozinho na sala");
+            UpdateEntryAsSmart(ptTable, "clue.carla.0", "{char.carla} era a única pessoa em sua linha e coluna");
+            EditorUtility.SetDirty(ptTable);
+        }
+
+        EditorUtility.SetDirty(puzzle.SharedData);
+        SetupCharacterNameVariables(puzzle);
+
+        foreach (var charName in new[] { "Adam", "Bruno", "Carla" })
+        {
+            var go = GameObject.Find(charName);
+            if (go == null) { Debug.LogWarning($"[LocalizationSetup] '{charName}' not found."); continue; }
+            var nl = go.GetComponentInChildren<NameLabel>(true);
+            if (nl != null)
+                SetField(nl, "localizedName", MakeLS(puzzle, $"name.{charName.ToLower()}"));
+            else
+                Debug.LogWarning($"[LocalizationSetup] NameLabel not found on '{charName}'.");
+        }
+
+        AssetDatabase.SaveAssets();
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
+        AssetDatabase.Refresh();
+        Debug.Log("[LocalizationSetup] Smart names setup complete!");
+    }
+
+    public static void CleanupTooltipKeys()
+    {
+        var puzzle = LocalizationEditorSettings.GetStringTableCollection("Puzzle");
+        if (puzzle == null) { Debug.LogError("[LocalizationSetup] Puzzle table not found."); return; }
+
+        var keysToRemove = new[]
+        {
+            "clue.adam.tooltip.0",
+            "clue.bruno.tooltip.0",
+            "clue.bruno.tooltip.1",
+            "clue.carla.tooltip.0",
+        };
+
+        foreach (var key in keysToRemove)
+        {
+            var sharedEntry = puzzle.SharedData.GetEntry(key);
+            if (sharedEntry == null) { Debug.Log($"[LocalizationSetup] Key '{key}' not found, skipping."); continue; }
+
+            long id = sharedEntry.Id;
+            foreach (var tableObj in puzzle.StringTables)
+            {
+                var st = tableObj as StringTable;
+                if (st == null) continue;
+                if (st.GetEntry(id) != null)
+                {
+                    st.RemoveEntry(id);
+                    EditorUtility.SetDirty(st);
+                }
+            }
+            puzzle.SharedData.RemoveKey(id);
+            EditorUtility.SetDirty(puzzle.SharedData);
+            Debug.Log($"[LocalizationSetup] Removed key '{key}'.");
+        }
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log("[LocalizationSetup] Tooltip keys cleanup complete.");
+    }
+
+    static void SetupCharacterNameVariables(StringTableCollection puzzle)
+    {
+        const string groupPath = "Assets/Localization/CharacterNames.asset";
+        var group = AssetDatabase.LoadAssetAtPath<VariablesGroupAsset>(groupPath);
+        if (group == null)
+        {
+            group = ScriptableObject.CreateInstance<VariablesGroupAsset>();
+            AssetDatabase.CreateAsset(group, groupPath);
+        }
+
+        if (group.ContainsKey("adam"))  group.Remove("adam");
+        if (group.ContainsKey("bruno")) group.Remove("bruno");
+        if (group.ContainsKey("carla")) group.Remove("carla");
+        group.Add("adam",  MakeLS(puzzle, "name.adam"));
+        group.Add("bruno", MakeLS(puzzle, "name.bruno"));
+        group.Add("carla", MakeLS(puzzle, "name.carla"));
+        EditorUtility.SetDirty(group);
+
+        var source = LocalizationSettings.StringDatabase.SmartFormatter
+            .GetSourceExtension<PersistentVariablesSource>();
+        if (source != null)
+        {
+            if (source.ContainsKey("char")) source.Remove("char");
+            source.Add("char", group);
+            EditorUtility.SetDirty(LocalizationEditorSettings.ActiveLocalizationSettings);
+        }
+        else
+        {
+            Debug.LogWarning("[LocalizationSetup] PersistentVariablesSource not found in SmartFormatter.");
+        }
+    }
+
+    static void SetSmartOnClueEntries(StringTable table)
+    {
+        var clueKeys = new[] { "clue.carla.0", "clue.bruno.0", "clue.bruno.1", "clue.adam.0" };
+        foreach (var key in clueKeys)
+        {
+            var entry = table.GetEntry(key);
+            if (entry != null) entry.IsSmart = true;
+        }
+        EditorUtility.SetDirty(table);
+    }
+
+    static void AddOrUpdateEntry(StringTable table, string key, string value)
+    {
+        var entry = table.GetEntry(key);
+        if (entry == null)
+            table.AddEntry(key, value);
+        else
+            entry.Value = value;
+    }
+
+    static void UpdateEntryAsSmart(StringTable table, string key, string value)
+    {
+        var entry = table.GetEntry(key);
+        if (entry == null) { Debug.LogWarning($"[LocalizationSetup] Entry '{key}' not found."); return; }
+        entry.Value = value;
+        entry.IsSmart = true;
     }
 
     // ─── Asset creation ───────────────────────────────────────────────────────
@@ -134,7 +294,6 @@ public static class LocalizationSetupTool
 
     // ─── Reflection helpers ───────────────────────────────────────────────────
 
-    // Sets any field (including private/inherited) and marks the Unity Object dirty.
     static void SetField(UnityEngine.Object target, string fieldName, object value)
     {
         var type = target.GetType();
@@ -151,7 +310,6 @@ public static class LocalizationSetupTool
 
     static void WireSceneObjects(StringTableCollection ui, StringTableCollection puzzle)
     {
-        // IdentifyKillerButton (4 LocalizedString fields)
         var btn = FindFirst<IdentifyKillerButton>();
         if (btn != null)
         {
@@ -162,28 +320,18 @@ public static class LocalizationSetupTool
         }
         else Debug.LogWarning("[LocalizationSetup] IdentifyKillerButton not found.");
 
-        // CursorManager
         var cursor = FindFirst<CursorManager>();
         if (cursor != null)
             SetField(cursor, "identifyTooltipLocalized", MakeLS(ui, "cursor.identifyPrompt"));
         else Debug.LogWarning("[LocalizationSetup] CursorManager not found.");
 
-        // All TooltipUI instances
         foreach (var tip in FindAll<TooltipUI>())
             SetField(tip, "cluesHeaderLocalized", MakeLS(ui, "tooltip.cluesHeader"));
 
-        // CluesTooltip per character
-        WireCharacterClues(puzzle, "Carla",
-            new[] { "clue.carla.0" },
-            new[] { "clue.carla.tooltip.0" });
-        WireCharacterClues(puzzle, "Bruno",
-            new[] { "clue.bruno.0", "clue.bruno.1" },
-            new[] { "clue.bruno.tooltip.0", "clue.bruno.tooltip.1" });
-        WireCharacterClues(puzzle, "Adam",
-            new[] { "clue.adam.0" },
-            new[] { "clue.adam.tooltip.0" });
+        WireCharacterClues(puzzle, "Carla", new[] { "clue.carla.0" });
+        WireCharacterClues(puzzle, "Bruno", new[] { "clue.bruno.0", "clue.bruno.1" });
+        WireCharacterClues(puzzle, "Adam",  new[] { "clue.adam.0" });
 
-        // NameLabel on Victim
         var victimGO = GameObject.Find("Victim");
         if (victimGO != null)
         {
@@ -192,7 +340,15 @@ public static class LocalizationSetupTool
         }
         else Debug.LogWarning("[LocalizationSetup] 'Victim' not found.");
 
-        // SuspectsLabel → LocalizeStringEvent + TMP binding
+        foreach (var charName in new[] { "Adam", "Bruno", "Carla" })
+        {
+            var go = GameObject.Find(charName);
+            if (go == null) { Debug.LogWarning($"[LocalizationSetup] '{charName}' not found."); continue; }
+            var nl = go.GetComponentInChildren<NameLabel>(true);
+            if (nl != null)
+                SetField(nl, "localizedName", MakeLS(puzzle, $"name.{charName.ToLower()}"));
+        }
+
         var suspectsLabelGO = GameObject.Find("SuspectsLabel");
         if (suspectsLabelGO != null)
             AddLocalizeStringEvent(suspectsLabelGO, ui, "label.suspects");
@@ -200,34 +356,31 @@ public static class LocalizationSetupTool
             Debug.LogWarning("[LocalizationSetup] 'SuspectsLabel' not found.");
     }
 
-    static void WireCharacterClues(StringTableCollection puzzle, string charName, string[] firstKeys, string[] secondKeys)
+    static void WireCharacterClues(StringTableCollection puzzle, string charName, string[] keys)
     {
         var go = GameObject.Find(charName);
         if (go == null) { Debug.LogWarning($"[LocalizationSetup] '{charName}' not found."); return; }
-
-        var tooltips = go.GetComponentsInChildren<CluesTooltip>(true);
-        string[][] groups = { firstKeys, secondKeys };
-        for (int i = 0; i < tooltips.Length && i < groups.Length; i++)
-            SetField(tooltips[i], "lines", MakeLSList(puzzle, groups[i]));
+        var tooltip = go.GetComponentInChildren<CluesTooltip>(true);
+        if (tooltip != null)
+            SetField(tooltip, "lines", MakeLSList(puzzle, keys));
+        else
+            Debug.LogWarning($"[LocalizationSetup] CluesTooltip not found on '{charName}'.");
     }
 
     static void AddLocalizeStringEvent(GameObject go, StringTableCollection collection, string key)
     {
         var lse = go.GetComponent<LocalizeStringEvent>() ?? go.AddComponent<LocalizeStringEvent>();
 
-        // Set the string reference via public property
         var sr = lse.StringReference;
         sr.TableReference      = collection.SharedData.TableCollectionNameGuid;
         sr.TableEntryReference = collection.SharedData.GetEntry(key)?.Id ?? 0;
         EditorUtility.SetDirty(lse);
 
-        // Wire UpdateString event to TMP.set_text via SerializedProperty
         var tmp = (UnityEngine.Object)go.GetComponent<TMPro.TextMeshProUGUI>()
                 ?? go.GetComponent<TMPro.TextMeshPro>();
         if (tmp == null) return;
 
         var so = new SerializedObject(lse);
-        // LocalizeStringEvent uses "m_UpdateString" as the backing field name
         var updateProp = so.FindProperty("m_UpdateString");
         if (updateProp == null) { Debug.LogWarning("[LocalizationSetup] m_UpdateString not found on LocalizeStringEvent."); so.ApplyModifiedProperties(); return; }
 
@@ -244,8 +397,8 @@ public static class LocalizationSetupTool
             call.FindPropertyRelative("m_TargetAssemblyTypeName").stringValue =
                 $"{tmp.GetType().FullName}, {tmp.GetType().Assembly.GetName().Name}";
             call.FindPropertyRelative("m_MethodName").stringValue  = "set_text";
-            call.FindPropertyRelative("m_Mode").intValue           = 5; // PersistentListenerMode.String
-            call.FindPropertyRelative("m_CallState").intValue      = 2; // RuntimeOnly
+            call.FindPropertyRelative("m_Mode").intValue           = 5;
+            call.FindPropertyRelative("m_CallState").intValue      = 2;
             var strArgProp = call.FindPropertyRelative("m_Arguments")
                               ?.FindPropertyRelative("m_StringArgument");
             if (strArgProp != null) strArgProp.stringValue = "";
@@ -280,15 +433,14 @@ public static class LocalizationSetupTool
 
         AddTranslationsToCollection("Puzzle", ptLocale, new Dictionary<string, string>
         {
-            ["clue.carla.0"]         = "Carla era a única pessoa em sua linha e coluna",
-            ["clue.carla.tooltip.0"] = "Não havia outra pessoa na mesma linha e coluna de Carla",
-            ["clue.bruno.0"]         = "Bruno era a única pessoa em sua linha e coluna",
-            ["clue.bruno.1"]         = "Bruno estava sozinho na sala",
-            ["clue.bruno.tooltip.0"] = "Não havia outra pessoa na mesma linha e coluna de Bruno",
-            ["clue.bruno.tooltip.1"] = "Bruno era a única pessoa na sala",
-            ["clue.adam.0"]          = "Adam era a única pessoa em sua linha e coluna",
-            ["clue.adam.tooltip.0"]  = "Não havia outra pessoa na mesma linha e coluna de Adam",
-            ["name.victim"]          = "Vítima",
+            ["clue.carla.0"]  = "{char.carla} era a única pessoa em sua linha e coluna",
+            ["clue.bruno.0"]  = "{char.bruno} era a única pessoa em sua linha e coluna",
+            ["clue.bruno.1"]  = "{char.bruno} estava sozinho na sala",
+            ["clue.adam.0"]   = "{char.adam} era a única pessoa em sua linha e coluna",
+            ["name.victim"]   = "Vítima",
+            ["name.adam"]     = "Adam",
+            ["name.bruno"]    = "Bruno",
+            ["name.carla"]    = "Carla",
         });
 
         AssetDatabase.SaveAssets();
@@ -301,7 +453,6 @@ public static class LocalizationSetupTool
         var collection = LocalizationEditorSettings.GetStringTableCollection(tableName);
         if (collection == null) { Debug.LogWarning($"[LocalizationSetup] Table '{tableName}' not found."); return; }
 
-        // Add a new StringTable for this locale if it doesn't exist yet
         var existing = collection.GetTable(locale.Identifier);
         StringTable table;
         if (existing == null)
@@ -318,6 +469,8 @@ public static class LocalizationSetupTool
         {
             var entry = table.GetEntry(kvp.Key) ?? table.AddEntry(kvp.Key, kvp.Value);
             entry.Value = kvp.Value;
+            if (kvp.Key.StartsWith("clue."))
+                entry.IsSmart = true;
         }
 
         EditorUtility.SetDirty(table);

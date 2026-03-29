@@ -19,10 +19,6 @@ MonoBehaviour:
     m_Key: clue.carla.0
     m_Metadata:
       m_Items: []
-  - m_Id: 191881216
-    m_Key: clue.carla.tooltip.0
-    m_Metadata:
-      m_Items: []
   - m_Id: 191881217
     m_Key: clue.bruno.0
     m_Metadata:
@@ -31,20 +27,8 @@ MonoBehaviour:
     m_Key: clue.bruno.1
     m_Metadata:
       m_Items: []
-  - m_Id: 191881219
-    m_Key: clue.bruno.tooltip.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 191881220
-    m_Key: clue.bruno.tooltip.1
-    m_Metadata:
-      m_Items: []
   - m_Id: 191881221
     m_Key: clue.adam.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 191881222
-    m_Key: clue.adam.tooltip.0
     m_Metadata:
       m_Items: []
   - m_Id: 191881223
@@ -53,6 +37,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 128387556302848
     m_Key: clue.victim.0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302671251628032
+    m_Key: name.adam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302671255822336
+    m_Key: name.bruno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302671255822337
+    m_Key: name.carla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304649553829888
+    m_Key: clue.victim.1
     m_Metadata:
       m_Items: []
   m_Metadata:

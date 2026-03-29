@@ -16,40 +16,29 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 4af7bbab842694a17bf1b59daa179f12, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 4753990918076105041
   m_TableData:
   - m_Id: 187686912
-    m_Localized: "Carla era a \xFAnica pessoa em sua linha e coluna"
+    m_Localized: "{char.carla} era a \xFAnica pessoa em sua linha e coluna"
     m_Metadata:
-      m_Items: []
-  - m_Id: 191881216
-    m_Localized: "N\xE3o havia outra pessoa na mesma linha e coluna de Carla"
-    m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 4753990918076105041
   - m_Id: 191881217
-    m_Localized: "Bruno era a \xFAnica pessoa em sua linha e coluna"
+    m_Localized: "{char.bruno} era a \xFAnica pessoa em sua linha e coluna"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 4753990918076105041
   - m_Id: 191881218
-    m_Localized: Bruno estava sozinho na sala
+    m_Localized: '{char.bruno} estava sozinho na sala'
     m_Metadata:
-      m_Items: []
-  - m_Id: 191881219
-    m_Localized: "N\xE3o havia outra pessoa na mesma linha e coluna de Bruno"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 191881220
-    m_Localized: "Bruno era a \xFAnica pessoa na sala"
-    m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 4753990918076105041
   - m_Id: 191881221
-    m_Localized: "Adam era a \xFAnica pessoa em sua linha e coluna"
+    m_Localized: "{char.adam} era a \xFAnica pessoa em sua linha e coluna"
     m_Metadata:
-      m_Items: []
-  - m_Id: 191881222
-    m_Localized: "N\xE3o havia outra pessoa na mesma linha e coluna de Adam"
-    m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 4753990918076105041
   - m_Id: 191881223
     m_Localized: "V\xEDtima"
     m_Metadata:
@@ -58,6 +47,33 @@ MonoBehaviour:
     m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o assassino"
     m_Metadata:
       m_Items: []
+  - m_Id: 302671251628032
+    m_Localized: Alex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302671255822336
+    m_Localized: Bruno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302671255822337
+    m_Localized: Carla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304649553829888
+    m_Localized: "A V\xEDtima estava abaixo de {char.carla}"
+    m_Metadata:
+      m_Items:
+      - rid: 4753990918076105041
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4753990918076105041
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 191881221
+        - id: 191881217
+        - id: 191881218
+        - id: 187686912
+        - id: 304649553829888
