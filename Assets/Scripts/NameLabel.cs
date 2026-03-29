@@ -1,9 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 [ExecuteAlways]
 public class NameLabel : MonoBehaviour
 {
+    [SerializeField] private LocalizedString localizedName;
+
     [SerializeField] private Vector3 _offset = new Vector3(0f, 0.3f, 0f);
     [SerializeField] private float _fontSize = 2f;
     [SerializeField] private Color _color = Color.white;
@@ -17,6 +21,23 @@ public class NameLabel : MonoBehaviour
     private void Awake()
     {
         CreateLabel();
+    }
+
+    private void OnEnable()
+    {
+        if (Application.isPlaying)
+            LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    }
+
+    private void OnDisable()
+    {
+        if (Application.isPlaying)
+            LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+    }
+
+    private void OnLocaleChanged(Locale _)
+    {
+        if (_textMesh != null) ApplySettings();
     }
 
     private void OnValidate()
@@ -44,13 +65,18 @@ public class NameLabel : MonoBehaviour
         ApplySettings();
     }
 
-    private void ApplySettings()
+    public void ApplySettings()
     {
+        if (_labelObject == null || _textMesh == null) return;
         _labelObject.transform.localPosition = _offset;
-        _textMesh.text = gameObject.name;
+        _textMesh.text = (Application.isPlaying && localizedName != null && !localizedName.IsEmpty)
+            ? localizedName.GetLocalizedString()
+            : gameObject.name;
         _textMesh.fontSize = _fontSize;
         _textMesh.color = _color;
         _textMesh.alignment = _alignment;
+        _textMesh.enableWordWrapping = false;
+        _textMesh.overflowMode = TextOverflowModes.Overflow;
         _textMesh.autoSizeTextContainer = true;
 
         _textMesh.fontStyle = _fontStyle;

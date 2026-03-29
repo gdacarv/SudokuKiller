@@ -4961,8 +4961,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TooltipUI
   text: {fileID: 1967362117}
+  cluesHeaderLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 460316674
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   slideAnimDuration: 0.3
   slideOffsetY: 120
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &255984185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5865,7 +5877,18 @@ MonoBehaviour:
   identifyKillerButton: {fileID: 1881519962}
   identifyTooltipPanel: {fileID: 1481619097}
   identifyTooltipText: {fileID: 1180811266}
-  identifyTooltipString: Who is the killer?\nChoose wisely. There's no going back.
+  identifyTooltipLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 460316672
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &298398628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7928,8 +7951,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TooltipUI
   text: {fileID: 1105741404}
+  cluesHeaderLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 460316674
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   slideAnimDuration: 0.3
   slideOffsetY: 120
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &381969759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8169,6 +8204,14 @@ PrefabInstance:
       propertyPath: 'lines.Array.data[0]'
       value: Carla was the only person in his row and column
       objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 187686912
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
       value: 21
@@ -8199,7 +8242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: _SortingOrder
-      value: 10
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_fontColor.b
@@ -17724,6 +17767,7 @@ GameObject:
   - component: {fileID: 909077635}
   - component: {fileID: 909077637}
   - component: {fileID: 909077636}
+  - component: {fileID: 909077638}
   m_Layer: 0
   m_Name: SuspectsLabel
   m_TagString: Untagged
@@ -17892,6 +17936,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &909077638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909077634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 460316673
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 1
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 909077636}
+        m_TargetAssemblyTypeName: TMPro.TextMeshPro, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &913032186
 GameObject:
   m_ObjectHideFlags: 0
@@ -20205,6 +20289,22 @@ PrefabInstance:
       propertyPath: 'lines.Array.data[1]'
       value: Bruno was alone in the room
       objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 191881217
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[1].m_TableEntryReference.m_KeyId
+      value: 191881218
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[1].m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
       value: 21
@@ -20231,7 +20331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: _SortingOrder
-      value: 10
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
@@ -36541,6 +36641,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: localizedName.m_TableEntryReference.m_KeyId
+      value: 191881223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: localizedName.m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: tooltipUI
       value: 
@@ -36549,6 +36657,14 @@ PrefabInstance:
       propertyPath: inputProvider
       value: 
       objectReference: {fileID: 519420033}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 128387556302848
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
     - target: {fileID: 3875278182876665019, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_Name
       value: Victim
@@ -36924,6 +37040,45 @@ MonoBehaviour:
   inputProvider: {fileID: 519420033}
   hoverTooltip: {fileID: 1881519958}
   pressedSprite: {fileID: -3296147874648832931, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
+  inactiveTooltipLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 447733760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  activeTooltipLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 456122368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  popupAllSuspectsLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 456122369
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  popupCluesNotRespectedLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 456122370
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1896505976
 GameObject:
   m_ObjectHideFlags: 0
@@ -40745,6 +40900,14 @@ PrefabInstance:
       propertyPath: 'lines.Array.data[0]'
       value: Adam was the only person in his row and column
       objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 191881221
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
       value: 21
@@ -40767,7 +40930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5292073538780746938, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: _SortingOrder
-      value: 10
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager

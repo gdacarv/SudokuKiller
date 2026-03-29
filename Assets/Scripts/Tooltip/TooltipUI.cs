@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization;
 
 public class TooltipUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
+
+    [Header("Localization")]
+    [SerializeField] private LocalizedString cluesHeaderLocalized;
 
     [Header("Popup Animation")]
     [SerializeField] private float slideAnimDuration = 0.3f;
@@ -37,7 +41,9 @@ public class TooltipUI : MonoBehaviour
         }
 
         var sb = new System.Text.StringBuilder();
-        sb.Append("<b>Clues:</b>");
+        sb.Append(cluesHeaderLocalized != null && !cluesHeaderLocalized.IsEmpty
+            ? cluesHeaderLocalized.GetLocalizedString()
+            : "<b>Clues:</b>");
         for (int i = 0; i < lines.Count; i++)
         {
             sb.Append('\n').Append("\u2022 ").Append(lines[i]);

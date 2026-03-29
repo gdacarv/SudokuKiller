@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class CursorManager : MonoBehaviour
 {
@@ -25,7 +27,7 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI identifyTooltipText;
 
     [Header("Tooltip")]
-    [SerializeField] private string identifyTooltipString = "Who is the killer?";
+    [SerializeField] private LocalizedString identifyTooltipLocalized;
 
     private RectTransform _cursorRect;
     private Vector2 _defaultPivot;
@@ -46,7 +48,7 @@ public class CursorManager : MonoBehaviour
     {
         _draggables = FindObjectsByType<Draggable>(FindObjectsSortMode.None);
         if (identifyTooltipText != null)
-            identifyTooltipText.text = identifyTooltipString;
+            identifyTooltipText.text = identifyTooltipLocalized.GetLocalizedString();
         if (identifyTooltipPanel != null)
             identifyTooltipPanel.SetActive(false);
     }
@@ -54,11 +56,19 @@ public class CursorManager : MonoBehaviour
     void OnEnable()
     {
         Cursor.visible = false;
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
     }
 
     void OnDisable()
     {
         Cursor.visible = true;
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+    }
+
+    void OnLocaleChanged(Locale _)
+    {
+        if (identifyTooltipText != null)
+            identifyTooltipText.text = identifyTooltipLocalized.GetLocalizedString();
     }
 
     void LateUpdate()

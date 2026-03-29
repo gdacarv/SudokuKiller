@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: 92fafd44b22bc4db0ae59faa9a3ebdec
+  m_Entries:
+  - m_Id: 447733760
+    m_Key: tooltip.inactive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 456122368
+    m_Key: tooltip.active
+    m_Metadata:
+      m_Items: []
+  - m_Id: 456122369
+    m_Key: popup.allSuspectsPlaced
+    m_Metadata:
+      m_Items: []
+  - m_Id: 456122370
+    m_Key: popup.cluesNotRespected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 460316672
+    m_Key: cursor.identifyPrompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 460316673
+    m_Key: label.suspects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 460316674
+    m_Key: tooltip.cluesHeader
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4753990918076104885
+  references:
+    version: 2
+    RefIds:
+    - rid: 4753990918076104885
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1774722255708

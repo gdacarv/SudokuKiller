@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -24,18 +26,38 @@ public class IdentifyKillerButton : MonoBehaviour
     public bool IsInIdentifyMode => _isInIdentifyMode;
     public bool WasClicked => _wasClicked;
 
+    [Header("Localization")]
+    [SerializeField] private LocalizedString inactiveTooltipLocalized;
+    [SerializeField] private LocalizedString activeTooltipLocalized;
+    [SerializeField] private LocalizedString popupAllSuspectsLocalized;
+    [SerializeField] private LocalizedString popupCluesNotRespectedLocalized;
+
     private float _checkTimer;
     private const float CheckInterval = 0.25f;
-
-    private const string InactiveTooltip =
-        "You need to place all the suspects, objects and victim\non the map before being able to identify the killer";
-    private const string ActiveTooltip = "Click to identify the killer";
 
     void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _collider = GetComponent<Collider2D>();
         _defaultSprite = _spriteRenderer.sprite;
+    }
+
+    void OnEnable()
+    {
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    }
+
+    void OnDisable()
+    {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+    }
+
+    void OnLocaleChanged(Locale _)
+    {
+        if (hoverTooltip == null) return;
+        hoverTooltip.message = _isActive
+            ? activeTooltipLocalized.GetLocalizedString()
+            : inactiveTooltipLocalized.GetLocalizedString();
     }
 
     void Start()
@@ -90,7 +112,7 @@ public class IdentifyKillerButton : MonoBehaviour
         _spriteRenderer.color = Color.white;
         _spriteRenderer.sprite = _defaultSprite;
         if (hoverTooltip != null)
-            hoverTooltip.message = ActiveTooltip;
+            hoverTooltip.message = activeTooltipLocalized.GetLocalizedString();
         StartCoroutine(PulseCoroutine());
     }
 
@@ -102,7 +124,7 @@ public class IdentifyKillerButton : MonoBehaviour
         _spriteRenderer.sprite = _defaultSprite;
         _spriteRenderer.transform.localScale = Vector3.one;
         if (hoverTooltip != null)
-            hoverTooltip.message = InactiveTooltip;
+            hoverTooltip.message = inactiveTooltipLocalized.GetLocalizedString();
     }
 
     private void OnClicked()
@@ -126,14 +148,14 @@ public class IdentifyKillerButton : MonoBehaviour
         }
         if (anyUnplaced)
         {
-            PopupMessage.Show("All suspects must be placed on the board!");
+            PopupMessage.Show(popupAllSuspectsLocalized.GetLocalizedString());
             return;
         }
 
         // Check 2: all rules must be valid
         if (!gridManager.AreAllRulesValid())
         {
-            PopupMessage.Show("Some clues are not being respected!");
+            PopupMessage.Show(popupCluesNotRespectedLocalized.GetLocalizedString());
             foreach (var d in gridManager.GetInvalidDraggables())
                 d.Flash();
             return;

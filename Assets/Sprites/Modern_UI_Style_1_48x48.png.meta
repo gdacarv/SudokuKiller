@@ -42041,6 +42041,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Modern_UI_Style_1_48x48_Settings_bg
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1584
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 25, z: 24, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b0cc2b45b784df9925969fdf68c154
+      internalID: 318197357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -43860,6 +43882,7 @@ TextureImporter:
       Modern_UI_Style_1_48x48_997: 726427999
       Modern_UI_Style_1_48x48_998: -758998509
       Modern_UI_Style_1_48x48_999: 286936449
+      Modern_UI_Style_1_48x48_Settings_bg: 318197357
       Modern_UI_Style_1_48x48_Tooltip: -1085400535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
