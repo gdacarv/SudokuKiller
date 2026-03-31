@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: tooltip.cluesHeader
     m_Metadata:
       m_Items: []
+  - m_Id: 1100968128143360
+    m_Key: popup.killerFound
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

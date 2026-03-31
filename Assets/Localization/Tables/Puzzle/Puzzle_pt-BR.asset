@@ -44,7 +44,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 128387556302848
-    m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o assassino"
+    m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o Assassino"
     m_Metadata:
       m_Items: []
   - m_Id: 302671251628032
@@ -64,6 +64,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4753990918076105041
+  - m_Id: 1087788089860096
+    m_Localized: "Errado! {0} n\xE3o est\xE1 no mesmo c\xF4modo da V\xEDtima!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095141786902528
+    m_Localized: "A {0} n\xE3o pode ser o Assassino!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

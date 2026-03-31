@@ -31,6 +31,7 @@ public class IdentifyKillerButton : MonoBehaviour
     [SerializeField] private LocalizedString activeTooltipLocalized;
     [SerializeField] private LocalizedString popupAllSuspectsLocalized;
     [SerializeField] private LocalizedString popupCluesNotRespectedLocalized;
+    [SerializeField] private LocalizedString popupCorrectLocalized;
 
     private float _checkTimer;
     private const float CheckInterval = 0.25f;
@@ -172,6 +173,26 @@ public class IdentifyKillerButton : MonoBehaviour
         _spriteRenderer.color = Color.white;
         if (pressedSprite != null)
             _spriteRenderer.sprite = pressedSprite;
+    }
+
+    public void OnSuspectClicked(Draggable suspect)
+    {
+        var failedRule = gridManager.EvaluateKillerRules(suspect);
+        if (failedRule != null)
+        {
+            PopupMessage.Show(failedRule.GetFailureMessage(suspect));
+            suspect.Flash();
+        }
+        else
+        {
+            ConfirmKillerIdentified();
+        }
+    }
+
+    public void ConfirmKillerIdentified()
+    {
+        PopupMessage.Show(popupCorrectLocalized.GetLocalizedString());
+        ExitIdentifyMode();
     }
 
     private void ExitIdentifyMode()

@@ -65,6 +65,11 @@ public class NameLabel : MonoBehaviour
         ApplySettings();
     }
 
+    public string GetLocalizedName()
+        => (Application.isPlaying && localizedName != null && !localizedName.IsEmpty)
+            ? localizedName.GetLocalizedString()
+            : gameObject.name;
+
     public void ApplySettings()
     {
         if (_labelObject == null || _textMesh == null) return;

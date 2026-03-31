@@ -19,18 +19,18 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 447733760
-    m_Localized: 'You need to place all the suspects, objects and victim
+    m_Localized: 'You need to place all the Suspects, Objects and Victim
 
       on
-      the map before being able to identify the killer'
+      the map before being able to identify the Killer'
     m_Metadata:
       m_Items: []
   - m_Id: 456122368
-    m_Localized: Click to identify the killer
+    m_Localized: Click to identify the Killer
     m_Metadata:
       m_Items: []
   - m_Id: 456122369
-    m_Localized: All suspects must be placed on the board!
+    m_Localized: All Suspects must be placed on the board!
     m_Metadata:
       m_Items: []
   - m_Id: 456122370
@@ -38,9 +38,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 460316672
-    m_Localized: 'Who is the killer?
-
-      Choose wisely. There''s no going back.'
+    m_Localized: Who is the Killer?
     m_Metadata:
       m_Items: []
   - m_Id: 460316673
@@ -49,6 +47,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 460316674
     m_Localized: <b>Clues:</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100968128143360
+    m_Localized: Correct! You found the Killer!
     m_Metadata:
       m_Items: []
   references:

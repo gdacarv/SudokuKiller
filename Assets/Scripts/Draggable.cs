@@ -24,6 +24,7 @@ public class Draggable : MonoBehaviour
     private bool _isDragging;
     public bool IsDragging => _isDragging;
     private Vector3 _dragOffset;
+    private IdentifyKillerButton _identifyKillerButton;
 
     void Awake()
     {
@@ -44,6 +45,7 @@ public class Draggable : MonoBehaviour
         }
 
         gridManager?.RegisterEntity(Entity);
+        _identifyKillerButton = FindFirstObjectByType<IdentifyKillerButton>();
     }
 
     void OnDestroy()
@@ -59,7 +61,12 @@ public class Draggable : MonoBehaviour
         {
             Vector3 pointerPos = inputProvider.PointerWorldPosition;
             if (_collider.OverlapPoint(pointerPos))
-                BeginDrag(pointerPos);
+            {
+                if (_identifyKillerButton != null && _identifyKillerButton.IsInIdentifyMode)
+                    _identifyKillerButton.OnSuspectClicked(this);
+                else
+                    BeginDrag(pointerPos);
+            }
         }
 
         if (_isDragging)

@@ -55,6 +55,14 @@ MonoBehaviour:
     m_Key: clue.victim.1
     m_Metadata:
       m_Items: []
+  - m_Id: 1087788089860096
+    m_Key: killer.notInSection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095141786902528
+    m_Key: killer.notVictim
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

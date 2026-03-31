@@ -7599,6 +7599,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GridManager
   gridOverlay: {fileID: 368987999}
   boardRules: []
+  killerRules:
+  - {fileID: 11400000, guid: 12fc3e02d55f24ee58007dc077d08627, type: 2}
+  - {fileID: 11400000, guid: 46234a5eb16ed4525aa49147c5f43fae, type: 2}
   preventInvalidPlacement: 0
   highlightRuleViolations: 1
 --- !u!114 &368987999
@@ -37228,6 +37231,15 @@ MonoBehaviour:
       m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
     m_TableEntryReference:
       m_KeyId: 456122370
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  popupCorrectLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:92fafd44b22bc4db0ae59faa9a3ebdec
+    m_TableEntryReference:
+      m_KeyId: 1100968128143360
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

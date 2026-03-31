@@ -9,6 +9,9 @@ public class GridManager : MonoBehaviour
     [Header("Board Rules")]
     public List<BoardRule> boardRules = new();
 
+    [Header("Killer Rules")]
+    public List<KillerRule> killerRules = new();
+
     [Header("Validation Settings")]
     public bool preventInvalidPlacement = true;
     public bool highlightRuleViolations = false;
@@ -261,6 +264,14 @@ public bool AreAllDraggablesInSolutionCells()
                 return false;
         }
         return true;
+    }
+
+    public KillerRule EvaluateKillerRules(Draggable suspect)
+    {
+        foreach (var rule in killerRules)
+            if (!rule.Evaluate(this, suspect))
+                return rule;
+        return null;
     }
 
     public bool AreAllRulesValid()

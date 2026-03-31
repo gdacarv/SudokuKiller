@@ -19,16 +19,16 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 447733760
-    m_Localized: "Voc\xEA precisa colocar todos os suspeitos, objetos e a v\xEDtima
-      no mapa antes de poder identificar o assassino"
+    m_Localized: "Voc\xEA precisa colocar todos os Suspeitos, Objetos e a V\xEDtima
+      no mapa antes de poder identificar o Assassino"
     m_Metadata:
       m_Items: []
   - m_Id: 456122368
-    m_Localized: Clique para identificar o assassino
+    m_Localized: Clique para identificar o Assassino
     m_Metadata:
       m_Items: []
   - m_Id: 456122369
-    m_Localized: Todos os suspeitos precisam estar no tabuleiro!
+    m_Localized: Todos os Suspeitos precisam estar no tabuleiro!
     m_Metadata:
       m_Items: []
   - m_Id: 456122370
@@ -36,8 +36,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 460316672
-    m_Localized: "Quem \xE9 o assassino?\nEscolha com sabedoria. N\xE3o h\xE1 volta
-      atr\xE1s."
+    m_Localized: "Quem \xE9 o assassino?"
     m_Metadata:
       m_Items: []
   - m_Id: 460316673
@@ -46,6 +45,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 460316674
     m_Localized: <b>Pistas:</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100968128143360
+    m_Localized: "Acertou! Voc\xEA descobriu o Assassino!"
     m_Metadata:
       m_Items: []
   references:

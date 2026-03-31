@@ -44,7 +44,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 128387556302848
-    m_Localized: The Victim was the only person in the room with the killer
+    m_Localized: The Victim was the only person in the room with the Killer
     m_Metadata:
       m_Items: []
   - m_Id: 302671251628032
@@ -64,6 +64,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4753990918076105042
+  - m_Id: 1087788089860096
+    m_Localized: Wrong! {0} is not in the same room of the Victim!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095141786902528
+    m_Localized: The {0} can't be the Killer!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
