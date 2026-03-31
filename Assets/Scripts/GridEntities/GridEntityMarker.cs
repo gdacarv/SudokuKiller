@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [ExecuteAlways]
+[RequireComponent(typeof(GridEntity))]
 public abstract class GridEntityMarker : MonoBehaviour
 {
     public GridManager gridManager;
@@ -10,9 +11,12 @@ public abstract class GridEntityMarker : MonoBehaviour
     [HideInInspector] public int row;
     [HideInInspector] public int col;
 
+    private GridEntity _entity;
 
     protected virtual void Awake()
     {
+        _entity = GetComponent<GridEntity>();
+
         if (Application.isPlaying && hideAtRuntime)
         {
             var sr = GetComponent<SpriteRenderer>();
@@ -34,6 +38,13 @@ public abstract class GridEntityMarker : MonoBehaviour
 
         col = cell.Value.x;
         row = cell.Value.y;
+
+        if (_entity == null) _entity = GetComponent<GridEntity>();
+        if (_entity != null)
+        {
+            _entity.Row = row;
+            _entity.Col = col;
+        }
 
         transform.position = gridManager.GetCellCenter(row, col);
     }

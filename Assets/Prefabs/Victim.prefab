@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6047449830747769193}
   - component: {fileID: 3451667758791918452}
   - component: {fileID: 2619917107855281601}
+  - component: {fileID: 3232116040542156355}
   m_Layer: 0
   m_Name: Victim
   m_TagString: Person
@@ -193,7 +194,17 @@ MonoBehaviour:
   inputProvider: {fileID: 0}
   tooltipUI: {fileID: 0}
   lines:
-  - The Victim was in the same room as the killer
+  - m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2619917107855281601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,12 +217,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1665e11e7dd432e8e132e939cf1ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NameLabel
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _offset: {x: 0, y: 0.39, z: 0}
   _fontSize: 2
   _color: {r: 0.3490566, g: 0.014818435, b: 0.014818435, a: 1}
   _alignment: 514
   _fontStyle: 1
   _sortingOrder: 21
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3232116040542156355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875278182876665019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags:
+  - key: type
+    value: Person
+  Row: -1
+  Col: -1
 --- !u!1 &7208888844455596130
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +400,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}

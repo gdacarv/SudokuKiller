@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(GridEntity))]
 public class Draggable : MonoBehaviour
 {
     [Header("References")]
@@ -11,6 +12,8 @@ public class Draggable : MonoBehaviour
     public List<DraggableRule> rules = new();
 
     public DragInputProvider inputProvider;
+
+    public GridEntity Entity { get; private set; }
 
     private Vector3 _spawnPosition;
     private Vector2Int _originCell;
@@ -26,6 +29,7 @@ public class Draggable : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _collider = GetComponent<Collider2D>();
+        Entity = GetComponent<GridEntity>();
     }
 
     void Start()
@@ -38,6 +42,13 @@ public class Draggable : MonoBehaviour
             _spawnPosition = solution.uiPosition;
             transform.position = _spawnPosition;
         }
+
+        gridManager?.RegisterEntity(Entity);
+    }
+
+    void OnDestroy()
+    {
+        gridManager?.UnregisterEntity(Entity);
     }
 
     void Update()
@@ -126,6 +137,9 @@ private void BeginDrag(Vector3 pointerPos)
             }
         }
 
+        Entity.Row = -1;
+        Entity.Col = -1;
+
         if (_spriteRenderer != null)
         {
             _originalSortingOrder = _spriteRenderer.sortingOrder;
@@ -178,6 +192,8 @@ public void Flash()
 
         if (cell.HasValue && rulesPass && gridManager.TryPlace(this, cell.Value.y, cell.Value.x))
         {
+            Entity.Row = cell.Value.y;
+            Entity.Col = cell.Value.x;
             transform.position = gridManager.GetCellCenter(cell.Value.y, cell.Value.x);
         }
         else if (!cell.HasValue)
@@ -191,6 +207,8 @@ public void Flash()
             if (_hadOriginCell)
             {
                 gridManager.TryPlace(this, _originCell.y, _originCell.x);
+                Entity.Row = _originCell.y;
+                Entity.Col = _originCell.x;
                 transform.position = gridManager.GetCellCenter(_originCell.y, _originCell.x);
             }
             else

@@ -16,6 +16,7 @@ public class GridManager : MonoBehaviour
     private Draggable[,] _occupants;
     private bool[,] _blockedByMarker;
     private int[,] _cellSection;
+    private readonly HashSet<GridEntity> _entities = new();
 
     void Awake()
     {
@@ -82,6 +83,25 @@ public class GridManager : MonoBehaviour
         return new Vector2Int(col, row);
     }
 
+    public void RegisterEntity(GridEntity entity)
+    {
+        if (entity != null) _entities.Add(entity);
+    }
+
+    public void UnregisterEntity(GridEntity entity)
+    {
+        _entities.Remove(entity);
+    }
+
+    public List<GridEntity> FindEntitiesWithTags(List<GridEntity.TagEntry> pattern)
+    {
+        var results = new List<GridEntity>();
+        foreach (var entity in _entities)
+            if (entity.IsOnGrid && entity.MatchesAll(pattern))
+                results.Add(entity);
+        return results;
+    }
+
     private void ApplyEntityMarkers()
     {
         var markers = GetComponentsInChildren<GridEntityMarker>(includeInactive: true);
@@ -98,6 +118,14 @@ public class GridManager : MonoBehaviour
             marker.col = cell.Value.x;
             Debug.Log($"[GridManager] Applying marker '{marker.name}' row={marker.row} col={marker.col}");
             marker.ApplyRule(this);
+
+            var entity = marker.GetComponent<GridEntity>();
+            if (entity != null)
+            {
+                entity.Row = marker.row;
+                entity.Col = marker.col;
+                RegisterEntity(entity);
+            }
         }
         gridOverlay.RefreshGrid();
     }
@@ -149,15 +177,15 @@ public class GridManager : MonoBehaviour
     }
 
     
-    public bool HasTagInSection(int sectionId, string tag, Draggable exclude)
+    public bool HasMatchInSection(int sectionId, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
-                if (_cellSection[r, c] == sectionId &&
-                    _occupants[r, c] != null &&
-                    _occupants[r, c] != exclude &&
-                    _occupants[r, c].CompareTag(tag))
+            {
+                var occ = _occupants[r, c];
+                if (_cellSection[r, c] == sectionId && occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
                     return true;
+            }
         return false;
     }
 
@@ -178,19 +206,25 @@ public class GridManager : MonoBehaviour
         return true;
     }
 
-    public bool HasTagInRow(int row, string tag, Draggable exclude)
+    public bool HasMatchInRow(int row, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
         for (int c = 0; c < gridOverlay.cols; c++)
-            if (_occupants[row, c] != null && _occupants[row, c] != exclude && _occupants[row, c].CompareTag(tag))
+        {
+            var occ = _occupants[row, c];
+            if (occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
                 return true;
+        }
         return false;
     }
 
-    public bool HasTagInCol(int col, string tag, Draggable exclude)
+    public bool HasMatchInCol(int col, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
         for (int r = 0; r < gridOverlay.rows; r++)
-            if (_occupants[r, col] != null && _occupants[r, col] != exclude && _occupants[r, col].CompareTag(tag))
+        {
+            var occ = _occupants[r, col];
+            if (occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
                 return true;
+        }
         return false;
     }
 

@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81689fcc8a9a4155ae0320741609a0f, type: 3}
   m_Name: UniquePerColumnRule
   m_EditorClassIdentifier: Assembly-CSharp::UniquePerColumnRule
+  tags:
+  - key: type
+    value: Person

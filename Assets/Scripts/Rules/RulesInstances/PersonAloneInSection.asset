@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f922a51bc32471eadbc89c11620ab3, type: 3}
   m_Name: PersonAloneInSection
   m_EditorClassIdentifier: Assembly-CSharp::UniquePerSectionRule
-  tag: Person
+  tags:
+  - key: type
+    value: Person

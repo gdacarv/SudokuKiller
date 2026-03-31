@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2619917107855281601}
   - component: {fileID: 757144604920681236}
   - component: {fileID: 109610372693376296}
+  - component: {fileID: 8000132837076029314}
   m_Layer: 0
   m_Name: Person
   m_TagString: Person
@@ -171,11 +172,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1665e11e7dd432e8e132e939cf1ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NameLabel
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _offset: {x: 0, y: 0.63, z: 0}
   _fontSize: 2
   _color: {r: 1, g: 1, b: 1, a: 1}
   _alignment: 514
   _fontStyle: 0
+  _sortingOrder: 10
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &757144604920681236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +208,9 @@ MonoBehaviour:
   inputProvider: {fileID: 0}
   tooltipUI: {fileID: 0}
   lines: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &109610372693376296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +227,23 @@ MonoBehaviour:
   uiPosition: {x: 0, y: 0, z: 0}
   solutionRow: 0
   solutionCol: 0
+--- !u!114 &8000132837076029314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875278182876665019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags:
+  - key: type
+    value: Person
+  Row: -1
+  Col: -1
 --- !u!1 &7208888844455596130
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +327,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5292073538780746938
 MonoBehaviour:
@@ -358,7 +392,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -385,7 +419,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   _SortingLayer: 0
   _SortingLayerID: 0
-  _SortingOrder: 0
+  _SortingOrder: 10
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1572826340931408289}
   m_maskType: 0
