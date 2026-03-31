@@ -177,17 +177,21 @@ public class GridManager : MonoBehaviour
     }
 
     
-    public bool HasMatchInSection(int sectionId, List<GridEntity.TagEntry> pattern, Draggable exclude)
+    public int CountMatchesInSection(int sectionId, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
+        int count = 0;
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
             {
                 var occ = _occupants[r, c];
                 if (_cellSection[r, c] == sectionId && occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
-                    return true;
+                    count++;
             }
-        return false;
+        return count;
     }
+
+    public bool HasMatchInSection(int sectionId, List<GridEntity.TagEntry> pattern, Draggable exclude)
+        => CountMatchesInSection(sectionId, pattern, exclude) > 0;
 
     
     public void HideGridCell(int row, int col)
@@ -206,27 +210,35 @@ public class GridManager : MonoBehaviour
         return true;
     }
 
-    public bool HasMatchInRow(int row, List<GridEntity.TagEntry> pattern, Draggable exclude)
+    public int CountMatchesInRow(int row, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
+        int count = 0;
         for (int c = 0; c < gridOverlay.cols; c++)
         {
             var occ = _occupants[row, c];
             if (occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
-                return true;
+                count++;
         }
-        return false;
+        return count;
     }
 
-    public bool HasMatchInCol(int col, List<GridEntity.TagEntry> pattern, Draggable exclude)
+    public bool HasMatchInRow(int row, List<GridEntity.TagEntry> pattern, Draggable exclude)
+        => CountMatchesInRow(row, pattern, exclude) > 0;
+
+    public int CountMatchesInCol(int col, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
+        int count = 0;
         for (int r = 0; r < gridOverlay.rows; r++)
         {
             var occ = _occupants[r, col];
             if (occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
-                return true;
+                count++;
         }
-        return false;
+        return count;
     }
+
+    public bool HasMatchInCol(int col, List<GridEntity.TagEntry> pattern, Draggable exclude)
+        => CountMatchesInCol(col, pattern, exclude) > 0;
 
     
     public void Release(Draggable obj)

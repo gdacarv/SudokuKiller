@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5f922a51bc32471eadbc89c11620ab3, type: 3}
+  m_Script: {fileID: 11500000, guid: c384fea402134471483866b23f4aa147, type: 3}
   m_Name: PersonAloneInSection
-  m_EditorClassIdentifier: Assembly-CSharp::UniquePerSectionRule
+  m_EditorClassIdentifier: Assembly-CSharp::NPerSectionRule
   tags:
   - key: type
     value: Person
+  n: 0
+  comparison: 1

@@ -1,14 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Sudoku/Rules/Unique Per Row")]
-public class UniquePerRowRule : DraggableRule
+[CreateAssetMenu(menuName = "Sudoku/Rules/N Per Column")]
+public class NPerColumnRule : DraggableRule
 {
     public List<GridEntity.TagEntry> tags = new();
+    public int n = 1;
+    public ComparisonMode comparison = ComparisonMode.LessThan;
 
     public override bool CanPlace(GridManager manager, Draggable draggable, int row, int col)
     {
         if (!draggable.Entity.MatchesAll(tags)) return true;
-        return !manager.HasMatchInRow(row, tags, draggable);
+        return Compare(manager.CountMatchesInCol(col, tags, draggable), comparison, n);
     }
 }

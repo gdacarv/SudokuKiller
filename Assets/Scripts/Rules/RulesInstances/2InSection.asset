@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 237533e9e3264467eb8c38dfe66a535f, type: 3}
-  m_Name: UniquePerColumnRule
-  m_EditorClassIdentifier: Assembly-CSharp::NPerColumnRule
+  m_Script: {fileID: 11500000, guid: c384fea402134471483866b23f4aa147, type: 3}
+  m_Name: 2InSection
+  m_EditorClassIdentifier: Assembly-CSharp::NPerSectionRule
   tags:
   - key: type
     value: Person
-  n: 0
+  n: 1
   comparison: 1

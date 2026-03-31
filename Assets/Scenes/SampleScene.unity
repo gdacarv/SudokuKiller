@@ -7600,7 +7600,7 @@ MonoBehaviour:
   gridOverlay: {fileID: 368987999}
   boardRules: []
   preventInvalidPlacement: 0
-  highlightRuleViolations: 0
+  highlightRuleViolations: 1
 --- !u!114 &368987999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8276,6 +8276,14 @@ PrefabInstance:
       propertyPath: inputProvider
       value: 
       objectReference: {fileID: 519420033}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 956570d07481a4ebb879181d8dac0399, type: 2}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cfeb21a6eb0545eb9ef1aac58986e4b, type: 2}
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.48
@@ -20329,6 +20337,14 @@ PrefabInstance:
       propertyPath: rules.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 956570d07481a4ebb879181d8dac0399, type: 2}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cfeb21a6eb0545eb9ef1aac58986e4b, type: 2}
     - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: 'rules.Array.data[2]'
       value: 
@@ -36835,12 +36851,16 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: rules.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: 'rules.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 87bdce4cd1cbd4d22a9eb76d2e256f8d, type: 2}
+    - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: 'rules.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 915e18c78c28e48b0a0254f776f0f4bd, type: 2}
     - target: {fileID: 6047449830747769193, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: gridManager
       value: 
@@ -41088,6 +41108,14 @@ PrefabInstance:
       propertyPath: inputProvider
       value: 
       objectReference: {fileID: 519420033}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cfeb21a6eb0545eb9ef1aac58986e4b, type: 2}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 956570d07481a4ebb879181d8dac0399, type: 2}
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.53
