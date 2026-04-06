@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4139153105663959308}
   - component: {fileID: 2958902400095043745}
   - component: {fileID: 7113511028189110157}
+  - component: {fileID: 8916534460792245156}
   m_Layer: 0
   m_Name: BlockedGridCell
   m_TagString: Untagged
@@ -35,6 +36,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2958902400095043745
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -79,7 +81,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 2632163617867790044, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -89,7 +92,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &7113511028189110157
 MonoBehaviour:
@@ -103,7 +105,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a60ed98006d74eed90d1f8a3430a2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockedCellMarker
-  hideAtRuntime: 1
-  row: 0
-  col: 2
   gridManager: {fileID: 0}
+  hideAtRuntime: 1
+  row: 2
+  col: 2
+  hideGridCell: 1
+--- !u!114 &8916534460792245156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648677945959586726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags: []
+  Row: 2
+  Col: 2

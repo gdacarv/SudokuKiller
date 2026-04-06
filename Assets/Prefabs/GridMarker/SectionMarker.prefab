@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8265648851044733886}
   - component: {fileID: 1769250249605416031}
   - component: {fileID: 4553746783223734825}
+  - component: {fileID: 3744235170737113672}
   m_Layer: 0
   m_Name: SectionMarker
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3504807817566375843}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.9199998, y: -2.7499998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,6 +36,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1769250249605416031
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -79,7 +81,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 100
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 7161523038674222959, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
   m_Color: {r: 0.31500003, g: 0.48570064, b: 0.9, a: 0.55}
   m_FlipX: 0
@@ -89,7 +92,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4553746783223734825
 MonoBehaviour:
@@ -105,6 +107,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SectionMarker
   gridManager: {fileID: 0}
   hideAtRuntime: 1
-  row: 0
-  col: 4
+  row: 6
+  col: 9
   sectionId: 1
+--- !u!114 &3744235170737113672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504807817566375843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags: []
+  Row: 6
+  Col: 9
