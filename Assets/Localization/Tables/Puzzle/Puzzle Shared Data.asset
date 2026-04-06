@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: killer.notVictim
     m_Metadata:
       m_Items: []
+  - m_Id: 3260596643422208
+    m_Key: room.name.entryway
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

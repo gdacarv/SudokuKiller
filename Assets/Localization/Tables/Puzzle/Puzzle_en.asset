@@ -72,6 +72,10 @@ MonoBehaviour:
     m_Localized: The {0} can't be the Killer!
     m_Metadata:
       m_Items: []
+  - m_Id: 3260596643422208
+    m_Localized: Entryway
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
