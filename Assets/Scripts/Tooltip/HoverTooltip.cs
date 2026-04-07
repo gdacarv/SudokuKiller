@@ -80,12 +80,34 @@ public class HoverTooltip : MonoBehaviour
         if (_tooltipCanvas == null || _tooltipRect == null) return;
 
         Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
-        screenPos.x += tooltipOffset.x;
-        screenPos.y += tooltipOffset.y;
+        float canvasScale = _tooltipCanvas.scaleFactor;
+        float tooltipW = _tooltipRect.rect.width * canvasScale;
+        float tooltipH = _tooltipRect.rect.height * canvasScale;
 
-        // Flip horizontal alignment when object is on the right half of screen
+        // Vertical: default pivot at bottom (grows upward); flip to top if it would exit the screen top
+        float offsetY = tooltipOffset.y;
+        float pivotY = 0f;
+        if (screenPos.y + offsetY + tooltipH > Screen.height)
+        {
+            pivotY = 1f;
+            offsetY = -tooltipOffset.y;
+        }
+
+        // Horizontal: keep existing logic (flip pivot side based on screen half)
         float pivotX = screenPos.x > Screen.width * 0.5f ? 1f : 0f;
-        _tooltipRect.pivot = new Vector2(pivotX, _tooltipRect.pivot.y);
+
+        _tooltipRect.pivot = new Vector2(pivotX, pivotY);
+
+        screenPos.x += tooltipOffset.x;
+        screenPos.y += offsetY;
+
+        // Clamp horizontally so tooltip stays within screen bounds
+        float leftEdge = screenPos.x - pivotX * tooltipW;
+        float rightEdge = leftEdge + tooltipW;
+        if (leftEdge < 0f)
+            screenPos.x -= leftEdge;
+        else if (rightEdge > Screen.width)
+            screenPos.x -= (rightEdge - Screen.width);
 
         // Overlay canvas: pass null as camera for RectTransformUtility
         Camera uiCam = _tooltipCanvas.renderMode == RenderMode.ScreenSpaceOverlay
