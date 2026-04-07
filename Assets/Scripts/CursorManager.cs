@@ -7,14 +7,13 @@ using UnityEngine.Localization.Settings;
 
 public class CursorManager : MonoBehaviour
 {
-    private enum CursorState { Default, DragStart, Dragging, DragEnd, IdentifyMode, Identified }
+    private enum CursorState { Default, DragStart, Dragging, DragEnd, IdentifyMode }
 
     [Header("Cursor Sprites")]
     [SerializeField] private Sprite defaultCursor;
     [SerializeField] private Sprite clickCursor;
     [SerializeField] private Sprite dragCursor;
     [SerializeField] private Sprite[] identifyFrames;
-    [SerializeField] private Sprite identifiedCursor;
 
     [Header("Timing")]
     [SerializeField] private float clickFlashDuration = 0.15f;
@@ -85,8 +84,6 @@ public class CursorManager : MonoBehaviour
 
     private void UpdateState()
     {
-        // Terminal state: once identified, never leave
-        if (_state == CursorState.Identified) return;
 
         bool anyDragging = false;
         foreach (var d in _draggables)
@@ -95,13 +92,6 @@ public class CursorManager : MonoBehaviour
         bool dragStarted = !_wasDragging && anyDragging;
         bool dragEnded = _wasDragging && !anyDragging;
         _wasDragging = anyDragging;
-
-        // Identified check (highest priority)
-        if (identifyKillerButton != null && identifyKillerButton.WasClicked)
-        {
-            _state = CursorState.Identified;
-            return;
-        }
 
         // Handle flash timer states
         if (_state == CursorState.DragStart || _state == CursorState.DragEnd)
@@ -159,14 +149,13 @@ public class CursorManager : MonoBehaviour
             case CursorState.DragEnd:    sprite = clickCursor;         break;
             case CursorState.Dragging:   sprite = dragCursor;          break;
             case CursorState.IdentifyMode: sprite = GetIdentifyFrame(); break;
-            case CursorState.Identified: sprite = identifiedCursor;    break;
         }
 
         if (cursorImage.sprite != sprite)
             cursorImage.sprite = sprite;
 
         // Identify/Identified sprites are centered; all others use the saved pivot
-        bool centered = _state == CursorState.IdentifyMode || _state == CursorState.Identified;
+        bool centered = _state == CursorState.IdentifyMode;
         _cursorRect.pivot = centered ? new Vector2(0.5f, 0.5f) : _defaultPivot;
 
         if (identifyTooltipPanel != null)

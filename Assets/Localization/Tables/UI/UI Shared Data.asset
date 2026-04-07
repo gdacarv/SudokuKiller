@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: popup.killerFound
     m_Metadata:
       m_Items: []
+  - m_Id: 3565387588296704
+    m_Key: button.identifyKiller.label
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

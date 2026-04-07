@@ -21,10 +21,8 @@ public class IdentifyKillerButton : MonoBehaviour
 
     private bool _isActive;
     private bool _isInIdentifyMode;
-    private bool _wasClicked;
     public bool IsActive => _isActive;
     public bool IsInIdentifyMode => _isInIdentifyMode;
-    public bool WasClicked => _wasClicked;
 
     [Header("Localization")]
     [SerializeField] private LocalizedString inactiveTooltipLocalized;
@@ -68,8 +66,6 @@ public class IdentifyKillerButton : MonoBehaviour
 
     void Update()
     {
-        if (_wasClicked) return;
-
         _checkTimer -= Time.deltaTime;
         if (_checkTimer <= 0f)
         {
@@ -192,6 +188,7 @@ public class IdentifyKillerButton : MonoBehaviour
     public void ConfirmKillerIdentified()
     {
         PopupMessage.Show(popupCorrectLocalized.GetLocalizedString());
+        PixelFireworks.Play();
         ExitIdentifyMode();
     }
 

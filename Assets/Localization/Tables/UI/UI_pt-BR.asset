@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Localized: "Acertou! Voc\xEA descobriu o Assassino!"
     m_Metadata:
       m_Items: []
+  - m_Id: 3565387588296704
+    m_Localized: Acusar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
