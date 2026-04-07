@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: room.name.entryway
     m_Metadata:
       m_Items: []
+  - m_Id: 3545032744230912
+    m_Key: room.name.louge
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

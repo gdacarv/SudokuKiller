@@ -76,6 +76,10 @@ MonoBehaviour:
     m_Localized: Entryway
     m_Metadata:
       m_Items: []
+  - m_Id: 3545032744230912
+    m_Localized: Lounge
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

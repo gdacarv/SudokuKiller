@@ -13,6 +13,7 @@ public class RoomLabel : MonoBehaviour
     [SerializeField] private Color _textColor = Color.white;
     [SerializeField] private Vector2 _padding = new Vector2(0.15f, 0.1f);
     [SerializeField] private int _bgSortingOrder = 10;
+    [SerializeField, Range(0f, 1f)] private float _bgAlpha = 0.85f;
     [SerializeField] private int _textSortingOrder = 11;
 
     [Header("Section")]
@@ -104,8 +105,16 @@ public void ApplySettings()
             Mathf.Max(textSize.y + _padding.y * 2f, 0.35f)
         );
         _bgRenderer.sortingOrder = _bgSortingOrder;
-        _bgRenderer.color = _useSectionColor ? SectionMarker.GetSectionColor(_sectionId, 0.85f) : Color.white;
+        _bgRenderer.color = _useSectionColor ? SectionMarker.GetSectionColor(_sectionId, _bgAlpha) : Color.white.WithAlpha(_bgAlpha);
 
         _textObject.transform.localPosition = Vector3.zero;
+    }
+}
+
+public static class ColorExtensions
+{
+    public static Color WithAlpha(this Color color, float alpha)
+    {
+        return new Color(color.r, color.g, color.b, alpha);
     }
 }
