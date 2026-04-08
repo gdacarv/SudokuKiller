@@ -80,6 +80,26 @@ MonoBehaviour:
     m_Localized: Lounge
     m_Metadata:
       m_Items: []
+  - m_Id: 3893198056316928
+    m_Localized: Bedroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3895077968535552
+    m_Localized: Dining Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3895270302539776
+    m_Localized: Office
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3947418826563584
+    m_Localized: David
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3950813503283200
+    m_Localized: '{0} was the only person in his row'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

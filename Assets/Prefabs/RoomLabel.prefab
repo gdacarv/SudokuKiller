@@ -79,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1067757675
+  m_SortingLayer: 1
   m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1085400535, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 0.66, y: 0.48}
+  m_Size: {x: 2.1488373, y: 0.42343748}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -115,10 +115,13 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _fontSize: 2
-  _textColor: {r: 1, g: 1, b: 1, a: 1}
+  _textColor: {r: 0, g: 0, b: 0, a: 1}
   _padding: {x: 0.15, y: 0.1}
   _bgSortingOrder: 10
+  _bgAlpha: 1
   _textSortingOrder: 11
+  _useSectionColor: 0
+  _sectionId: 0
   references:
     version: 2
     RefIds: []

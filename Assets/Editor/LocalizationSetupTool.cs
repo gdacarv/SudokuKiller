@@ -59,7 +59,7 @@ public static class LocalizationSetupTool
 
         AssetDatabase.SaveAssets();
         WireSceneObjects(ui, puzzle);
-        SetupCharacterNameVariables(puzzle);
+        SyncVariableGroupsMenuItem();
         AssetDatabase.SaveAssets();
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         AssetDatabase.Refresh();
@@ -102,7 +102,7 @@ public static class LocalizationSetupTool
         }
 
         EditorUtility.SetDirty(puzzle.SharedData);
-        SetupCharacterNameVariables(puzzle);
+        SyncVariableGroupsMenuItem();
 
         foreach (var charName in new[] { "Adam", "Bruno", "Carla" })
         {
@@ -160,36 +160,78 @@ public static class LocalizationSetupTool
         Debug.Log("[LocalizationSetup] Tooltip keys cleanup complete.");
     }
 
-    static void SetupCharacterNameVariables(StringTableCollection puzzle)
+    [MenuItem("Localization/Sync Variable Groups")]
+    public static void SyncVariableGroupsMenuItem()
     {
-        const string groupPath = "Assets/Localization/CharacterNames.asset";
-        var group = AssetDatabase.LoadAssetAtPath<VariablesGroupAsset>(groupPath);
-        if (group == null)
+        const string configPath = "Assets/Localization/VariableSyncConfig.asset";
+        var config = AssetDatabase.LoadAssetAtPath<VariableSyncConfig>(configPath);
+        if (config == null)
         {
-            group = ScriptableObject.CreateInstance<VariablesGroupAsset>();
-            AssetDatabase.CreateAsset(group, groupPath);
+            Debug.LogError($"[VariableSync] Config not found at '{configPath}'. " +
+                "Create one via Assets > Create > Localization > Variable Sync Config.");
+            return;
         }
+        SyncVariableGroups(config);
+    }
 
-        if (group.ContainsKey("adam"))  group.Remove("adam");
-        if (group.ContainsKey("bruno")) group.Remove("bruno");
-        if (group.ContainsKey("carla")) group.Remove("carla");
-        group.Add("adam",  MakeLS(puzzle, "name.adam"));
-        group.Add("bruno", MakeLS(puzzle, "name.bruno"));
-        group.Add("carla", MakeLS(puzzle, "name.carla"));
-        EditorUtility.SetDirty(group);
-
+    static void SyncVariableGroups(VariableSyncConfig config)
+    {
         var source = LocalizationSettings.StringDatabase.SmartFormatter
             .GetSourceExtension<PersistentVariablesSource>();
-        if (source != null)
+        if (source == null)
         {
-            if (source.ContainsKey("char")) source.Remove("char");
-            source.Add("char", group);
-            EditorUtility.SetDirty(LocalizationEditorSettings.ActiveLocalizationSettings);
+            Debug.LogError("[VariableSync] PersistentVariablesSource not found in SmartFormatter.");
+            return;
         }
-        else
+
+        foreach (var rule in config.rules)
         {
-            Debug.LogWarning("[LocalizationSetup] PersistentVariablesSource not found in SmartFormatter.");
+            var collection = LocalizationEditorSettings.GetStringTableCollection(rule.tableCollectionName);
+            if (collection == null)
+            {
+                Debug.LogWarning($"[VariableSync] Table '{rule.tableCollectionName}' not found, skipping rule.");
+                continue;
+            }
+
+            var group = AssetDatabase.LoadAssetAtPath<VariablesGroupAsset>(rule.groupAssetPath);
+            if (group == null)
+            {
+                EnsureDirectory(Path.GetDirectoryName(rule.groupAssetPath));
+                group = ScriptableObject.CreateInstance<VariablesGroupAsset>();
+                AssetDatabase.CreateAsset(group, rule.groupAssetPath);
+            }
+
+            // Clear and rebuild via SerializedObject to bypass type validation
+            var so = new SerializedObject(group);
+            var varsProp = so.FindProperty("m_Variables");
+            varsProp.ClearArray();
+
+            int count = 0;
+            foreach (var entry in collection.SharedData.Entries)
+            {
+                if (!entry.Key.StartsWith(rule.keyPrefix)) continue;
+                string varName = entry.Key.Substring(rule.keyPrefix.Length);
+                if (string.IsNullOrEmpty(varName)) continue;
+                varsProp.InsertArrayElementAtIndex(count);
+                var elem = varsProp.GetArrayElementAtIndex(count);
+                elem.FindPropertyRelative("name").stringValue = varName;
+                elem.FindPropertyRelative("variable").managedReferenceValue = MakeLS(collection, entry.Key);
+                count++;
+            }
+
+            so.ApplyModifiedPropertiesWithoutUndo();
+            EditorUtility.SetDirty(group);
+
+            if (source.ContainsKey(rule.groupName)) source.Remove(rule.groupName);
+            source.Add(rule.groupName, group);
+
+            Debug.Log($"[VariableSync] Group '{rule.groupName}': synced {count} variables " +
+                $"from '{rule.tableCollectionName}' (prefix '{rule.keyPrefix}')");
         }
+
+        EditorUtility.SetDirty(LocalizationEditorSettings.ActiveLocalizationSettings);
+        AssetDatabase.SaveAssets();
+        Debug.Log("[VariableSync] Sync complete.");
     }
 
     static void SetSmartOnClueEntries(StringTable table)

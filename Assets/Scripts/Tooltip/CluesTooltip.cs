@@ -12,9 +12,12 @@ public class CluesTooltip : HoverTooltip
         _isShowing = true;
         tooltipUI.gameObject.SetActive(true);
 
+        var nameLabel = GetComponent<NameLabel>();
+        string characterName = nameLabel != null ? nameLabel.GetLocalizedName() : gameObject.name;
+
         var resolved = new List<string>(lines.Count);
         foreach (var ls in lines)
-            resolved.Add(ls != null ? ls.GetLocalizedString() : "");
+            resolved.Add(ls != null ? ls.GetLocalizedString(characterName) : "");
 
         tooltipUI.SetLines(resolved);
         PositionTooltip();

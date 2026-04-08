@@ -80,6 +80,26 @@ MonoBehaviour:
     m_Localized: Sala
     m_Metadata:
       m_Items: []
+  - m_Id: 3893198056316928
+    m_Localized: Quarto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3895077968535552
+    m_Localized: Sala de Jantar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3895270302539776
+    m_Localized: "Escrit\xF3rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3947418826563584
+    m_Localized: Davi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3950813503283200
+    m_Localized: "{0} era a \xFAnica pessoa na sua linha"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

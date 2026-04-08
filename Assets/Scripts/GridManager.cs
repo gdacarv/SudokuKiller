@@ -119,7 +119,7 @@ public class GridManager : MonoBehaviour
             }
             marker.row = cell.Value.y;
             marker.col = cell.Value.x;
-            Debug.Log($"[GridManager] Applying marker '{marker.name}' row={marker.row} col={marker.col}");
+            //Debug.Log($"[GridManager] Applying marker '{marker.name}' row={marker.row} col={marker.col}");
             marker.ApplyRule(this);
 
             var entity = marker.GetComponent<GridEntity>();

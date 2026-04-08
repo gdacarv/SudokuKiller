@@ -71,6 +71,26 @@ MonoBehaviour:
     m_Key: room.name.louge
     m_Metadata:
       m_Items: []
+  - m_Id: 3893198056316928
+    m_Key: room.name.bedroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3895077968535552
+    m_Key: room.name.dining
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3895270302539776
+    m_Key: room.name.office
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3947418826563584
+    m_Key: name.david
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3950813503283200
+    m_Key: clue.aloneInRow
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
