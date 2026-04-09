@@ -20,6 +20,16 @@ public class HoverTooltip : MonoBehaviour
     private Canvas _tooltipCanvas;
     private RectTransform _tooltipRect;
 
+#if UNITY_EDITOR
+    protected virtual void OnValidate()
+    {
+        if (inputProvider == null)
+            inputProvider = FindFirstObjectByType<DragInputProvider>();
+        if (tooltipUI == null)
+            tooltipUI = FindFirstObjectByType<TooltipUI>();
+    }
+#endif
+
     void Awake()
     {
         _collider = GetComponent<Collider2D>();

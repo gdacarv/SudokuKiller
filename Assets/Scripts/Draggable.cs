@@ -26,6 +26,16 @@ public class Draggable : MonoBehaviour
     private Vector3 _dragOffset;
     private IdentifyKillerButton _identifyKillerButton;
 
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (gridManager == null)
+            gridManager = FindFirstObjectByType<GridManager>();
+        if (inputProvider == null)
+            inputProvider = FindFirstObjectByType<DragInputProvider>();
+    }
+#endif
+
     void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();

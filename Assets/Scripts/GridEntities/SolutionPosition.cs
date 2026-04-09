@@ -15,12 +15,17 @@ public class SolutionPosition : MonoBehaviour
     public int SolutionRow => solutionRow;
     public int SolutionCol => solutionCol;
 
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (gridManager == null)
+            gridManager = FindFirstObjectByType<GridManager>();
+    }
+#endif
+
     void Update()
     {
         if (Application.isPlaying) return;
-
-        if (gridManager == null)
-            gridManager = FindFirstObjectByType<GridManager>();
 
         if (gridManager == null) return;
 

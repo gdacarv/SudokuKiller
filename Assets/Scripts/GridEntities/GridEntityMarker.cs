@@ -13,6 +13,14 @@ public abstract class GridEntityMarker : MonoBehaviour
 
     private GridEntity _entity;
 
+#if UNITY_EDITOR
+    protected virtual void OnValidate()
+    {
+        if (gridManager == null)
+            gridManager = FindFirstObjectByType<GridManager>();
+    }
+#endif
+
     protected virtual void Awake()
     {
         _entity = GetComponent<GridEntity>();
@@ -27,9 +35,6 @@ public abstract class GridEntityMarker : MonoBehaviour
     protected virtual void Update()
     {
         if (Application.isPlaying) return;
-
-        if (gridManager == null)
-            gridManager = FindFirstObjectByType<GridManager>();
 
         if (gridManager == null) return;
 
