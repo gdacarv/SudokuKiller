@@ -1,0 +1,2497 @@
+fileFormatVersion: 2
+guid: dfb87802ec05d4f7d8acf3e0183ce51d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1276144449108956973
+    second: kid_Karen_48x48_0
+  - first:
+      213: -3923108197739800718
+    second: kid_Karen_48x48_1
+  - first:
+      213: 57479424123869508
+    second: kid_Karen_48x48_2
+  - first:
+      213: 391970556811303717
+    second: kid_Karen_48x48_3
+  - first:
+      213: -7469469036127841304
+    second: kid_Karen_48x48_4
+  - first:
+      213: 475423211455804526
+    second: kid_Karen_48x48_5
+  - first:
+      213: -3869388643097123847
+    second: kid_Karen_48x48_6
+  - first:
+      213: 110199043853337891
+    second: kid_Karen_48x48_7
+  - first:
+      213: -8643431899932569993
+    second: kid_Karen_48x48_8
+  - first:
+      213: -3328987232196519781
+    second: kid_Karen_48x48_9
+  - first:
+      213: -3962946758972718996
+    second: kid_Karen_48x48_10
+  - first:
+      213: -6983942498825945508
+    second: kid_Karen_48x48_11
+  - first:
+      213: 513791774021523722
+    second: kid_Karen_48x48_12
+  - first:
+      213: 8027416756269337305
+    second: kid_Karen_48x48_13
+  - first:
+      213: 2974532662777084936
+    second: kid_Karen_48x48_14
+  - first:
+      213: 9010455873860495679
+    second: kid_Karen_48x48_15
+  - first:
+      213: -5458929466537535458
+    second: kid_Karen_48x48_16
+  - first:
+      213: -6147542205566198595
+    second: kid_Karen_48x48_17
+  - first:
+      213: 4629531043262722015
+    second: kid_Karen_48x48_18
+  - first:
+      213: -4129608510641457942
+    second: kid_Karen_48x48_19
+  - first:
+      213: 4032663310459870604
+    second: kid_Karen_48x48_20
+  - first:
+      213: 7425431154622646223
+    second: kid_Karen_48x48_21
+  - first:
+      213: -4413384648791186563
+    second: kid_Karen_48x48_22
+  - first:
+      213: 1158453690514050169
+    second: kid_Karen_48x48_23
+  - first:
+      213: 2723660480821855344
+    second: kid_Karen_48x48_24
+  - first:
+      213: 8753970598631281664
+    second: kid_Karen_48x48_25
+  - first:
+      213: 4511933019453707062
+    second: kid_Karen_48x48_26
+  - first:
+      213: 893593532005101248
+    second: kid_Karen_48x48_27
+  - first:
+      213: 4547998617457064362
+    second: kid_Karen_48x48_28
+  - first:
+      213: -3571698331873708888
+    second: kid_Karen_48x48_29
+  - first:
+      213: 5989910730865002107
+    second: kid_Karen_48x48_30
+  - first:
+      213: 4720469973742079594
+    second: kid_Karen_48x48_31
+  - first:
+      213: -6640638824251351711
+    second: kid_Karen_48x48_32
+  - first:
+      213: -7995084282818182874
+    second: kid_Karen_48x48_33
+  - first:
+      213: -3831384932388817846
+    second: kid_Karen_48x48_34
+  - first:
+      213: 3678332668029466753
+    second: kid_Karen_48x48_35
+  - first:
+      213: -5679683219329156202
+    second: kid_Karen_48x48_36
+  - first:
+      213: -2999816378218313591
+    second: kid_Karen_48x48_37
+  - first:
+      213: 5176233834846926513
+    second: kid_Karen_48x48_38
+  - first:
+      213: -1440519403993392899
+    second: kid_Karen_48x48_39
+  - first:
+      213: 5746257819910306435
+    second: kid_Karen_48x48_40
+  - first:
+      213: -1321424475008338380
+    second: kid_Karen_48x48_41
+  - first:
+      213: -6178069074415691657
+    second: kid_Karen_48x48_42
+  - first:
+      213: -6470108032003010394
+    second: kid_Karen_48x48_43
+  - first:
+      213: -8528269225845592379
+    second: kid_Karen_48x48_44
+  - first:
+      213: -2197792559725438525
+    second: kid_Karen_48x48_45
+  - first:
+      213: 5702350363184784954
+    second: kid_Karen_48x48_46
+  - first:
+      213: -2311370520448294437
+    second: kid_Karen_48x48_47
+  - first:
+      213: 8424249010045866535
+    second: kid_Karen_48x48_48
+  - first:
+      213: 7606553683640449581
+    second: kid_Karen_48x48_49
+  - first:
+      213: 625992327828586569
+    second: kid_Karen_48x48_50
+  - first:
+      213: -238875738344758776
+    second: kid_Karen_48x48_51
+  - first:
+      213: -1001435905448685898
+    second: kid_Karen_48x48_100
+  - first:
+      213: 8719811523243163200
+    second: kid_Karen_48x48_101
+  - first:
+      213: -4768393378409215553
+    second: kid_Karen_48x48_102
+  - first:
+      213: 5723020613252115746
+    second: kid_Karen_48x48_103
+  - first:
+      213: -8975912514371168942
+    second: kid_Karen_48x48_104
+  - first:
+      213: 4054110584559780473
+    second: kid_Karen_48x48_105
+  - first:
+      213: 7314605938291036452
+    second: kid_Karen_48x48_106
+  - first:
+      213: 7920493754461713533
+    second: kid_Karen_48x48_107
+  - first:
+      213: 8325756148979202863
+    second: kid_Karen_48x48_108
+  - first:
+      213: -967091059737030245
+    second: kid_Karen_48x48_109
+  - first:
+      213: -1711038474368820340
+    second: kid_Karen_48x48_110
+  - first:
+      213: 1104037462910203429
+    second: kid_Karen_48x48_111
+  - first:
+      213: -2354319500989080345
+    second: kid_Karen_48x48_112
+  - first:
+      213: 2815764097845848134
+    second: kid_Karen_48x48_113
+  - first:
+      213: -8190964465500395825
+    second: kid_Karen_48x48_114
+  - first:
+      213: -4469835503999582344
+    second: kid_Karen_48x48_115
+  - first:
+      213: 5623669403612906949
+    second: kid_Karen_48x48_116
+  - first:
+      213: -5352518900687800815
+    second: kid_Karen_48x48_117
+  - first:
+      213: -1026704565731409713
+    second: kid_Karen_48x48_118
+  - first:
+      213: -1646195474540044642
+    second: kid_Karen_48x48_119
+  - first:
+      213: -5303878347764152441
+    second: kid_Karen_48x48_120
+  - first:
+      213: -7530129483065608273
+    second: kid_Karen_48x48_121
+  - first:
+      213: -6097631309407059559
+    second: kid_Karen_48x48_122
+  - first:
+      213: 6383260302841293
+    second: kid_Karen_48x48_123
+  - first:
+      213: -2799436108370587858
+    second: kid_Karen_48x48_124
+  - first:
+      213: -5859829601492914847
+    second: kid_Karen_48x48_125
+  - first:
+      213: 2513050946405186029
+    second: kid_Karen_48x48_126
+  - first:
+      213: -1628195833524110290
+    second: kid_Karen_48x48_127
+  - first:
+      213: -9168617587139916207
+    second: kid_Karen_48x48_128
+  - first:
+      213: 7684449465062767277
+    second: kid_Karen_48x48_129
+  - first:
+      213: -6430781001250710603
+    second: kid_Karen_48x48_130
+  - first:
+      213: -4258120718591483577
+    second: kid_Karen_48x48_131
+  - first:
+      213: 6965037905276172167
+    second: kid_Karen_48x48_132
+  - first:
+      213: -6530459512165746358
+    second: kid_Karen_48x48_133
+  - first:
+      213: -519447340566360845
+    second: kid_Karen_48x48_134
+  - first:
+      213: -2186892686872018240
+    second: kid_Karen_48x48_135
+  - first:
+      213: 7853932882268874652
+    second: kid_Karen_48x48_136
+  - first:
+      213: -9025290230931351662
+    second: kid_Karen_48x48_137
+  - first:
+      213: 1189146618077610221
+    second: kid_Karen_48x48_138
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kid_Karen_48x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27d93b7d96c5b110800000000000000
+      internalID: 1276144449108956973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277db4231e15e89c0800000000000000
+      internalID: -3923108197739800718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4491cc05b353cc000800000000000000
+      internalID: 57479424123869508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b5629052f807500800000000000000
+      internalID: 391970556811303717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e312d09c7d175890800000000000000
+      internalID: -7469469036127841304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e647cc454ea099600800000000000000
+      internalID: 475423211455804526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3e34ea78b2d4ac0800000000000000
+      internalID: -3869388643097123847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325477f4271878100800000000000000
+      internalID: 110199043853337891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e4d3c5b7c5c0880800000000000000
+      internalID: -8643431899932569993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b989d1300cf0dc1d0800000000000000
+      internalID: -3328987232196519781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_10
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6045a75be8c009c0800000000000000
+      internalID: -3962946758972718996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5eb9b1cc4d041f90800000000000000
+      internalID: -6983942498825945508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09121375ea512700800000000000000
+      internalID: 513791774021523722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dac37d320d176f60800000000000000
+      internalID: 8027416756269337305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cff9172b9a74920800000000000000
+      internalID: 2974532662777084936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3969c9b0e19b0d70800000000000000
+      internalID: 9010455873860495679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e181e15a29cfd34b0800000000000000
+      internalID: -5458929466537535458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_17
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc51836fea8faaa0800000000000000
+      internalID: -6147542205566198595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf615e94f56f3040800000000000000
+      internalID: 4629531043262722015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae439cd60fea0b6c0800000000000000
+      internalID: -4129608510641457942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d16b63ae5e6f730800000000000000
+      internalID: 4032663310459870604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7c6632b4e6c0760800000000000000
+      internalID: 7425431154622646223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73a3a78b0280c2c0800000000000000
+      internalID: -4413384648791186563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c84d76e77a31010800000000000000
+      internalID: 1158453690514050169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_24
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0740828d6c26cc520800000000000000
+      internalID: 2723660480821855344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00491a101e95c7970800000000000000
+      internalID: 8753970598631281664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633d4ea0d2b9d9e30800000000000000
+      internalID: 4511933019453707062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce20c8359ea66c00800000000000000
+      internalID: 893593532005101248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9fe7075acbd1f30800000000000000
+      internalID: 4547998617457064362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4ffc37a47ce6ec0800000000000000
+      internalID: -3571698331873708888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b764285e210702350800000000000000
+      internalID: 5989910730865002107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e4bc55e6a728140800000000000000
+      internalID: 4720469973742079594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d94d64c26b7d3a0800000000000000
+      internalID: -6640638824251351711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621405d5431cb0190800000000000000
+      internalID: -7995084282818182874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a443e2b14bf24dac0800000000000000
+      internalID: -3831384932388817846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1887c9ba2101c0330800000000000000
+      internalID: 3678332668029466753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b732b4436bd21b0800000000000000
+      internalID: -5679683219329156202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98806e0d5e28e56d0800000000000000
+      internalID: -2999816378218313591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6b8687f3da5d740800000000000000
+      internalID: 5176233834846926513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df89ae8fb3f320ce0800000000000000
+      internalID: -1440519403993392899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_40
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a709fca0fcebf40800000000000000
+      internalID: 5746257819910306435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436fe91f07b59ade0800000000000000
+      internalID: -1321424475008338380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77850add8e6134aa0800000000000000
+      internalID: -6178069074415691657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_43
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a01f06660f8536a0800000000000000
+      internalID: -6470108032003010394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cee394e25085a980800000000000000
+      internalID: -8528269225845592379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c99193bf4fdf71e0800000000000000
+      internalID: -2197792559725438525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36e2766171d22f40800000000000000
+      internalID: 5702350363184784954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1ae5002cc5cefd0800000000000000
+      internalID: -2311370520448294437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722583f47d1f8e470800000000000000
+      internalID: 8424249010045866535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2af3562648ef8960800000000000000
+      internalID: 7606553683640449581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940c75c94b8ffa800800000000000000
+      internalID: 625992327828586569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_51
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 480
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802608618c75facf0800000000000000
+      internalID: -238875738344758776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bec86e895f2a12f0800000000000000
+      internalID: -1001435905448685898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e344f716ef20970800000000000000
+      internalID: 8719811523243163200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb908928c7343ddb0800000000000000
+      internalID: -4768393378409215553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_103
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d61270de04c6f40800000000000000
+      internalID: 5723020613252115746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2555ce5ef172f6380800000000000000
+      internalID: -8975912514371168942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_105
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97246d8d818134830800000000000000
+      internalID: 4054110584559780473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421dccfa853b28560800000000000000
+      internalID: 7314605938291036452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_107
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74f368ea1f3bed60800000000000000
+      internalID: 7920493754461713533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bfd621b170b8370800000000000000
+      internalID: 8325756148979202863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_109
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b911be61ec33492f0800000000000000
+      internalID: -967091059737030245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_110
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b5832b29b2148e0800000000000000
+      internalID: -1711038474368820340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_111
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5267c7b1934525f00800000000000000
+      internalID: 1104037462910203429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec55c733e6c35fd0800000000000000
+      internalID: -2354319500989080345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6486667478a931720800000000000000
+      internalID: 2815764097845848134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6600a5739d35e80800000000000000
+      internalID: -8190964465500395825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_115
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ffca39a44f7f1c0800000000000000
+      internalID: -4469835503999582344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c58490f6894b0e40800000000000000
+      internalID: 5623669403612906949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_117
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11670fe2b6808b5b0800000000000000
+      internalID: -5352518900687800815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0ce4e13a960c1f0800000000000000
+      internalID: -1026704565731409713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_119
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e5f2510f98729e0800000000000000
+      internalID: -1646195474540044642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_120
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787c1ad6eb6d466b0800000000000000
+      internalID: -5303878347764152441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7bd29a12b9f7790800000000000000
+      internalID: -7530129483065608273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_122
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9910e7771acd06ba0800000000000000
+      internalID: -6097631309407059559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc51cda9a8da61000800000000000000
+      internalID: 6383260302841293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f4b2501b76629d0800000000000000
+      internalID: -2799436108370587858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_125
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d22be2604bdaea0800000000000000
+      internalID: -5859829601492914847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9b0f2658620e220800000000000000
+      internalID: 2513050946405186029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c3606148c7769e0800000000000000
+      internalID: -1628195833524110290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_128
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e4025c1e682c080800000000000000
+      internalID: -9168617587139916207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daab1831316a4aa60800000000000000
+      internalID: 7684449465062767277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_130
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbde1840c641c6a0800000000000000
+      internalID: -6430781001250710603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_131
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741af9554cd18e4c0800000000000000
+      internalID: -4258120718591483577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_132
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787fd1f8219c8a060800000000000000
+      internalID: 6965037905276172167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_133
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a493a4d6ca52f55a0800000000000000
+      internalID: -6530459512165746358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_134
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc450a556d8ac8f0800000000000000
+      internalID: -519447340566360845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_135
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2081d10b896a1e0800000000000000
+      internalID: -2186892686872018240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_136
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9765613856cefc60800000000000000
+      internalID: 7853932882268874652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_137
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297988e5a5abfb280800000000000000
+      internalID: -9025290230931351662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kid_Karen_48x48_138
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de08f5c7c82b08010800000000000000
+      internalID: 1189146618077610221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bob_idle_anim_48x48_0: 831543710325836122
+      Bob_idle_anim_48x48_1: 3338227350339112376
+      Bob_idle_anim_48x48_10: 619538298773257506
+      Bob_idle_anim_48x48_11: 3966555982802685239
+      Bob_idle_anim_48x48_12: -8968938349002617098
+      Bob_idle_anim_48x48_13: -4504635487249204502
+      Bob_idle_anim_48x48_2: -7804176378215013095
+      Bob_idle_anim_48x48_3: 158246801873651653
+      Bob_idle_anim_48x48_4: -8465323890994823232
+      Bob_idle_anim_48x48_5: -8353842248846761725
+      Bob_idle_anim_48x48_6: -4116828821013658098
+      Bob_idle_anim_48x48_7: -8905050139056182904
+      Bob_idle_anim_48x48_8: 3792459370451621365
+      Bob_idle_anim_48x48_9: -142127553761280378
+      kid_Karen_48x48_0: 1276144449108956973
+      kid_Karen_48x48_1: -3923108197739800718
+      kid_Karen_48x48_10: -3962946758972718996
+      kid_Karen_48x48_100: -1001435905448685898
+      kid_Karen_48x48_101: 8719811523243163200
+      kid_Karen_48x48_102: -4768393378409215553
+      kid_Karen_48x48_103: 5723020613252115746
+      kid_Karen_48x48_104: -8975912514371168942
+      kid_Karen_48x48_105: 4054110584559780473
+      kid_Karen_48x48_106: 7314605938291036452
+      kid_Karen_48x48_107: 7920493754461713533
+      kid_Karen_48x48_108: 8325756148979202863
+      kid_Karen_48x48_109: -967091059737030245
+      kid_Karen_48x48_11: -6983942498825945508
+      kid_Karen_48x48_110: -1711038474368820340
+      kid_Karen_48x48_111: 1104037462910203429
+      kid_Karen_48x48_112: -2354319500989080345
+      kid_Karen_48x48_113: 2815764097845848134
+      kid_Karen_48x48_114: -8190964465500395825
+      kid_Karen_48x48_115: -4469835503999582344
+      kid_Karen_48x48_116: 5623669403612906949
+      kid_Karen_48x48_117: -5352518900687800815
+      kid_Karen_48x48_118: -1026704565731409713
+      kid_Karen_48x48_119: -1646195474540044642
+      kid_Karen_48x48_12: 513791774021523722
+      kid_Karen_48x48_120: -5303878347764152441
+      kid_Karen_48x48_121: -7530129483065608273
+      kid_Karen_48x48_122: -6097631309407059559
+      kid_Karen_48x48_123: 6383260302841293
+      kid_Karen_48x48_124: -2799436108370587858
+      kid_Karen_48x48_125: -5859829601492914847
+      kid_Karen_48x48_126: 2513050946405186029
+      kid_Karen_48x48_127: -1628195833524110290
+      kid_Karen_48x48_128: -9168617587139916207
+      kid_Karen_48x48_129: 7684449465062767277
+      kid_Karen_48x48_13: 8027416756269337305
+      kid_Karen_48x48_130: -6430781001250710603
+      kid_Karen_48x48_131: -4258120718591483577
+      kid_Karen_48x48_132: 6965037905276172167
+      kid_Karen_48x48_133: -6530459512165746358
+      kid_Karen_48x48_134: -519447340566360845
+      kid_Karen_48x48_135: -2186892686872018240
+      kid_Karen_48x48_136: 7853932882268874652
+      kid_Karen_48x48_137: -9025290230931351662
+      kid_Karen_48x48_138: 1189146618077610221
+      kid_Karen_48x48_14: 2974532662777084936
+      kid_Karen_48x48_15: 9010455873860495679
+      kid_Karen_48x48_16: -5458929466537535458
+      kid_Karen_48x48_17: -6147542205566198595
+      kid_Karen_48x48_18: 4629531043262722015
+      kid_Karen_48x48_19: -4129608510641457942
+      kid_Karen_48x48_2: 57479424123869508
+      kid_Karen_48x48_20: 4032663310459870604
+      kid_Karen_48x48_21: 7425431154622646223
+      kid_Karen_48x48_22: -4413384648791186563
+      kid_Karen_48x48_23: 1158453690514050169
+      kid_Karen_48x48_24: 2723660480821855344
+      kid_Karen_48x48_25: 8753970598631281664
+      kid_Karen_48x48_26: 4511933019453707062
+      kid_Karen_48x48_27: 893593532005101248
+      kid_Karen_48x48_28: 4547998617457064362
+      kid_Karen_48x48_29: -3571698331873708888
+      kid_Karen_48x48_3: 391970556811303717
+      kid_Karen_48x48_30: 5989910730865002107
+      kid_Karen_48x48_31: 4720469973742079594
+      kid_Karen_48x48_32: -6640638824251351711
+      kid_Karen_48x48_33: -7995084282818182874
+      kid_Karen_48x48_34: -3831384932388817846
+      kid_Karen_48x48_35: 3678332668029466753
+      kid_Karen_48x48_36: -5679683219329156202
+      kid_Karen_48x48_37: -2999816378218313591
+      kid_Karen_48x48_38: 5176233834846926513
+      kid_Karen_48x48_39: -1440519403993392899
+      kid_Karen_48x48_4: -7469469036127841304
+      kid_Karen_48x48_40: 5746257819910306435
+      kid_Karen_48x48_41: -1321424475008338380
+      kid_Karen_48x48_42: -6178069074415691657
+      kid_Karen_48x48_43: -6470108032003010394
+      kid_Karen_48x48_44: -8528269225845592379
+      kid_Karen_48x48_45: -2197792559725438525
+      kid_Karen_48x48_46: 5702350363184784954
+      kid_Karen_48x48_47: -2311370520448294437
+      kid_Karen_48x48_48: 8424249010045866535
+      kid_Karen_48x48_49: 7606553683640449581
+      kid_Karen_48x48_5: 475423211455804526
+      kid_Karen_48x48_50: 625992327828586569
+      kid_Karen_48x48_51: -238875738344758776
+      kid_Karen_48x48_6: -3869388643097123847
+      kid_Karen_48x48_7: 110199043853337891
+      kid_Karen_48x48_8: -8643431899932569993
+      kid_Karen_48x48_9: -3328987232196519781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,10 +19,6 @@ MonoBehaviour:
     m_Key: clue.carla.0
     m_Metadata:
       m_Items: []
-  - m_Id: 191881217
-    m_Key: clue.bruno.0
-    m_Metadata:
-      m_Items: []
   - m_Id: 191881218
     m_Key: clue.bruno.1
     m_Metadata:
@@ -88,7 +84,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3950813503283200
-    m_Key: clue.aloneInRow
+    m_Key: clue.aloneInRowAndColumn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4257141207588864
+    m_Key: name.edgar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4289797903343616
+    m_Key: name.fatima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4290803194126336
+    m_Key: name.gabriel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4291366078111744
+    m_Key: name.hannah
     m_Metadata:
       m_Items: []
   m_Metadata:

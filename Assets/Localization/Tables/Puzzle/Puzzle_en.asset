@@ -24,11 +24,6 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4753990918076105042
-  - m_Id: 191881217
-    m_Localized: '{char.bruno} was the only person in his row and column'
-    m_Metadata:
-      m_Items:
-      - rid: 4753990918076105042
   - m_Id: 191881218
     m_Localized: '{char.bruno} was alone in the room'
     m_Metadata:
@@ -97,7 +92,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3950813503283200
-    m_Localized: '{0} was the only person in his row'
+    m_Localized: '{0} was the only person in his row and column'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4257141207588864
+    m_Localized: Edgar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4289797903343616
+    m_Localized: Fatima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4290803194126336
+    m_Localized: Gabriel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4291366078111744
+    m_Localized: Hannah
     m_Metadata:
       m_Items: []
   references:
@@ -109,7 +120,6 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 191881221
-        - id: 191881217
         - id: 191881218
         - id: 187686912
         - id: 304649553829888

@@ -1,49 +1,7 @@
 fileFormatVersion: 2
-guid: 9f356004a586945209cba23a85e2ac26
+guid: 96d6c8cee6e754c2ab997cc9cb337f76
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 831543710325836122
-    second: Bob_idle_anim_48x48_0
-  - first:
-      213: 3338227350339112376
-    second: Bob_idle_anim_48x48_1
-  - first:
-      213: -7804176378215013095
-    second: Bob_idle_anim_48x48_2
-  - first:
-      213: 158246801873651653
-    second: Bob_idle_anim_48x48_3
-  - first:
-      213: -8465323890994823232
-    second: Bob_idle_anim_48x48_4
-  - first:
-      213: -8353842248846761725
-    second: Bob_idle_anim_48x48_5
-  - first:
-      213: -4116828821013658098
-    second: Bob_idle_anim_48x48_6
-  - first:
-      213: -8905050139056182904
-    second: Bob_idle_anim_48x48_7
-  - first:
-      213: 3792459370451621365
-    second: Bob_idle_anim_48x48_8
-  - first:
-      213: -142127553761280378
-    second: Bob_idle_anim_48x48_9
-  - first:
-      213: 619538298773257506
-    second: Bob_idle_anim_48x48_10
-  - first:
-      213: 3966555982802685239
-    second: Bob_idle_anim_48x48_11
-  - first:
-      213: -8968938349002617098
-    second: Bob_idle_anim_48x48_12
-  - first:
-      213: -4504635487249204502
-    second: Bob_idle_anim_48x48_13
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -86,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -142,12 +100,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,12 +122,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,12 +144,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -208,12 +166,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 146
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +188,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +210,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_5
       rect:
         serializedVersion: 2
-        x: 240
+        x: 242
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +232,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 287
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 290
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +254,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_7
       rect:
         serializedVersion: 2
-        x: 336
+        x: 581
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +276,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 629
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +298,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_9
       rect:
         serializedVersion: 2
-        x: 432
+        x: 677
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +320,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_10
       rect:
         serializedVersion: 2
-        x: 480
+        x: 725
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,12 +342,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_11
       rect:
         serializedVersion: 2
-        x: 528
+        x: 773
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -406,12 +364,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_12
       rect:
         serializedVersion: 2
-        x: 576
+        x: 821
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -428,12 +386,12 @@ TextureImporter:
       name: Bob_idle_anim_48x48_13
       rect:
         serializedVersion: 2
-        x: 624
+        x: 863
         y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 289
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -446,231 +404,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_14
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b02a7a36e0cb4481898ccd7a7179810
-      internalID: -1124482459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_15
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4fbc6f82320f4ecb9f5af65c0dcb3c7
-      internalID: 2116778917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_16
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51d375847d7ce4ed189e11b8d17beda5
-      internalID: -1614798498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_17
-      rect:
-        serializedVersion: 2
-        x: 816
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c2ee36208aed4f93b80bad434ad45bc
-      internalID: 1472883153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_18
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3810d19f1fbe49d4a0a89dfc94c69cf
-      internalID: 160717220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_19
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 577116b3397cc444a8d8016da61c31ca
-      internalID: 1803614554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_20
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: beab8b3961f1e4223ab82416b4b3ab10
-      internalID: 323357445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_21
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c56eaa76bb877435393b541e7d79717c
-      internalID: 1445182735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_22
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 324e894bf3bf24d59a18c2c4bf7bf5fb
-      internalID: 1882220422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_23
-      rect:
-        serializedVersion: 2
-        x: 1104
-        y: 0
-        width: 48
-        height: 72
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1336f73dfb10a4a8aa7ddcc6f16ece8f
-      internalID: 1254150191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f4f6a326b44cc4d85a79f6c4e64f589e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -678,9 +416,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":24.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.25},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
       Bob_idle_anim_48x48_0: 831543710325836122
       Bob_idle_anim_48x48_1: 3338227350339112376
@@ -688,17 +424,7 @@ TextureImporter:
       Bob_idle_anim_48x48_11: 3966555982802685239
       Bob_idle_anim_48x48_12: -8968938349002617098
       Bob_idle_anim_48x48_13: -4504635487249204502
-      Bob_idle_anim_48x48_14: -1124482459
-      Bob_idle_anim_48x48_15: 2116778917
-      Bob_idle_anim_48x48_16: -1614798498
-      Bob_idle_anim_48x48_17: 1472883153
-      Bob_idle_anim_48x48_18: 160717220
-      Bob_idle_anim_48x48_19: 1803614554
       Bob_idle_anim_48x48_2: -7804176378215013095
-      Bob_idle_anim_48x48_20: 323357445
-      Bob_idle_anim_48x48_21: 1445182735
-      Bob_idle_anim_48x48_22: 1882220422
-      Bob_idle_anim_48x48_23: 1254150191
       Bob_idle_anim_48x48_3: 158246801873651653
       Bob_idle_anim_48x48_4: -8465323890994823232
       Bob_idle_anim_48x48_5: -8353842248846761725

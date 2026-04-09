@@ -24,13 +24,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4753990918076105041
-  - m_Id: 191881217
-    m_Localized: "{char.bruno} era a \xFAnica pessoa em sua linha e coluna"
-    m_Metadata:
-      m_Items:
-      - rid: 4753990918076105041
   - m_Id: 191881218
-    m_Localized: '{char.bruno} estava sozinho na sala'
+    m_Localized: "{char.bruno} estava sozinho no c\xF4modo"
     m_Metadata:
       m_Items:
       - rid: 4753990918076105041
@@ -97,7 +92,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3950813503283200
-    m_Localized: "{0} era a \xFAnica pessoa na sua linha"
+    m_Localized: "{0} era a \xFAnica pessoa na sua linha e coluna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4257141207588864
+    m_Localized: Eduardo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4289797903343616
+    m_Localized: "F\xE1tima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4290803194126336
+    m_Localized: Gabriel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4291366078111744
+    m_Localized: Helena
     m_Metadata:
       m_Items: []
   references:
@@ -109,7 +120,6 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 191881221
-        - id: 191881217
         - id: 191881218
         - id: 187686912
         - id: 304649553829888
