@@ -1,7 +1,280 @@
 fileFormatVersion: 2
 guid: 361e645a0466e4dc28ff2e388c211faf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2554041583828470813
+    second: Molly_48x48_0
+  - first:
+      213: -4084939102388452074
+    second: Molly_48x48_1
+  - first:
+      213: 2724164602698625316
+    second: Molly_48x48_2
+  - first:
+      213: 9126990405231642595
+    second: Molly_48x48_3
+  - first:
+      213: -3102109121908090850
+    second: Molly_48x48_4
+  - first:
+      213: -1530080569517785545
+    second: Molly_48x48_5
+  - first:
+      213: -9010535372041510414
+    second: Molly_48x48_6
+  - first:
+      213: -2642576514531944863
+    second: Molly_48x48_7
+  - first:
+      213: 6592257901184504326
+    second: Molly_48x48_8
+  - first:
+      213: 1519433704340159803
+    second: Molly_48x48_9
+  - first:
+      213: -2126207526561946094
+    second: Molly_48x48_10
+  - first:
+      213: 1579667779778651092
+    second: Molly_48x48_11
+  - first:
+      213: -5482805540605989773
+    second: Molly_48x48_12
+  - first:
+      213: -2135682200932271238
+    second: Molly_48x48_13
+  - first:
+      213: -3465159863547653703
+    second: Molly_48x48_14
+  - first:
+      213: 1771776366200256
+    second: Molly_48x48_15
+  - first:
+      213: 1845922308109471142
+    second: Molly_48x48_16
+  - first:
+      213: 4901595866259204834
+    second: Molly_48x48_17
+  - first:
+      213: 6586972168953553389
+    second: Molly_48x48_18
+  - first:
+      213: 2819121517956801133
+    second: Molly_48x48_19
+  - first:
+      213: -8071221089832198145
+    second: Molly_48x48_20
+  - first:
+      213: 581165172246051230
+    second: Molly_48x48_21
+  - first:
+      213: 2048835243008901137
+    second: Molly_48x48_22
+  - first:
+      213: -2112045754549627884
+    second: Molly_48x48_23
+  - first:
+      213: 8192702778432706375
+    second: Molly_48x48_24
+  - first:
+      213: 6820490880286741813
+    second: Molly_48x48_25
+  - first:
+      213: 7371561937994299892
+    second: Molly_48x48_26
+  - first:
+      213: 1799218703952541918
+    second: Molly_48x48_27
+  - first:
+      213: -2012106284937436859
+    second: Molly_48x48_28
+  - first:
+      213: 9074440293239971528
+    second: Molly_48x48_29
+  - first:
+      213: -9089663960698800603
+    second: Molly_48x48_30
+  - first:
+      213: -2262976980258327544
+    second: Molly_48x48_31
+  - first:
+      213: -4256275092280356883
+    second: Molly_48x48_32
+  - first:
+      213: -4936165527949761812
+    second: Molly_48x48_33
+  - first:
+      213: 4873071884765201854
+    second: Molly_48x48_34
+  - first:
+      213: -7002347082802097531
+    second: Molly_48x48_35
+  - first:
+      213: -1230799409839627628
+    second: Molly_48x48_36
+  - first:
+      213: -2645854278037097808
+    second: Molly_48x48_37
+  - first:
+      213: 1171293072111726374
+    second: Molly_48x48_38
+  - first:
+      213: 4589864059511661653
+    second: Molly_48x48_39
+  - first:
+      213: 476830228140696439
+    second: Molly_48x48_40
+  - first:
+      213: -2266792327670464317
+    second: Molly_48x48_41
+  - first:
+      213: 763453265206636170
+    second: Molly_48x48_42
+  - first:
+      213: -4188454075233003083
+    second: Molly_48x48_43
+  - first:
+      213: 3006818654353583948
+    second: Molly_48x48_44
+  - first:
+      213: -3044080672208933691
+    second: Molly_48x48_45
+  - first:
+      213: -1349248543426208094
+    second: Molly_48x48_46
+  - first:
+      213: 5216625274277810255
+    second: Molly_48x48_47
+  - first:
+      213: -1589199725719633900
+    second: Molly_48x48_48
+  - first:
+      213: 2998665263938084294
+    second: Molly_48x48_49
+  - first:
+      213: -2231394544948025301
+    second: Molly_48x48_50
+  - first:
+      213: -7724446842693545070
+    second: Molly_48x48_51
+  - first:
+      213: -5526967636850428084
+    second: Molly_48x48_100
+  - first:
+      213: 2562491350372131175
+    second: Molly_48x48_101
+  - first:
+      213: 79810447353268950
+    second: Molly_48x48_102
+  - first:
+      213: 5926098143800023250
+    second: Molly_48x48_103
+  - first:
+      213: 964082110669138070
+    second: Molly_48x48_104
+  - first:
+      213: -1165279271434228730
+    second: Molly_48x48_105
+  - first:
+      213: 9084266840834564302
+    second: Molly_48x48_106
+  - first:
+      213: -7908757683427743845
+    second: Molly_48x48_107
+  - first:
+      213: -3446018989238382032
+    second: Molly_48x48_108
+  - first:
+      213: 3266432186992553218
+    second: Molly_48x48_109
+  - first:
+      213: 6747642570764247135
+    second: Molly_48x48_110
+  - first:
+      213: 6149835312291982977
+    second: Molly_48x48_111
+  - first:
+      213: -8298707270515202914
+    second: Molly_48x48_112
+  - first:
+      213: -6758157462367731526
+    second: Molly_48x48_113
+  - first:
+      213: -7722295252329351209
+    second: Molly_48x48_114
+  - first:
+      213: -2551841507817693819
+    second: Molly_48x48_115
+  - first:
+      213: -437429931755773323
+    second: Molly_48x48_116
+  - first:
+      213: 7596906045185876085
+    second: Molly_48x48_117
+  - first:
+      213: 2761476963428324023
+    second: Molly_48x48_118
+  - first:
+      213: -6156918470600844143
+    second: Molly_48x48_119
+  - first:
+      213: 8068525974752474825
+    second: Molly_48x48_120
+  - first:
+      213: 4201385558549774442
+    second: Molly_48x48_121
+  - first:
+      213: -2864132489115332090
+    second: Molly_48x48_122
+  - first:
+      213: 5004954060530446005
+    second: Molly_48x48_123
+  - first:
+      213: -6173383735837032825
+    second: Molly_48x48_124
+  - first:
+      213: -655897848140235164
+    second: Molly_48x48_125
+  - first:
+      213: 7323918217435143526
+    second: Molly_48x48_126
+  - first:
+      213: 6119474675037452396
+    second: Molly_48x48_127
+  - first:
+      213: 2133505520276063600
+    second: Molly_48x48_128
+  - first:
+      213: 3627269843327032204
+    second: Molly_48x48_129
+  - first:
+      213: 6951628171602763372
+    second: Molly_48x48_130
+  - first:
+      213: -7780935496242968159
+    second: Molly_48x48_131
+  - first:
+      213: -5107942864253357076
+    second: Molly_48x48_132
+  - first:
+      213: -2806643361065525475
+    second: Molly_48x48_133
+  - first:
+      213: 3870474336879850768
+    second: Molly_48x48_134
+  - first:
+      213: 7497598138582946383
+    second: Molly_48x48_135
+  - first:
+      213: 568702318537971027
+    second: Molly_48x48_136
+  - first:
+      213: 5260731605810914438
+    second: Molly_48x48_137
+  - first:
+      213: -9158200302111224525
+    second: Molly_48x48_138
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,309 +370,2003 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_0
+      name: Molly_48x48_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a598e2d499c3a8b00800000000000000
-      internalID: 831543710325836122
+      spriteID: d1c0ca1e947c17320800000000000000
+      internalID: 2554041583828470813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_1
+      name: Molly_48x48_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bdc474a614c35e20800000000000000
-      internalID: 3338227350339112376
+      spriteID: 615880187816f47c0800000000000000
+      internalID: -4084939102388452074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_2
+      name: Molly_48x48_2
       rect:
         serializedVersion: 2
-        x: 98
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 915effbaeeef1b390800000000000000
-      internalID: -7804176378215013095
+      spriteID: 4217b8dd54d2ec520800000000000000
+      internalID: 2724164602698625316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_3
+      name: Molly_48x48_3
       rect:
         serializedVersion: 2
-        x: 146
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c7458cb0a4323200800000000000000
-      internalID: 158246801873651653
+      spriteID: 3e70b3caa6599ae70800000000000000
+      internalID: 9126990405231642595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_4
+      name: Molly_48x48_4
       rect:
         serializedVersion: 2
-        x: 194
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cf30a8b5c0258a80800000000000000
-      internalID: -8465323890994823232
+      spriteID: e185b26703813f4d0800000000000000
+      internalID: -3102109121908090850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_5
+      name: Molly_48x48_5
       rect:
         serializedVersion: 2
-        x: 242
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 301a6d73cb0311c80800000000000000
-      internalID: -8353842248846761725
+      spriteID: 73e3a2824df04cae0800000000000000
+      internalID: -1530080569517785545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_6
+      name: Molly_48x48_6
       rect:
         serializedVersion: 2
-        x: 287
-        y: 0
-        width: 290
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e06046acff51ed6c0800000000000000
-      internalID: -4116828821013658098
+      spriteID: 2f1af59a1d524f280800000000000000
+      internalID: -9010535372041510414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_7
+      name: Molly_48x48_7
       rect:
         serializedVersion: 2
-        x: 581
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 889638a5418ea6480800000000000000
-      internalID: -8905050139056182904
+      spriteID: 166988739aea35bd0800000000000000
+      internalID: -2642576514531944863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_8
+      name: Molly_48x48_8
       rect:
         serializedVersion: 2
-        x: 629
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5ded044b581a430800000000000000
-      internalID: 3792459370451621365
+      spriteID: 6025dd342a76c7b50800000000000000
+      internalID: 6592257901184504326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_9
+      name: Molly_48x48_9
       rect:
         serializedVersion: 2
-        x: 677
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68e734d2ebf070ef0800000000000000
-      internalID: -142127553761280378
+      spriteID: b3d73fe57ec161510800000000000000
+      internalID: 1519433704340159803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_10
+      name: Molly_48x48_10
       rect:
         serializedVersion: 2
-        x: 725
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22d312fdcca099800800000000000000
-      internalID: 619538298773257506
+      spriteID: 216638c05813e72e0800000000000000
+      internalID: -2126207526561946094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_11
+      name: Molly_48x48_11
       rect:
         serializedVersion: 2
-        x: 773
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73d87a096a90c0730800000000000000
-      internalID: 3966555982802685239
+      spriteID: 4d326dce97b1ce510800000000000000
+      internalID: 1579667779778651092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_12
+      name: Molly_48x48_12
       rect:
         serializedVersion: 2
-        x: 821
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fe025f471ee78380800000000000000
-      internalID: -8968938349002617098
+      spriteID: 37ce2a3f86929e3b0800000000000000
+      internalID: -5482805540605989773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_13
+      name: Molly_48x48_13
       rect:
         serializedVersion: 2
-        x: 863
-        y: 0
-        width: 289
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 432
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aea74e314e15c71c0800000000000000
-      internalID: -4504635487249204502
+      spriteID: a7bbe448a588c52e0800000000000000
+      internalID: -2135682200932271238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b11d4b967749efc0800000000000000
+      internalID: -3465159863547653703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5cde4db6b460000800000000000000
+      internalID: 1771776366200256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad85d12f880e9910800000000000000
+      internalID: 1845922308109471142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_17
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea27e87877f50440800000000000000
+      internalID: 4901595866259204834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de16cd3d940a96b50800000000000000
+      internalID: 6586972168953553389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62a97095188f1720800000000000000
+      internalID: 2819121517956801133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff19e49e234dff80800000000000000
+      internalID: -8071221089832198145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99fd8f15a6b01800800000000000000
+      internalID: 581165172246051230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110c8de5cccee6c10800000000000000
+      internalID: 2048835243008901137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41492ba839180b2e0800000000000000
+      internalID: -2112045754549627884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_24
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74756da25c352b170800000000000000
+      internalID: 8192702778432706375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5355841b15047ae50800000000000000
+      internalID: 6820490880286741813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9b0f1c68c0d4660800000000000000
+      internalID: 7371561937994299892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8745ae0eb18f810800000000000000
+      internalID: 1799218703952541918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54129f39eff8314e0800000000000000
+      internalID: -2012106284937436859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce5f064e53eeed70800000000000000
+      internalID: 9074440293239971528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526b0ee69c60bd180800000000000000
+      internalID: -9089663960698800603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804f0dc1d6a4890e0800000000000000
+      internalID: -2262976980258327544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def4942ba5caee4c0800000000000000
+      internalID: -4256275092280356883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2a602fa973f7bb0800000000000000
+      internalID: -4936165527949761812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb58f508f01a0a340800000000000000
+      internalID: 4873071884765201854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582969f9d6aa2de90800000000000000
+      internalID: -7002347082802097531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492afb235725beee0800000000000000
+      internalID: -1230799409839627628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2b62e6d89084bd0800000000000000
+      internalID: -2645854278037097808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f6813e7d4414010800000000000000
+      internalID: 1171293072111726374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55466824b0972bf30800000000000000
+      internalID: 4589864059511661653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_40
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773ae7ee09a0e9600800000000000000
+      internalID: 476830228140696439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c00f91536cba80e0800000000000000
+      internalID: -2266792327670464317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ee04323b4589a00800000000000000
+      internalID: 763453265206636170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_43
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b913bfb53f9fd5c0800000000000000
+      internalID: -4188454075233003083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f63c4a2ad5ab920800000000000000
+      internalID: 3006818654353583948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccaa51c1c041c5d0800000000000000
+      internalID: -3044080672208933691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae1e5f2991864de0800000000000000
+      internalID: -1349248543426208094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4057af4c0d256840800000000000000
+      internalID: 5216625274277810255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4104557f44702f9e0800000000000000
+      internalID: -1589199725719633900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd15518b266d9920800000000000000
+      internalID: 2998665263938084294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28e0aadb7e7801e0800000000000000
+      internalID: -2231394544948025301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_51
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2931ddeb5804dc490800000000000000
+      internalID: -7724446842693545070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c473378a7344c43b0800000000000000
+      internalID: -5526967636850428084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76121f67e4ccf8320800000000000000
+      internalID: 2562491350372131175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da4bd3dd2b8b1100800000000000000
+      internalID: 79810447353268950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_103
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d85d4d2ddabd3250800000000000000
+      internalID: 5926098143800023250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6982ebc529b116d00800000000000000
+      internalID: 964082110669138070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_105
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c69023da814dfe0800000000000000
+      internalID: -1165279271434228730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0edccaf8cc11e70800000000000000
+      internalID: 9084266840834564302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_107
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97e5a01ac27e3290800000000000000
+      internalID: -7908757683427743845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0321231bcf74d20d0800000000000000
+      internalID: -3446018989238382032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_109
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20de79c84c2b45d20800000000000000
+      internalID: 3266432186992553218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_110
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50e4b5ea2174ad50800000000000000
+      internalID: 6747642570764247135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_111
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e215022aa985550800000000000000
+      internalID: 6149835312291982977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e946df5b4b115dc80800000000000000
+      internalID: -8298707270515202914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab08a6f18933632a0800000000000000
+      internalID: -6758157462367731526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7393ae165e4d490800000000000000
+      internalID: -7722295252329351209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_115
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ddd6b3ba9069cd0800000000000000
+      internalID: -2551841507817693819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572e29f6bcfede9f0800000000000000
+      internalID: -437429931755773323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_117
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57062574cc1ad6960800000000000000
+      internalID: 7596906045185876085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2d194daacb25620800000000000000
+      internalID: 2761476963428324023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_119
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c9bc0954b3e8aa0800000000000000
+      internalID: -6156918470600844143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_120
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6322a00a929ff60800000000000000
+      internalID: 8068525974752474825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60c0d5d7e15e4a30800000000000000
+      internalID: 4201385558549774442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_122
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60210ac0dae8048d0800000000000000
+      internalID: -2864132489115332090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bee01f533b257540800000000000000
+      internalID: 5004954060530446005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e7243433cb35aa0800000000000000
+      internalID: -6173383735837032825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_125
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e78a8d168c5e6f0800000000000000
+      internalID: -655897848140235164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ddb32a0d8c3a560800000000000000
+      internalID: 7323918217435143526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c683b996bcdbce450800000000000000
+      internalID: 6119474675037452396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_128
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075c36687fbbb9d10800000000000000
+      internalID: 2133505520276063600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b9ef354b6a65230800000000000000
+      internalID: 3627269843327032204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_130
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e1bf2adf4297060800000000000000
+      internalID: 6951628171602763372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_131
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9c53e2460940490800000000000000
+      internalID: -7780935496242968159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_132
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3ff2b2701fc19b0800000000000000
+      internalID: -5107942864253357076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_133
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f1b7cbbbccc09d0800000000000000
+      internalID: -2806643361065525475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_134
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0153df917efa6b530800000000000000
+      internalID: 3870474336879850768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_135
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42ddd678c1dc0860800000000000000
+      internalID: 7497598138582946383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_136
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355956fdebf64e700800000000000000
+      internalID: 568702318537971027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_137
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684a70fd58fd10940800000000000000
+      internalID: 5260731605810914438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molly_48x48_138
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d09c2f85987e080800000000000000
+      internalID: -9158200302111224525
       vertices: []
       indices: 
       edges: []
@@ -432,6 +2399,97 @@ TextureImporter:
       Bob_idle_anim_48x48_7: -8905050139056182904
       Bob_idle_anim_48x48_8: 3792459370451621365
       Bob_idle_anim_48x48_9: -142127553761280378
+      Molly_48x48_0: 2554041583828470813
+      Molly_48x48_1: -4084939102388452074
+      Molly_48x48_10: -2126207526561946094
+      Molly_48x48_100: -5526967636850428084
+      Molly_48x48_101: 2562491350372131175
+      Molly_48x48_102: 79810447353268950
+      Molly_48x48_103: 5926098143800023250
+      Molly_48x48_104: 964082110669138070
+      Molly_48x48_105: -1165279271434228730
+      Molly_48x48_106: 9084266840834564302
+      Molly_48x48_107: -7908757683427743845
+      Molly_48x48_108: -3446018989238382032
+      Molly_48x48_109: 3266432186992553218
+      Molly_48x48_11: 1579667779778651092
+      Molly_48x48_110: 6747642570764247135
+      Molly_48x48_111: 6149835312291982977
+      Molly_48x48_112: -8298707270515202914
+      Molly_48x48_113: -6758157462367731526
+      Molly_48x48_114: -7722295252329351209
+      Molly_48x48_115: -2551841507817693819
+      Molly_48x48_116: -437429931755773323
+      Molly_48x48_117: 7596906045185876085
+      Molly_48x48_118: 2761476963428324023
+      Molly_48x48_119: -6156918470600844143
+      Molly_48x48_12: -5482805540605989773
+      Molly_48x48_120: 8068525974752474825
+      Molly_48x48_121: 4201385558549774442
+      Molly_48x48_122: -2864132489115332090
+      Molly_48x48_123: 5004954060530446005
+      Molly_48x48_124: -6173383735837032825
+      Molly_48x48_125: -655897848140235164
+      Molly_48x48_126: 7323918217435143526
+      Molly_48x48_127: 6119474675037452396
+      Molly_48x48_128: 2133505520276063600
+      Molly_48x48_129: 3627269843327032204
+      Molly_48x48_13: -2135682200932271238
+      Molly_48x48_130: 6951628171602763372
+      Molly_48x48_131: -7780935496242968159
+      Molly_48x48_132: -5107942864253357076
+      Molly_48x48_133: -2806643361065525475
+      Molly_48x48_134: 3870474336879850768
+      Molly_48x48_135: 7497598138582946383
+      Molly_48x48_136: 568702318537971027
+      Molly_48x48_137: 5260731605810914438
+      Molly_48x48_138: -9158200302111224525
+      Molly_48x48_14: -3465159863547653703
+      Molly_48x48_15: 1771776366200256
+      Molly_48x48_16: 1845922308109471142
+      Molly_48x48_17: 4901595866259204834
+      Molly_48x48_18: 6586972168953553389
+      Molly_48x48_19: 2819121517956801133
+      Molly_48x48_2: 2724164602698625316
+      Molly_48x48_20: -8071221089832198145
+      Molly_48x48_21: 581165172246051230
+      Molly_48x48_22: 2048835243008901137
+      Molly_48x48_23: -2112045754549627884
+      Molly_48x48_24: 8192702778432706375
+      Molly_48x48_25: 6820490880286741813
+      Molly_48x48_26: 7371561937994299892
+      Molly_48x48_27: 1799218703952541918
+      Molly_48x48_28: -2012106284937436859
+      Molly_48x48_29: 9074440293239971528
+      Molly_48x48_3: 9126990405231642595
+      Molly_48x48_30: -9089663960698800603
+      Molly_48x48_31: -2262976980258327544
+      Molly_48x48_32: -4256275092280356883
+      Molly_48x48_33: -4936165527949761812
+      Molly_48x48_34: 4873071884765201854
+      Molly_48x48_35: -7002347082802097531
+      Molly_48x48_36: -1230799409839627628
+      Molly_48x48_37: -2645854278037097808
+      Molly_48x48_38: 1171293072111726374
+      Molly_48x48_39: 4589864059511661653
+      Molly_48x48_4: -3102109121908090850
+      Molly_48x48_40: 476830228140696439
+      Molly_48x48_41: -2266792327670464317
+      Molly_48x48_42: 763453265206636170
+      Molly_48x48_43: -4188454075233003083
+      Molly_48x48_44: 3006818654353583948
+      Molly_48x48_45: -3044080672208933691
+      Molly_48x48_46: -1349248543426208094
+      Molly_48x48_47: 5216625274277810255
+      Molly_48x48_48: -1589199725719633900
+      Molly_48x48_49: 2998665263938084294
+      Molly_48x48_5: -1530080569517785545
+      Molly_48x48_50: -2231394544948025301
+      Molly_48x48_51: -7724446842693545070
+      Molly_48x48_6: -9010535372041510414
+      Molly_48x48_7: -2642576514531944863
+      Molly_48x48_8: 6592257901184504326
+      Molly_48x48_9: 1519433704340159803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

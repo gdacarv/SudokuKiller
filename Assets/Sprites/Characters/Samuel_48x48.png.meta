@@ -1,7 +1,280 @@
 fileFormatVersion: 2
 guid: 4dc37a3d2658f4285b7505dd816ce6be
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6421428041129071074
+    second: Samuel_48x48_0
+  - first:
+      213: 2117036215012028622
+    second: Samuel_48x48_1
+  - first:
+      213: 3244577849643566321
+    second: Samuel_48x48_2
+  - first:
+      213: 1576881849659778036
+    second: Samuel_48x48_3
+  - first:
+      213: 1502374918656496380
+    second: Samuel_48x48_4
+  - first:
+      213: 2851711415051680809
+    second: Samuel_48x48_5
+  - first:
+      213: -6226858238288208635
+    second: Samuel_48x48_6
+  - first:
+      213: -5424880469896330363
+    second: Samuel_48x48_7
+  - first:
+      213: 4820056435268179306
+    second: Samuel_48x48_8
+  - first:
+      213: 2951991808280381514
+    second: Samuel_48x48_9
+  - first:
+      213: 275378746085911571
+    second: Samuel_48x48_10
+  - first:
+      213: -3928458609929106211
+    second: Samuel_48x48_11
+  - first:
+      213: 6564203310745547563
+    second: Samuel_48x48_12
+  - first:
+      213: -2772330914775944288
+    second: Samuel_48x48_13
+  - first:
+      213: 2599678408611876157
+    second: Samuel_48x48_14
+  - first:
+      213: 2809478071809707107
+    second: Samuel_48x48_15
+  - first:
+      213: -8971475490295040520
+    second: Samuel_48x48_16
+  - first:
+      213: 172280777351764882
+    second: Samuel_48x48_17
+  - first:
+      213: 2170895341849301379
+    second: Samuel_48x48_18
+  - first:
+      213: 665271478725376089
+    second: Samuel_48x48_19
+  - first:
+      213: 1081452888306116113
+    second: Samuel_48x48_20
+  - first:
+      213: -4896381389447632133
+    second: Samuel_48x48_21
+  - first:
+      213: 3320179207906194763
+    second: Samuel_48x48_22
+  - first:
+      213: 5924638438174606662
+    second: Samuel_48x48_23
+  - first:
+      213: -508499420639737115
+    second: Samuel_48x48_24
+  - first:
+      213: -6822215812266119145
+    second: Samuel_48x48_25
+  - first:
+      213: -2716237922468640387
+    second: Samuel_48x48_26
+  - first:
+      213: -2053176805206350147
+    second: Samuel_48x48_27
+  - first:
+      213: -7512255010764850735
+    second: Samuel_48x48_28
+  - first:
+      213: -527760354973524226
+    second: Samuel_48x48_29
+  - first:
+      213: 4138324242503905165
+    second: Samuel_48x48_30
+  - first:
+      213: 7708313065709027887
+    second: Samuel_48x48_31
+  - first:
+      213: 1099594022117575144
+    second: Samuel_48x48_32
+  - first:
+      213: -4984614474671756194
+    second: Samuel_48x48_33
+  - first:
+      213: -8175425999951668016
+    second: Samuel_48x48_34
+  - first:
+      213: -5636966537848909476
+    second: Samuel_48x48_35
+  - first:
+      213: -7484718003496190559
+    second: Samuel_48x48_36
+  - first:
+      213: -1137672759798811450
+    second: Samuel_48x48_37
+  - first:
+      213: 3809208462374974081
+    second: Samuel_48x48_38
+  - first:
+      213: -3530612003516905113
+    second: Samuel_48x48_39
+  - first:
+      213: 8274440580991154570
+    second: Samuel_48x48_40
+  - first:
+      213: -6427467164350059688
+    second: Samuel_48x48_41
+  - first:
+      213: -61946345595812449
+    second: Samuel_48x48_42
+  - first:
+      213: 5054825394537661653
+    second: Samuel_48x48_43
+  - first:
+      213: -4118573461687311154
+    second: Samuel_48x48_44
+  - first:
+      213: 4388773665969465344
+    second: Samuel_48x48_45
+  - first:
+      213: 6189519051213897460
+    second: Samuel_48x48_46
+  - first:
+      213: 8021928956392143784
+    second: Samuel_48x48_47
+  - first:
+      213: 2890578940740439697
+    second: Samuel_48x48_48
+  - first:
+      213: 662509822886853012
+    second: Samuel_48x48_49
+  - first:
+      213: -7007209434844819524
+    second: Samuel_48x48_50
+  - first:
+      213: -8153065344054209031
+    second: Samuel_48x48_51
+  - first:
+      213: 1669010414073608113
+    second: Samuel_48x48_100
+  - first:
+      213: 8461923806214966406
+    second: Samuel_48x48_101
+  - first:
+      213: 8948366128200021343
+    second: Samuel_48x48_102
+  - first:
+      213: -7442309806007096259
+    second: Samuel_48x48_103
+  - first:
+      213: -814003817416156851
+    second: Samuel_48x48_104
+  - first:
+      213: 1162174275001018919
+    second: Samuel_48x48_105
+  - first:
+      213: 1263596361683798883
+    second: Samuel_48x48_106
+  - first:
+      213: -4079634721550398944
+    second: Samuel_48x48_107
+  - first:
+      213: -3822693371923626598
+    second: Samuel_48x48_108
+  - first:
+      213: 3770648883311021588
+    second: Samuel_48x48_109
+  - first:
+      213: 8160361468006235115
+    second: Samuel_48x48_110
+  - first:
+      213: -3385065993275417497
+    second: Samuel_48x48_111
+  - first:
+      213: 3341024133699985471
+    second: Samuel_48x48_112
+  - first:
+      213: -628258991485515534
+    second: Samuel_48x48_113
+  - first:
+      213: -5179845174004379795
+    second: Samuel_48x48_114
+  - first:
+      213: -7544266609046874486
+    second: Samuel_48x48_115
+  - first:
+      213: 5113641978128389751
+    second: Samuel_48x48_116
+  - first:
+      213: 6496098750899042421
+    second: Samuel_48x48_117
+  - first:
+      213: 7361290822701909468
+    second: Samuel_48x48_118
+  - first:
+      213: -1128112990934082618
+    second: Samuel_48x48_119
+  - first:
+      213: 3716653242911931694
+    second: Samuel_48x48_120
+  - first:
+      213: -4132137656527206773
+    second: Samuel_48x48_121
+  - first:
+      213: 7176295994298737340
+    second: Samuel_48x48_122
+  - first:
+      213: -6779922882503399363
+    second: Samuel_48x48_123
+  - first:
+      213: -2622022025954704419
+    second: Samuel_48x48_124
+  - first:
+      213: -2651501660121892323
+    second: Samuel_48x48_125
+  - first:
+      213: 7786963518517491222
+    second: Samuel_48x48_126
+  - first:
+      213: 5602138343597073391
+    second: Samuel_48x48_127
+  - first:
+      213: -1464109188547575465
+    second: Samuel_48x48_128
+  - first:
+      213: 4565437712549187623
+    second: Samuel_48x48_129
+  - first:
+      213: 4492586515958104635
+    second: Samuel_48x48_130
+  - first:
+      213: -5769984485899411219
+    second: Samuel_48x48_131
+  - first:
+      213: -7555291370456781460
+    second: Samuel_48x48_132
+  - first:
+      213: 6508939138335243137
+    second: Samuel_48x48_133
+  - first:
+      213: -3480626771614739192
+    second: Samuel_48x48_134
+  - first:
+      213: 9084624314726534047
+    second: Samuel_48x48_135
+  - first:
+      213: 337972431283228557
+    second: Samuel_48x48_136
+  - first:
+      213: 6000306748194648980
+    second: Samuel_48x48_137
+  - first:
+      213: 2133403953537398794
+    second: Samuel_48x48_138
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,309 +370,2003 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_0
+      name: Samuel_48x48_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a598e2d499c3a8b00800000000000000
-      internalID: 831543710325836122
+      spriteID: 2e11b3ef7ce7d1950800000000000000
+      internalID: 6421428041129071074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_1
+      name: Samuel_48x48_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bdc474a614c35e20800000000000000
-      internalID: 3338227350339112376
+      spriteID: ec0fd649839316d10800000000000000
+      internalID: 2117036215012028622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_2
+      name: Samuel_48x48_2
       rect:
         serializedVersion: 2
-        x: 98
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 915effbaeeef1b390800000000000000
-      internalID: -7804176378215013095
+      spriteID: 1f40b1e1d5e070d20800000000000000
+      internalID: 3244577849643566321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_3
+      name: Samuel_48x48_3
       rect:
         serializedVersion: 2
-        x: 146
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c7458cb0a4323200800000000000000
-      internalID: 158246801873651653
+      spriteID: 4f36bb500b532e510800000000000000
+      internalID: 1576881849659778036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_4
+      name: Samuel_48x48_4
       rect:
         serializedVersion: 2
-        x: 194
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cf30a8b5c0258a80800000000000000
-      internalID: -8465323890994823232
+      spriteID: cf21af1570289d410800000000000000
+      internalID: 1502374918656496380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_5
+      name: Samuel_48x48_5
       rect:
         serializedVersion: 2
-        x: 242
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 301a6d73cb0311c80800000000000000
-      internalID: -8353842248846761725
+      spriteID: 92cf4184c60539720800000000000000
+      internalID: 2851711415051680809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_6
+      name: Samuel_48x48_6
       rect:
         serializedVersion: 2
-        x: 287
-        y: 0
-        width: 290
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e06046acff51ed6c0800000000000000
-      internalID: -4116828821013658098
+      spriteID: 50ddd107c61c599a0800000000000000
+      internalID: -6226858238288208635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_7
+      name: Samuel_48x48_7
       rect:
         serializedVersion: 2
-        x: 581
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 889638a5418ea6480800000000000000
-      internalID: -8905050139056182904
+      spriteID: 58300e274f3f6b4b0800000000000000
+      internalID: -5424880469896330363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_8
+      name: Samuel_48x48_8
       rect:
         serializedVersion: 2
-        x: 629
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5ded044b581a430800000000000000
-      internalID: 3792459370451621365
+      spriteID: a65de754ac744e240800000000000000
+      internalID: 4820056435268179306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_9
+      name: Samuel_48x48_9
       rect:
         serializedVersion: 2
-        x: 677
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68e734d2ebf070ef0800000000000000
-      internalID: -142127553761280378
+      spriteID: a484a68c8e497f820800000000000000
+      internalID: 2951991808280381514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_10
+      name: Samuel_48x48_10
       rect:
         serializedVersion: 2
-        x: 725
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22d312fdcca099800800000000000000
-      internalID: 619538298773257506
+      spriteID: 31ca423b28752d300800000000000000
+      internalID: 275378746085911571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_11
+      name: Samuel_48x48_11
       rect:
         serializedVersion: 2
-        x: 773
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73d87a096a90c0730800000000000000
-      internalID: 3966555982802685239
+      spriteID: ddcc95845bf4b79c0800000000000000
+      internalID: -3928458609929106211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_12
+      name: Samuel_48x48_12
       rect:
         serializedVersion: 2
-        x: 821
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fe025f471ee78380800000000000000
-      internalID: -8968938349002617098
+      spriteID: b237e6ae12cb81b50800000000000000
+      internalID: 6564203310745547563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_13
+      name: Samuel_48x48_13
       rect:
         serializedVersion: 2
-        x: 863
-        y: 0
-        width: 289
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 432
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aea74e314e15c71c0800000000000000
-      internalID: -4504635487249204502
+      spriteID: 0a332f0b8b3b689d0800000000000000
+      internalID: -2772330914775944288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d409b2db9e31420800000000000000
+      internalID: 2599678408611876157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c877acb654df620800000000000000
+      internalID: 2809478071809707107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f537d1139aee7380800000000000000
+      internalID: -8971475490295040520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_17
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b1ea74470146200800000000000000
+      internalID: 172280777351764882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3815a7fbfc1902e10800000000000000
+      internalID: 2170895341849301379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958ff9892e48b3900800000000000000
+      internalID: 665271478725376089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1166ec01ca7120f00800000000000000
+      internalID: 1081452888306116113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfae325811f8c0cb0800000000000000
+      internalID: -4896381389447632133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45f2e50665a31e20800000000000000
+      internalID: 3320179207906194763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645c50af44b883250800000000000000
+      internalID: 5924638438174606662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_24
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eac648987271f8f0800000000000000
+      internalID: -508499420639737115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71033d84dde9251a0800000000000000
+      internalID: -6822215812266119145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79cfc1300cfd4ad0800000000000000
+      internalID: -2716237922468640387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6aa98e296a183e0800000000000000
+      internalID: -2053176805206350147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9763d8edb1fb790800000000000000
+      internalID: -7512255010764850735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efed44bd0c40da8f0800000000000000
+      internalID: -527760354973524226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f25d709f74e6930800000000000000
+      internalID: 4138324242503905165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22c61394ed69fa60800000000000000
+      internalID: 7708313065709027887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9067defea824f00800000000000000
+      internalID: 1099594022117575144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c6bee7b8713dab0800000000000000
+      internalID: -4984614474671756194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc53694e5d0b8e80800000000000000
+      internalID: -8175425999951668016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5190ccbcc875c1b0800000000000000
+      internalID: -5636966537848909476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad73ada1a0f02890800000000000000
+      internalID: -7484718003496190559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4bd8117ac2630f0800000000000000
+      internalID: -1137672759798811450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182b54b1ae60dd430800000000000000
+      internalID: 3809208462374974081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76905aab61fb00fc0800000000000000
+      internalID: -3530612003516905113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_40
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89fd095ed7b4d270800000000000000
+      internalID: 8274440580991154570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b6d6f0bac0dc6a0800000000000000
+      internalID: -6427467164350059688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95c0ab702ce32ff0800000000000000
+      internalID: -61946345595812449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_43
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d48a0b2ae8562640800000000000000
+      internalID: 5054825394537661653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4e6caf143e7d6c0800000000000000
+      internalID: -4118573461687311154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008e2bf756e08ec30800000000000000
+      internalID: 4388773665969465344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fefd1a98c695e550800000000000000
+      internalID: 6189519051213897460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab7c2342ed935f60800000000000000
+      internalID: 8021928956392143784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e0f0e4b366d1820800000000000000
+      internalID: 2890578940740439697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499b06d7c25b13900800000000000000
+      internalID: 662509822886853012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf0f41152461ce90800000000000000
+      internalID: -7007209434844819524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_51
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5d911344e7ade80800000000000000
+      internalID: -8153065344054209031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7f849f024892710800000000000000
+      internalID: 1669010414073608113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c4dd95edace6570800000000000000
+      internalID: 8461923806214966406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55ff77459bfe2c70800000000000000
+      internalID: 8948366128200021343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_103
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c6a8899aa97b890800000000000000
+      internalID: -7442309806007096259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49191147d314b4f0800000000000000
+      internalID: -814003817416156851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_105
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a688c785fd02010800000000000000
+      internalID: 1162174275001018919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b83a53232398110800000000000000
+      internalID: 1263596361683798883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_107
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a83a8e5d93267c0800000000000000
+      internalID: -4079634721550398944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a958049b1a013fac0800000000000000
+      internalID: -3822693371923626598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_109
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e0a7e7e29045430800000000000000
+      internalID: 3770648883311021588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_110
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebfb4b058d6f3170800000000000000
+      internalID: 8160361468006235115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_111
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 288
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c5099f964d501d0800000000000000
+      internalID: -3385065993275417497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30e1338fb3bd5e20800000000000000
+      internalID: 3341024133699985471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f88f81a6c9f747f0800000000000000
+      internalID: -628258991485515534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f82fb124e7d18b0800000000000000
+      internalID: -5179845174004379795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_115
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a869be48d716d4790800000000000000
+      internalID: -7544266609046874486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7765ede294e47f640800000000000000
+      internalID: 5113641978128389751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_117
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57832396567c62a50800000000000000
+      internalID: 6496098750899042421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd58d7f500f882660800000000000000
+      internalID: 7361290822701909468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_119
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbded436332850f0800000000000000
+      internalID: -1128112990934082618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_120
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2db119ce64349330800000000000000
+      internalID: 3716653242911931694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b864ea3c1b2b7a6c0800000000000000
+      internalID: -4132137656527206773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_122
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb22c376f23579360800000000000000
+      internalID: 7176295994298737340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38a7d75f00e8e1a0800000000000000
+      internalID: -6779922882503399363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd348b50cd4bc9bd0800000000000000
+      internalID: -2622022025954704419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_125
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a7313d949f33bd0800000000000000
+      internalID: -2651501660121892323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6163920201ad01c60800000000000000
+      internalID: 7786963518517491222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3e2b0642bcebd40800000000000000
+      internalID: 5602138343597073391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_128
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7518c3043707eabe0800000000000000
+      internalID: -1464109188547575465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7209aac2961bb5f30800000000000000
+      internalID: 4565437712549187623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_130
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32846e22afd85e30800000000000000
+      internalID: 4492586515958104635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_131
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de063764ea5ecefa0800000000000000
+      internalID: -5769984485899411219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_132
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d69593786362790800000000000000
+      internalID: -7555291370456781460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_133
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bfb1519a5645a50800000000000000
+      internalID: 6508939138335243137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_134
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8055032746452bfc0800000000000000
+      internalID: -3480626771614739192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_135
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bc62d8ea1131e70800000000000000
+      internalID: 9084624314726534047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_136
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f0386b228b0b400800000000000000
+      internalID: 337972431283228557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_137
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493758d423f554350800000000000000
+      internalID: 6000306748194648980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuel_48x48_138
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08b20da79f5b9d10800000000000000
+      internalID: 2133403953537398794
       vertices: []
       indices: 
       edges: []
@@ -432,6 +2399,97 @@ TextureImporter:
       Bob_idle_anim_48x48_7: -8905050139056182904
       Bob_idle_anim_48x48_8: 3792459370451621365
       Bob_idle_anim_48x48_9: -142127553761280378
+      Samuel_48x48_0: 6421428041129071074
+      Samuel_48x48_1: 2117036215012028622
+      Samuel_48x48_10: 275378746085911571
+      Samuel_48x48_100: 1669010414073608113
+      Samuel_48x48_101: 8461923806214966406
+      Samuel_48x48_102: 8948366128200021343
+      Samuel_48x48_103: -7442309806007096259
+      Samuel_48x48_104: -814003817416156851
+      Samuel_48x48_105: 1162174275001018919
+      Samuel_48x48_106: 1263596361683798883
+      Samuel_48x48_107: -4079634721550398944
+      Samuel_48x48_108: -3822693371923626598
+      Samuel_48x48_109: 3770648883311021588
+      Samuel_48x48_11: -3928458609929106211
+      Samuel_48x48_110: 8160361468006235115
+      Samuel_48x48_111: -3385065993275417497
+      Samuel_48x48_112: 3341024133699985471
+      Samuel_48x48_113: -628258991485515534
+      Samuel_48x48_114: -5179845174004379795
+      Samuel_48x48_115: -7544266609046874486
+      Samuel_48x48_116: 5113641978128389751
+      Samuel_48x48_117: 6496098750899042421
+      Samuel_48x48_118: 7361290822701909468
+      Samuel_48x48_119: -1128112990934082618
+      Samuel_48x48_12: 6564203310745547563
+      Samuel_48x48_120: 3716653242911931694
+      Samuel_48x48_121: -4132137656527206773
+      Samuel_48x48_122: 7176295994298737340
+      Samuel_48x48_123: -6779922882503399363
+      Samuel_48x48_124: -2622022025954704419
+      Samuel_48x48_125: -2651501660121892323
+      Samuel_48x48_126: 7786963518517491222
+      Samuel_48x48_127: 5602138343597073391
+      Samuel_48x48_128: -1464109188547575465
+      Samuel_48x48_129: 4565437712549187623
+      Samuel_48x48_13: -2772330914775944288
+      Samuel_48x48_130: 4492586515958104635
+      Samuel_48x48_131: -5769984485899411219
+      Samuel_48x48_132: -7555291370456781460
+      Samuel_48x48_133: 6508939138335243137
+      Samuel_48x48_134: -3480626771614739192
+      Samuel_48x48_135: 9084624314726534047
+      Samuel_48x48_136: 337972431283228557
+      Samuel_48x48_137: 6000306748194648980
+      Samuel_48x48_138: 2133403953537398794
+      Samuel_48x48_14: 2599678408611876157
+      Samuel_48x48_15: 2809478071809707107
+      Samuel_48x48_16: -8971475490295040520
+      Samuel_48x48_17: 172280777351764882
+      Samuel_48x48_18: 2170895341849301379
+      Samuel_48x48_19: 665271478725376089
+      Samuel_48x48_2: 3244577849643566321
+      Samuel_48x48_20: 1081452888306116113
+      Samuel_48x48_21: -4896381389447632133
+      Samuel_48x48_22: 3320179207906194763
+      Samuel_48x48_23: 5924638438174606662
+      Samuel_48x48_24: -508499420639737115
+      Samuel_48x48_25: -6822215812266119145
+      Samuel_48x48_26: -2716237922468640387
+      Samuel_48x48_27: -2053176805206350147
+      Samuel_48x48_28: -7512255010764850735
+      Samuel_48x48_29: -527760354973524226
+      Samuel_48x48_3: 1576881849659778036
+      Samuel_48x48_30: 4138324242503905165
+      Samuel_48x48_31: 7708313065709027887
+      Samuel_48x48_32: 1099594022117575144
+      Samuel_48x48_33: -4984614474671756194
+      Samuel_48x48_34: -8175425999951668016
+      Samuel_48x48_35: -5636966537848909476
+      Samuel_48x48_36: -7484718003496190559
+      Samuel_48x48_37: -1137672759798811450
+      Samuel_48x48_38: 3809208462374974081
+      Samuel_48x48_39: -3530612003516905113
+      Samuel_48x48_4: 1502374918656496380
+      Samuel_48x48_40: 8274440580991154570
+      Samuel_48x48_41: -6427467164350059688
+      Samuel_48x48_42: -61946345595812449
+      Samuel_48x48_43: 5054825394537661653
+      Samuel_48x48_44: -4118573461687311154
+      Samuel_48x48_45: 4388773665969465344
+      Samuel_48x48_46: 6189519051213897460
+      Samuel_48x48_47: 8021928956392143784
+      Samuel_48x48_48: 2890578940740439697
+      Samuel_48x48_49: 662509822886853012
+      Samuel_48x48_5: 2851711415051680809
+      Samuel_48x48_50: -7007209434844819524
+      Samuel_48x48_51: -8153065344054209031
+      Samuel_48x48_6: -6226858238288208635
+      Samuel_48x48_7: -5424880469896330363
+      Samuel_48x48_8: 4820056435268179306
+      Samuel_48x48_9: 2951991808280381514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

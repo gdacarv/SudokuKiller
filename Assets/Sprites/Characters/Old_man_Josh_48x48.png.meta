@@ -1,7 +1,280 @@
 fileFormatVersion: 2
 guid: a27a5bc693bdc4c6faefa9c7a3c88c26
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1682184048765216677
+    second: Old_man_Josh_48x48_0
+  - first:
+      213: -3623014173037667338
+    second: Old_man_Josh_48x48_1
+  - first:
+      213: 6044589156242267614
+    second: Old_man_Josh_48x48_2
+  - first:
+      213: -659920587522272610
+    second: Old_man_Josh_48x48_3
+  - first:
+      213: -6942233639834120699
+    second: Old_man_Josh_48x48_4
+  - first:
+      213: -1996246716377207690
+    second: Old_man_Josh_48x48_5
+  - first:
+      213: 7193357966044509029
+    second: Old_man_Josh_48x48_6
+  - first:
+      213: 6423620312865990385
+    second: Old_man_Josh_48x48_7
+  - first:
+      213: -659061016567353283
+    second: Old_man_Josh_48x48_8
+  - first:
+      213: 195066429841541529
+    second: Old_man_Josh_48x48_9
+  - first:
+      213: -7663705786863036738
+    second: Old_man_Josh_48x48_10
+  - first:
+      213: 8959503394185137559
+    second: Old_man_Josh_48x48_11
+  - first:
+      213: 689261024411655759
+    second: Old_man_Josh_48x48_12
+  - first:
+      213: -1292057896904163529
+    second: Old_man_Josh_48x48_13
+  - first:
+      213: 8815832863383332431
+    second: Old_man_Josh_48x48_14
+  - first:
+      213: -6516066248693999206
+    second: Old_man_Josh_48x48_15
+  - first:
+      213: -153769715117103764
+    second: Old_man_Josh_48x48_16
+  - first:
+      213: -3467833880015841996
+    second: Old_man_Josh_48x48_17
+  - first:
+      213: -1902212147917407613
+    second: Old_man_Josh_48x48_18
+  - first:
+      213: -8585872213119496438
+    second: Old_man_Josh_48x48_19
+  - first:
+      213: 2412656084337508177
+    second: Old_man_Josh_48x48_20
+  - first:
+      213: -8323978367080961513
+    second: Old_man_Josh_48x48_21
+  - first:
+      213: -7552413369842803566
+    second: Old_man_Josh_48x48_22
+  - first:
+      213: -6810480729573621043
+    second: Old_man_Josh_48x48_23
+  - first:
+      213: -1829917234220265159
+    second: Old_man_Josh_48x48_24
+  - first:
+      213: -5751134542135688915
+    second: Old_man_Josh_48x48_25
+  - first:
+      213: 6135300545110719671
+    second: Old_man_Josh_48x48_26
+  - first:
+      213: -7328183052210159850
+    second: Old_man_Josh_48x48_27
+  - first:
+      213: 6437798417510988580
+    second: Old_man_Josh_48x48_28
+  - first:
+      213: 2082393335962217304
+    second: Old_man_Josh_48x48_29
+  - first:
+      213: -1008051371133533369
+    second: Old_man_Josh_48x48_30
+  - first:
+      213: -6638743617993262942
+    second: Old_man_Josh_48x48_31
+  - first:
+      213: 8418907018769503227
+    second: Old_man_Josh_48x48_32
+  - first:
+      213: -8000012584527155858
+    second: Old_man_Josh_48x48_33
+  - first:
+      213: 1372508012913339267
+    second: Old_man_Josh_48x48_34
+  - first:
+      213: -5116853451594845792
+    second: Old_man_Josh_48x48_35
+  - first:
+      213: 2398527103540720923
+    second: Old_man_Josh_48x48_36
+  - first:
+      213: -2113782170182674888
+    second: Old_man_Josh_48x48_37
+  - first:
+      213: -8424343991690630783
+    second: Old_man_Josh_48x48_38
+  - first:
+      213: 6081191265692496753
+    second: Old_man_Josh_48x48_39
+  - first:
+      213: -3671349944465218774
+    second: Old_man_Josh_48x48_40
+  - first:
+      213: -2899497959453191843
+    second: Old_man_Josh_48x48_41
+  - first:
+      213: 8334975479824536412
+    second: Old_man_Josh_48x48_42
+  - first:
+      213: -549164586457750548
+    second: Old_man_Josh_48x48_43
+  - first:
+      213: 8579049085929792554
+    second: Old_man_Josh_48x48_44
+  - first:
+      213: -6485028388971668427
+    second: Old_man_Josh_48x48_45
+  - first:
+      213: 7004776729330630142
+    second: Old_man_Josh_48x48_46
+  - first:
+      213: -2898123478416743285
+    second: Old_man_Josh_48x48_47
+  - first:
+      213: -2170260030317591282
+    second: Old_man_Josh_48x48_48
+  - first:
+      213: -2133581634341804536
+    second: Old_man_Josh_48x48_49
+  - first:
+      213: -8974463162240569246
+    second: Old_man_Josh_48x48_50
+  - first:
+      213: -4138777019230975831
+    second: Old_man_Josh_48x48_51
+  - first:
+      213: 8573392170450592827
+    second: Old_man_Josh_48x48_100
+  - first:
+      213: 4434876464134279731
+    second: Old_man_Josh_48x48_101
+  - first:
+      213: 4409205870481920794
+    second: Old_man_Josh_48x48_102
+  - first:
+      213: 4682884856577694111
+    second: Old_man_Josh_48x48_103
+  - first:
+      213: -583081199269541445
+    second: Old_man_Josh_48x48_104
+  - first:
+      213: -2063243754928838411
+    second: Old_man_Josh_48x48_105
+  - first:
+      213: -3827454957560662420
+    second: Old_man_Josh_48x48_106
+  - first:
+      213: 4079971526577171000
+    second: Old_man_Josh_48x48_107
+  - first:
+      213: 6064011402193410537
+    second: Old_man_Josh_48x48_108
+  - first:
+      213: -674962584407205479
+    second: Old_man_Josh_48x48_109
+  - first:
+      213: -9148862355868614970
+    second: Old_man_Josh_48x48_110
+  - first:
+      213: -3463207665356172150
+    second: Old_man_Josh_48x48_111
+  - first:
+      213: 4564567821940456704
+    second: Old_man_Josh_48x48_112
+  - first:
+      213: -3369930331280858751
+    second: Old_man_Josh_48x48_113
+  - first:
+      213: -8604913366168915480
+    second: Old_man_Josh_48x48_114
+  - first:
+      213: -7450479634745055400
+    second: Old_man_Josh_48x48_115
+  - first:
+      213: 7481372168658660611
+    second: Old_man_Josh_48x48_116
+  - first:
+      213: -7698174536551485408
+    second: Old_man_Josh_48x48_117
+  - first:
+      213: -2268689870359404955
+    second: Old_man_Josh_48x48_118
+  - first:
+      213: 8103065395555149344
+    second: Old_man_Josh_48x48_119
+  - first:
+      213: -1558930913244670811
+    second: Old_man_Josh_48x48_120
+  - first:
+      213: -414250506320276518
+    second: Old_man_Josh_48x48_121
+  - first:
+      213: 4363881861422656567
+    second: Old_man_Josh_48x48_122
+  - first:
+      213: -4654929629531887221
+    second: Old_man_Josh_48x48_123
+  - first:
+      213: -29723255258153351
+    second: Old_man_Josh_48x48_124
+  - first:
+      213: 8251661402907164268
+    second: Old_man_Josh_48x48_125
+  - first:
+      213: -1320578283093525582
+    second: Old_man_Josh_48x48_126
+  - first:
+      213: 2619506652402596493
+    second: Old_man_Josh_48x48_127
+  - first:
+      213: 8000747443855643243
+    second: Old_man_Josh_48x48_128
+  - first:
+      213: 4138516266336712480
+    second: Old_man_Josh_48x48_129
+  - first:
+      213: -5104091433931682667
+    second: Old_man_Josh_48x48_130
+  - first:
+      213: -4942280705653991125
+    second: Old_man_Josh_48x48_131
+  - first:
+      213: 80511337804835203
+    second: Old_man_Josh_48x48_132
+  - first:
+      213: -4530006972671553440
+    second: Old_man_Josh_48x48_133
+  - first:
+      213: -6909736481044612166
+    second: Old_man_Josh_48x48_134
+  - first:
+      213: 3093055189413288522
+    second: Old_man_Josh_48x48_135
+  - first:
+      213: -5012678302964359135
+    second: Old_man_Josh_48x48_136
+  - first:
+      213: 1004937312906056734
+    second: Old_man_Josh_48x48_137
+  - first:
+      213: 8380345087738646580
+    second: Old_man_Josh_48x48_138
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,309 +370,1805 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_0
+      name: Old_man_Josh_48x48_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a598e2d499c3a8b00800000000000000
-      internalID: 831543710325836122
+      spriteID: b58558e258ea7a8e0800000000000000
+      internalID: -1682184048765216677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_1
+      name: Old_man_Josh_48x48_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bdc474a614c35e20800000000000000
-      internalID: 3338227350339112376
+      spriteID: 6fb52ef1ec778bdc0800000000000000
+      internalID: -3623014173037667338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_2
+      name: Old_man_Josh_48x48_2
       rect:
         serializedVersion: 2
-        x: 98
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 915effbaeeef1b390800000000000000
-      internalID: -7804176378215013095
+      spriteID: edd9ffedfc1b2e350800000000000000
+      internalID: 6044589156242267614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_3
+      name: Old_man_Josh_48x48_3
       rect:
         serializedVersion: 2
-        x: 146
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 768
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c7458cb0a4323200800000000000000
-      internalID: 158246801873651653
+      spriteID: e9294c8d8bd77d6f0800000000000000
+      internalID: -659920587522272610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_4
+      name: Old_man_Josh_48x48_4
       rect:
         serializedVersion: 2
-        x: 194
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cf30a8b5c0258a80800000000000000
-      internalID: -8465323890994823232
+      spriteID: 50e8bed394b38af90800000000000000
+      internalID: -6942233639834120699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_5
+      name: Old_man_Josh_48x48_5
       rect:
         serializedVersion: 2
-        x: 242
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 301a6d73cb0311c80800000000000000
-      internalID: -8353842248846761725
+      spriteID: 67ceb422038eb44e0800000000000000
+      internalID: -1996246716377207690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_6
+      name: Old_man_Josh_48x48_6
       rect:
         serializedVersion: 2
-        x: 287
-        y: 0
-        width: 290
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e06046acff51ed6c0800000000000000
-      internalID: -4116828821013658098
+      spriteID: 5633f4445f0f3d360800000000000000
+      internalID: 7193357966044509029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_7
+      name: Old_man_Josh_48x48_7
       rect:
         serializedVersion: 2
-        x: 581
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 889638a5418ea6480800000000000000
-      internalID: -8905050139056182904
+      spriteID: 1f66c5804a8452950800000000000000
+      internalID: 6423620312865990385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_8
+      name: Old_man_Josh_48x48_8
       rect:
         serializedVersion: 2
-        x: 629
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5ded044b581a430800000000000000
-      internalID: 3792459370451621365
+      spriteID: d30f13e4f7b8ad6f0800000000000000
+      internalID: -659061016567353283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_9
+      name: Old_man_Josh_48x48_9
       rect:
         serializedVersion: 2
-        x: 677
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68e734d2ebf070ef0800000000000000
-      internalID: -142127553761280378
+      spriteID: 9990f4a62e305b200800000000000000
+      internalID: 195066429841541529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_10
+      name: Old_man_Josh_48x48_10
       rect:
         serializedVersion: 2
-        x: 725
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22d312fdcca099800800000000000000
-      internalID: 619538298773257506
+      spriteID: eb65ceed03c05a590800000000000000
+      internalID: -7663705786863036738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_11
+      name: Old_man_Josh_48x48_11
       rect:
         serializedVersion: 2
-        x: 773
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73d87a096a90c0730800000000000000
-      internalID: 3966555982802685239
+      spriteID: 79dcf461edc865c70800000000000000
+      internalID: 8959503394185137559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_12
+      name: Old_man_Josh_48x48_12
       rect:
         serializedVersion: 2
-        x: 821
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fe025f471ee78380800000000000000
-      internalID: -8968938349002617098
+      spriteID: f4e1495ff3fb09900800000000000000
+      internalID: 689261024411655759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_13
+      name: Old_man_Josh_48x48_13
       rect:
         serializedVersion: 2
-        x: 863
-        y: 0
-        width: 289
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 432
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aea74e314e15c71c0800000000000000
-      internalID: -4504635487249204502
+      spriteID: 73ff9c93030b11ee0800000000000000
+      internalID: -1292057896904163529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46ad2de741285a70800000000000000
+      internalID: 8815832863383332431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a999ea935484295a0800000000000000
+      internalID: -6516066248693999206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c656b314243bdddf0800000000000000
+      internalID: -153769715117103764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_17
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4355791a577cfdfc0800000000000000
+      internalID: -3467833880015841996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a33fb312cf995e0800000000000000
+      internalID: -1902212147917407613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f8d1a46bad8d880800000000000000
+      internalID: -8585872213119496438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f3f180de97b7120800000000000000
+      internalID: 2412656084337508177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a6a1807c94b7c80800000000000000
+      internalID: -8323978367080961513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cdb95fd00703790800000000000000
+      internalID: -7552413369842803566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc20f142cdf4c71a0800000000000000
+      internalID: -6810480729573621043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_24
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9319fe588f3da96e0800000000000000
+      internalID: -1829917234220265159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d210680da9ddf20b0800000000000000
+      internalID: -5751134542135688915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcb59de657f42550800000000000000
+      internalID: 6135300545110719671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 672
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fb9f327501d4a90800000000000000
+      internalID: -7328183052210159850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b70534d87a75950800000000000000
+      internalID: 6437798417510988580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b2ba0c4b526ec10800000000000000
+      internalID: 2082393335962217304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7438d3c6e9ea202f0800000000000000
+      internalID: -1008051371133533369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8be9e5ad17ed3a0800000000000000
+      internalID: -6638743617993262942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf39cca0457f5d470800000000000000
+      internalID: 8418907018769503227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6daa94b0fe3af090800000000000000
+      internalID: -8000012584527155858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ba31114c02c0310800000000000000
+      internalID: 1372508012913339267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a135f165e84df8b0800000000000000
+      internalID: -5116853451594845792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15f0b651b7494120800000000000000
+      internalID: 2398527103540720923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83615b5c0565aa2e0800000000000000
+      internalID: -2113782170182674888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189659d06c7b61b80800000000000000
+      internalID: -8424343991690630783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1733fc29c3bb46450800000000000000
+      internalID: 6081191265692496753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_40
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23200a5daebc0dc0800000000000000
+      internalID: -3671349944465218774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5192d3d7f9e2c7d0800000000000000
+      internalID: -2899497959453191843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53588ec908cba370800000000000000
+      internalID: 8334975479824536412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_43
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce326fcd7b9f068f0800000000000000
+      internalID: -549164586457750548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a242c7d90b7ee0770800000000000000
+      internalID: 8579049085929792554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c15051a0d8006a0800000000000000
+      internalID: -6485028388971668427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdbcaa8257f53160800000000000000
+      internalID: 7004776729330630142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8420c12d0cc7c7d0800000000000000
+      internalID: -2898123478416743285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0501be3000b1e1e0800000000000000
+      internalID: -2170260030317591282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80662c9cecef362e0800000000000000
+      internalID: -2133581634341804536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26072dc7d4d447380800000000000000
+      internalID: -8974463162240569246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_51
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 576
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8003caa3c1096c0800000000000000
+      internalID: -4138777019230975831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_109
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9999ab70b1d02a6f0800000000000000
+      internalID: -674962584407205479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_110
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cef18bf826b80180800000000000000
+      internalID: -9148862355868614970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_111
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84190b2af630ffc0800000000000000
+      internalID: -3463207665356172150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d70fbff3a985f30800000000000000
+      internalID: 4564567821940456704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181a036e73a9b31d0800000000000000
+      internalID: -3369930331280858751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1bd7e52e4359880800000000000000
+      internalID: -8604913366168915480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_115
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8572dbc1f349a9890800000000000000
+      internalID: -7450479634745055400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30da461795c23d760800000000000000
+      internalID: 7481372168658660611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_117
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02034e1bb079a2590800000000000000
+      internalID: -7698174536551485408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e53bb359ef380e0800000000000000
+      internalID: -2268689870359404955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_119
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02623dd9b0fd37070800000000000000
+      internalID: 8103065395555149344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_120
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a41dae08909d5ae0800000000000000
+      internalID: -1558930913244670811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad311cafb59404af0800000000000000
+      internalID: -414250506320276518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_122
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c2edf9e6f9f8c30800000000000000
+      internalID: 4363881861422656567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89af413a2e566fb0800000000000000
+      internalID: -4654929629531887221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ef4c85bd6669ff0800000000000000
+      internalID: -29723255258153351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_125
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e3517a35ac38270800000000000000
+      internalID: 8251661402907164268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb7d1a5c0d5cade0800000000000000
+      internalID: -1320578283093525582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8aba3feb6b5a5420800000000000000
+      internalID: 2619506652402596493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_128
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6251a0196d580f60800000000000000
+      internalID: 8000747443855643243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027fc201e96fe6930800000000000000
+      internalID: 4138516266336712480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_130
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c436b22ef9a29b0800000000000000
+      internalID: -5104091433931682667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_131
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b291a3f22ed796bb0800000000000000
+      internalID: -4942280705653991125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_132
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389af3a92a80e1100800000000000000
+      internalID: 80511337804835203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_133
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0609edbc8ae2221c0800000000000000
+      internalID: -4530006972671553440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_134
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb37c3a74fab10a0800000000000000
+      internalID: -6909736481044612166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_135
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a58ab9e4dbcea20800000000000000
+      internalID: 3093055189413288522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_136
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120608a44a36f6ab0800000000000000
+      internalID: -5012678302964359135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_137
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e141d45692142fd00800000000000000
+      internalID: 1004937312906056734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_man_Josh_48x48_138
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 96
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4301ad1d477fc4470800000000000000
+      internalID: 8380345087738646580
       vertices: []
       indices: 
       edges: []
@@ -432,6 +2201,97 @@ TextureImporter:
       Bob_idle_anim_48x48_7: -8905050139056182904
       Bob_idle_anim_48x48_8: 3792459370451621365
       Bob_idle_anim_48x48_9: -142127553761280378
+      Old_man_Josh_48x48_0: -1682184048765216677
+      Old_man_Josh_48x48_1: -3623014173037667338
+      Old_man_Josh_48x48_10: -7663705786863036738
+      Old_man_Josh_48x48_100: 8573392170450592827
+      Old_man_Josh_48x48_101: 4434876464134279731
+      Old_man_Josh_48x48_102: 4409205870481920794
+      Old_man_Josh_48x48_103: 4682884856577694111
+      Old_man_Josh_48x48_104: -583081199269541445
+      Old_man_Josh_48x48_105: -2063243754928838411
+      Old_man_Josh_48x48_106: -3827454957560662420
+      Old_man_Josh_48x48_107: 4079971526577171000
+      Old_man_Josh_48x48_108: 6064011402193410537
+      Old_man_Josh_48x48_109: -674962584407205479
+      Old_man_Josh_48x48_11: 8959503394185137559
+      Old_man_Josh_48x48_110: -9148862355868614970
+      Old_man_Josh_48x48_111: -3463207665356172150
+      Old_man_Josh_48x48_112: 4564567821940456704
+      Old_man_Josh_48x48_113: -3369930331280858751
+      Old_man_Josh_48x48_114: -8604913366168915480
+      Old_man_Josh_48x48_115: -7450479634745055400
+      Old_man_Josh_48x48_116: 7481372168658660611
+      Old_man_Josh_48x48_117: -7698174536551485408
+      Old_man_Josh_48x48_118: -2268689870359404955
+      Old_man_Josh_48x48_119: 8103065395555149344
+      Old_man_Josh_48x48_12: 689261024411655759
+      Old_man_Josh_48x48_120: -1558930913244670811
+      Old_man_Josh_48x48_121: -414250506320276518
+      Old_man_Josh_48x48_122: 4363881861422656567
+      Old_man_Josh_48x48_123: -4654929629531887221
+      Old_man_Josh_48x48_124: -29723255258153351
+      Old_man_Josh_48x48_125: 8251661402907164268
+      Old_man_Josh_48x48_126: -1320578283093525582
+      Old_man_Josh_48x48_127: 2619506652402596493
+      Old_man_Josh_48x48_128: 8000747443855643243
+      Old_man_Josh_48x48_129: 4138516266336712480
+      Old_man_Josh_48x48_13: -1292057896904163529
+      Old_man_Josh_48x48_130: -5104091433931682667
+      Old_man_Josh_48x48_131: -4942280705653991125
+      Old_man_Josh_48x48_132: 80511337804835203
+      Old_man_Josh_48x48_133: -4530006972671553440
+      Old_man_Josh_48x48_134: -6909736481044612166
+      Old_man_Josh_48x48_135: 3093055189413288522
+      Old_man_Josh_48x48_136: -5012678302964359135
+      Old_man_Josh_48x48_137: 1004937312906056734
+      Old_man_Josh_48x48_138: 8380345087738646580
+      Old_man_Josh_48x48_14: 8815832863383332431
+      Old_man_Josh_48x48_15: -6516066248693999206
+      Old_man_Josh_48x48_16: -153769715117103764
+      Old_man_Josh_48x48_17: -3467833880015841996
+      Old_man_Josh_48x48_18: -1902212147917407613
+      Old_man_Josh_48x48_19: -8585872213119496438
+      Old_man_Josh_48x48_2: 6044589156242267614
+      Old_man_Josh_48x48_20: 2412656084337508177
+      Old_man_Josh_48x48_21: -8323978367080961513
+      Old_man_Josh_48x48_22: -7552413369842803566
+      Old_man_Josh_48x48_23: -6810480729573621043
+      Old_man_Josh_48x48_24: -1829917234220265159
+      Old_man_Josh_48x48_25: -5751134542135688915
+      Old_man_Josh_48x48_26: 6135300545110719671
+      Old_man_Josh_48x48_27: -7328183052210159850
+      Old_man_Josh_48x48_28: 6437798417510988580
+      Old_man_Josh_48x48_29: 2082393335962217304
+      Old_man_Josh_48x48_3: -659920587522272610
+      Old_man_Josh_48x48_30: -1008051371133533369
+      Old_man_Josh_48x48_31: -6638743617993262942
+      Old_man_Josh_48x48_32: 8418907018769503227
+      Old_man_Josh_48x48_33: -8000012584527155858
+      Old_man_Josh_48x48_34: 1372508012913339267
+      Old_man_Josh_48x48_35: -5116853451594845792
+      Old_man_Josh_48x48_36: 2398527103540720923
+      Old_man_Josh_48x48_37: -2113782170182674888
+      Old_man_Josh_48x48_38: -8424343991690630783
+      Old_man_Josh_48x48_39: 6081191265692496753
+      Old_man_Josh_48x48_4: -6942233639834120699
+      Old_man_Josh_48x48_40: -3671349944465218774
+      Old_man_Josh_48x48_41: -2899497959453191843
+      Old_man_Josh_48x48_42: 8334975479824536412
+      Old_man_Josh_48x48_43: -549164586457750548
+      Old_man_Josh_48x48_44: 8579049085929792554
+      Old_man_Josh_48x48_45: -6485028388971668427
+      Old_man_Josh_48x48_46: 7004776729330630142
+      Old_man_Josh_48x48_47: -2898123478416743285
+      Old_man_Josh_48x48_48: -2170260030317591282
+      Old_man_Josh_48x48_49: -2133581634341804536
+      Old_man_Josh_48x48_5: -1996246716377207690
+      Old_man_Josh_48x48_50: -8974463162240569246
+      Old_man_Josh_48x48_51: -4138777019230975831
+      Old_man_Josh_48x48_6: 7193357966044509029
+      Old_man_Josh_48x48_7: 6423620312865990385
+      Old_man_Josh_48x48_8: -659061016567353283
+      Old_man_Josh_48x48_9: 195066429841541529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -111,6 +111,14 @@ MonoBehaviour:
     m_Localized: Helena
     m_Metadata:
       m_Items: []
+  - m_Id: 4657919789359104
+    m_Localized: "{0} \xE9 uma Crian\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4658726513401856
+    m_Localized: "O Assassino n\xE3o \xE9 uma Crian\xE7a!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

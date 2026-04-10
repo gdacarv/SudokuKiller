@@ -245,7 +245,7 @@ public static class LocalizationSetupTool
         EditorUtility.SetDirty(table);
     }
 
-    static void AddOrUpdateEntry(StringTable table, string key, string value)
+    internal static void AddOrUpdateEntry(StringTable table, string key, string value)
     {
         var entry = table.GetEntry(key);
         if (entry == null)
@@ -313,7 +313,7 @@ public static class LocalizationSetupTool
 
     // ─── LocalizedString factory ──────────────────────────────────────────────
 
-    static LocalizedString MakeLS(StringTableCollection collection, string key)
+    internal static LocalizedString MakeLS(StringTableCollection collection, string key)
     {
         var entry = collection.SharedData.GetEntry(key);
         if (entry == null)
@@ -336,7 +336,7 @@ public static class LocalizationSetupTool
 
     // ─── Reflection helpers ───────────────────────────────────────────────────
 
-    static void SetField(UnityEngine.Object target, string fieldName, object value)
+    internal static void SetField(UnityEngine.Object target, string fieldName, object value)
     {
         var type = target.GetType();
         FieldInfo field = null;

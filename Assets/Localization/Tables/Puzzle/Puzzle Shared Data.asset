@@ -103,6 +103,18 @@ MonoBehaviour:
     m_Key: name.hannah
     m_Metadata:
       m_Items: []
+  - m_Id: 4317873328611328
+    m_Key: name.ingrid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4657919789359104
+    m_Key: clue.isAKid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4658726513401856
+    m_Key: killer.notAKid
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

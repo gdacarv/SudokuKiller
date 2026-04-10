@@ -111,6 +111,14 @@ MonoBehaviour:
     m_Localized: Hannah
     m_Metadata:
       m_Items: []
+  - m_Id: 4657919789359104
+    m_Localized: '{0} is a Kid'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4658726513401856
+    m_Localized: The Killer is not a Kid!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
