@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class GridManager : MonoBehaviour
 {
@@ -15,8 +18,12 @@ public class GridManager : MonoBehaviour
     [Header("Validation Settings")]
     public bool preventInvalidPlacement = true;
     public bool highlightRuleViolations = false;
+    public bool startAtSolutionPositions = false;
 
     private Draggable[,] _occupants;
+#if UNITY_EDITOR
+    [System.NonSerialized] private bool _prevHighlightRuleViolations;
+#endif
     private bool[,] _blockedByMarker;
     private int[,] _cellSection;
     private readonly HashSet<GridEntity> _entities = new();
@@ -289,6 +296,54 @@ public bool AreAllDraggablesInSolutionCells()
             }
         return true;
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (Application.isPlaying) return;
+        if (highlightRuleViolations == _prevHighlightRuleViolations) return;
+        _prevHighlightRuleViolations = highlightRuleViolations;
+
+        EditorApplication.delayCall += () =>
+        {
+            if (this == null) return;
+            RefreshEditModeViolations();
+        };
+    }
+
+    public void RefreshEditModeViolations()
+    {
+        if (gridOverlay == null)
+            gridOverlay = GetComponent<GridOverlay>();
+        if (gridOverlay == null) return;
+
+        _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
+        _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
+        _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
+                _cellSection[r, c] = -1;
+
+        ApplyEntityMarkers();
+
+        var solutions = FindObjectsByType<SolutionPosition>(FindObjectsSortMode.None);
+        foreach (var sol in solutions)
+        {
+            var draggable = sol.GetComponent<Draggable>();
+            if (draggable == null) continue;
+
+            // Awake doesn't run in edit mode, so Entity may be null — initialize it here
+            draggable.EnsureEntityInitialized();
+
+            int r = sol.solutionRow;
+            int c = sol.solutionCol;
+            if (r >= 0 && r < gridOverlay.rows && c >= 0 && c < gridOverlay.cols)
+                _occupants[r, c] = draggable;
+        }
+
+        RefreshViolationHighlights();
+    }
+#endif
 
     public List<Draggable> GetInvalidDraggables()
     {

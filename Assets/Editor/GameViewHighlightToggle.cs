@@ -7,64 +7,48 @@ public static class GameViewHighlightToggle
 {
     static GameViewHighlightToggle()
     {
-        EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+        EditorApplication.update += EnsureToggleInGameViews;
     }
 
-    static void OnPlayModeStateChanged(PlayModeStateChange state)
+    static void EnsureToggleInGameViews()
     {
-        if (state == PlayModeStateChange.EnteredPlayMode)
-            AddToggleToGameViews();
-        else if (state == PlayModeStateChange.ExitingPlayMode)
-            RemoveToggleFromGameViews();
-    }
-
-    static void AddToggleToGameViews()
-    {
-        var gameViewType = typeof(EditorWindow).Assembly.GetType("UnityEditor.GameView");
-        if (gameViewType == null) return;
-
         var gm = Object.FindFirstObjectByType<GridManager>();
 
-        foreach (var gameView in Resources.FindObjectsOfTypeAll(gameViewType))
-        {
-            var root = ((EditorWindow)gameView).rootVisualElement;
+        var gameViewType = typeof(EditorWindow).Assembly.GetType("UnityEditor.GameView");
+        if (gameViewType != null)
+            foreach (var w in Resources.FindObjectsOfTypeAll(gameViewType))
+                EnsureToggleInWindow((EditorWindow)w, gm);
 
-            if (root.Q<Toggle>("highlight-violations-toggle") != null) continue;
-
-            var toggle = new Toggle("Highlight Violations")
-            {
-                name = "highlight-violations-toggle",
-                value = gm != null && gm.highlightRuleViolations
-            };
-
-            toggle.style.alignSelf = Align.FlexEnd;
-            toggle.style.top = 44;
-            toggle.style.position = Position.Absolute;
-            toggle.style.right = 4;
-            toggle.style.color = Color.white;
-            toggle.style.unityFontStyleAndWeight = FontStyle.Normal;
-
-            toggle.RegisterValueChangedCallback(evt =>
-            {
-                var g = Object.FindFirstObjectByType<GridManager>();
-                if (g == null) return;
-                g.highlightRuleViolations = evt.newValue;
-                g.RefreshViolationHighlights();
-            });
-
-            root.Add(toggle);
-        }
+        foreach (SceneView sv in SceneView.sceneViews)
+            EnsureToggleInWindow(sv, gm);
     }
 
-    static void RemoveToggleFromGameViews()
+    static void EnsureToggleInWindow(EditorWindow window, GridManager gm)
     {
-        var gameViewType = typeof(EditorWindow).Assembly.GetType("UnityEditor.GameView");
-        if (gameViewType == null) return;
+        var root = window.rootVisualElement;
+        if (root.Q<Toggle>("highlight-violations-toggle") != null) return;
 
-        foreach (var gameView in Resources.FindObjectsOfTypeAll(gameViewType))
+        var toggle = new Toggle("Highlight Violations")
         {
-            var root = ((EditorWindow)gameView).rootVisualElement;
-            root.Q<Toggle>("highlight-violations-toggle")?.RemoveFromHierarchy();
-        }
+            name = "highlight-violations-toggle",
+            value = gm != null && gm.highlightRuleViolations
+        };
+
+        toggle.style.alignSelf = Align.FlexEnd;
+        toggle.style.top = window is SceneView ? 5 : (Application.isPlaying ? 44 : 24);
+        toggle.style.position = Position.Absolute;
+        toggle.style.right = 5;
+        toggle.style.color = Color.white;
+        toggle.style.unityFontStyleAndWeight = FontStyle.Normal;
+
+        toggle.RegisterValueChangedCallback(evt =>
+        {
+            var g = Object.FindFirstObjectByType<GridManager>();
+            if (g == null) return;
+            g.highlightRuleViolations = evt.newValue;
+            g.RefreshViolationHighlights();
+        });
+
+        root.Add(toggle);
     }
 }

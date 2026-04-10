@@ -13,6 +13,7 @@ public class NameLabel : MonoBehaviour
     [SerializeField] private Color _color = Color.white;
     [SerializeField] private TextAlignmentOptions _alignment = TextAlignmentOptions.Center;
     [SerializeField] private FontStyles _fontStyle = FontStyles.Normal;
+    [SerializeField] private string _sortingLayerName = "UI";
     [SerializeField] private int _sortingOrder = 10;
 
     private GameObject _labelObject;
@@ -85,6 +86,8 @@ public class NameLabel : MonoBehaviour
         _textMesh.autoSizeTextContainer = true;
 
         _textMesh.fontStyle = _fontStyle;
+        var renderer = _textMesh.GetComponent<Renderer>();
+        if (renderer != null) renderer.sortingLayerName = _sortingLayerName;
         _textMesh.sortingOrder = _sortingOrder;
     }
 }

@@ -34,6 +34,12 @@ public class Draggable : MonoBehaviour
         if (inputProvider == null)
             inputProvider = FindFirstObjectByType<DragInputProvider>();
     }
+
+    public void EnsureEntityInitialized()
+    {
+        if (Entity == null)
+            Entity = GetComponent<GridEntity>();
+    }
 #endif
 
     void Awake()
@@ -50,8 +56,19 @@ public class Draggable : MonoBehaviour
         var solution = GetComponent<SolutionPosition>();
         if (solution != null)
         {
-            _spawnPosition = solution.uiPosition;
-            transform.position = _spawnPosition;
+            if (gridManager != null && gridManager.startAtSolutionPositions)
+            {
+                // Stay at solution cell position for debugging; treat it as the spawn origin
+                _spawnPosition = transform.position;
+                gridManager.TryPlace(this, solution.solutionRow, solution.solutionCol);
+                Entity.Row = solution.solutionRow;
+                Entity.Col = solution.solutionCol;
+            }
+            else
+            {
+                _spawnPosition = solution.uiPosition;
+                transform.position = _spawnPosition;
+            }
         }
 
         gridManager?.RegisterEntity(Entity);

@@ -41,6 +41,8 @@ public class SolutionPosition : MonoBehaviour
             solutionCol = newCol;
 #if UNITY_EDITOR
             EditorUtility.SetDirty(this);
+            if (gridManager != null && gridManager.highlightRuleViolations)
+                gridManager.RefreshEditModeViolations();
 #endif
         }
 
