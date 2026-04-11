@@ -119,6 +119,26 @@ MonoBehaviour:
     m_Key: clue.notAlone
     m_Metadata:
       m_Items: []
+  - m_Id: 5067272195399680
+    m_Key: name.alice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5067467356364800
+    m_Key: name.benjamin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5067497857343488
+    m_Key: name.camille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5067537837449216
+    m_Key: name.daphne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5067578002104320
+    m_Key: name.elena
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

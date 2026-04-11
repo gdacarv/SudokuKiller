@@ -15,38 +15,53 @@ MonoBehaviour:
   m_Variables:
   - name: victim
     variable:
-      rid: 6722194408310833675
+      rid: 6722194408310834014
   - name: adam
     variable:
-      rid: 6722194408310833676
+      rid: 6722194408310834015
   - name: bruno
     variable:
-      rid: 6722194408310833677
+      rid: 6722194408310834016
   - name: carla
     variable:
-      rid: 6722194408310833678
+      rid: 6722194408310834017
   - name: david
     variable:
-      rid: 6722194408310833679
+      rid: 6722194408310834018
   - name: edgar
     variable:
-      rid: 6722194408310833680
+      rid: 6722194408310834019
   - name: fatima
     variable:
-      rid: 6722194408310833681
+      rid: 6722194408310834020
   - name: gabriel
     variable:
-      rid: 6722194408310833682
+      rid: 6722194408310834021
   - name: hannah
     variable:
-      rid: 6722194408310833683
+      rid: 6722194408310834022
   - name: ingrid
     variable:
-      rid: 6722194408310833684
+      rid: 6722194408310834023
+  - name: alice
+    variable:
+      rid: 6722194408310834024
+  - name: benjamin
+    variable:
+      rid: 6722194408310834025
+  - name: camille
+    variable:
+      rid: 6722194408310834026
+  - name: daphne
+    variable:
+      rid: 6722194408310834027
+  - name: elena
+    variable:
+      rid: 6722194408310834028
   references:
     version: 2
     RefIds:
-    - rid: 6722194408310833675
+    - rid: 6722194408310834014
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -57,7 +72,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833676
+    - rid: 6722194408310834015
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -68,7 +83,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833677
+    - rid: 6722194408310834016
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -79,7 +94,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833678
+    - rid: 6722194408310834017
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -90,7 +105,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833679
+    - rid: 6722194408310834018
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -101,7 +116,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833680
+    - rid: 6722194408310834019
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -112,7 +127,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833681
+    - rid: 6722194408310834020
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -123,7 +138,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833682
+    - rid: 6722194408310834021
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -134,7 +149,7 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833683
+    - rid: 6722194408310834022
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
@@ -145,13 +160,68 @@ MonoBehaviour:
         m_FallbackState: 0
         m_WaitForCompletion: 0
         m_LocalVariables: []
-    - rid: 6722194408310833684
+    - rid: 6722194408310834023
       type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
           m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
         m_TableEntryReference:
           m_KeyId: 4317873328611328
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 6722194408310834024
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+        m_TableEntryReference:
+          m_KeyId: 5067272195399680
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 6722194408310834025
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+        m_TableEntryReference:
+          m_KeyId: 5067467356364800
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 6722194408310834026
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+        m_TableEntryReference:
+          m_KeyId: 5067497857343488
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 6722194408310834027
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+        m_TableEntryReference:
+          m_KeyId: 5067537837449216
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 6722194408310834028
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+        m_TableEntryReference:
+          m_KeyId: 5067578002104320
           m_Key: 
         m_FallbackState: 0
         m_WaitForCompletion: 0

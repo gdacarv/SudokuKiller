@@ -17,15 +17,16 @@ public class CameraAspectHandler : MonoBehaviour
     [Tooltip("Aspect ratio the game was designed for (width / height). Default: 16/9.")]
     [SerializeField] private float referenceAspect = 16f / 9f;
 
-    [Tooltip("Orthographic size at the reference aspect ratio.")]
-    [SerializeField] private float referenceOrthoSize = 3.5f;
-
     private Camera _cam;
+    private float _referenceOrthoSize;
+    private bool _referenceOrthoSizeCaptured;
     private float _lastAspect;
 
     private void Awake()
     {
         _cam = GetComponent<Camera>();
+        _referenceOrthoSize = _cam.orthographicSize;
+        _referenceOrthoSizeCaptured = true;
     }
 
     private void Start()
@@ -51,18 +52,26 @@ public class CameraAspectHandler : MonoBehaviour
         if (current < referenceAspect)
         {
             // Narrower than reference: scale up ortho size to preserve horizontal extent.
-            _cam.orthographicSize = referenceOrthoSize * (referenceAspect / current);
+            _cam.orthographicSize = _referenceOrthoSize * (referenceAspect / current);
         }
         else
         {
             // Wider than or equal to reference: keep ortho size fixed, extra width is a bonus.
-            _cam.orthographicSize = referenceOrthoSize;
+            _cam.orthographicSize = _referenceOrthoSize;
         }
     }
 
 #if UNITY_EDITOR
     private void OnValidate()
     {
+        if (_cam == null)
+            _cam = GetComponent<Camera>();
+        // In edit mode Awake hasn't run yet — capture initial ortho size on first call.
+        if (!_referenceOrthoSizeCaptured)
+        {
+            _referenceOrthoSize = _cam.orthographicSize;
+            _referenceOrthoSizeCaptured = true;
+        }
         UpdateOrthoSize();
     }
 #endif
