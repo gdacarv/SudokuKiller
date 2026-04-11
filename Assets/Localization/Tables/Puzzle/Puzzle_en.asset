@@ -119,6 +119,10 @@ MonoBehaviour:
     m_Localized: The Killer is not a Kid!
     m_Metadata:
       m_Items: []
+  - m_Id: 5030918212280320
+    m_Localized: There were other people in the same room of {0}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

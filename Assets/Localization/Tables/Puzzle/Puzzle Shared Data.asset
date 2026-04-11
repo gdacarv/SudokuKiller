@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: killer.notAKid
     m_Metadata:
       m_Items: []
+  - m_Id: 5030918212280320
+    m_Key: clue.notAlone
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

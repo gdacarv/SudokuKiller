@@ -160,7 +160,7 @@ public static class LocalizationSetupTool
         Debug.Log("[LocalizationSetup] Tooltip keys cleanup complete.");
     }
 
-    [MenuItem("Localization/Sync Variable Groups")]
+    [MenuItem("Tools/Localization/Sync Variable Groups")]
     public static void SyncVariableGroupsMenuItem()
     {
         const string configPath = "Assets/Localization/VariableSyncConfig.asset";

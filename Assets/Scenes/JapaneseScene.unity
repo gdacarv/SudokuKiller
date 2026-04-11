@@ -345,6 +345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [3,9]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 9
@@ -522,6 +526,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [3,5]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 5
@@ -613,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -658,6 +670,10 @@ PrefabInstance:
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
@@ -858,6 +874,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -948,7 +976,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1156,6 +1188,10 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [6,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -1441,6 +1477,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [9,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -2989,6 +3033,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [4,3]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 3
@@ -3211,7 +3263,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3561,6 +3617,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3636,6 +3700,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3852,6 +3928,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3930,6 +4018,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4460,6 +4560,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4673,6 +4781,10 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [6,4]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -5894,6 +6006,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [3,4]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 4
@@ -6274,6 +6394,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [0,4]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 4
@@ -6412,6 +6540,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6453,6 +6593,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [1,3]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -6771,7 +6919,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7012,6 +7164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [6,2]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 2
@@ -7151,6 +7307,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7512,6 +7680,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7983,6 +8163,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8329,6 +8521,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8693,6 +8897,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8880,6 +9096,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1100170805}
   - {fileID: 672305990}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8922,8 +9139,8 @@ MonoBehaviour:
   cellHeight: 0.48
   lineColor: {r: 1, g: 1, b: 1, a: 0.33333334}
   lineWidth: 0.02
-  sortingOrder: 10
-  sortingLayerName: Default
+  sortingOrder: 5
+  sortingLayerName: UI
   offset: {x: 0, y: -0.39}
 --- !u!1 &369473994
 GameObject:
@@ -9452,7 +9669,7 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionCol
-      value: 13
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionRow
@@ -9480,7 +9697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.25
+      value: 0.342
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -9534,6 +9751,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2110923469, guid: 892217fb4e0344bf2ad4577ecbdd280c, type: 3}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
       value: 20
@@ -9602,6 +9827,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0.48
       objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6667097287794317257, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: tooltipUI
       value: 
@@ -9620,7 +9849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8799999
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9802,6 +10031,10 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [9,9]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -10125,7 +10358,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10302,6 +10539,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 14
@@ -10388,6 +10629,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10554,7 +10807,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11436,6 +11693,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11519,6 +11788,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11647,6 +11928,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [9,4]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 4
@@ -11773,9 +12062,25 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: row
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12158,6 +12463,10 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12334,6 +12643,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12587,6 +12908,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [4,7]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 7
@@ -12716,6 +13045,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13619,6 +13960,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13697,6 +14050,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13770,6 +14135,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13932,6 +14309,10 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14019,6 +14400,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15212,7 +15601,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15414,6 +15811,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [2,6]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 6
@@ -15494,6 +15899,10 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [6,0]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -15874,6 +16283,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [3,8]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 8
@@ -16235,6 +16652,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16308,6 +16729,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16472,6 +16905,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16592,6 +17037,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [4,6]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -16828,6 +17281,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17049,6 +17514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [6,1]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 1
@@ -17129,6 +17598,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [5,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -17269,6 +17746,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17468,11 +17957,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionCol
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionRow
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.x
@@ -17480,7 +17969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -17488,14 +17977,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[1].m_TableEntryReference.m_KeyId
       value: 4657919789359104
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[2].m_TableEntryReference.m_KeyId
+      value: 5030918212280320
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[1].m_TableReference.m_TableCollectionName
+      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[2].m_TableReference.m_TableCollectionName
       value: GUID:4af7bbab842694a17bf1b59daa179f12
       objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
@@ -17510,6 +18007,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1957540092, guid: 8b88c66620c7a492da3680c4bb5c7be3, type: 3}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619917107855281601, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: _offset.y
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 2619917107855281601, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: localizedName.m_TableEntryReference.m_KeyId
       value: 4289797903343616
@@ -17526,17 +18035,29 @@ PrefabInstance:
       propertyPath: m_text
       value: Fatima
       objectReference: {fileID: 0}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: rules.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824487254868341983, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'rules.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 915e18c78c28e48b0a0254f776f0f4bd, type: 2}
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.62
       objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.48000002
+      value: 0.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.96
+      value: 2.88
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17660,7 +18181,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17735,6 +18264,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17764,6 +18305,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [5,7]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -17894,6 +18443,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18349,7 +18910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.72
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: tooltipUI
@@ -18414,6 +18975,10 @@ PrefabInstance:
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18922,7 +19487,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19051,6 +19624,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [10,8]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -19185,6 +19766,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19312,6 +19905,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [9,2]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -19508,6 +20109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [6,3]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 3
@@ -19603,6 +20208,10 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [6,7]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -20209,7 +20818,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20286,6 +20903,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20361,6 +20986,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20850,6 +21487,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -22614,6 +23259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [6,6]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 6
@@ -22849,6 +23498,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23104,6 +23765,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23128,6 +23801,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [3,7]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -23602,11 +24283,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionCol
-      value: 4
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionRow
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.x
@@ -23630,7 +24311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -23780,6 +24461,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0.54
       objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6667097287794317257, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: tooltipUI
       value: 
@@ -23798,11 +24483,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4399999
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.88
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24024,7 +24709,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24152,6 +24845,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [5,3]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 3
@@ -24237,8 +24938,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100170804}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.30266517, y: 1.228626, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.3373349, y: 1.078626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24247,7 +24948,7 @@ Transform:
   - {fileID: 600950631}
   - {fileID: 1859685489}
   - {fileID: 628211397}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 368987997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1101514374 stripped
 Transform:
@@ -24273,6 +24974,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [5,4]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -24724,6 +25433,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24748,6 +25469,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [4,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -24969,6 +25698,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25323,6 +26064,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25438,6 +26191,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [2,3]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -25678,6 +26439,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25866,6 +26639,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 10
@@ -25959,7 +26736,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26035,6 +26816,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 10
@@ -26222,6 +27007,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26295,6 +27092,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26512,7 +27321,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26684,6 +27501,14 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26724,7 +27549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -26769,6 +27594,10 @@ PrefabInstance:
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26893,7 +27722,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27171,7 +28004,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27452,6 +28293,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27658,6 +28511,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [5,2]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -28037,6 +28898,10 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [6,8]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -28955,9 +29820,25 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: row
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29031,6 +29912,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29212,7 +30105,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29292,6 +30189,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29338,6 +30247,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [1,4]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -29472,6 +30389,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30049,6 +30978,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [0,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -30869,6 +31806,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30984,6 +31933,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [5,6]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -31114,6 +32071,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31769,6 +32738,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 10
@@ -31902,6 +32875,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [2,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -32217,6 +33198,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32686,6 +33679,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 11
@@ -33017,6 +34014,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [10,1]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -33633,6 +34638,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 14
@@ -33811,6 +34820,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 15
@@ -34081,7 +35094,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34168,6 +35189,10 @@ PrefabInstance:
     - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34285,6 +35310,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34868,6 +35905,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 10
@@ -35544,6 +36585,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35751,6 +36804,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [3,3]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 3
@@ -35885,6 +36946,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36244,6 +37317,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36315,12 +37400,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: row
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36391,6 +37488,10 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Col
       value: 15
@@ -36479,6 +37580,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36645,6 +37754,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36760,6 +37881,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37022,6 +38151,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37193,6 +38334,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37268,6 +38417,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37346,6 +38507,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37424,6 +38597,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37499,7 +38684,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37666,6 +38859,14 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37947,6 +39148,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -40330,12 +41539,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: row
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40412,7 +41633,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40450,6 +41675,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [1,6]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -40874,6 +42107,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -41332,6 +42573,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41368,6 +42621,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [10,5]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -41593,6 +42854,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41718,6 +42991,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [3,2]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -41921,6 +43202,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [2,4]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 4
@@ -42052,7 +43341,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42424,6 +43717,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42493,6 +43798,14 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42568,6 +43881,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -43962,6 +45283,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [3,1]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 1
@@ -44861,7 +46190,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592759554012994614, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0726652
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 592759554012994614, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -45030,6 +46359,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [4,2]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -45275,6 +46612,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45618,7 +46967,15 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46170,6 +47527,14 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -46250,6 +47615,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46424,6 +47801,18 @@ PrefabInstance:
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: hideGridCell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46764,12 +48153,20 @@ PrefabInstance:
       value: 'BlockedGridCell [0,2]'
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: row
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: gridManager
       value: 
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Row
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47263,7 +48660,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: hideGridCell
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47301,6 +48702,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [9,8]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -47487,6 +48896,14 @@ PrefabInstance:
     - target: {fileID: 3504807817566375843, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: m_Name
       value: 'SectionMarker [3,6]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
@@ -47781,6 +49198,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SectionMarker [4,4]'
       objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Col
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744235170737113672, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
+      propertyPath: Row
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4553746783223734825, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
       propertyPath: col
       value: 4
@@ -48023,11 +49448,11 @@ PrefabInstance:
       objectReference: {fileID: 368987998}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionCol
-      value: 14
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: solutionRow
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: uiPosition.x
@@ -48040,6 +49465,10 @@ PrefabInstance:
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Offset.y
       value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.342
       objectReference: {fileID: 0}
     - target: {fileID: 403783733533006872, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -48089,6 +49518,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2141901776, guid: 1dc3f8e439597435495e5f65dfe5c947, type: 3}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingOrder
       value: 20
@@ -48141,6 +49578,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0.53
       objectReference: {fileID: 0}
+    - target: {fileID: 6172635434101081224, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6667097287794317257, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: tooltipUI
       value: 
@@ -48159,11 +49600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.36
+      value: -0.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 6864220347082749830, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48223,4 +49664,3 @@ SceneRoots:
   - {fileID: 4808148110008624622}
   - {fileID: 298398630}
   - {fileID: 1549835613}
-  - {fileID: 1100170805}
