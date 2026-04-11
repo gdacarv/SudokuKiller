@@ -10,7 +10,6 @@ using UnityEngine;
 ///   - Wider ratio (e.g. 21:9): orthographic size stays at referenceOrthoSize
 ///     so the player simply gains horizontal space (default Unity behaviour).
 /// </summary>
-[ExecuteAlways]
 [RequireComponent(typeof(Camera))]
 public class CameraAspectHandler : MonoBehaviour
 {
@@ -19,14 +18,12 @@ public class CameraAspectHandler : MonoBehaviour
 
     private Camera _cam;
     private float _referenceOrthoSize;
-    private bool _referenceOrthoSizeCaptured;
     private float _lastAspect;
 
     private void Awake()
     {
         _cam = GetComponent<Camera>();
         _referenceOrthoSize = _cam.orthographicSize;
-        _referenceOrthoSizeCaptured = true;
     }
 
     private void Start()
@@ -60,19 +57,4 @@ public class CameraAspectHandler : MonoBehaviour
             _cam.orthographicSize = _referenceOrthoSize;
         }
     }
-
-#if UNITY_EDITOR
-    private void OnValidate()
-    {
-        if (_cam == null)
-            _cam = GetComponent<Camera>();
-        // In edit mode Awake hasn't run yet — capture initial ortho size on first call.
-        if (!_referenceOrthoSizeCaptured)
-        {
-            _referenceOrthoSize = _cam.orthographicSize;
-            _referenceOrthoSizeCaptured = true;
-        }
-        UpdateOrthoSize();
-    }
-#endif
 }

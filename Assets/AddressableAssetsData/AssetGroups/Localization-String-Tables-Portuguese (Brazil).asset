@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 413a407ea4e0748578627edb00ac479b
+    m_Address: Puzzle.IcecreamShop_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 87960ad69bcac4f24a2030528c599b2c
     m_Address: UI_pt-BR
     m_ReadOnly: 1

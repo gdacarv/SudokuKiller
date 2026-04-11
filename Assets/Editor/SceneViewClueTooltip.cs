@@ -127,13 +127,12 @@ private static List<string> BuildLines(HoverTooltip tooltip)
 private static string ResolveLocalizedString(LocalizedString ls, string charName)
     {
         // Try runtime path first (works when locale is initialized)
-        try
+        if (UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale != null)
         {
             string result = ls.GetLocalizedString(charName);
             if (!string.IsNullOrEmpty(result))
                 return Regex.Replace(result, @"\{[^}]+\}", charName);
         }
-        catch { }
 
         // Editor fallback: read directly from the string table by entry ID
         try

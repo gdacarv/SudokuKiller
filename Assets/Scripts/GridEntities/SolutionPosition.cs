@@ -30,7 +30,20 @@ public class SolutionPosition : MonoBehaviour
         if (gridManager == null) return;
 
         var cell = gridManager.WorldToCell(transform.position);
-        if (cell == null) return;
+        if (cell == null)
+        {
+            if (solutionRow != -1 || solutionCol != -1)
+            {
+                solutionRow = -1;
+                solutionCol = -1;
+#if UNITY_EDITOR
+                EditorUtility.SetDirty(this);
+                if (gridManager != null && gridManager.highlightRuleViolations)
+                    gridManager.RefreshEditModeViolations();
+#endif
+            }
+            return;
+        }
 
         int newRow = cell.Value.y;
         int newCol = cell.Value.x;

@@ -342,6 +342,12 @@ public bool AreAllDraggablesInSolutionCells()
         }
 
         RefreshViolationHighlights();
+
+        foreach (var sol in solutions)
+        {
+            if (sol.solutionRow < 0 || sol.solutionCol < 0)
+                sol.GetComponent<Draggable>()?.SetHighlight(false);
+        }
     }
 #endif
 
@@ -373,12 +379,9 @@ public bool AreAllDraggablesInSolutionCells()
                 var occ = _occupants[r, c];
                 if (occ == null) continue;
 
-                var sr = occ.GetComponent<SpriteRenderer>();
-                if (sr == null) continue;
-
                 if (!highlightRuleViolations)
                 {
-                    sr.color = Color.white;
+                    occ.SetHighlight(false);
                     continue;
                 }
 
@@ -389,7 +392,7 @@ public bool AreAllDraggablesInSolutionCells()
                 if (valid)
                     valid = CheckBoardRules(occ, r, c);
 
-                sr.color = valid ? Color.white : new Color(1f, 0.3f, 0.3f, 1f);
+                occ.SetHighlight(!valid);
             }
     }
 
@@ -423,9 +426,6 @@ public void UpdateDragHighlights(Draggable incoming, Vector2Int? targetCell)
                 var occ = _occupants[r, c];
                 if (occ == null || occ == incoming) continue;
 
-                var sr = occ.GetComponent<SpriteRenderer>();
-                if (sr == null) continue;
-
                 bool valid = true;
                 foreach (var rule in occ.rules)
                     if (!rule.CanPlace(this, occ, r, c))
@@ -433,7 +433,7 @@ public void UpdateDragHighlights(Draggable incoming, Vector2Int? targetCell)
                 if (valid)
                     valid = CheckBoardRules(occ, r, c);
 
-                sr.color = valid ? Color.white : new Color(1f, 0.3f, 0.3f, 1f);
+                occ.SetHighlight(!valid);
             }
 
         if (simulated)

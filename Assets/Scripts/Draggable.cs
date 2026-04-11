@@ -181,7 +181,15 @@ private void BeginDrag(Vector3 pointerPos)
         }
     }
 
-public void Flash()
+    public void SetHighlight(bool highlighted)
+    {
+        if (_spriteRenderer == null)
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        if (_spriteRenderer != null)
+            _spriteRenderer.color = highlighted ? new Color(1f, 0.3f, 0.3f, 1f) : Color.white;
+    }
+
+    public void Flash()
     {
         StartCoroutine(FlashCoroutine());
     }
