@@ -9912,6 +9912,10 @@ Transform:
   - {fileID: 1508202651}
   - {fileID: 604964805}
   - {fileID: 939283705}
+  - {fileID: 1907481998}
+  - {fileID: 2098975530}
+  - {fileID: 1554050836}
+  - {fileID: 1779531028}
   m_Father: {fileID: 368987997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689239238
@@ -19759,6 +19763,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1554050835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554050836}
+  - component: {fileID: 1554050838}
+  - component: {fileID: 1554050837}
+  m_Layer: 0
+  m_Name: CornerTagEntity (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1554050836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554050835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.16, y: 0.7199999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672305990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554050837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554050835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a2cc78ca13141179e6f0b4964a69ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TagMarker
+  gridManager: {fileID: 368987998}
+  hideAtRuntime: 1
+  row: 6
+  col: 9
+--- !u!114 &1554050838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554050835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags:
+  - key: type
+    value: marker
+  - key: subtype
+    value: corner
+  Row: 6
+  Col: 9
 --- !u!1 &1554500437
 GameObject:
   m_ObjectHideFlags: 0
@@ -23936,6 +24008,74 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1779531027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779531028}
+  - component: {fileID: 1779531030}
+  - component: {fileID: 1779531029}
+  m_Layer: 0
+  m_Name: CornerTagEntity (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779531028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779531027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.16, y: -1.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672305990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779531029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779531027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a2cc78ca13141179e6f0b4964a69ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TagMarker
+  gridManager: {fileID: 368987998}
+  hideAtRuntime: 1
+  row: 1
+  col: 9
+--- !u!114 &1779531030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779531027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags:
+  - key: type
+    value: marker
+  - key: subtype
+    value: corner
+  Row: 1
+  Col: 9
 --- !u!1 &1786661186
 GameObject:
   m_ObjectHideFlags: 0
@@ -24648,6 +24788,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1067757675
       objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066006038807832617, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2619917107855281601, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: localizedName.m_TableEntryReference.m_KeyId
       value: 191881223
@@ -24678,11 +24826,11 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
-      value: 128387556302848
+      value: 16323174400
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[1].m_TableEntryReference.m_KeyId
@@ -24694,7 +24842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
-      value: GUID:4af7bbab842694a17bf1b59daa179f12
+      value: GUID:02306047dfa66470a83d9d6433c37f1d
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[1].m_TableReference.m_TableCollectionName
@@ -24754,12 +24902,12 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: rules.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: 'rules.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: bcc5a3948fe374498b4936ef5f6dcb08, type: 2}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: 'rules.Array.data[1]'
       value: 
@@ -25253,6 +25401,74 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1907481997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907481998}
+  - component: {fileID: 1907482000}
+  - component: {fileID: 1907481999}
+  m_Layer: 0
+  m_Name: CornerTagEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907481998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907481997}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.1599998, y: -1.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672305990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907481999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907481997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a2cc78ca13141179e6f0b4964a69ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TagMarker
+  gridManager: {fileID: 368987998}
+  hideAtRuntime: 1
+  row: 1
+  col: 0
+--- !u!114 &1907482000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907481997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags:
+  - key: type
+    value: marker
+  - key: subtype
+    value: corner
+  Row: 1
+  Col: 0
 --- !u!1 &1908633557
 GameObject:
   m_ObjectHideFlags: 0
@@ -27862,6 +28078,74 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2098975529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098975530}
+  - component: {fileID: 2098975532}
+  - component: {fileID: 2098975531}
+  m_Layer: 0
+  m_Name: CornerTagEntity (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098975530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098975529}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.1599998, y: 0.7199999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672305990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098975531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098975529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a2cc78ca13141179e6f0b4964a69ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TagMarker
+  gridManager: {fileID: 368987998}
+  hideAtRuntime: 1
+  row: 6
+  col: 0
+--- !u!114 &2098975532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098975529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bccc36a0154842ad42f61edec1683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridEntity
+  tags:
+  - key: type
+    value: marker
+  - key: subtype
+    value: corner
+  Row: 6
+  Col: 0
 --- !u!1 &2126086524
 GameObject:
   m_ObjectHideFlags: 0
