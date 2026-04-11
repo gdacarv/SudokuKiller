@@ -16,8 +16,6 @@ public static class AddSuspectTool
     const float RightColumnX = -5.04f;
     const float TopRowY      = 3.12f;
     const float RowSpacing   = 0.96f;
-    static readonly Vector3 DraggablesParentWorld = new(2.16f, -1.2f, 0f);
-
     // ─── Sprite Pools (path, slice name) ─────────────────────────────────────
     // Each entry specifies the exact sprite slice to use from the sprite sheet.
     static readonly (string path, string slice)[] MaleSprites = {
@@ -164,7 +162,7 @@ public static class AddSuspectTool
         float localX = col == 0 ? LeftColumnX : RightColumnX;
         float localY = TopRowY - (row * RowSpacing);
         Vector3 localPos = new(localX, localY, 0f);
-        Vector3 worldPos = DraggablesParentWorld + localPos;
+        Vector3 worldPos = draggablesGO.transform.position + localPos;
 
         // ── Begin Undo group ───────────────────────────────────────────────────
         Undo.SetCurrentGroupName($"Add Suspect '{chosenName}'");

@@ -36,7 +36,7 @@ public abstract class GridEntityMarker : MonoBehaviour
     {
         if (Application.isPlaying) return;
 
-        if (gridManager == null) return;
+        if (!gridManager) return;
 
         var cell = gridManager.WorldToCell(transform.position);
         if (cell == null) return;

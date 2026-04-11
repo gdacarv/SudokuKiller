@@ -128,19 +128,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5067467356364800
-    m_Localized: Benjamin
+    m_Localized: Bernardo
     m_Metadata:
       m_Items: []
   - m_Id: 5067497857343488
-    m_Localized: Camille
+    m_Localized: Camila
     m_Metadata:
       m_Items: []
   - m_Id: 5067537837449216
-    m_Localized: Daphne
+    m_Localized: Daniela
     m_Metadata:
       m_Items: []
   - m_Id: 5067578002104320
-    m_Localized: Elena
+    m_Localized: Emilia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5081589963808768
+    m_Localized: Eduardo
     m_Metadata:
       m_Items: []
   references:

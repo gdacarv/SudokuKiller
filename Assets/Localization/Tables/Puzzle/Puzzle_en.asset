@@ -143,6 +143,10 @@ MonoBehaviour:
     m_Localized: Elena
     m_Metadata:
       m_Items: []
+  - m_Id: 5081589963808768
+    m_Localized: Ernest
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
