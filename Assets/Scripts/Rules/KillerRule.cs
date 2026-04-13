@@ -9,10 +9,9 @@ public abstract class KillerRule : ScriptableObject
 
     public string GetFailureMessage(Draggable suspect = null)
     {
-        var template = failureMessage.GetLocalizedString();
-        if (suspect == null) return template;
+        if (suspect == null) return failureMessage.GetLocalizedString();
         var nameLabel = suspect.GetComponent<NameLabel>();
         var name = nameLabel != null ? nameLabel.GetLocalizedName() : suspect.name;
-        return string.Format(template, name);
+        return failureMessage.GetLocalizedString(name);
     }
 }

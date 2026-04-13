@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VariableSyncConfig
   m_EditorClassIdentifier: Assembly-CSharp-Editor::VariableSyncConfig
   rules:
-  - tableCollectionName: Puzzle
+  - tableCollectionName: Names
     keyPrefix: name.
     groupName: char
     groupAssetPath: Assets/Localization/CharacterNames.asset

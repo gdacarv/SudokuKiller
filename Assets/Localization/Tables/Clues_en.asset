@@ -16,12 +16,28 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 02306047dfa66470a83d9d6433c37f1d, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6722194458415989152
   m_TableData:
   - m_Id: 16323174400
     m_Localized: '{0} was on a corner of the room'
     m_Metadata:
       m_Items: []
+  - m_Id: 593899537031168
+    m_Localized: '{0} is not the closest person to the {char.victim}!'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 599727119785984
+    m_Localized: The Killer was the closest person to the {0}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6722194458415989152
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 593899537031168

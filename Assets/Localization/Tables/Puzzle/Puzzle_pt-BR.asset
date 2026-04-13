@@ -34,24 +34,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4753990918076105041
-  - m_Id: 191881223
-    m_Localized: "V\xEDtima"
-    m_Metadata:
-      m_Items: []
   - m_Id: 128387556302848
     m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o Assassino"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 302671251628032
-    m_Localized: Alex
-    m_Metadata:
-      m_Items: []
-  - m_Id: 302671255822336
-    m_Localized: Bruno
-    m_Metadata:
-      m_Items: []
-  - m_Id: 302671255822337
-    m_Localized: Carla
     m_Metadata:
       m_Items: []
   - m_Id: 304649553829888
@@ -87,28 +71,8 @@ MonoBehaviour:
     m_Localized: "Escrit\xF3rio"
     m_Metadata:
       m_Items: []
-  - m_Id: 3947418826563584
-    m_Localized: Davi
-    m_Metadata:
-      m_Items: []
   - m_Id: 3950813503283200
     m_Localized: "{0} era a \xFAnica pessoa na sua linha e coluna"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4257141207588864
-    m_Localized: Eduardo
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4289797903343616
-    m_Localized: "F\xE1tima"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4290803194126336
-    m_Localized: Gabriel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4291366078111744
-    m_Localized: Helena
     m_Metadata:
       m_Items: []
   - m_Id: 4657919789359104
@@ -121,30 +85,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5030918212280320
     m_Localized: "Havia mais gente no mesmo c\xF4modo de {0}"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067272195399680
-    m_Localized: Alice
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067467356364800
-    m_Localized: Bernardo
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067497857343488
-    m_Localized: Camila
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067537837449216
-    m_Localized: Daniela
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067578002104320
-    m_Localized: Emilia
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5081589963808768
-    m_Localized: Eduardo
     m_Metadata:
       m_Items: []
   references:

@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Names_pt-BR
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 0a5774bb68d1344c19dbf32e38051e53, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 804249600
+    m_Localized: "V\xEDtima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 804249601
+    m_Localized: Alex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 804249602
+    m_Localized: Bruno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 804249603
+    m_Localized: Carla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443904
+    m_Localized: Davi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443905
+    m_Localized: Eduardo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443906
+    m_Localized: "F\xE1tima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443907
+    m_Localized: Gabriel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443908
+    m_Localized: Helena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443909
+    m_Localized: Alice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443910
+    m_Localized: Bernardo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443911
+    m_Localized: Camila
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443912
+    m_Localized: Daniela
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443913
+    m_Localized: Emilia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808443914
+    m_Localized: Eduardo
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

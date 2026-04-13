@@ -124,6 +124,12 @@ public static class AddSuspectTool
             EditorUtility.DisplayDialog("Add Suspect", "Puzzle localization table not found. Run Setup first.", "OK");
             return;
         }
+        var names = LocalizationEditorSettings.GetStringTableCollection("Names");
+        if (names == null)
+        {
+            EditorUtility.DisplayDialog("Add Suspect", "Names localization table not found. Run Setup first.", "OK");
+            return;
+        }
 
         // ── Determine next available letter ───────────────────────────────────
         var existingPersons = GameObject.FindGameObjectsWithTag("Person");
@@ -250,33 +256,33 @@ public static class AddSuspectTool
             EditorUtility.SetDirty(cluesTooltip);
         }
 
-        // ── Localization: add name.{key} entry ────────────────────────────────
+        // ── Localization: add name.{key} entry to Names table ────────────────
         string locKey = $"name.{chosenName.ToLower()}";
 
-        var enTable = puzzle.GetTable(new LocaleIdentifier("en")) as StringTable;
-        if (enTable != null)
+        var enNamesTable = names.GetTable(new LocaleIdentifier("en")) as StringTable;
+        if (enNamesTable != null)
         {
-            Undo.RecordObject(enTable, "Add Localization Entry");
-            LocalizationSetupTool.AddOrUpdateEntry(enTable, locKey, chosenName);
-            EditorUtility.SetDirty(enTable);
+            Undo.RecordObject(enNamesTable, "Add Localization Entry");
+            LocalizationSetupTool.AddOrUpdateEntry(enNamesTable, locKey, chosenName);
+            EditorUtility.SetDirty(enNamesTable);
         }
 
-        var ptTable = puzzle.GetTable(new LocaleIdentifier("pt-BR")) as StringTable;
-        if (ptTable != null)
+        var ptNamesTable = names.GetTable(new LocaleIdentifier("pt-BR")) as StringTable;
+        if (ptNamesTable != null)
         {
-            Undo.RecordObject(ptTable, "Add Localization Entry pt-BR");
-            LocalizationSetupTool.AddOrUpdateEntry(ptTable, locKey, chosenName);
-            EditorUtility.SetDirty(ptTable);
+            Undo.RecordObject(ptNamesTable, "Add Localization Entry pt-BR");
+            LocalizationSetupTool.AddOrUpdateEntry(ptNamesTable, locKey, chosenName);
+            EditorUtility.SetDirty(ptNamesTable);
         }
 
-        EditorUtility.SetDirty(puzzle.SharedData);
+        EditorUtility.SetDirty(names.SharedData);
 
         // ── Wire NameLabel.localizedName ──────────────────────────────────────
         var nameLabel = newGO.GetComponentInChildren<NameLabel>(true);
         if (nameLabel != null)
         {
             LocalizationSetupTool.SetField(nameLabel, "localizedName",
-                LocalizationSetupTool.MakeLS(puzzle, locKey));
+                LocalizationSetupTool.MakeLS(names, locKey));
         }
 
         // ── Sync variable groups (rebuilds CharacterNames.asset) ──────────────

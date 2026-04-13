@@ -34,24 +34,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4753990918076105042
-  - m_Id: 191881223
-    m_Localized: Victim
-    m_Metadata:
-      m_Items: []
   - m_Id: 128387556302848
     m_Localized: The Victim was the only person in the room with the Killer
-    m_Metadata:
-      m_Items: []
-  - m_Id: 302671251628032
-    m_Localized: Adam
-    m_Metadata:
-      m_Items: []
-  - m_Id: 302671255822336
-    m_Localized: Bruno
-    m_Metadata:
-      m_Items: []
-  - m_Id: 302671255822337
-    m_Localized: Courtney
     m_Metadata:
       m_Items: []
   - m_Id: 304649553829888
@@ -87,28 +71,8 @@ MonoBehaviour:
     m_Localized: Office
     m_Metadata:
       m_Items: []
-  - m_Id: 3947418826563584
-    m_Localized: David
-    m_Metadata:
-      m_Items: []
   - m_Id: 3950813503283200
     m_Localized: '{0} was the only person in his row and column'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4257141207588864
-    m_Localized: Edgar
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4289797903343616
-    m_Localized: Fatima
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4290803194126336
-    m_Localized: Gabriel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4291366078111744
-    m_Localized: Hannah
     m_Metadata:
       m_Items: []
   - m_Id: 4657919789359104
@@ -121,30 +85,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5030918212280320
     m_Localized: There were other people in the same room of {0}
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067272195399680
-    m_Localized: Alice
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067467356364800
-    m_Localized: Benjamin
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067497857343488
-    m_Localized: Camille
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067537837449216
-    m_Localized: Daphne
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5067578002104320
-    m_Localized: Elena
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5081589963808768
-    m_Localized: Ernest
     m_Metadata:
       m_Items: []
   references:

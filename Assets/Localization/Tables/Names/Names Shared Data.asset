@@ -10,83 +10,79 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Puzzle Shared Data
+  m_Name: Names Shared Data
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
-  m_TableCollectionName: Puzzle
-  m_TableCollectionNameGuidString: 4af7bbab842694a17bf1b59daa179f12
+  m_TableCollectionName: Names
+  m_TableCollectionNameGuidString: 0a5774bb68d1344c19dbf32e38051e53
   m_Entries:
-  - m_Id: 187686912
-    m_Key: clue.carla.0
+  - m_Id: 804249600
+    m_Key: name.victim
     m_Metadata:
       m_Items: []
-  - m_Id: 191881218
-    m_Key: clue.bruno.1
+  - m_Id: 804249601
+    m_Key: name.adam
     m_Metadata:
       m_Items: []
-  - m_Id: 191881221
-    m_Key: clue.adam.0
+  - m_Id: 804249602
+    m_Key: name.bruno
     m_Metadata:
       m_Items: []
-  - m_Id: 128387556302848
-    m_Key: clue.victim.0
+  - m_Id: 804249603
+    m_Key: name.carla
     m_Metadata:
       m_Items: []
-  - m_Id: 304649553829888
-    m_Key: clue.victim.1
+  - m_Id: 808443904
+    m_Key: name.david
     m_Metadata:
       m_Items: []
-  - m_Id: 1087788089860096
-    m_Key: killer.notInSection
+  - m_Id: 808443905
+    m_Key: name.edgar
     m_Metadata:
       m_Items: []
-  - m_Id: 1095141786902528
-    m_Key: killer.notVictim
+  - m_Id: 808443906
+    m_Key: name.fatima
     m_Metadata:
       m_Items: []
-  - m_Id: 3260596643422208
-    m_Key: room.name.entryway
+  - m_Id: 808443907
+    m_Key: name.gabriel
     m_Metadata:
       m_Items: []
-  - m_Id: 3545032744230912
-    m_Key: room.name.louge
+  - m_Id: 808443908
+    m_Key: name.hannah
     m_Metadata:
       m_Items: []
-  - m_Id: 3893198056316928
-    m_Key: room.name.bedroom
+  - m_Id: 808443909
+    m_Key: name.alice
     m_Metadata:
       m_Items: []
-  - m_Id: 3895077968535552
-    m_Key: room.name.dining
+  - m_Id: 808443910
+    m_Key: name.benjamin
     m_Metadata:
       m_Items: []
-  - m_Id: 3895270302539776
-    m_Key: room.name.office
+  - m_Id: 808443911
+    m_Key: name.camille
     m_Metadata:
       m_Items: []
-  - m_Id: 3950813503283200
-    m_Key: clue.aloneInRowAndColumn
+  - m_Id: 808443912
+    m_Key: name.daphne
     m_Metadata:
       m_Items: []
-  - m_Id: 4657919789359104
-    m_Key: clue.isAKid
+  - m_Id: 808443913
+    m_Key: name.elena
     m_Metadata:
       m_Items: []
-  - m_Id: 4658726513401856
-    m_Key: killer.notAKid
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5030918212280320
-    m_Key: clue.notAlone
+  - m_Id: 808443914
+    m_Key: name.ernest
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 4753990918076104886
+    rid: 6722194458415988988
   references:
     version: 2
     RefIds:
-    - rid: 4753990918076104886
+    - rid: 6722194458415988988
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1774722255817
+        m_CustomEpoch: 1776087690629

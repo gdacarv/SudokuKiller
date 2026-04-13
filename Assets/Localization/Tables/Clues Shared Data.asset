@@ -19,6 +19,14 @@ MonoBehaviour:
     m_Key: clue.isOnCorner
     m_Metadata:
       m_Items: []
+  - m_Id: 593899537031168
+    m_Key: killer.closestToVictim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599727119785984
+    m_Key: clue.killerClosest2Victim
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

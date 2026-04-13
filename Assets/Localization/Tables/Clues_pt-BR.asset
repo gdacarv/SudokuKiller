@@ -16,12 +16,28 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 02306047dfa66470a83d9d6433c37f1d, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6722194458415989153
   m_TableData:
   - m_Id: 16323174400
     m_Localized: "{0} estava no canto do c\xF4modo"
     m_Metadata:
       m_Items: []
+  - m_Id: 593899537031168
+    m_Localized: "{0} n\xE3o \xE9 a pessoa mais pr\xF3xima da {char.victim}!"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 599727119785984
+    m_Localized: "O Assassino foi a pessoa mais pr\xF3xima da {0}"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6722194458415989153
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 593899537031168
