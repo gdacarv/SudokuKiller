@@ -27,6 +27,18 @@ MonoBehaviour:
     m_Key: clue.killerClosest2Victim
     m_Metadata:
       m_Items: []
+  - m_Id: 1687770585096192
+    m_Key: clue.onCarpet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1689794882035712
+    m_Key: clue.onCarpetColor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1707510711967744
+    m_Key: clue.onChair
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

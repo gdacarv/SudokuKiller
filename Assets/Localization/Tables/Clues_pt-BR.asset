@@ -32,6 +32,21 @@ MonoBehaviour:
     m_Localized: "O Assassino foi a pessoa mais pr\xF3xima da {0}"
     m_Metadata:
       m_Items: []
+  - m_Id: 1687770585096192
+    m_Localized: '{0} estava em um tapete'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1689794882035712
+    m_Localized: '{0} estava em um tapete {color}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 1707510711967744
+    m_Localized: '{0} estava sentad{gender:choose(male|female|other):o|a|a} em uma
+      cadeira'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -41,3 +56,5 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 593899537031168
+        - id: 1689794882035712
+        - id: 1707510711967744

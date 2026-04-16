@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: clue.aboveCounter
     m_Metadata:
       m_Items: []
+  - m_Id: 1738861511172096
+    m_Key: clue.eatingRediceCream
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

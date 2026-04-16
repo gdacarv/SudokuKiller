@@ -32,6 +32,19 @@ MonoBehaviour:
     m_Localized: The Killer was the closest person to the {0}
     m_Metadata:
       m_Items: []
+  - m_Id: 1687770585096192
+    m_Localized: '{0} was on a carpet'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1689794882035712
+    m_Localized: '{0} was on a {color} carpet'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 1707510711967744
+    m_Localized: '{0} was sitting on a chair'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -41,3 +54,4 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 593899537031168
+        - id: 1689794882035712

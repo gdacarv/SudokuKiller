@@ -22,6 +22,10 @@ MonoBehaviour:
     m_Localized: "{0} estava acima do balc\xE3o de sorvetes"
     m_Metadata:
       m_Items: []
+  - m_Id: 1738861511172096
+    m_Localized: '{0} estava tomando um sorvete vermelho'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

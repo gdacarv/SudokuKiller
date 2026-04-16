@@ -9,14 +9,10 @@ public class RequireTaggedCellRule : DraggableRule
 
     public override bool CanPlace(GridManager manager, Draggable draggable, int row, int col)
     {
-        foreach (var tag in cellTags)
-        {
-            var matches = manager.FindEntitiesWithTags(new List<GridEntity.TagEntry> { tag });
-            foreach (var entity in matches)
-                if (entity.Row == row && entity.Col == col)
-                    return true;
-        }
-
+        var matches = manager.FindEntitiesWithTags(cellTags);
+        foreach (var entity in matches)
+            if (entity.Row == row && entity.Col == col)
+                return true;
         return false;
     }
 }

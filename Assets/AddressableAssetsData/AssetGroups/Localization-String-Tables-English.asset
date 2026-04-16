@@ -15,6 +15,13 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English
   m_GUID: 3558b3e9e3b704de9894c32e5b7cd8d5
   m_SerializeEntries:
+  - m_GUID: 0371240ebb03640de81631d8e3e0a752
+    m_Address: Color_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9b66babf86a864044b860db26b04d6de
     m_Address: Puzzle_en
     m_ReadOnly: 1
@@ -26,6 +33,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: addbc85c8c1244b2fb44dfc7e1c37cfe
     m_Address: UI_en
@@ -45,6 +53,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 8e1b76daa439b4e7e8f7d6459b119cd2, type: 2}

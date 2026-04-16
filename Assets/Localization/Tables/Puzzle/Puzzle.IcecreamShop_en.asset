@@ -22,6 +22,10 @@ MonoBehaviour:
     m_Localized: '{0} was above the ice cream counter'
     m_Metadata:
       m_Items: []
+  - m_Id: 1738861511172096
+    m_Localized: '{0} was eating a red ice cream'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
