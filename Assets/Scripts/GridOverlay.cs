@@ -96,6 +96,12 @@ void BuildGrid()
 
     public void RefreshGrid() => BuildGrid();
 
+    public void SetVisible(bool visible)
+    {
+        if (_linesRoot != null)
+            _linesRoot.SetActive(visible);
+    }
+
     void CreateLine(Vector3 start, Vector3 end)
     {
         var go = new GameObject("Line");
