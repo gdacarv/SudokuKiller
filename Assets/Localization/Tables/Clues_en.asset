@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 6722194458415989152
   m_TableData:
   - m_Id: 16323174400
-    m_Localized: '{0} was on a corner of the room'
+    m_Localized: '{0} was in a corner of the room'
     m_Metadata:
       m_Items: []
   - m_Id: 593899537031168

@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CluesTooltip
   message: 
-  hoverDelay: 0.5
+  hoverDelay: 0
   tooltipOffset: {x: 0, y: 60}
   inputProvider: {fileID: 0}
   tooltipUI: {fileID: 0}

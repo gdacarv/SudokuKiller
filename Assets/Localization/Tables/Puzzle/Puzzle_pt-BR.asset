@@ -48,7 +48,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1095141786902528
-    m_Localized: "A {0} n\xE3o pode ser o Assassino!"
+    m_Localized: "{0} n\xE3o pode ser o Assassino!"
     m_Metadata:
       m_Items: []
   - m_Id: 3260596643422208
@@ -72,7 +72,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3950813503283200
-    m_Localized: "{0} era a \xFAnica pessoa na sua linha e coluna"
+    m_Localized: "{0} era a \xFAnica pessoa em sua linha e coluna"
     m_Metadata:
       m_Items: []
   - m_Id: 4657919789359104

@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CluesTooltip
   message: 
-  hoverDelay: 0.5
+  hoverDelay: 0
   tooltipOffset: {x: 0, y: 60}
   inputProvider: {fileID: 0}
   tooltipUI: {fileID: 0}
@@ -232,6 +232,7 @@ MonoBehaviour:
   _color: {r: 0.3490566, g: 0.014818435, b: 0.014818435, a: 1}
   _alignment: 514
   _fontStyle: 1
+  _sortingLayerName: UI
   _sortingOrder: 21
   references:
     version: 2

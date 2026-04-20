@@ -7,7 +7,7 @@ public class HoverTooltip : MonoBehaviour
     public string message = "";
 
     [Header("Behaviour")]
-    public float hoverDelay = 0.5f;
+    public float hoverDelay = 0.2f;
     public Vector2 tooltipOffset = new(0f, 60f);
 
     [Header("References")]

@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 4753990918076105042
   m_TableData:
   - m_Id: 187686912
-    m_Localized: '{char.carla} was the only person in his row and column'
+    m_Localized: '{char.carla} was the only person in her row and column'
     m_Metadata:
       m_Items:
       - rid: 4753990918076105042
@@ -44,11 +44,11 @@ MonoBehaviour:
       m_Items:
       - rid: 4753990918076105042
   - m_Id: 1087788089860096
-    m_Localized: Wrong! {0} is not in the same room of the Victim!
+    m_Localized: Wrong! {0} is not in the same room as the Victim!
     m_Metadata:
       m_Items: []
   - m_Id: 1095141786902528
-    m_Localized: The {0} can't be the Killer!
+    m_Localized: '{0} can''t be the Killer!'
     m_Metadata:
       m_Items: []
   - m_Id: 3260596643422208
@@ -72,7 +72,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3950813503283200
-    m_Localized: '{0} was the only person in his row and column'
+    m_Localized: '{0} was the only person in their row and column'
     m_Metadata:
       m_Items: []
   - m_Id: 4657919789359104
@@ -84,7 +84,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5030918212280320
-    m_Localized: There were other people in the same room of {0}
+    m_Localized: There were other people in the same room as {0}
     m_Metadata:
       m_Items: []
   references:

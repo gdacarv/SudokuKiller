@@ -19,10 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 447733760
-    m_Localized: 'You need to place all the Suspects, Objects and Victim
-
-      on
-      the map before being able to identify the Killer'
+    m_Localized: Place all Suspects, Objects and the Victim on the map before identifying
+      the Killer
     m_Metadata:
       m_Items: []
   - m_Id: 456122368
@@ -34,7 +32,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 456122370
-    m_Localized: Some clues are not being respected!
+    m_Localized: "Some clues aren't satisfied!"
     m_Metadata:
       m_Items: []
   - m_Id: 460316672
