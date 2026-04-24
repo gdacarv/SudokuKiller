@@ -43,6 +43,13 @@ public class GridManager : MonoBehaviour
             return;
         }
 
+        InitializeGridState();
+        gridOverlay.SetVisible(showGridOverlay);
+        Debug.Log($"[GridManager] Awake: rows={gridOverlay.rows}, cols={gridOverlay.cols}");
+    }
+
+    private void InitializeGridState()
+    {
         _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
         _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
         _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
@@ -50,8 +57,6 @@ public class GridManager : MonoBehaviour
             for (int c = 0; c < gridOverlay.cols; c++)
                 _cellSection[r, c] = -1;
         ApplyEntityMarkers();
-        gridOverlay.SetVisible(showGridOverlay);
-        Debug.Log($"[GridManager] Awake: rows={gridOverlay.rows}, cols={gridOverlay.cols}");
     }
 
     public bool IsCellAvailable(int row, int col)
@@ -333,14 +338,7 @@ public bool AreAllDraggablesInSolutionCells()
             gridOverlay = GetComponent<GridOverlay>();
         if (gridOverlay == null) return;
 
-        _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
-        _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
-        _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
-        for (int r = 0; r < gridOverlay.rows; r++)
-            for (int c = 0; c < gridOverlay.cols; c++)
-                _cellSection[r, c] = -1;
-
-        ApplyEntityMarkers();
+        InitializeGridState();
 
         var solutions = FindObjectsByType<SolutionPosition>(FindObjectsSortMode.None);
         foreach (var sol in solutions)

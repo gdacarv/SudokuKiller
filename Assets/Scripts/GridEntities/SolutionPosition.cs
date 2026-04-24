@@ -30,23 +30,8 @@ public class SolutionPosition : MonoBehaviour
         if (gridManager == null) return;
 
         var cell = gridManager.WorldToCell(transform.position);
-        if (cell == null)
-        {
-            if (solutionRow != -1 || solutionCol != -1)
-            {
-                solutionRow = -1;
-                solutionCol = -1;
-#if UNITY_EDITOR
-                EditorUtility.SetDirty(this);
-                if (gridManager != null && gridManager.highlightRuleViolations)
-                    gridManager.RefreshEditModeViolations();
-#endif
-            }
-            return;
-        }
-
-        int newRow = cell.Value.y;
-        int newCol = cell.Value.x;
+        int newRow = cell?.y ?? -1;
+        int newCol = cell?.x ?? -1;
 
         if (newRow != solutionRow || newCol != solutionCol)
         {
@@ -54,12 +39,13 @@ public class SolutionPosition : MonoBehaviour
             solutionCol = newCol;
 #if UNITY_EDITOR
             EditorUtility.SetDirty(this);
-            if (gridManager != null && gridManager.highlightRuleViolations)
+            if (gridManager.highlightRuleViolations)
                 gridManager.RefreshEditModeViolations();
 #endif
         }
 
-        transform.position = gridManager.GetCellCenter(solutionRow, solutionCol);
+        if (cell != null)
+            transform.position = gridManager.GetCellCenter(solutionRow, solutionCol);
     }
 
     [ContextMenu("Save Current as UI Position")]
