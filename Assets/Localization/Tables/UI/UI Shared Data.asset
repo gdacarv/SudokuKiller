@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Key: button.identifyKiller.label
     m_Metadata:
       m_Items: []
+  - m_Id: 10670133193203712
+    m_Key: coloredObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

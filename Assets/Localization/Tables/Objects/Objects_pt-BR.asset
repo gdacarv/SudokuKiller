@@ -10,24 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Color_en
+  m_Name: Objects_pt-BR
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
   m_LocaleId:
-    m_Code: en
-  m_SharedData: {fileID: 11400000, guid: 7c35782a1924e446eaea05fbf4566661, type: 2}
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: dc78d4cea0a8045cd9cc33a34bef791f, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 121356935168
-    m_Localized: yellow
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3842761676546048
-    m_Localized: red
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3845440096165888
-    m_Localized: blue
+  - m_Id: 43678425088
+    m_Localized: vaso
     m_Metadata:
       m_Items: []
   references:

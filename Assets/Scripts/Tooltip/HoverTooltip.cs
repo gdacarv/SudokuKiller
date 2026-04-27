@@ -131,7 +131,7 @@ public class HoverTooltip : MonoBehaviour
         _tooltipRect.localPosition = localPoint;
     }
 
-    void OnDisable()
+    protected virtual void OnDisable()
     {
         if (_isShowing)
             HideTooltip();

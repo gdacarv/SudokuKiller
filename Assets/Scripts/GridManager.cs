@@ -26,7 +26,6 @@ public class GridManager : MonoBehaviour
     private Draggable[,] _occupants;
 #if UNITY_EDITOR
     [System.NonSerialized] private bool _prevHighlightRuleViolations;
-    [System.NonSerialized] private bool _prevShowGridOverlay = true;
 #endif
     private bool[,] _blockedByMarker;
     private int[,] _cellSection;
@@ -312,15 +311,11 @@ public bool AreAllDraggablesInSolutionCells()
     {
         if (Application.isPlaying) return;
 
-        if (showGridOverlay != _prevShowGridOverlay)
+        EditorApplication.delayCall += () =>
         {
-            _prevShowGridOverlay = showGridOverlay;
-            EditorApplication.delayCall += () =>
-            {
-                if (this == null || gridOverlay == null) return;
-                gridOverlay.SetVisible(showGridOverlay);
-            };
-        }
+            if (this == null || gridOverlay == null) return;
+            gridOverlay.SetVisible(showGridOverlay);
+        };
 
         if (highlightRuleViolations == _prevHighlightRuleViolations) return;
         _prevHighlightRuleViolations = highlightRuleViolations;

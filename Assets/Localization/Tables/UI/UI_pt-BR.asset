@@ -16,11 +16,12 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 92fafd44b22bc4db0ae59faa9a3ebdec, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6722194805398962275
   m_TableData:
   - m_Id: 447733760
-    m_Localized: "Coloque todos os Suspeitos, Objetos e a V\xEDtima no mapa antes de
-      identificar o Assassino"
+    m_Localized: "Coloque todos os Suspeitos, Objetos e a V\xEDtima no mapa antes
+      de identificar o Assassino"
     m_Metadata:
       m_Items: []
   - m_Id: 456122368
@@ -55,6 +56,17 @@ MonoBehaviour:
     m_Localized: Acusar
     m_Metadata:
       m_Items: []
+  - m_Id: 10670133193203712
+    m_Localized: '{object} {color}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962275
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6722194805398962275
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 10670133193203712

@@ -21,6 +21,8 @@ public class GridOverlay : MonoBehaviour
     [Header("Offset (world units, relative to this transform)")]
     public Vector2 offset = Vector2.zero;
 
+    [SerializeField, HideInInspector] private bool _linesVisible = true;
+
     private List<LineRenderer> _lines = new List<LineRenderer>();
     private HashSet<Vector2Int> _hiddenCells = new HashSet<Vector2Int>();
     private GameObject _linesRoot;
@@ -47,6 +49,7 @@ void BuildGrid()
         _linesRoot.transform.localRotation = Quaternion.identity;
         _linesRoot.transform.localScale    = Vector3.one;
         _linesRoot.hideFlags = HideFlags.DontSave;
+        _linesRoot.SetActive(_linesVisible);
 
         float totalW = cellWidth  * Mathf.Max(cols, 1);
         float totalH = cellHeight * Mathf.Max(rows, 1);
@@ -98,6 +101,7 @@ void BuildGrid()
 
     public void SetVisible(bool visible)
     {
+        _linesVisible = visible;
         if (_linesRoot != null)
             _linesRoot.SetActive(visible);
     }

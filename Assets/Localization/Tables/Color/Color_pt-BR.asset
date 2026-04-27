@@ -16,12 +16,28 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 7c35782a1924e446eaea05fbf4566661, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6722194805398962277
   m_TableData:
   - m_Id: 121356935168
-    m_Localized: amarelo
+    m_Localized: amarel{gender:choose(male|female):o|a}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3842761676546048
+    m_Localized: vermelh{gender:choose(male|female):o|a}
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962277
+  - m_Id: 3845440096165888
+    m_Localized: azul
     m_Metadata:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6722194805398962277
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 3842761676546048

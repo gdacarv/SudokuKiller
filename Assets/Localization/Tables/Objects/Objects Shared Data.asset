@@ -10,31 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Color Shared Data
+  m_Name: Objects Shared Data
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
-  m_TableCollectionName: Color
-  m_TableCollectionNameGuidString: 7c35782a1924e446eaea05fbf4566661
+  m_TableCollectionName: Objects
+  m_TableCollectionNameGuidString: dc78d4cea0a8045cd9cc33a34bef791f
   m_Entries:
-  - m_Id: 121356935168
-    m_Key: color.yellow
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3842761676546048
-    m_Key: color.red
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3845440096165888
-    m_Key: color.blue
+  - m_Id: 43678425088
+    m_Key: "object.vase\t"
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 6722194458415989208
+    rid: 6722194805398962280
   references:
     version: 2
     RefIds:
-    - rid: 6722194458415989208
+    - rid: 6722194805398962280
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1776350151286
+        m_CustomEpoch: 1777266619535

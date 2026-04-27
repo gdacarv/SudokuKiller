@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 92fafd44b22bc4db0ae59faa9a3ebdec, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6722194805398962274
   m_TableData:
   - m_Id: 447733760
     m_Localized: Place all Suspects, Objects and the Victim on the map before identifying
@@ -32,7 +33,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 456122370
-    m_Localized: "Some clues aren't satisfied!"
+    m_Localized: Some clues aren't satisfied!
     m_Metadata:
       m_Items: []
   - m_Id: 460316672
@@ -55,6 +56,17 @@ MonoBehaviour:
     m_Localized: Accuse
     m_Metadata:
       m_Items: []
+  - m_Id: 10670133193203712
+    m_Localized: '{color} {object}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962274
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6722194805398962274
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 10670133193203712
