@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 757144604920681236}
   - component: {fileID: 109610372693376296}
   - component: {fileID: 8000132837076029314}
+  - component: {fileID: 8477061818084145337}
   m_Layer: 0
   m_Name: Person
   m_TagString: Person
@@ -235,8 +236,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SolutionPosition
   gridManager: {fileID: 0}
   uiPosition: {x: 0, y: 0, z: 0}
-  solutionRow: 0
-  solutionCol: 0
+  solutionRow: -1
+  solutionCol: -1
 --- !u!114 &8000132837076029314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +255,23 @@ MonoBehaviour:
     value: Person
   Row: -1
   Col: -1
+--- !u!114 &8477061818084145337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875278182876665019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3016a775f268c4854b58b6352c91d966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteOutline
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlinePixels: 2
+  outlineMode: 1
+  inputProvider: {fileID: 0}
+  suppressWhileDragging: 1
 --- !u!1 &7208888844455596130
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.63}
+  m_AnchoredPosition: {x: 0, y: 0.55}
   m_SizeDelta: {x: 0.64, y: 0.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1572826340931408289
@@ -335,8 +353,8 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1067757675
+  m_SortingLayer: 1
   m_SortingOrder: 10
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
