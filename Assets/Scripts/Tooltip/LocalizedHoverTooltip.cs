@@ -9,8 +9,9 @@ public class LocalizedHoverTooltip : HoverTooltip
 
     public LocalizedString LocalizedMessage => messageLocalized;
 
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         if (Application.isPlaying)
             LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
     }

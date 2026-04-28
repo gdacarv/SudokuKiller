@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -15,10 +16,14 @@ public class HoverTooltip : MonoBehaviour
     public TooltipUI tooltipUI;
 
     protected Collider2D _collider;
+    protected Renderer _sortingRenderer;
     private float _hoverTimer;
     protected bool _isShowing;
     private Canvas _tooltipCanvas;
     private RectTransform _tooltipRect;
+
+    private static readonly List<HoverTooltip> _instances = new();
+    private static HoverTooltip _currentOwner;
 
 #if UNITY_EDITOR
     protected virtual void OnValidate()
@@ -33,6 +38,12 @@ public class HoverTooltip : MonoBehaviour
     void Awake()
     {
         _collider = GetComponent<Collider2D>();
+        _sortingRenderer = GetComponentInChildren<Renderer>(true);
+    }
+
+    protected virtual void OnEnable()
+    {
+        _instances.Add(this);
     }
 
     void Start()
@@ -55,34 +66,79 @@ public class HoverTooltip : MonoBehaviour
 
         if (isHovering && !isHeld)
         {
-            _hoverTimer += Time.deltaTime;
-
-            if (_hoverTimer >= hoverDelay && !_isShowing)
-                ShowTooltip();
-
-            if (_isShowing)
-                PositionTooltip();
+            if (IsTopmostHovered(pointerWorldPos))
+            {
+                _hoverTimer += Time.deltaTime;
+                if (_hoverTimer >= hoverDelay && _currentOwner != this)
+                {
+                    _currentOwner = this;
+                    _isShowing = true;
+                    ShowTooltip();
+                }
+                if (_currentOwner == this)
+                    PositionTooltip();
+            }
+            else
+            {
+                ReleaseOwnership();
+                _hoverTimer = 0f;
+            }
         }
         else
         {
-            if (_isShowing)
-                HideTooltip();
+            ReleaseOwnership();
             _hoverTimer = 0f;
         }
     }
 
+    private bool IsTopmostHovered(Vector3 pointerWorldPos)
+    {
+        HoverTooltip topmost = null;
+        int topmostLayerValue = int.MinValue;
+        int topmostOrder = int.MinValue;
+        int topmostID = int.MinValue;
+
+        foreach (var instance in _instances)
+        {
+            if (!instance._collider.OverlapPoint(pointerWorldPos)) continue;
+
+            int layerValue = instance._sortingRenderer != null
+                ? SortingLayer.GetLayerValueFromID(instance._sortingRenderer.sortingLayerID)
+                : int.MinValue;
+            int order = instance._sortingRenderer != null
+                ? instance._sortingRenderer.sortingOrder
+                : int.MinValue;
+            int id = instance.GetInstanceID();
+
+            if (layerValue > topmostLayerValue ||
+                (layerValue == topmostLayerValue && order > topmostOrder) ||
+                (layerValue == topmostLayerValue && order == topmostOrder && id > topmostID))
+            {
+                topmost = instance;
+                topmostLayerValue = layerValue;
+                topmostOrder = order;
+                topmostID = id;
+            }
+        }
+
+        return topmost == this;
+    }
+
+    private void ReleaseOwnership()
+    {
+        if (_currentOwner == this)
+        {
+            _currentOwner = null;
+            tooltipUI.gameObject.SetActive(false);
+        }
+        _isShowing = false;
+    }
+
     protected virtual void ShowTooltip()
     {
-        _isShowing = true;
         tooltipUI.gameObject.SetActive(true);
         tooltipUI.SetText(message);
         PositionTooltip();
-    }
-
-    private void HideTooltip()
-    {
-        _isShowing = false;
-        tooltipUI.gameObject.SetActive(false);
     }
 
     protected void PositionTooltip()
@@ -133,7 +189,7 @@ public class HoverTooltip : MonoBehaviour
 
     protected virtual void OnDisable()
     {
-        if (_isShowing)
-            HideTooltip();
+        _instances.Remove(this);
+        ReleaseOwnership();
     }
 }

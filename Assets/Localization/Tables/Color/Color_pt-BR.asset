@@ -24,12 +24,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3842761676546048
-    m_Localized: vermelh{gender:choose(male|female):o|a}
+    m_Localized: vermelh{gender:choose(male|female):o|a|o}
     m_Metadata:
       m_Items:
       - rid: 6722194805398962277
   - m_Id: 3845440096165888
     m_Localized: azul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4219533538615296
+    m_Localized: marrom
     m_Metadata:
       m_Items: []
   references:

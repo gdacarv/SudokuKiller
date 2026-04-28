@@ -19,6 +19,22 @@ MonoBehaviour:
     m_Key: "object.vase\t"
     m_Metadata:
       m_Items: []
+  - m_Id: 353370895278080
+    m_Key: object.stool
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356060786319360
+    m_Key: object.plant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356883700375552
+    m_Key: object.statue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370241929469952
+    m_Key: object.carpet
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
