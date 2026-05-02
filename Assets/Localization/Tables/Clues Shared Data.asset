@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: clue.onChair
     m_Metadata:
       m_Items: []
+  - m_Id: 7279246115332096
+    m_Key: clue.onlyOnObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

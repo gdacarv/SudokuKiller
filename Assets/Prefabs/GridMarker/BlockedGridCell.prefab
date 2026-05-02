@@ -108,7 +108,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 2
-  col: 2
+  col: 4
   hideGridCell: 1
 --- !u!114 &8916534460792245156
 MonoBehaviour:
@@ -124,4 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GridEntity
   tags: []
   Row: 2
-  Col: 2
+  Col: 4

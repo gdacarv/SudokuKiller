@@ -123,7 +123,7 @@ public class GridManager : MonoBehaviour
 
     private void ApplyEntityMarkers()
     {
-        var markers = GetComponentsInChildren<GridEntityMarker>(includeInactive: true);
+        var markers = Object.FindObjectsByType<GridEntityMarker>(FindObjectsInactive.Exclude);
         Debug.Log($"[GridManager] Found {markers.Length} entity marker(s).");
         foreach (var marker in markers)
         {

@@ -47,6 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 7279246115332096
+    m_Localized: "{0} era a \xFAnica pessoa em {object}"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -58,3 +63,4 @@ MonoBehaviour:
         - id: 593899537031168
         - id: 1689794882035712
         - id: 1707510711967744
+        - id: 7279246115332096

@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Items:
       - rid: 4753990918076105042
   - m_Id: 191881218
-    m_Localized: '{char.bruno} was alone in the room'
+    m_Localized: '{0} was alone in the room'
     m_Metadata:
       m_Items:
       - rid: 4753990918076105042
@@ -85,6 +85,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5030918212280320
     m_Localized: There were other people in the same room as {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12379488628236288
+    m_Localized: '{0} was the only person in their column'
     m_Metadata:
       m_Items: []
   references:

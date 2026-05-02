@@ -9597,6 +9597,7 @@ MonoBehaviour:
   sortingOrder: 5
   sortingLayerName: UI
   offset: {x: 0, y: -0.39}
+  _linesVisible: 1
 --- !u!1 &369473994
 GameObject:
   m_ObjectHideFlags: 0
@@ -10184,7 +10185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
-      value: 187686912
+      value: 3950813503283200
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
@@ -26380,6 +26381,18 @@ PrefabInstance:
       value: Bruno was alone in the room
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'managedReferences[6722194805398962357]'
+      value: Unity.Localization UnityEngine.Localization.SmartFormat.PersistentVariables.StringVariable
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[6722194805398962357].m_Value
+      value: male
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[1].m_LocalVariables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
       value: 3950813503283200
       objectReference: {fileID: 0}
@@ -26388,12 +26401,20 @@ PrefabInstance:
       value: 191881218
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[1].m_LocalVariables.Array.data[0].name
+      value: gender
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
       value: GUID:4af7bbab842694a17bf1b59daa179f12
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[1].m_TableReference.m_TableCollectionName
       value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: lines.Array.data[1].m_LocalVariables.Array.data[0].variable
+      value: 6722194805398962357
       objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingLayer
@@ -53153,7 +53174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
-      value: 191881221
+      value: 3950813503283200
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName

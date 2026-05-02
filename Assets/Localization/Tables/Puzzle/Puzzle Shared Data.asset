@@ -20,7 +20,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 191881218
-    m_Key: clue.bruno.1
+    m_Key: clue.aloneInRoom
     m_Metadata:
       m_Items: []
   - m_Id: 191881221
@@ -77,6 +77,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5030918212280320
     m_Key: clue.notAlone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12379488628236288
+    m_Key: clue.aloneInColumn
     m_Metadata:
       m_Items: []
   m_Metadata:

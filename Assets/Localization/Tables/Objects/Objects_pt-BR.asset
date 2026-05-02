@@ -16,16 +16,18 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: dc78d4cea0a8045cd9cc33a34bef791f, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6722194805398962331
   m_TableData:
   - m_Id: 43678425088
     m_Localized: vaso
     m_Metadata:
       m_Items: []
   - m_Id: 353370895278080
-    m_Localized: banquinho
+    m_Localized: '{useArticle:um |}banquinho'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962331
   - m_Id: 356060786319360
     m_Localized: planta
     m_Metadata:
@@ -40,4 +42,10 @@ MonoBehaviour:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6722194805398962331
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 353370895278080
