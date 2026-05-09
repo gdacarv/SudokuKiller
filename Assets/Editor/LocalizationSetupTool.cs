@@ -41,7 +41,9 @@ public static class LocalizationSetupTool
             ["tooltip.cluesHeader"]     = "<b>Clues:</b>",
         });
 
-        var puzzle = CreateStringTableCollection("Puzzle", enLocale, new Dictionary<string, string>
+        var puzzle = CreateStringTableCollection("Puzzle", enLocale, new Dictionary<string, string>());
+
+        var clues = CreateStringTableCollection("Clues", enLocale, new Dictionary<string, string>
         {
             ["clue.carla.0"]  = "{char.carla} was the only person in his row and column",
             ["clue.bruno.0"]  = "{char.bruno} was the only person in his row and column",
@@ -58,11 +60,11 @@ public static class LocalizationSetupTool
         });
 
         // Enable Smart Strings on clue entries
-        var enTable = puzzle.GetTable(enLocale.Identifier) as StringTable;
+        var enTable = clues.GetTable(enLocale.Identifier) as StringTable;
         if (enTable != null) SetSmartOnClueEntries(enTable);
 
         AssetDatabase.SaveAssets();
-        WireSceneObjects(ui, puzzle, names);
+        WireSceneObjects(ui, puzzle, names, clues);
         SyncVariableGroupsMenuItem();
         AssetDatabase.SaveAssets();
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
@@ -74,12 +76,12 @@ public static class LocalizationSetupTool
 
     public static void SetupSmartNames()
     {
-        var puzzle = LocalizationEditorSettings.GetStringTableCollection("Puzzle");
-        if (puzzle == null) { Debug.LogError("[LocalizationSetup] Puzzle table not found. Run Setup first."); return; }
+        var clues = LocalizationEditorSettings.GetStringTableCollection("Clues");
+        if (clues == null) { Debug.LogError("[LocalizationSetup] Clues table not found. Run Setup first."); return; }
         var names = LocalizationEditorSettings.GetStringTableCollection("Names");
         if (names == null) { Debug.LogError("[LocalizationSetup] Names table not found. Run Setup first."); return; }
 
-        var enTable = puzzle.GetTable(new LocaleIdentifier("en")) as StringTable;
+        var enTable = clues.GetTable(new LocaleIdentifier("en")) as StringTable;
         if (enTable != null)
         {
             UpdateEntryAsSmart(enTable, "clue.adam.0",  "{char.adam} was the only person in his row and column");
@@ -98,7 +100,7 @@ public static class LocalizationSetupTool
             EditorUtility.SetDirty(enNamesTable);
         }
 
-        var ptTable = puzzle.GetTable(new LocaleIdentifier("pt-BR")) as StringTable;
+        var ptTable = clues.GetTable(new LocaleIdentifier("pt-BR")) as StringTable;
         if (ptTable != null)
         {
             UpdateEntryAsSmart(ptTable, "clue.adam.0",  "{char.adam} era a única pessoa em sua linha e coluna");
@@ -117,7 +119,7 @@ public static class LocalizationSetupTool
             EditorUtility.SetDirty(ptNamesTable);
         }
 
-        EditorUtility.SetDirty(puzzle.SharedData);
+        EditorUtility.SetDirty(clues.SharedData);
         EditorUtility.SetDirty(names.SharedData);
         SyncVariableGroupsMenuItem();
 
@@ -314,6 +316,196 @@ public static class LocalizationSetupTool
         Debug.Log($"[Migration] Done! Moved {nameEntries.Count} name.* entries from Puzzle → Names.");
     }
 
+    [MenuItem("Tools/Localization/Migrate Clues to Clues Table")]
+    public static void MigrateCluesToCluesTable()
+    {
+        var puzzle = LocalizationEditorSettings.GetStringTableCollection("Puzzle");
+        if (puzzle == null) { Debug.LogError("[Migration] Puzzle table not found."); return; }
+
+        var clues = LocalizationEditorSettings.GetStringTableCollection("Clues");
+        if (clues == null) { Debug.LogError("[Migration] Clues table not found. Create it before migrating."); return; }
+
+        var clueEntries = new List<SharedTableData.SharedTableEntry>();
+        foreach (var entry in puzzle.SharedData.Entries)
+        {
+            if (entry.Key.StartsWith("clue."))
+                clueEntries.Add(entry);
+        }
+
+        if (clueEntries.Count == 0) { Debug.Log("[Migration] No clue.* entries found in Puzzle. Nothing to migrate."); return; }
+
+        var idToKey   = new Dictionary<long, string>();
+        var idToSmart = new Dictionary<long, bool>();
+        var enPuzzle  = puzzle.GetTable(new LocaleIdentifier("en")) as StringTable;
+
+        foreach (var entry in clueEntries)
+        {
+            idToKey[entry.Id] = entry.Key;
+            var srcEntry = enPuzzle?.GetEntry(entry.Id);
+            if (srcEntry == null)
+            {
+                foreach (var tableObj in puzzle.StringTables)
+                {
+                    var st = tableObj as StringTable;
+                    srcEntry = st?.GetEntry(entry.Id);
+                    if (srcEntry != null) break;
+                }
+            }
+            idToSmart[entry.Id] = srcEntry?.IsSmart ?? false;
+        }
+
+        var locales = LocalizationEditorSettings.GetLocales();
+
+        foreach (var locale in locales)
+        {
+            if (clues.GetTable(locale.Identifier) == null)
+                clues.AddNewTable(locale.Identifier);
+        }
+
+        // Copy values and smart flag for each locale
+        foreach (var locale in locales)
+        {
+            var puzzleTable = puzzle.GetTable(locale.Identifier) as StringTable;
+            var cluesTable  = clues.GetTable(locale.Identifier) as StringTable;
+            if (cluesTable == null) continue;
+
+            foreach (var entry in clueEntries)
+            {
+                string value = puzzleTable?.GetEntry(entry.Id)?.Value ?? entry.Key;
+                AddOrUpdateEntry(cluesTable, entry.Key, value);
+                var clueEntry = cluesTable.GetEntry(entry.Key);
+                if (clueEntry != null) clueEntry.IsSmart = idToSmart[entry.Id];
+            }
+            EditorUtility.SetDirty(cluesTable);
+        }
+        EditorUtility.SetDirty(clues.SharedData);
+        AssetDatabase.SaveAssets();
+
+        // Rewire CluesTooltip.lines in all prefabs
+        var allPrefabGuids = AssetDatabase.FindAssets("t:Prefab", new[] { "Assets" });
+        foreach (var prefabGuid in allPrefabGuids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(prefabGuid);
+            var go = AssetDatabase.LoadAssetAtPath<GameObject>(path);
+            if (go == null) continue;
+
+            bool prefabModified = false;
+            foreach (var ct in go.GetComponentsInChildren<CluesTooltip>(true))
+            {
+                var newLines = new List<LocalizedString>();
+                bool changed = false;
+                foreach (var ls in ct.lines)
+                {
+                    if (ls == null) { newLines.Add(new LocalizedString()); continue; }
+                    long oldKeyId = ls.TableEntryReference.KeyId;
+                    if (idToKey.TryGetValue(oldKeyId, out var key))
+                    {
+                        newLines.Add(MakeLS(clues, key));
+                        changed = true;
+                        Debug.Log($"[Migration] Rewired '{key}' on '{ct.gameObject.name}' in prefab '{path}'");
+                    }
+                    else
+                    {
+                        newLines.Add(ls);
+                    }
+                }
+                if (changed)
+                {
+                    SetField(ct, "lines", newLines);
+                    prefabModified = true;
+                }
+            }
+
+            if (prefabModified)
+                EditorUtility.SetDirty(go);
+        }
+        AssetDatabase.SaveAssets();
+
+        // Rewire CluesTooltip.lines in all scenes
+        var allSceneGuids = AssetDatabase.FindAssets("t:Scene", new[] { "Assets" });
+        foreach (var sceneGuid in allSceneGuids)
+        {
+            string scenePath = AssetDatabase.GUIDToAssetPath(sceneGuid);
+            var loadedScene  = EditorSceneManager.GetSceneByPath(scenePath);
+            bool wasLoaded   = loadedScene.isLoaded;
+
+            if (!wasLoaded)
+                loadedScene = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Additive);
+
+            bool modified = false;
+            foreach (var rootGO in loadedScene.GetRootGameObjects())
+            foreach (var ct in rootGO.GetComponentsInChildren<CluesTooltip>(true))
+            {
+                var newLines = new List<LocalizedString>();
+                bool changed = false;
+                foreach (var ls in ct.lines)
+                {
+                    if (ls == null) { newLines.Add(new LocalizedString()); continue; }
+                    long oldKeyId = ls.TableEntryReference.KeyId;
+                    if (idToKey.TryGetValue(oldKeyId, out var key))
+                    {
+                        newLines.Add(MakeLS(clues, key));
+                        changed = true;
+                        Debug.Log($"[Migration] Rewired '{key}' on '{ct.gameObject.name}' in '{scenePath}'");
+                    }
+                    else
+                    {
+                        newLines.Add(ls);
+                    }
+                }
+                if (changed)
+                {
+                    SetField(ct, "lines", newLines);
+                    modified = true;
+                }
+            }
+
+            if (modified)
+                EditorSceneManager.SaveScene(loadedScene);
+
+            if (!wasLoaded)
+                EditorSceneManager.CloseScene(loadedScene, true);
+        }
+
+        // Update VariableSyncConfig if any clue rule still points at Puzzle
+        const string configPath = "Assets/Localization/VariableSyncConfig.asset";
+        var config = AssetDatabase.LoadAssetAtPath<VariableSyncConfig>(configPath);
+        if (config != null)
+        {
+            foreach (var rule in config.rules)
+            {
+                if (rule.tableCollectionName == "Puzzle" && rule.keyPrefix == "clue.")
+                {
+                    rule.tableCollectionName = "Clues";
+                    EditorUtility.SetDirty(config);
+                    Debug.Log("[Migration] Updated VariableSyncConfig to use Clues table.");
+                }
+            }
+        }
+
+        // Remove clue.* entries from Puzzle
+        foreach (var entry in clueEntries)
+        {
+            long id = entry.Id;
+            foreach (var tableObj in puzzle.StringTables)
+            {
+                var st = tableObj as StringTable;
+                if (st == null) continue;
+                if (st.GetEntry(id) != null)
+                {
+                    st.RemoveEntry(id);
+                    EditorUtility.SetDirty(st);
+                }
+            }
+            puzzle.SharedData.RemoveKey(id);
+        }
+        EditorUtility.SetDirty(puzzle.SharedData);
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log($"[Migration] Done! Moved {clueEntries.Count} clue.* entries from Puzzle → Clues.");
+    }
+
     [MenuItem("Tools/Localization/Sync Variable Groups")]
     public static void SyncVariableGroupsMenuItem()
     {
@@ -504,7 +696,7 @@ public static class LocalizationSetupTool
 
     // ─── Scene wiring ─────────────────────────────────────────────────────────
 
-    static void WireSceneObjects(StringTableCollection ui, StringTableCollection puzzle, StringTableCollection names)
+    static void WireSceneObjects(StringTableCollection ui, StringTableCollection puzzle, StringTableCollection names, StringTableCollection clues)
     {
         var btn = FindFirst<IdentifyKillerButton>();
         if (btn != null)
@@ -524,9 +716,9 @@ public static class LocalizationSetupTool
         foreach (var tip in FindAll<TooltipUI>())
             SetField(tip, "cluesHeaderLocalized", MakeLS(ui, "tooltip.cluesHeader"));
 
-        WireCharacterClues(puzzle, "Carla", new[] { "clue.carla.0" });
-        WireCharacterClues(puzzle, "Bruno", new[] { "clue.bruno.0", "clue.bruno.1" });
-        WireCharacterClues(puzzle, "Adam",  new[] { "clue.adam.0" });
+        WireCharacterClues(clues, "Carla", new[] { "clue.carla.0" });
+        WireCharacterClues(clues, "Bruno", new[] { "clue.bruno.0", "clue.bruno.1" });
+        WireCharacterClues(clues, "Adam",  new[] { "clue.adam.0" });
 
         var victimGO = GameObject.Find("Victim");
         if (victimGO != null)
@@ -627,7 +819,7 @@ public static class LocalizationSetupTool
             ["tooltip.cluesHeader"]     = "<b>Pistas:</b>",
         });
 
-        AddTranslationsToCollection("Puzzle", ptLocale, new Dictionary<string, string>
+        AddTranslationsToCollection("Clues", ptLocale, new Dictionary<string, string>
         {
             ["clue.carla.0"]  = "{char.carla} era a única pessoa em sua linha e coluna",
             ["clue.bruno.0"]  = "{char.bruno} era a única pessoa em sua linha e coluna",

@@ -15,26 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: Puzzle
   m_TableCollectionNameGuidString: 4af7bbab842694a17bf1b59daa179f12
   m_Entries:
-  - m_Id: 187686912
-    m_Key: clue.carla.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 191881218
-    m_Key: clue.aloneInRoom
-    m_Metadata:
-      m_Items: []
-  - m_Id: 191881221
-    m_Key: clue.adam.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 128387556302848
-    m_Key: clue.victim.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 304649553829888
-    m_Key: clue.victim.1
-    m_Metadata:
-      m_Items: []
   - m_Id: 1087788089860096
     m_Key: killer.notInSection
     m_Metadata:
@@ -63,24 +43,8 @@ MonoBehaviour:
     m_Key: room.name.office
     m_Metadata:
       m_Items: []
-  - m_Id: 3950813503283200
-    m_Key: clue.aloneInRowAndColumn
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4657919789359104
-    m_Key: clue.isAKid
-    m_Metadata:
-      m_Items: []
   - m_Id: 4658726513401856
     m_Key: killer.notAKid
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5030918212280320
-    m_Key: clue.notAlone
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12379488628236288
-    m_Key: clue.aloneInColumn
     m_Metadata:
       m_Items: []
   m_Metadata:

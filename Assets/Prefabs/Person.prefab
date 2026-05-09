@@ -212,9 +212,9 @@ MonoBehaviour:
   tooltipUI: {fileID: 0}
   lines:
   - m_TableReference:
-      m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+      m_TableCollectionName: GUID:02306047dfa66470a83d9d6433c37f1d
     m_TableEntryReference:
-      m_KeyId: 3950813503283200
+      m_KeyId: 7564429460758532
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

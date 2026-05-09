@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Sudoku/Rules/Require Tagged Cell")]
-public class RequireTaggedCellRule : DraggableRule
+public class RequireTaggedCellRule : Rule
 {
     [Tooltip("All these tags must exist on a GridEntity at the target cell (AND logic).")]
     public List<GridEntity.TagEntry> cellTags = new();

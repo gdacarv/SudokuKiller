@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5c7b436836cc4a6bb8214dd0989459e, type: 3}
+  m_Script: {fileID: 11500000, guid: 31dfe9cf4309349a485939d9595ad520, type: 3}
   m_Name: KillerClose2Victim
   m_EditorClassIdentifier: Assembly-CSharp::KillerDistanceToTagRule
-  failureMessage:
+  killerFailureMessage:
     m_TableReference:
       m_TableCollectionName: GUID:02306047dfa66470a83d9d6433c37f1d
     m_TableEntryReference:
@@ -26,7 +26,7 @@ MonoBehaviour:
     value: Person
   - key: subtype
     value: Victim
-  metric: 1
+  metric: 0
   comparison: 1
   distance: 2
   requireAll: 0

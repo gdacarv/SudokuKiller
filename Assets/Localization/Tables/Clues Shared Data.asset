@@ -43,6 +43,42 @@ MonoBehaviour:
     m_Key: clue.onlyOnObject
     m_Metadata:
       m_Items: []
+  - m_Id: 7564429443981312
+    m_Key: clue.carla.0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758528
+    m_Key: clue.aloneInRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758529
+    m_Key: clue.adam.0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758530
+    m_Key: clue.victim.0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758531
+    m_Key: clue.victim.1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758532
+    m_Key: clue.aloneInRowAndColumn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758533
+    m_Key: clue.isAKid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758534
+    m_Key: clue.notAlone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7564429460758535
+    m_Key: clue.aloneInColumn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

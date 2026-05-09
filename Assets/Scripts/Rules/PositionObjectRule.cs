@@ -2,10 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum GridAxis { Vertical, Horizontal }
-public enum PositionComparison { Less, LessOrEqual, Equal, GreaterOrEqual, Greater }
 
 [CreateAssetMenu(menuName = "Sudoku/Rules/Position Object")]
-public class PositionObjectRule : DraggableRule
+public class PositionObjectRule : Rule
 {
     [Tooltip("Tags identifying the target object(s) (AND logic — entity must match all entries)")]
     public List<GridEntity.TagEntry> targetTags = new();

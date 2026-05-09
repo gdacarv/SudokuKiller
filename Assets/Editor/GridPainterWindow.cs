@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class GridPainterWindow : EditorWindow
 {
+    private enum Mode { Off, Paint, Erase }
+
     private GameObject _prefab;
     private int _sectionId = 0;
-    private bool _eraseMode = false;
+    private Mode _mode = Mode.Off;
     private bool _replaceExisting = true;
     private GridManager _gridManager;
 
@@ -44,20 +46,27 @@ public class GridPainterWindow : EditorWindow
 
         EditorGUILayout.Space();
         Color prev = GUI.backgroundColor;
-        GUI.backgroundColor = _eraseMode ? new Color(1f, 0.4f, 0.4f) : new Color(0.4f, 1f, 0.6f);
-        if (GUILayout.Button(_eraseMode ? "Mode: ERASE  (click to toggle)" : "Mode: PAINT  (click to toggle)", GUILayout.Height(30)))
-            _eraseMode = !_eraseMode;
+        GUI.backgroundColor = _mode switch
+        {
+            Mode.Paint => new Color(0.4f, 1f, 0.6f),
+            Mode.Erase => new Color(1f, 0.4f, 0.4f),
+            _ => new Color(0.85f, 0.85f, 0.85f),
+        };
+        _mode = (Mode)GUILayout.Toolbar((int)_mode, new[] { "OFF", "Paint", "Erase" }, GUILayout.Height(30));
         GUI.backgroundColor = prev;
 
         EditorGUILayout.Space();
         EditorGUILayout.HelpBox(
-            "Click or drag in the Scene view to paint/erase cells.\nHold the mouse button and drag to paint multiple cells.",
+            _mode == Mode.Off
+                ? "Grid Painter is OFF — scene interaction works normally."
+                : "Click or drag in the Scene view to paint/erase cells.\nHold the mouse button and drag to paint multiple cells.",
             MessageType.Info);
     }
 
     private void OnSceneGUI(SceneView sceneView)
     {
         if (_gridManager == null) return;
+        if (_mode == Mode.Off) return;
 
         Event e = Event.current;
 
@@ -81,7 +90,7 @@ public class GridPainterWindow : EditorWindow
         if (cell == _lastPaintedCell) return;
         _lastPaintedCell = cell;
 
-        if (_eraseMode)
+        if (_mode == Mode.Erase)
             EraseCell(cell);
         else
             PaintCell(cell);

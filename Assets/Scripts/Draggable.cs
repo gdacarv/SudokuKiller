@@ -9,7 +9,7 @@ public class Draggable : MonoBehaviour
     [Header("References")]
     public GridManager gridManager;
     [Header("Rules")]
-    public List<DraggableRule> rules = new();
+    public List<Rule> rules = new();
 
     public DragInputProvider inputProvider;
 

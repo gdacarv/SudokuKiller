@@ -16,33 +16,8 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 4af7bbab842694a17bf1b59daa179f12, type: 2}
   m_Metadata:
-    m_Items:
-    - rid: 4753990918076105041
+    m_Items: []
   m_TableData:
-  - m_Id: 187686912
-    m_Localized: "{char.carla} era a \xFAnica pessoa em sua linha e coluna"
-    m_Metadata:
-      m_Items:
-      - rid: 4753990918076105041
-  - m_Id: 191881218
-    m_Localized: "{0} estava sozinh{gender:choose(male|female):o|a|o} no c\xF4modo"
-    m_Metadata:
-      m_Items:
-      - rid: 4753990918076105041
-  - m_Id: 191881221
-    m_Localized: "{char.adam} era a \xFAnica pessoa em sua linha e coluna"
-    m_Metadata:
-      m_Items:
-      - rid: 4753990918076105041
-  - m_Id: 128387556302848
-    m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o Assassino"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 304649553829888
-    m_Localized: "A V\xEDtima estava abaixo de {char.carla}"
-    m_Metadata:
-      m_Items:
-      - rid: 4753990918076105041
   - m_Id: 1087788089860096
     m_Localized: "Errado! {0} n\xE3o est\xE1 no mesmo c\xF4modo da V\xEDtima!"
     m_Metadata:
@@ -71,35 +46,10 @@ MonoBehaviour:
     m_Localized: "Escrit\xF3rio"
     m_Metadata:
       m_Items: []
-  - m_Id: 3950813503283200
-    m_Localized: "{0} era a \xFAnica pessoa em sua linha e coluna"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4657919789359104
-    m_Localized: "{0} \xE9 uma Crian\xE7a"
-    m_Metadata:
-      m_Items: []
   - m_Id: 4658726513401856
     m_Localized: "O Assassino n\xE3o \xE9 uma Crian\xE7a!"
     m_Metadata:
       m_Items: []
-  - m_Id: 5030918212280320
-    m_Localized: "Havia mais gente no mesmo c\xF4modo de {0}"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12379488628236288
-    m_Localized: "{0} era a \xFAnica pessoa em sua coluna"
-    m_Metadata:
-      m_Items: []
   references:
     version: 2
-    RefIds:
-    - rid: 4753990918076105041
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 
-        m_SharedEntries:
-        - id: 191881221
-        - id: 191881218
-        - id: 187686912
-        - id: 304649553829888
+    RefIds: []

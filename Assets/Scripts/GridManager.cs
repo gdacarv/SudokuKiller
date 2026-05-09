@@ -10,10 +10,10 @@ public class GridManager : MonoBehaviour
     public GridOverlay gridOverlay;
 
     [Header("Board Rules")]
-    public List<BoardRule> boardRules = new();
+    public List<Rule> boardRules = new();
 
     [Header("Killer Rules")]
-    public List<KillerRule> killerRules = new();
+    public List<Rule> killerRules = new();
 
     [Header("Validation Settings")]
     public bool preventInvalidPlacement = true;
@@ -282,10 +282,10 @@ public bool AreAllDraggablesInSolutionCells()
         return true;
     }
 
-    public KillerRule EvaluateKillerRules(Draggable suspect)
+    public Rule EvaluateKillerRules(Draggable suspect)
     {
         foreach (var rule in killerRules)
-            if (!rule.Evaluate(this, suspect))
+            if (!rule.CanPlace(this, suspect, suspect.Entity.Row, suspect.Entity.Col))
                 return rule;
         return null;
     }

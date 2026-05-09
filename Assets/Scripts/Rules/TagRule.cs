@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Sudoku/Killer Rules/Killer Tag")]
-public class KillerTagRule : KillerRule
+[CreateAssetMenu(menuName = "Sudoku/Rules/Killer Tag")]
+public class TagRule : Rule
 {
     public enum MatchMode { All, Any }
     public enum ExpectMode { Has, HasNot }
@@ -11,11 +11,11 @@ public class KillerTagRule : KillerRule
     public MatchMode matchMode = MatchMode.All;
     public ExpectMode expectMode = ExpectMode.Has;
 
-    public override bool Evaluate(GridManager manager, Draggable suspect)
+    public override bool CanPlace(GridManager manager, Draggable target, int row, int col)
     {
         bool matches = matchMode == MatchMode.All
-            ? suspect.Entity.MatchesAll(tags)
-            : MatchesAny(suspect.Entity);
+            ? target.Entity.MatchesAll(tags)
+            : MatchesAny(target.Entity);
 
         return expectMode == ExpectMode.Has ? matches : !matches;
     }
