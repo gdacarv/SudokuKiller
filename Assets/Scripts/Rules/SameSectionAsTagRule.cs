@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Sudoku/Rules/Killer Same Section As Tag")]
+[CreateAssetMenu(menuName = "Sudoku/Rules/Same Section As Tag")]
 public class SameSectionAsTagRule : Rule
 {
     public List<GridEntity.TagEntry> targetTags = new();

@@ -92,6 +92,15 @@ MonoBehaviour:
     m_Localized: "{0} era a \xFAnica pessoa em sua coluna"
     m_Metadata:
       m_Items: []
+  - m_Id: 10118092045672448
+    m_Localized: "{0} estava pr\xF3xim{gender:choose(male|female):o|a|o(a)} de {colorObject}"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 10138690801098752
+    m_Localized: "{0} era a \xFAnica pessoa adulta em sua linha e coluna"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -108,3 +117,4 @@ MonoBehaviour:
         - id: 7564429460758528
         - id: 7564429460758529
         - id: 7564429460758531
+        - id: 10118092045672448

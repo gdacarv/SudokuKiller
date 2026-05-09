@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Sudoku/Rules/Killer In Section")]
+[CreateAssetMenu(menuName = "Sudoku/Rules/In Section")]
 public class InSectionRule : Rule
 {
     public int targetSection;

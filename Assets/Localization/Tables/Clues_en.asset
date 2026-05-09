@@ -90,6 +90,15 @@ MonoBehaviour:
     m_Localized: '{0} was the only person in their column'
     m_Metadata:
       m_Items: []
+  - m_Id: 10118092045672448
+    m_Localized: '{0} was next to {colorObject}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 10138690801098752
+    m_Localized: '{0} was the only adult in their row and column'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -105,3 +114,4 @@ MonoBehaviour:
         - id: 7564429460758528
         - id: 7564429460758529
         - id: 7564429460758531
+        - id: 10118092045672448

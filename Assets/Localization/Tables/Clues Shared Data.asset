@@ -79,6 +79,14 @@ MonoBehaviour:
     m_Key: clue.aloneInColumn
     m_Metadata:
       m_Items: []
+  - m_Id: 10118092045672448
+    m_Key: clue.nextToColorObject
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138690801098752
+    m_Key: clue.onlyAdultInRowAndColumn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

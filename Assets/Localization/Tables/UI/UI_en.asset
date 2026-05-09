@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10670133193203712
-    m_Localized: '{color} {object}'
+    m_Localized: '{articleEN}{color} {object}'
     m_Metadata:
       m_Items:
       - rid: 6722194805398962274

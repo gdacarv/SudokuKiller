@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Sudoku/Rules/Killer Tag")]
+[CreateAssetMenu(menuName = "Sudoku/Rules/Tag")]
 public class TagRule : Rule
 {
     public enum MatchMode { All, Any }

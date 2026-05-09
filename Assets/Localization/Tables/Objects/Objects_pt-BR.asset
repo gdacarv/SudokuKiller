@@ -20,9 +20,10 @@ MonoBehaviour:
     - rid: 6722194805398962331
   m_TableData:
   - m_Id: 43678425088
-    m_Localized: vaso
+    m_Localized: '{article:um |}vaso'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962331
   - m_Id: 353370895278080
     m_Localized: '{useArticle:um |}banquinho'
     m_Metadata:
@@ -49,3 +50,4 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 353370895278080
+        - id: 43678425088
