@@ -18051,11 +18051,11 @@ PrefabInstance:
       objectReference: {fileID: -1957540092, guid: 8b88c66620c7a492da3680c4bb5c7be3, type: 3}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Color.b
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2066006038807832617, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_Color.g
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2619917107855281601, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: localizedName.m_TableEntryReference.m_KeyId

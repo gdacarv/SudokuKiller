@@ -49,6 +49,7 @@ public class GridManager : MonoBehaviour
 
     private void InitializeGridState()
     {
+        _entities.Clear();
         _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
         _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
         _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
@@ -346,8 +347,20 @@ public bool AreAllDraggablesInSolutionCells()
 
             int r = sol.solutionRow;
             int c = sol.solutionCol;
-            if (r >= 0 && r < gridOverlay.rows && c >= 0 && c < gridOverlay.cols)
+            bool inBounds = r >= 0 && r < gridOverlay.rows && c >= 0 && c < gridOverlay.cols;
+
+            if (inBounds)
+            {
                 _occupants[r, c] = draggable;
+                draggable.Entity.Row = r;
+                draggable.Entity.Col = c;
+            }
+            else
+            {
+                draggable.Entity.Row = -1;
+                draggable.Entity.Col = -1;
+            }
+            RegisterEntity(draggable.Entity);
         }
 
         RefreshViolationHighlights();
