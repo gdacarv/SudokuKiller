@@ -13,14 +13,35 @@ public class GridEntity : MonoBehaviour
 
     public List<TagEntry> tags = new();
 
+    [Tooltip("When enabled, this entity ignores its own tags and uses the tags of the nearest ancestor GridEntity instead.")]
+    public bool inheritTagsFromParent;
+
     [HideInInspector] public int Row = -1;
     [HideInInspector] public int Col = -1;
 
     public bool IsOnGrid => Row >= 0 && Col >= 0;
 
+    static readonly List<TagEntry> _empty = new();
+
+    public GridEntity ParentEntity =>
+        transform.parent != null ? transform.parent.GetComponentInParent<GridEntity>() : null;
+
+    public List<TagEntry> ResolvedTags
+    {
+        get
+        {
+            if (inheritTagsFromParent)
+            {
+                var parent = ParentEntity;
+                return parent != null ? parent.ResolvedTags : _empty;
+            }
+            return tags;
+        }
+    }
+
     public string GetTag(string key)
     {
-        foreach (var entry in tags)
+        foreach (var entry in ResolvedTags)
             if (entry.key == key)
                 return entry.value;
         return null;
@@ -28,7 +49,7 @@ public class GridEntity : MonoBehaviour
 
     public bool HasTag(string key, string value)
     {
-        foreach (var entry in tags)
+        foreach (var entry in ResolvedTags)
             if (entry.key == key && entry.value == value)
                 return true;
         return false;
@@ -36,7 +57,7 @@ public class GridEntity : MonoBehaviour
 
     public bool HasKey(string key)
     {
-        foreach (var entry in tags)
+        foreach (var entry in ResolvedTags)
             if (entry.key == key)
                 return true;
         return false;

@@ -41,6 +41,10 @@ MonoBehaviour:
     m_Localized: carpet
     m_Metadata:
       m_Items: []
+  - m_Id: 6425924303052800
+    m_Localized: fossils
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -15,7 +15,7 @@ public class HoverTooltip : MonoBehaviour
     public DragInputProvider inputProvider;
     public TooltipUI tooltipUI;
 
-    protected Collider2D _collider;
+    protected Collider2D[] _colliders;
     protected Renderer _sortingRenderer;
     private float _hoverTimer;
     protected bool _isShowing;
@@ -37,7 +37,7 @@ public class HoverTooltip : MonoBehaviour
 
     void Awake()
     {
-        _collider = GetComponent<Collider2D>();
+        _colliders = GetComponentsInChildren<Collider2D>(true);
         _sortingRenderer = GetComponentInChildren<Renderer>(true);
     }
 
@@ -61,7 +61,7 @@ public class HoverTooltip : MonoBehaviour
         if (inputProvider == null || tooltipUI == null) return;
 
         Vector3 pointerWorldPos = inputProvider.PointerWorldPosition;
-        bool isHovering = _collider.OverlapPoint(pointerWorldPos);
+        bool isHovering = AnyColliderOverlaps(pointerWorldPos);
         bool isHeld = inputProvider.IsHeld;
 
         if (isHovering && !isHeld)
@@ -100,7 +100,7 @@ public class HoverTooltip : MonoBehaviour
 
         foreach (var instance in _instances)
         {
-            if (!instance._collider.OverlapPoint(pointerWorldPos)) continue;
+            if (!instance.AnyColliderOverlaps(pointerWorldPos)) continue;
 
             int layerValue = instance._sortingRenderer != null
                 ? SortingLayer.GetLayerValueFromID(instance._sortingRenderer.sortingLayerID)
@@ -122,6 +122,13 @@ public class HoverTooltip : MonoBehaviour
         }
 
         return topmost == this;
+    }
+
+    private bool AnyColliderOverlaps(Vector2 worldPoint)
+    {
+        for (int i = 0; i < _colliders.Length; i++)
+            if (_colliders[i].OverlapPoint(worldPoint)) return true;
+        return false;
     }
 
     private void ReleaseOwnership()

@@ -29,7 +29,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 599727119785984
-    m_Localized: "O Assassino foi a pessoa mais pr\xF3xima da {0}"
+    m_Localized: "O(a) Assassino(a) foi a pessoa mais pr\xF3xima da {0}"
     m_Metadata:
       m_Items: []
   - m_Id: 1687770585096192
@@ -93,7 +93,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10118092045672448
-    m_Localized: "{0} estava pr\xF3xim{gender:choose(male|female):o|a|o(a)} de {colorObject}"
+    m_Localized: "{useArticle:{gender:choose(male|female):O|A|O(A)} |}{0} estava
+      pr\xF3xim{gender:choose(male|female):o|a|o(a)} de {colorObject}"
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153

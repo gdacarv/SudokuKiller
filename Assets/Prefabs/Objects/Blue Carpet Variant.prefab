@@ -52,6 +52,7 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: blue
+  inheritTagsFromParent: 1
   Row: 4
   Col: 3
 --- !u!114 &4516256658288549333
@@ -122,6 +123,7 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: blue
+  inheritTagsFromParent: 1
   Row: 3
   Col: 3
 --- !u!114 &2248826451909833767
@@ -192,6 +194,7 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: blue
+  inheritTagsFromParent: 1
   Row: 4
   Col: 4
 --- !u!114 &4461253498171599673
@@ -262,6 +265,7 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: blue
+  inheritTagsFromParent: 1
   Row: 3
   Col: 2
 --- !u!114 &4537571328670625813
@@ -332,6 +336,7 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: blue
+  inheritTagsFromParent: 1
   Row: 4
   Col: 2
 --- !u!114 &5922202099827926874
@@ -450,6 +455,10 @@ PrefabInstance:
       propertyPath: m_TileAnchor.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7847142593291311707, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7847142593291311707, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: m_Name
       value: Blue Carpet Variant

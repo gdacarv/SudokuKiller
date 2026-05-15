@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: object.carpet
     m_Metadata:
       m_Items: []
+  - m_Id: 6425924303052800
+    m_Key: object.fossils
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

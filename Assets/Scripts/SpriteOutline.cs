@@ -34,7 +34,7 @@ public class SpriteOutline : MonoBehaviour
     SpriteRenderer _spriteSrc;
     Tilemap _tilemap;
     TilemapRenderer _tilemapSrc;
-    Collider2D _collider;
+    Collider2D[] _colliders;
 
     // Sprite path
     SpriteRenderer[] _spriteOutlines;
@@ -73,7 +73,7 @@ public class SpriteOutline : MonoBehaviour
         _spriteSrc = GetComponent<SpriteRenderer>();
         _tilemap = GetComponent<Tilemap>();
         _tilemapSrc = GetComponent<TilemapRenderer>();
-        _collider = GetComponent<Collider2D>();
+        _colliders = GetComponentsInChildren<Collider2D>(true);
         if (inputProvider == null)
             inputProvider = FindFirstObjectByType<DragInputProvider>();
 
@@ -186,10 +186,17 @@ public class SpriteOutline : MonoBehaviour
         if (inputProvider != null && !(suppressWhileDragging && inputProvider.IsHeld))
         {
             Vector3 pointerWorldPos = inputProvider.PointerWorldPosition;
-            if (_collider.OverlapPoint(pointerWorldPos))
+            if (AnyColliderOverlaps(pointerWorldPos))
                 hovered = IsTopmostHovered(pointerWorldPos);
         }
         _active = hovered || IsSelected;
+    }
+
+    bool AnyColliderOverlaps(Vector2 worldPoint)
+    {
+        for (int i = 0; i < _colliders.Length; i++)
+            if (_colliders[i].OverlapPoint(worldPoint)) return true;
+        return false;
     }
 
     bool IsTopmostHovered(Vector3 pointerWorldPos)
@@ -201,7 +208,7 @@ public class SpriteOutline : MonoBehaviour
 
         foreach (var instance in _instances)
         {
-            if (instance._collider == null || !instance._collider.OverlapPoint(pointerWorldPos)) continue;
+            if (!instance.AnyColliderOverlaps(pointerWorldPos)) continue;
 
             instance.GetSortingKey(out int layerValue, out int order);
             int id = instance.GetInstanceID();

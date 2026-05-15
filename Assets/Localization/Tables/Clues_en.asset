@@ -91,7 +91,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10118092045672448
-    m_Localized: '{0} was next to {colorObject}'
+    m_Localized: '{useArticle:The |}{0} was next to {colorObject}'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152

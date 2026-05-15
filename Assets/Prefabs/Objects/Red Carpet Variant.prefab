@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1654212211080437694}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.48000002, y: 0.47999996, z: 0}
+  m_LocalPosition: {x: -0.48000002, y: 0.48000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52,8 +52,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: red
+  inheritTagsFromParent: 1
   Row: 4
-  Col: 12
+  Col: 9
 --- !u!114 &4408668513518218916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +70,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 4
-  col: 12
+  col: 9
 --- !u!1 &1967836574997489015
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,8 +123,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: red
+  inheritTagsFromParent: 1
   Row: 3
-  Col: 11
+  Col: 8
 --- !u!114 &2013427879112399234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +141,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 3
-  col: 11
+  col: 8
 --- !u!1 &4556443771877554737
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 4556443771877554737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.96000004, y: 0.47999996, z: 0}
+  m_LocalPosition: {x: -0.96000004, y: 0.48000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -192,8 +194,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: red
+  inheritTagsFromParent: 1
   Row: 4
-  Col: 11
+  Col: 8
 --- !u!114 &7838970348401546583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +212,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 4
-  col: 11
+  col: 8
 --- !u!1 &6456127518190338869
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 6456127518190338869}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.47999996, z: 0}
+  m_LocalPosition: {x: 0, y: 0.48000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -262,8 +265,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: red
+  inheritTagsFromParent: 1
   Row: 4
-  Col: 13
+  Col: 10
 --- !u!114 &4865591179524631334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +283,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 4
-  col: 13
+  col: 10
 --- !u!1 &8005358831252577384
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,8 +336,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: red
+  inheritTagsFromParent: 1
   Row: 3
-  Col: 12
+  Col: 9
 --- !u!114 &6599800655825160483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +354,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 3
-  col: 12
+  col: 9
 --- !u!1001 &7567977770321104906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -368,11 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2677911764091203969, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5899997
+      value: 3.72
       objectReference: {fileID: 0}
     - target: {fileID: 2677911764091203969, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.187
+      value: -1.0400001
       objectReference: {fileID: 0}
     - target: {fileID: 2677911764091203969, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: m_LocalPosition.z
@@ -540,7 +545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: Col
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: Row
@@ -560,7 +565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8479192745206913719, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: col
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8479192745206913719, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: row
