@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: clue.onlyAdultInRowAndColumn
     m_Metadata:
       m_Items: []
+  - m_Id: 15982772018470912
+    m_Key: clue.aboveObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

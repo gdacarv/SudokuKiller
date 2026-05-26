@@ -52,6 +52,8 @@ public class Draggable : MonoBehaviour
     void Start()
     {
         _spawnPosition = transform.position;
+        Entity.Row = -1;
+        Entity.Col = -1;
 
         var solution = GetComponent<SolutionPosition>();
         if (solution != null)

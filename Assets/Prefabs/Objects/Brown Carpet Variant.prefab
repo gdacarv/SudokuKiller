@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 419306270801121941}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.48000002, y: 0.48000002, z: 0}
+  m_LocalPosition: {x: -0.48000002, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52,9 +52,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 6
-  Col: 4
+  Col: 7
 --- !u!114 &7045123120774732683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 6
-  col: 4
+  col: 7
 --- !u!1 &1318917096879721026
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +98,7 @@ Transform:
   m_GameObject: {fileID: 1318917096879721026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4799999, y: 0, z: 0}
+  m_LocalPosition: {x: 0.48000002, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,9 +123,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 5
-  Col: 6
+  Col: 9
 --- !u!114 &3702659044058132584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 5
-  col: 6
+  col: 9
 --- !u!1 &1490458374683333435
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 1490458374683333435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.96000004, y: 0.48000002, z: 0}
+  m_LocalPosition: {x: -0.96000004, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -194,9 +194,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 6
-  Col: 3
+  Col: 6
 --- !u!114 &3077524945322746599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 6
-  col: 3
+  col: 6
 --- !u!1 &3352826724191261767
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,9 +265,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 5
-  Col: 3
+  Col: 6
 --- !u!114 &7686138202816803180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 5
-  col: 3
+  col: 6
 --- !u!1 &5907395555409332509
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,9 +336,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 5
-  Col: 4
+  Col: 7
 --- !u!114 &9070522026473870047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 5
-  col: 4
+  col: 7
 --- !u!1 &5985193431093139676
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,9 +407,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 5
-  Col: 5
+  Col: 8
 --- !u!114 &6903440290455758284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 5
-  col: 5
+  col: 8
 --- !u!1 &6581081836488369369
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ Transform:
   m_GameObject: {fileID: 6581081836488369369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4799999, y: 0.48000002, z: 0}
+  m_LocalPosition: {x: 0.48000002, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -478,9 +478,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 6
-  Col: 6
+  Col: 9
 --- !u!114 &359847786606754946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 6
-  col: 6
+  col: 9
 --- !u!1 &7666248346724000193
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ Transform:
   m_GameObject: {fileID: 7666248346724000193}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.48000002, z: 0}
+  m_LocalPosition: {x: 0, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -549,9 +549,9 @@ MonoBehaviour:
     value: carpet
   - key: color
     value: brown
-  inheritTagsFromParent: 0
+  inheritTagsFromParent: 1
   Row: 6
-  Col: 5
+  Col: 8
 --- !u!114 &6046569396748434516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +567,7 @@ MonoBehaviour:
   gridManager: {fileID: 0}
   hideAtRuntime: 1
   row: 6
-  col: 5
+  col: 8
 --- !u!1001 &6039466592186517510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -614,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1813928407978426526, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: Col
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1813928407978426526, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: Row
@@ -634,7 +634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2065744097698269885, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: col
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2065744097698269885, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: row
@@ -918,11 +918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5489607711000895883, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.32
+      value: 1.1899999
       objectReference: {fileID: 0}
     - target: {fileID: 5489607711000895883, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08000009
+      value: -0.22700009
       objectReference: {fileID: 0}
     - target: {fileID: 5489607711000895883, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1005,7 +1005,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1967836574997489015, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
+    - {fileID: 4556443771877554737, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
+    - {fileID: 8005358831252577384, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
+    - {fileID: 1654212211080437694, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
+    - {fileID: 6456127518190338869, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5489607711000895883, guid: 3e64ecdaf748240ddb756d9c6a53b7b1, type: 3}
       insertIndex: -1

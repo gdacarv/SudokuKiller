@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEditor.Localization;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.Tables;
 
 [InitializeOnLoad]
@@ -14,6 +14,21 @@ public static class SceneViewClueTooltip
     static SceneViewClueTooltip()
     {
         SceneView.duringSceneGui += OnSceneGUI;
+        EditorApplication.delayCall += EnsureLocalizationInitialized;
+    }
+
+    private static void EnsureLocalizationInitialized()
+    {
+        var op = LocalizationSettings.InitializationOperation;
+        if (!op.IsDone) op.WaitForCompletion();
+
+        if (LocalizationSettings.SelectedLocale == null)
+        {
+            var locales = LocalizationSettings.AvailableLocales?.Locales;
+            if (locales != null && locales.Count > 0)
+                LocalizationSettings.SelectedLocale =
+                    locales.Find(l => l.Identifier.Code == "en") ?? locales[0];
+        }
     }
 
     [MenuItem("Tools/Scene View Clue Tooltips")]
@@ -126,15 +141,15 @@ private static List<string> BuildLines(HoverTooltip tooltip)
 
 private static string ResolveLocalizedString(LocalizedString ls, string charName)
     {
-        // Try runtime path first (works when locale is initialized)
-        if (UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale != null)
+        EnsureLocalizationInitialized();
+
+        if (LocalizationSettings.SelectedLocale != null)
         {
             string result = ls.GetLocalizedString(charName);
-            if (!string.IsNullOrEmpty(result))
-                return Regex.Replace(result, @"\{[^}]+\}", charName);
+            if (!string.IsNullOrEmpty(result)) return result;
         }
 
-        // Editor fallback: read directly from the string table by entry ID
+        // Fallback: read raw entry from the en string table (rare; locale not initialized)
         try
         {
             foreach (var collection in LocalizationEditorSettings.GetStringTableCollections())
@@ -155,9 +170,7 @@ private static string ResolveLocalizedString(LocalizedString ls, string charName
 
                 var entry = table.GetEntry(ls.TableEntryReference.KeyId);
                 if (entry == null) continue;
-
-                // Replace SmartFormat tokens like {char.adam} with the character name
-                return Regex.Replace(entry.Value, @"\{[^}]+\}", charName);
+                return entry.Value;
             }
         }
         catch { }

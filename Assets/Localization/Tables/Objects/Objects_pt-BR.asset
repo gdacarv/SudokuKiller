@@ -30,9 +30,10 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194805398962331
   - m_Id: 356060786319360
-    m_Localized: planta
+    m_Localized: '{useArticle:uma |}planta'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962331
   - m_Id: 356883700375552
     m_Localized: "est\xE1tua"
     m_Metadata:
@@ -55,3 +56,4 @@ MonoBehaviour:
         m_SharedEntries:
         - id: 353370895278080
         - id: 43678425088
+        - id: 356060786319360
