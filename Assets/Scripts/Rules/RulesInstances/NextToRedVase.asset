@@ -10,25 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31dfe9cf4309349a485939d9595ad520, type: 3}
-  m_Name: KillerClose2Victim
-  m_EditorClassIdentifier: Assembly-CSharp::KillerDistanceToTagRule
+  m_Name: NextToRedVase
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToTagRule
   killerFailureMessage:
     m_TableReference:
-      m_TableCollectionName: GUID:02306047dfa66470a83d9d6433c37f1d
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 593899537031168
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   targetTags:
   - key: type
-    value: Person
-  - key: subtype
-    value: Victim
+    value: object
+  - key: name
+    value: vase
+  - key: color
+    value: red
   metric: 1
   comparison: 1
-  distance: 2
+  distance: 1
   requireAll: 0
   references:
     version: 2
