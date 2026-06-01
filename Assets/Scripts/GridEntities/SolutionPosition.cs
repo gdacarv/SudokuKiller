@@ -21,6 +21,18 @@ public class SolutionPosition : MonoBehaviour
         if (gridManager == null)
             gridManager = FindFirstObjectByType<GridManager>();
     }
+
+    private bool IsAncestorBeingMoved()
+    {
+        var p = transform.parent;
+        while (p != null)
+        {
+            if (UnityEditor.Selection.Contains(p.gameObject))
+                return true;
+            p = p.parent;
+        }
+        return false;
+    }
 #endif
 
     void Update()
@@ -28,6 +40,10 @@ public class SolutionPosition : MonoBehaviour
         if (Application.isPlaying) return;
 
         if (gridManager == null) return;
+
+#if UNITY_EDITOR
+        if (IsAncestorBeingMoved()) return;
+#endif
 
         var cell = gridManager.WorldToCell(transform.position);
         int newRow = cell?.y ?? -1;

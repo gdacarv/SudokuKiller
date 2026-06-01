@@ -19,6 +19,18 @@ public abstract class GridEntityMarker : MonoBehaviour
         if (gridManager == null)
             gridManager = FindFirstObjectByType<GridManager>();
     }
+
+    private bool IsAncestorBeingMoved()
+    {
+        var p = transform.parent;
+        while (p != null)
+        {
+            if (UnityEditor.Selection.Contains(p.gameObject))
+                return true;
+            p = p.parent;
+        }
+        return false;
+    }
 #endif
 
     protected virtual void Awake()
@@ -37,6 +49,10 @@ public abstract class GridEntityMarker : MonoBehaviour
         if (Application.isPlaying) return;
 
         if (!gridManager) return;
+
+#if UNITY_EDITOR
+        if (IsAncestorBeingMoved()) return;
+#endif
 
         var cell = gridManager.WorldToCell(transform.position);
         if (cell == null) return;
