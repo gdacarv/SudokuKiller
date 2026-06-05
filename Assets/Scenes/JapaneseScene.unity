@@ -501,6 +501,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &7403912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
+  m_PrefabInstance: {fileID: 1944375528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &7403914
+MeshFilter:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403912}
+  m_Mesh: {fileID: 0}
 --- !u!4 &8990933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4139153105663959308, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
@@ -1934,7 +1947,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 0}
+      addedObject: {fileID: 221680342}
   m_SourcePrefab: {fileID: 100100000, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
 --- !u!4 &94806913 stripped
 Transform:
@@ -2824,7 +2837,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 0}
+      addedObject: {fileID: 1967911399}
   m_SourcePrefab: {fileID: 100100000, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
 --- !u!4 &132452533 stripped
 Transform:
@@ -4796,6 +4809,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &221680340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
+  m_PrefabInstance: {fileID: 94298156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &221680342
+MeshFilter:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221680340}
+  m_Mesh: {fileID: 0}
 --- !u!1001 &222212390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9268,7 +9294,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 0}
+      addedObject: {fileID: 926998005}
   m_SourcePrefab: {fileID: 100100000, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
 --- !u!1001 &361630021
 PrefabInstance:
@@ -9561,7 +9587,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4a44f2d7ca52f4a78b54aa45f35f626c, type: 2}
   preventInvalidPlacement: 0
   highlightRuleViolations: 1
-  startAtSolutionPositions: 1
+  startAtSolutionPositions: 0
   showGridOverlay: 1
 --- !u!114 &368987999
 MonoBehaviour:
@@ -9902,7 +9928,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 40, y: 32}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &381969758
 MonoBehaviour:
@@ -23540,6 +23566,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8265648851044733886, guid: 66a5f4f6a5c424eb08ceadfca04eab14, type: 3}
   m_PrefabInstance: {fileID: 925239711}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926998003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
+  m_PrefabInstance: {fileID: 355359827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &926998005
+MeshFilter:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926998003}
+  m_Mesh: {fileID: 0}
 --- !u!1 &928974743
 GameObject:
   m_ObjectHideFlags: 0
@@ -27071,9 +27110,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 381969757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: -16}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105741404
@@ -29485,9 +29524,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1481619098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: -16}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1187204127
@@ -33977,6 +34016,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1389092421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
+  m_PrefabInstance: {fileID: 1971811736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &1389092423
+MeshFilter:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389092421}
+  m_Mesh: {fileID: 0}
 --- !u!1 &1394072275
 GameObject:
   m_ObjectHideFlags: 0
@@ -35895,7 +35947,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: -16}
-  m_SizeDelta: {x: 40, y: 32}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1481619099
 MonoBehaviour:
@@ -49280,7 +49332,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 0}
+      addedObject: {fileID: 7403914}
   m_SourcePrefab: {fileID: 100100000, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
 --- !u!4 &1953952574 stripped
 Transform:
@@ -49725,6 +49777,19 @@ RectTransform:
   m_AnchoredPosition: {x: 24, y: -20}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1967911397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
+  m_PrefabInstance: {fileID: 132314200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &1967911399
+MeshFilter:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967911397}
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1971811736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49883,7 +49948,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5536744562641826962, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 0}
+      addedObject: {fileID: 1389092423}
   m_SourcePrefab: {fileID: 100100000, guid: 0e589fda92e694fe79d50bda6d27a2b0, type: 3}
 --- !u!1001 &1972617378
 PrefabInstance:

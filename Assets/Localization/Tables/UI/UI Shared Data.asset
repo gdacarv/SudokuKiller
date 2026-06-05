@@ -55,6 +55,14 @@ MonoBehaviour:
     m_Key: coloredObject
     m_Metadata:
       m_Items: []
+  - m_Id: 10670133193203713
+    m_Key: menu.play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10670133193203714
+    m_Key: menu.quit
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

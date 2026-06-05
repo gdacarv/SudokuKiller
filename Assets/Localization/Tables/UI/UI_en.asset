@@ -61,6 +61,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962274
+  - m_Id: 10670133193203713
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10670133193203714
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

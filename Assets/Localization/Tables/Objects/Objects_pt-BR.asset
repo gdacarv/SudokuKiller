@@ -46,6 +46,10 @@ MonoBehaviour:
     m_Localized: "f\xF3sseis"
     m_Metadata:
       m_Items: []
+  - m_Id: 14365975204847616
+    m_Localized: sorvete
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

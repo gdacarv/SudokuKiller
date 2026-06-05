@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: object.fossils
     m_Metadata:
       m_Items: []
+  - m_Id: 14365975204847616
+    m_Key: object.icecream
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
