@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: ice cream
     m_Metadata:
       m_Items: []
+  - m_Id: 14368674151391232
+    m_Localized: chair
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

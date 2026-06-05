@@ -31,19 +31,19 @@ public class SpriteOutline : MonoBehaviour
         new Vector2(-1,  1), new Vector2(-1, -1)
     };
 
-    SpriteRenderer _spriteSrc;
-    Tilemap _tilemap;
-    TilemapRenderer _tilemapSrc;
-    Collider2D[] _colliders;
-
     // Sprite path
-    SpriteRenderer[] _spriteOutlines;
+    SpriteRenderer[] _spriteSrcs;
+    SpriteRenderer[][] _spriteOutlines;
 
     // Tilemap path
+    Tilemap _tilemap;
+    TilemapRenderer _tilemapSrc;
     GameObject[] _tilemapOutlineGOs;
     Tilemap[] _tilemapOutlineTMs;
     TilemapRenderer[] _tilemapOutlineTRs;
     float _pixelsPerUnit;
+
+    Collider2D[] _colliders;
 
     bool _active;
 
@@ -70,20 +70,23 @@ public class SpriteOutline : MonoBehaviour
 
     void Awake()
     {
-        _spriteSrc = GetComponent<SpriteRenderer>();
-        _tilemap = GetComponent<Tilemap>();
-        _tilemapSrc = GetComponent<TilemapRenderer>();
         _colliders = GetComponentsInChildren<Collider2D>(true);
         if (inputProvider == null)
             inputProvider = FindFirstObjectByType<DragInputProvider>();
 
-        if (_spriteSrc != null)
+        // Scan for SpriteRenderers BEFORE building outlines (so outlines aren't picked up).
+        _spriteSrcs = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
+
+        _tilemap = GetComponent<Tilemap>();
+        _tilemapSrc = GetComponent<TilemapRenderer>();
+
+        if (_spriteSrcs.Length > 0)
             BuildSpriteOutlines();
         else if (_tilemap != null && _tilemapSrc != null)
             BuildTilemapOutlines();
         else
         {
-            Debug.LogWarning($"[SpriteOutline] {name}: requires SpriteRenderer or Tilemap+TilemapRenderer.", this);
+            Debug.LogWarning($"[SpriteOutline] {name}: requires SpriteRenderer (root or child) or Tilemap+TilemapRenderer.", this);
             enabled = false;
         }
     }
@@ -91,17 +94,22 @@ public class SpriteOutline : MonoBehaviour
     void BuildSpriteOutlines()
     {
         var dirs = outlineMode == Mode.FourDirections ? Dirs4 : Dirs8;
-        _spriteOutlines = new SpriteRenderer[dirs.Length];
-        for (int i = 0; i < dirs.Length; i++)
+        var mat = GetSilhouetteMaterial();
+
+        _spriteOutlines = new SpriteRenderer[_spriteSrcs.Length][];
+        for (int s = 0; s < _spriteSrcs.Length; s++)
         {
-            var go = new GameObject("_Outline" + i);
-            go.hideFlags = HideFlags.HideAndDontSave;
-            go.transform.SetParent(transform, worldPositionStays: false);
-            var sr = go.AddComponent<SpriteRenderer>();
-            var mat = GetSilhouetteMaterial();
-            if (mat != null) sr.material = mat;
-            sr.enabled = false;
-            _spriteOutlines[i] = sr;
+            _spriteOutlines[s] = new SpriteRenderer[dirs.Length];
+            for (int i = 0; i < dirs.Length; i++)
+            {
+                var go = new GameObject("_Outline" + i);
+                go.hideFlags = HideFlags.HideAndDontSave;
+                go.transform.SetParent(_spriteSrcs[s].transform, worldPositionStays: false);
+                var sr = go.AddComponent<SpriteRenderer>();
+                if (mat != null) sr.material = mat;
+                sr.enabled = false;
+                _spriteOutlines[s][i] = sr;
+            }
         }
     }
 
@@ -229,10 +237,19 @@ public class SpriteOutline : MonoBehaviour
 
     void GetSortingKey(out int layerValue, out int order)
     {
-        if (_spriteSrc != null)
+        if (_spriteSrcs != null && _spriteSrcs.Length > 0)
         {
-            layerValue = SortingLayer.GetLayerValueFromID(_spriteSrc.sortingLayerID);
-            order = _spriteSrc.sortingOrder;
+            layerValue = int.MinValue;
+            order = int.MinValue;
+            foreach (var sr in _spriteSrcs)
+            {
+                int lv = SortingLayer.GetLayerValueFromID(sr.sortingLayerID);
+                if (lv > layerValue || (lv == layerValue && sr.sortingOrder > order))
+                {
+                    layerValue = lv;
+                    order = sr.sortingOrder;
+                }
+            }
         }
         else if (_tilemapSrc != null)
         {
@@ -256,28 +273,35 @@ public class SpriteOutline : MonoBehaviour
 
     void LateUpdateSprite()
     {
-        if (_spriteSrc.sprite == null)
-        {
-            foreach (var o in _spriteOutlines) o.enabled = false;
-            return;
-        }
-
-        float step = outlinePixels / _spriteSrc.sprite.pixelsPerUnit;
         var dirs = outlineMode == Mode.FourDirections ? Dirs4 : Dirs8;
 
-        for (int i = 0; i < _spriteOutlines.Length; i++)
+        for (int s = 0; s < _spriteSrcs.Length; s++)
         {
-            var o = _spriteOutlines[i];
-            o.enabled = _active;
-            o.sprite = _spriteSrc.sprite;
-            o.flipX = _spriteSrc.flipX;
-            o.flipY = _spriteSrc.flipY;
-            o.sortingLayerID = _spriteSrc.sortingLayerID;
-            o.sortingOrder = _spriteSrc.sortingOrder - 1;
-            o.color = outlineColor;
-            o.transform.localPosition = (Vector3)(dirs[i] * step);
-            o.transform.localRotation = Quaternion.identity;
-            o.transform.localScale = Vector3.one;
+            var src = _spriteSrcs[s];
+            var outlines = _spriteOutlines[s];
+
+            if (src.sprite == null)
+            {
+                foreach (var o in outlines) o.enabled = false;
+                continue;
+            }
+
+            float step = outlinePixels / src.sprite.pixelsPerUnit;
+
+            for (int i = 0; i < outlines.Length; i++)
+            {
+                var o = outlines[i];
+                o.enabled = _active;
+                o.sprite = src.sprite;
+                o.flipX = src.flipX;
+                o.flipY = src.flipY;
+                o.sortingLayerID = src.sortingLayerID;
+                o.sortingOrder = src.sortingOrder - 1;
+                o.color = outlineColor;
+                o.transform.localPosition = (Vector3)(dirs[i] * step);
+                o.transform.localRotation = Quaternion.identity;
+                o.transform.localScale = Vector3.one;
+            }
         }
     }
 
@@ -302,8 +326,9 @@ public class SpriteOutline : MonoBehaviour
     void OnDestroy()
     {
         if (_spriteOutlines != null)
-            foreach (var o in _spriteOutlines)
-                if (o != null) Destroy(o.gameObject);
+            foreach (var outlines in _spriteOutlines)
+                foreach (var o in outlines)
+                    if (o != null) Destroy(o.gameObject);
 
         if (_tilemapOutlineGOs != null)
             foreach (var go in _tilemapOutlineGOs)

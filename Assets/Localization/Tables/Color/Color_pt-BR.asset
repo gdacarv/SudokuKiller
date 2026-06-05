@@ -22,7 +22,8 @@ MonoBehaviour:
   - m_Id: 121356935168
     m_Localized: amarel{gender:choose(male|female):o|a}
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962277
   - m_Id: 3842761676546048
     m_Localized: vermelh{gender:choose(male|female):o|a|o}
     m_Metadata:
@@ -36,6 +37,10 @@ MonoBehaviour:
     m_Localized: marrom
     m_Metadata:
       m_Items: []
+  - m_Id: 18225283151683584
+    m_Localized: rosa
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -45,3 +50,4 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 3842761676546048
+        - id: 121356935168

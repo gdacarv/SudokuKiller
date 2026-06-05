@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: object.icecream
     m_Metadata:
       m_Items: []
+  - m_Id: 14368674151391232
+    m_Key: object.chair
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
