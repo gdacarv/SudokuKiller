@@ -75,7 +75,11 @@ public class SpriteOutline : MonoBehaviour
             inputProvider = FindFirstObjectByType<DragInputProvider>();
 
         // Scan for SpriteRenderers BEFORE building outlines (so outlines aren't picked up).
-        _spriteSrcs = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
+        var all = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
+        var list = new List<SpriteRenderer>(all.Length);
+        foreach (var sr in all)
+            if (sr.gameObject.activeInHierarchy) list.Add(sr);
+        _spriteSrcs = list.ToArray();
 
         _tilemap = GetComponent<Tilemap>();
         _tilemapSrc = GetComponent<TilemapRenderer>();
@@ -275,6 +279,20 @@ public class SpriteOutline : MonoBehaviour
     {
         var dirs = outlineMode == Mode.FourDirections ? Dirs4 : Dirs8;
 
+        int minLayerValue = int.MaxValue;
+        int minOrder = int.MaxValue;
+        int minLayerID = _spriteSrcs[0].sortingLayerID;
+        foreach (var sr in _spriteSrcs)
+        {
+            int lv = SortingLayer.GetLayerValueFromID(sr.sortingLayerID);
+            if (lv < minLayerValue || (lv == minLayerValue && sr.sortingOrder < minOrder))
+            {
+                minLayerValue = lv;
+                minOrder = sr.sortingOrder;
+                minLayerID = sr.sortingLayerID;
+            }
+        }
+
         for (int s = 0; s < _spriteSrcs.Length; s++)
         {
             var src = _spriteSrcs[s];
@@ -295,8 +313,8 @@ public class SpriteOutline : MonoBehaviour
                 o.sprite = src.sprite;
                 o.flipX = src.flipX;
                 o.flipY = src.flipY;
-                o.sortingLayerID = src.sortingLayerID;
-                o.sortingOrder = src.sortingOrder - 1;
+                o.sortingLayerID = minLayerID;
+                o.sortingOrder = minOrder - 1;
                 o.color = outlineColor;
                 o.transform.localPosition = (Vector3)(dirs[i] * step);
                 o.transform.localRotation = Quaternion.identity;

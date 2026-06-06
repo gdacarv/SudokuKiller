@@ -54,6 +54,10 @@ MonoBehaviour:
     m_Localized: cadeira
     m_Metadata:
       m_Items: []
+  - m_Id: 14390237093421056
+    m_Localized: "balc\xE3o de sorvetes"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
