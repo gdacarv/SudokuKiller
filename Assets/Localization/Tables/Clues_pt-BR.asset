@@ -107,6 +107,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 27414966213533696
+    m_Localized: Apenas uma pessoa por cada linha e coluna
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

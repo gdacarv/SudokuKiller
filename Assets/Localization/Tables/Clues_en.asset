@@ -104,6 +104,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
+  - m_Id: 27414966213533696
+    m_Localized: There was only one person in each row and column
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

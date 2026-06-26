@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: menu.quit
     m_Metadata:
       m_Items: []
+  - m_Id: 28573169534099456
+    m_Key: label.other_clues
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

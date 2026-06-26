@@ -69,6 +69,10 @@ MonoBehaviour:
     m_Localized: Sair
     m_Metadata:
       m_Items: []
+  - m_Id: 28573169534099456
+    m_Localized: Outras Pistas
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

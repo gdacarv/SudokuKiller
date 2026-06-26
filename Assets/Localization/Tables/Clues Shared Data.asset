@@ -91,6 +91,10 @@ MonoBehaviour:
     m_Key: clue.aboveObject
     m_Metadata:
       m_Items: []
+  - m_Id: 27414966213533696
+    m_Key: clue.onlyOnePersonInRowAndColumn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
