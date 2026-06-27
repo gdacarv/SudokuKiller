@@ -75,10 +75,12 @@ public class SpriteOutline : MonoBehaviour
             inputProvider = FindFirstObjectByType<DragInputProvider>();
 
         // Scan for SpriteRenderers BEFORE building outlines (so outlines aren't picked up).
+        // Only include enabled renderers so disabled decoration children (e.g. BlockedGridCell)
+        // don't prevent falling through to the tilemap outline path.
         var all = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
         var list = new List<SpriteRenderer>(all.Length);
         foreach (var sr in all)
-            if (sr.gameObject.activeInHierarchy) list.Add(sr);
+            if (sr.gameObject.activeInHierarchy && sr.enabled) list.Add(sr);
         _spriteSrcs = list.ToArray();
 
         _tilemap = GetComponent<Tilemap>();
@@ -275,7 +277,7 @@ public class SpriteOutline : MonoBehaviour
             LateUpdateTilemap();
     }
 
-    void LateUpdateSprite()
+void LateUpdateSprite()
     {
         var dirs = outlineMode == Mode.FourDirections ? Dirs4 : Dirs8;
 
@@ -284,6 +286,8 @@ public class SpriteOutline : MonoBehaviour
         int minLayerID = _spriteSrcs[0].sortingLayerID;
         foreach (var sr in _spriteSrcs)
         {
+            // Skip disabled or inactive renderers — they don't contribute to the outline.
+            if (!sr.enabled || !sr.gameObject.activeInHierarchy) continue;
             int lv = SortingLayer.GetLayerValueFromID(sr.sortingLayerID);
             if (lv < minLayerValue || (lv == minLayerValue && sr.sortingOrder < minOrder))
             {
@@ -298,7 +302,7 @@ public class SpriteOutline : MonoBehaviour
             var src = _spriteSrcs[s];
             var outlines = _spriteOutlines[s];
 
-            if (src.sprite == null)
+            if (!src.enabled || !src.gameObject.activeInHierarchy || src.sprite == null)
             {
                 foreach (var o in outlines) o.enabled = false;
                 continue;

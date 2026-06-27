@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a4e57dd9e0c4d8081af1814be6d507, type: 3}
   m_Name: Level_IceCreamShop
   m_EditorClassIdentifier: Assembly-CSharp::LevelDefinition
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: 21300000, guid: 1855555f0964e46e6a945becdf9249c3, type: 3}
   levelName:
     m_TableReference:
       m_TableCollectionName: UI
