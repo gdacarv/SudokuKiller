@@ -73,6 +73,22 @@ MonoBehaviour:
     m_Localized: Outras Pistas
     m_Metadata:
       m_Items: []
+  - m_Id: 28573169534099457
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099458
+    m_Localized: "Cena Japonesa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099459
+    m_Localized: Sorveteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099460
+    m_Localized: Museu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

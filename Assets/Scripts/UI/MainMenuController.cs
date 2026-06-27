@@ -17,17 +17,21 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playLabel;
     [SerializeField] private TextMeshProUGUI quitLabel;
 
+    [Header("Level Select")]
+    [SerializeField] private CanvasGroup levelSelectGroup;
+    [SerializeField] private Button backButton;
+    [SerializeField] private TextMeshProUGUI backLabel;
+    [SerializeField] private LevelSelectController levelSelectController;
+
     [Header("Localization")]
     [SerializeField] private LocalizedString playTextLocalized;
     [SerializeField] private LocalizedString quitTextLocalized;
+    [SerializeField] private LocalizedString backTextLocalized;
 
     [Header("Timings")]
     [SerializeField] private float backgroundFadeDuration = 0.8f;
     [SerializeField] private float contentFadeDuration = 0.5f;
     [SerializeField] private float contentDelay = 0.2f;
-
-    [Header("Scene Loading")]
-    [SerializeField] private string gameSceneName = "IceCreamShopScene";
 
     void Awake()
     {
@@ -38,6 +42,12 @@ public class MainMenuController : MonoBehaviour
             contentGroup.interactable = false;
             contentGroup.blocksRaycasts = false;
         }
+        if (levelSelectGroup != null)
+        {
+            levelSelectGroup.alpha = 0f;
+            levelSelectGroup.interactable = false;
+            levelSelectGroup.blocksRaycasts = false;
+        }
     }
 
     void OnEnable()
@@ -45,6 +55,8 @@ public class MainMenuController : MonoBehaviour
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
         if (playButton != null) playButton.onClick.AddListener(OnPlayClicked);
         if (quitButton != null) quitButton.onClick.AddListener(OnQuitClicked);
+        if (backButton != null) backButton.onClick.AddListener(OnBackClicked);
+        if (levelSelectController != null) levelSelectController.LevelSelected += OnLevelSelected;
     }
 
     void OnDisable()
@@ -52,6 +64,8 @@ public class MainMenuController : MonoBehaviour
         LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
         if (playButton != null) playButton.onClick.RemoveListener(OnPlayClicked);
         if (quitButton != null) quitButton.onClick.RemoveListener(OnQuitClicked);
+        if (backButton != null) backButton.onClick.RemoveListener(OnBackClicked);
+        if (levelSelectController != null) levelSelectController.LevelSelected -= OnLevelSelected;
     }
 
     IEnumerator Start()
@@ -70,6 +84,8 @@ public class MainMenuController : MonoBehaviour
             playLabel.text = playTextLocalized.GetLocalizedString();
         if (quitLabel != null && !quitTextLocalized.IsEmpty)
             quitLabel.text = quitTextLocalized.GetLocalizedString();
+        if (backLabel != null && !backTextLocalized.IsEmpty)
+            backLabel.text = backTextLocalized.GetLocalizedString();
     }
 
     IEnumerator FadeInRoutine()
@@ -110,10 +126,57 @@ public class MainMenuController : MonoBehaviour
     void OnPlayClicked()
     {
         if (contentGroup != null) contentGroup.interactable = false;
-        StartCoroutine(LoadGameRoutine());
+        StartCoroutine(CrossFadeToLevelSelect());
     }
 
-    IEnumerator LoadGameRoutine()
+    void OnBackClicked()
+    {
+        if (levelSelectGroup != null) levelSelectGroup.interactable = false;
+        StartCoroutine(CrossFadeToMainMenu());
+    }
+
+    void OnLevelSelected(string sceneName)
+    {
+        if (levelSelectGroup != null) levelSelectGroup.interactable = false;
+        StartCoroutine(LoadGameRoutine(sceneName));
+    }
+
+    void OnQuitClicked()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    IEnumerator CrossFadeToLevelSelect()
+    {
+        yield return FadeCanvasGroup(contentGroup, 1f, 0f, contentFadeDuration);
+        if (contentGroup != null) contentGroup.blocksRaycasts = false;
+
+        yield return FadeCanvasGroup(levelSelectGroup, 0f, 1f, contentFadeDuration);
+        if (levelSelectGroup != null)
+        {
+            levelSelectGroup.interactable = true;
+            levelSelectGroup.blocksRaycasts = true;
+        }
+    }
+
+    IEnumerator CrossFadeToMainMenu()
+    {
+        yield return FadeCanvasGroup(levelSelectGroup, 1f, 0f, contentFadeDuration);
+        if (levelSelectGroup != null) levelSelectGroup.blocksRaycasts = false;
+
+        yield return FadeCanvasGroup(contentGroup, 0f, 1f, contentFadeDuration);
+        if (contentGroup != null)
+        {
+            contentGroup.interactable = true;
+            contentGroup.blocksRaycasts = true;
+        }
+    }
+
+    IEnumerator LoadGameRoutine(string sceneName)
     {
         if (blackOverlay != null) blackOverlay.blocksRaycasts = true;
         float t = 0f;
@@ -125,15 +188,6 @@ public class MainMenuController : MonoBehaviour
             yield return null;
         }
         if (blackOverlay != null) blackOverlay.alpha = 1f;
-        SceneManager.LoadScene(gameSceneName);
-    }
-
-    void OnQuitClicked()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        SceneManager.LoadScene(sceneName);
     }
 }

@@ -67,6 +67,22 @@ MonoBehaviour:
     m_Key: label.other_clues
     m_Metadata:
       m_Items: []
+  - m_Id: 28573169534099457
+    m_Key: menu.back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099458
+    m_Key: level.japanese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099459
+    m_Key: level.icecream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099460
+    m_Key: level.museum
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -73,6 +73,22 @@ MonoBehaviour:
     m_Localized: Other Clues
     m_Metadata:
       m_Items: []
+  - m_Id: 28573169534099457
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099458
+    m_Localized: Japanese Scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099459
+    m_Localized: Ice Cream Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28573169534099460
+    m_Localized: Museum
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
