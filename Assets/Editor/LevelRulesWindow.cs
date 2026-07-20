@@ -33,6 +33,7 @@ public class LevelRulesWindow : EditorWindow
     private Vector2 _scroll;
     private bool    _gridFoldout  = false;
     private bool    _tipsFoldout  = false;
+    private bool    _gridSizeFoldout = false;
 
     // ── Colors ────────────────────────────────────────────────────────
     private static readonly Color ColorVictimHeader  = new(0.65f, 0.22f, 0.22f, 0.30f);
@@ -52,6 +53,7 @@ public class LevelRulesWindow : EditorWindow
         titleContent = new GUIContent("Level Rules", EditorGUIUtility.FindTexture("d_Search Icon"));
         EditorSceneManager.sceneOpened                  += OnSceneOpened;
         EditorSceneManager.activeSceneChangedInEditMode += OnActiveSceneChanged;
+        Selection.selectionChanged                      += OnSelectionChanged;
         Discover();
     }
 
@@ -59,10 +61,27 @@ public class LevelRulesWindow : EditorWindow
     {
         EditorSceneManager.sceneOpened                  -= OnSceneOpened;
         EditorSceneManager.activeSceneChangedInEditMode -= OnActiveSceneChanged;
+        Selection.selectionChanged                      -= OnSelectionChanged;
     }
 
     private void OnSceneOpened(Scene scene, OpenSceneMode mode) => Discover();
     private void OnActiveSceneChanged(Scene prev, Scene next)   => Discover();
+
+    // Syncs suspect foldouts with the active Hierarchy/Scene selection:
+    // the selected suspect opens, all others collapse.
+    private void OnSelectionChanged()
+    {
+        var selected = Selection.activeGameObject;
+        if (selected == null) return;
+
+        var match = _suspects.FirstOrDefault(e => e.go == selected);
+        if (match == null) return;
+
+        foreach (var e in _suspects)
+            _foldouts[e.go.GetInstanceID()] = e.go == selected;
+
+        Repaint();
+    }
 
     // ── Discovery ─────────────────────────────────────────────────────
 
@@ -206,13 +225,16 @@ public class LevelRulesWindow : EditorWindow
                     if (_soGridOverlay != null)
                     {
                         EditorGUILayout.Space(4);
-                        GUILayout.Label("Grid Size", EditorStyles.miniBoldLabel);
-                        _soGridOverlay.Update();
-                        EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("rows"));
-                        EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cols"));
-                        EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cellWidth"));
-                        EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cellHeight"));
-                        _soGridOverlay.ApplyModifiedProperties();
+                        _gridSizeFoldout = EditorGUILayout.Foldout(_gridSizeFoldout, "Grid Size", true, EditorStyles.foldoutHeader);
+                        if (_gridSizeFoldout)
+                        {
+                            _soGridOverlay.Update();
+                            EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("rows"));
+                            EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cols"));
+                            EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cellWidth"));
+                            EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cellHeight"));
+                            _soGridOverlay.ApplyModifiedProperties();
+                        }
                     }
                 }
             }

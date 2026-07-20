@@ -111,6 +111,10 @@ MonoBehaviour:
     m_Localized: Apenas uma pessoa por cada linha e coluna
     m_Metadata:
       m_Items: []
+  - m_Id: 36118547489873920
+    m_Localized: '{0} ainda estava usando sapatos'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -95,6 +95,10 @@ MonoBehaviour:
     m_Key: clue.onlyOnePersonInRowAndColumn
     m_Metadata:
       m_Items: []
+  - m_Id: 36118547489873920
+    m_Key: clue.hadShoesOn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
