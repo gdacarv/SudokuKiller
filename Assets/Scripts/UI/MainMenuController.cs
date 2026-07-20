@@ -80,10 +80,8 @@ public class MainMenuController : MonoBehaviour
 
     void ApplyLabels()
     {
-        if (playLabel != null && !playTextLocalized.IsEmpty)
-            playLabel.text = playTextLocalized.GetLocalizedString();
-        if (quitLabel != null && !quitTextLocalized.IsEmpty)
-            quitLabel.text = quitTextLocalized.GetLocalizedString();
+        // Play and Quit button text is baked into the button sprites per locale;
+        // LocalizedButtonSprites handles those. Only the Back button still uses a TMP label.
         if (backLabel != null && !backTextLocalized.IsEmpty)
             backLabel.text = backTextLocalized.GetLocalizedString();
     }
