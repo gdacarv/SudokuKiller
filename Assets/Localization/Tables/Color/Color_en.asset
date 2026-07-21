@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: pink
     m_Metadata:
       m_Items: []
+  - m_Id: 34763845359624192
+    m_Localized: greenish
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

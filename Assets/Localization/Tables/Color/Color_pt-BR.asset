@@ -41,6 +41,11 @@ MonoBehaviour:
     m_Localized: rosa
     m_Metadata:
       m_Items: []
+  - m_Id: 34763845359624192
+    m_Localized: esverdead{gender:choose(male|female):o|a|o}
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962277
   references:
     version: 2
     RefIds:
@@ -51,3 +56,4 @@ MonoBehaviour:
         m_SharedEntries:
         - id: 3842761676546048
         - id: 121356935168
+        - id: 34763845359624192
