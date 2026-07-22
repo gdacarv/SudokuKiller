@@ -51,9 +51,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14368674151391232
-    m_Localized: cadeira
+    m_Localized: '{useArticle:uma |}cadeira'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962331
   - m_Id: 14390237093421056
     m_Localized: "balc\xE3o de sorvetes"
     m_Metadata:
@@ -69,3 +70,4 @@ MonoBehaviour:
         - id: 353370895278080
         - id: 43678425088
         - id: 356060786319360
+        - id: 14368674151391232

@@ -29,9 +29,10 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 599727119785984
-    m_Localized: The Killer was the closest person to the {0}
+    m_Localized: The Killer was the closest person to the {object}
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194458415989152
   - m_Id: 1687770585096192
     m_Localized: '{0} was on a carpet'
     m_Metadata:
@@ -113,6 +114,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
+  - m_Id: 36468701376012288
+    m_Localized: '{0} was not on {object}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 36477824872210432
+    m_Localized: There was only one adult in each row and column
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -131,3 +141,5 @@ MonoBehaviour:
         - id: 10118092045672448
         - id: 15982772018470912
         - id: 36118547489873920
+        - id: 599727119785984
+        - id: 36468701376012288

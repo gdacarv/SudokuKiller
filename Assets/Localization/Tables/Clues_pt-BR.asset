@@ -29,9 +29,11 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 599727119785984
-    m_Localized: "O(a) Assassino(a) foi a pessoa mais pr\xF3xima da {0}"
+    m_Localized: "O(a) Assassino(a) era a pessoa mais pr\xF3xima d{objectGender:choose(male|female):o|a|o}
+      {object}"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194458415989153
   - m_Id: 1687770585096192
     m_Localized: '{0} estava em um tapete'
     m_Metadata:
@@ -108,11 +110,20 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 27414966213533696
-    m_Localized: Apenas uma pessoa por cada linha e coluna
+    m_Localized: Tinha apenas uma pessoa por cada linha e coluna
     m_Metadata:
       m_Items: []
   - m_Id: 36118547489873920
     m_Localized: '{0} ainda estava usando sapatos'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36468701376012288
+    m_Localized: "{0} n\xE3o estava em {object}"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 36477824872210432
+    m_Localized: Tinha apenas um adulto por cada linha e coluna
     m_Metadata:
       m_Items: []
   references:
@@ -133,3 +144,5 @@ MonoBehaviour:
         - id: 7564429460758531
         - id: 10118092045672448
         - id: 15982772018470912
+        - id: 599727119785984
+        - id: 36468701376012288

@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 599727119785984
-    m_Key: clue.killerClosest2Victim
+    m_Key: clue.killerClosestToObject
     m_Metadata:
       m_Items: []
   - m_Id: 1687770585096192
@@ -97,6 +97,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 36118547489873920
     m_Key: clue.hadShoesOn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36468701376012288
+    m_Key: clue.notOnObject
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36477824872210432
+    m_Key: clue.onlyOneAdultInRowAndColumn
     m_Metadata:
       m_Items: []
   m_Metadata:
