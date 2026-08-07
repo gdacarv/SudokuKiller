@@ -51,6 +51,14 @@ MonoBehaviour:
     m_Key: object.icecream_counter
     m_Metadata:
       m_Items: []
+  - m_Id: 37080630561857536
+    m_Key: object.phone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37082865404469248
+    m_Key: object.object
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -171,8 +171,9 @@ public class GridManager : MonoBehaviour
 
     public bool CheckBoardRules(Draggable incoming, int row, int col)
     {
+        // Empty inspector slots are a common authoring slip — skip them instead of throwing.
         foreach (var rule in boardRules)
-            if (!rule.CanPlace(this, incoming, row, col))
+            if (rule != null && !rule.CanPlace(this, incoming, row, col))
                 return false;
         return true;
     }
@@ -189,7 +190,7 @@ public class GridManager : MonoBehaviour
                 var occ = _occupants[r, c];
                 if (occ == null || occ == incoming) continue;
                 foreach (var rule in occ.rules)
-                    if (!rule.CanPlace(this, occ, r, c))
+                    if (rule != null && !rule.CanPlace(this, occ, r, c))
                     { ok = false; break; }
             }
         _occupants[row, col] = previous;
@@ -286,7 +287,7 @@ public bool AreAllDraggablesInSolutionCells()
     public Rule EvaluateKillerRules(Draggable suspect)
     {
         foreach (var rule in killerRules)
-            if (!rule.CanPlace(this, suspect, suspect.Entity.Row, suspect.Entity.Col))
+            if (rule != null && !rule.CanPlace(this, suspect, suspect.Entity.Row, suspect.Entity.Col))
                 return rule;
         return null;
     }

@@ -47,18 +47,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14365975204847616
-    m_Localized: ice cream
+    m_Localized: '{useArticle:an |}ice cream'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962333
   - m_Id: 14368674151391232
     m_Localized: '{useArticle:a |}chair'
     m_Metadata:
       m_Items:
       - rid: 6722194805398962333
   - m_Id: 14390237093421056
-    m_Localized: ice cream counter
+    m_Localized: '{useArticle:an |}ice cream counter'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962333
+  - m_Id: 37080630561857536
+    m_Localized: '{useArticle:a |}phone'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962333
+  - m_Id: 37082865404469248
+    m_Localized: '{useArticle:an |}object'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962333
   references:
     version: 2
     RefIds:
@@ -71,3 +83,7 @@ MonoBehaviour:
         - id: 43678425088
         - id: 356060786319360
         - id: 14368674151391232
+        - id: 37082865404469248
+        - id: 37080630561857536
+        - id: 14365975204847616
+        - id: 14390237093421056

@@ -126,6 +126,56 @@ MonoBehaviour:
     m_Localized: Tinha apenas um adulto por cada linha e coluna
     m_Metadata:
       m_Items: []
+  - m_Id: 41892628617224192
+    m_Localized: '{0} estava ouvindo o gramofone'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390016
+    m_Localized: '{0} estava em uma almofada'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390017
+    m_Localized: '{0} estava cozinhando no fogareiro'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390018
+    m_Localized: '{0} estava acima de {char.fatima}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390019
+    m_Localized: "{0} estava perto do bonsai do escrit\xF3rio"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390020
+    m_Localized: '{0} estava cochilando ao lado de uma cama'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390021
+    m_Localized: "{0} estava perto da c\xF4moda"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390022
+    m_Localized: "{0} estava \xE0 mesa de jantar"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390023
+    m_Localized: "A V\xEDtima foi encontrada ao lado do bonsai"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 41892628642390024
+    m_Localized: "{0} n\xE3o passou do capacho"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -146,3 +196,13 @@ MonoBehaviour:
         - id: 15982772018470912
         - id: 599727119785984
         - id: 36468701376012288
+        - id: 41892628617224192
+        - id: 41892628642390016
+        - id: 41892628642390017
+        - id: 41892628642390018
+        - id: 41892628642390019
+        - id: 41892628642390020
+        - id: 41892628642390021
+        - id: 41892628642390022
+        - id: 41892628642390023
+        - id: 41892628642390024

@@ -107,6 +107,46 @@ MonoBehaviour:
     m_Key: clue.onlyOneAdultInRowAndColumn
     m_Metadata:
       m_Items: []
+  - m_Id: 41892628617224192
+    m_Key: clue.listeningGramophone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390016
+    m_Key: clue.onCushion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390017
+    m_Key: clue.cookingBrazier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390018
+    m_Key: clue.aboveFatima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390019
+    m_Key: clue.nextToOfficeBonsai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390020
+    m_Key: clue.nappingNextToBed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390021
+    m_Key: clue.nextToDresser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390022
+    m_Key: clue.atDiningTable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390023
+    m_Key: clue.victimNextToBonsai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41892628642390024
+    m_Key: clue.neverPastDoormat
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

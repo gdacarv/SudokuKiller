@@ -24076,6 +24076,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: red_phone
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1704
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7722130f86b1444f951b11eb734ea7a
+      internalID: -1518343720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -25182,6 +25204,7 @@ TextureImporter:
       1_Generic_Black_Shadow_48x48_997: -394142984
       1_Generic_Black_Shadow_48x48_998: 238275655
       1_Generic_Black_Shadow_48x48_999: 1188199506
+      red_phone: -1518343720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

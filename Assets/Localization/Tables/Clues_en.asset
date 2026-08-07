@@ -123,6 +123,56 @@ MonoBehaviour:
     m_Localized: There was only one adult in each row and column
     m_Metadata:
       m_Items: []
+  - m_Id: 41892628617224192
+    m_Localized: '{0} was listening to the gramophone'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390016
+    m_Localized: '{0} was sitting on a cushion'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390017
+    m_Localized: '{0} was cooking at the brazier'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390018
+    m_Localized: '{0} was above {char.fatima}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390019
+    m_Localized: '{0} was next to the office bonsai'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390020
+    m_Localized: '{0} was napping next to a bed'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390021
+    m_Localized: '{0} was next to the dresser'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390022
+    m_Localized: '{0} was sitting at the dining table'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390023
+    m_Localized: The Victim was found next to the bonsai tree
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 41892628642390024
+    m_Localized: '{0} never stepped past the doormat'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
   references:
     version: 2
     RefIds:
@@ -143,3 +193,13 @@ MonoBehaviour:
         - id: 36118547489873920
         - id: 599727119785984
         - id: 36468701376012288
+        - id: 41892628617224192
+        - id: 41892628642390016
+        - id: 41892628642390017
+        - id: 41892628642390018
+        - id: 41892628642390019
+        - id: 41892628642390020
+        - id: 41892628642390021
+        - id: 41892628642390022
+        - id: 41892628642390023
+        - id: 41892628642390024
