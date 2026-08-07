@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4053a1704024eb8afbe0749583bd66, type: 3}
   m_Name: KillerIsNotVictim
   m_EditorClassIdentifier: Assembly-CSharp::KillerTagRule
-  failureMessage:
+  killerFailureMessage:
     m_TableReference:
       m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
     m_TableEntryReference:
@@ -22,7 +22,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   tags:
-  - key: subtype
+  - key: role
     value: Victim
   matchMode: 0
   expectMode: 1

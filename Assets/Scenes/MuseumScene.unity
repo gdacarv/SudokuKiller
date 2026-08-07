@@ -2203,6 +2203,10 @@ PrefabInstance:
       propertyPath: tags.Array.data[1].value
       value: Adult
       objectReference: {fileID: 0}
+    - target: {fileID: 8477061818084145337, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: inputProvider
+      value: 
+      objectReference: {fileID: 519420033}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25052,6 +25056,10 @@ PrefabInstance:
       propertyPath: tags.Array.data[1].value
       value: Kid
       objectReference: {fileID: 0}
+    - target: {fileID: 8477061818084145337, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: inputProvider
+      value: 
+      objectReference: {fileID: 519420033}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25241,6 +25249,10 @@ PrefabInstance:
       propertyPath: tags.Array.data[1].value
       value: Adult
       objectReference: {fileID: 0}
+    - target: {fileID: 8477061818084145337, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: inputProvider
+      value: 
+      objectReference: {fileID: 519420033}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37068,15 +37080,31 @@ PrefabInstance:
       value: GUID:0a5774bb68d1344c19dbf32e38051e53
       objectReference: {fileID: 0}
     - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: Row
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: tags.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: tags.Array.data[1].key
       value: subtype
       objectReference: {fileID: 0}
     - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tags.Array.data[2].key
+      value: role
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: tags.Array.data[1].value
+      value: Adult
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232116040542156355, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tags.Array.data[2].value
       value: Victim
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}

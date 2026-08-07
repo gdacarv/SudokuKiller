@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6519ca577ade4c6a8a02a9c20339ffc, type: 3}
   m_Name: KillerSameSectionAsVictim
   m_EditorClassIdentifier: Assembly-CSharp::KillerSameSectionAsTagRule
-  failureMessage:
+  killerFailureMessage:
     m_TableReference:
       m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
     m_TableEntryReference:
@@ -22,7 +22,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   targetTags:
-  - key: subtype
+  - key: role
     value: Victim
   references:
     version: 2

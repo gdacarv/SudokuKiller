@@ -11,6 +11,7 @@ using UnityEngine;
 public static class PuzzleUniquenessVerifier
 {
     const int MaxRecordedLayouts = 20;
+    const int MaxRecordedPerKillerSet = 3;
     const long MaxVisits = 5_000_000;
 
     public enum Outcome { Unique, KillerUnique, NotUnique, Broken, Inconclusive, Error }
@@ -150,6 +151,8 @@ public static class PuzzleUniquenessVerifier
             report.AppendLine($"  ({deferred} board rule(s) can only be checked on complete layouts — search may be slower.)");
 
         var recordedLayouts = new List<LayoutInfo>();
+        var recordedPerKillerSet = new Dictionary<string, int>();
+        string KillerKey(List<string> names) => names.Count == 0 ? "(none)" : string.Join(",", names.OrderBy(k => k));
         var killerNames = new HashSet<string>();
         int noKillerLayouts = 0, multiKillerLayouts = 0;
         long visits = 0;
@@ -180,9 +183,29 @@ public static class PuzzleUniquenessVerifier
                 else if (killers.Count > 1) multiKillerLayouts++;
                 killerNames.UnionWith(killers);
 
-                if (recordedLayouts.Count < MaxRecordedLayouts)
+                // Cap how many layouts we record per killer-set so the sample shown
+                // to the user has variety instead of being dominated by whichever
+                // killer the DFS happens to reach first.
+                string killerKey = KillerKey(killers);
+                bool isAuthoredSolution = order.All(d => originalCells[d] == new Vector2Int(d.Entity.Row, d.Entity.Col));
+                recordedPerKillerSet.TryGetValue(killerKey, out int recordedForKiller);
+
+                // The layout currently on the board must always be one of the
+                // recorded options for its killer set, even if the per-killer
+                // (or overall) cap was already filled by layouts found earlier.
+                if (isAuthoredSolution && (recordedForKiller >= MaxRecordedPerKillerSet || recordedLayouts.Count >= MaxRecordedLayouts))
                 {
-                    var info = new LayoutInfo { killers = killers, matchesAuthored = true };
+                    int evictIndex = recordedLayouts.FindLastIndex(l => KillerKey(l.killers) == killerKey);
+                    if (evictIndex < 0) evictIndex = recordedLayouts.Count - 1;
+                    recordedPerKillerSet[KillerKey(recordedLayouts[evictIndex].killers)]--;
+                    recordedLayouts.RemoveAt(evictIndex);
+                    recordedForKiller = recordedPerKillerSet.TryGetValue(killerKey, out int rc) ? rc : 0;
+                }
+
+                if (recordedLayouts.Count < MaxRecordedLayouts && recordedForKiller < MaxRecordedPerKillerSet)
+                {
+                    recordedPerKillerSet[killerKey] = recordedForKiller + 1;
+                    var info = new LayoutInfo { killers = killers, matchesAuthored = isAuthoredSolution };
                     foreach (var d in order.OrderBy(x => x.name))
                     {
                         info.placements.Add(new LayoutPlacement
@@ -192,10 +215,13 @@ public static class PuzzleUniquenessVerifier
                             col = d.Entity.Col,
                             section = gm.GetSection(d.Entity.Row, d.Entity.Col),
                         });
-                        if (originalCells[d] != new Vector2Int(d.Entity.Row, d.Entity.Col))
-                            info.matchesAuthored = false;
                     }
-                    recordedLayouts.Add(info);
+                    // The current-board layout leads the list (and its killer-set
+                    // group) rather than landing wherever the DFS happened to find it.
+                    if (isAuthoredSolution)
+                        recordedLayouts.Insert(0, info);
+                    else
+                        recordedLayouts.Add(info);
                 }
                 return;
             }

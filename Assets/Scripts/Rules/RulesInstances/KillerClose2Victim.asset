@@ -25,6 +25,8 @@ MonoBehaviour:
   - key: type
     value: Person
   - key: subtype
+    value: Adult
+  - key: role
     value: Victim
   metric: 1
   comparison: 1
