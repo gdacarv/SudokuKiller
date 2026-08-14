@@ -43,11 +43,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 0
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.5, y: 0.23}
+  spritePivot: {x: 0.5, y: 0.38}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -97,309 +97,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_0
+      name: Living_Room_Singles_Shadowless_48x48_13_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a598e2d499c3a8b00800000000000000
-      internalID: 831543710325836122
+      spriteID: 5640e40555340421386d7b743b8d4a0f
+      internalID: 1102494088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_idle_anim_48x48_1
+      name: Living_Room_Singles_Shadowless_48x48_13_1
       rect:
         serializedVersion: 2
-        x: 50
+        x: 0
         y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8bdc474a614c35e20800000000000000
-      internalID: 3338227350339112376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_2
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 915effbaeeef1b390800000000000000
-      internalID: -7804176378215013095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c7458cb0a4323200800000000000000
-      internalID: 158246801873651653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_4
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cf30a8b5c0258a80800000000000000
-      internalID: -8465323890994823232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_5
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 301a6d73cb0311c80800000000000000
-      internalID: -8353842248846761725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_6
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 0
-        width: 290
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e06046acff51ed6c0800000000000000
-      internalID: -4116828821013658098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_7
-      rect:
-        serializedVersion: 2
-        x: 581
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 889638a5418ea6480800000000000000
-      internalID: -8905050139056182904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_8
-      rect:
-        serializedVersion: 2
-        x: 629
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f5ded044b581a430800000000000000
-      internalID: 3792459370451621365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_9
-      rect:
-        serializedVersion: 2
-        x: 677
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 68e734d2ebf070ef0800000000000000
-      internalID: -142127553761280378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_10
-      rect:
-        serializedVersion: 2
-        x: 725
-        y: 0
-        width: 41
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22d312fdcca099800800000000000000
-      internalID: 619538298773257506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_11
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73d87a096a90c0730800000000000000
-      internalID: 3966555982802685239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_12
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 0
-        width: 41
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fe025f471ee78380800000000000000
-      internalID: -8968938349002617098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bob_idle_anim_48x48_13
-      rect:
-        serializedVersion: 2
-        x: 863
-        y: 0
-        width: 289
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aea74e314e15c71c0800000000000000
-      internalID: -4504635487249204502
+      spriteID: 2336dc5e2c9a849ea8b15dd87c74303f
+      internalID: -962679683
       vertices: []
       indices: 
       edges: []
@@ -409,29 +145,19 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Bob_idle_anim_48x48_0: 831543710325836122
-      Bob_idle_anim_48x48_1: 3338227350339112376
-      Bob_idle_anim_48x48_10: 619538298773257506
-      Bob_idle_anim_48x48_11: 3966555982802685239
-      Bob_idle_anim_48x48_12: -8968938349002617098
-      Bob_idle_anim_48x48_13: -4504635487249204502
-      Bob_idle_anim_48x48_2: -7804176378215013095
-      Bob_idle_anim_48x48_3: 158246801873651653
-      Bob_idle_anim_48x48_4: -8465323890994823232
-      Bob_idle_anim_48x48_5: -8353842248846761725
-      Bob_idle_anim_48x48_6: -4116828821013658098
-      Bob_idle_anim_48x48_7: -8905050139056182904
-      Bob_idle_anim_48x48_8: 3792459370451621365
-      Bob_idle_anim_48x48_9: -142127553761280378
+      Living_Room_Singles_Shadowless_48x48_13_0: 1102494088
+      Living_Room_Singles_Shadowless_48x48_13_1: -962679683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

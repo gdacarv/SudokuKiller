@@ -71,6 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962333
+  - m_Id: 39631354629971968
+    m_Localized: '{useArticle:a |}bonsai'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962333
   references:
     version: 2
     RefIds:
@@ -87,3 +92,4 @@ MonoBehaviour:
         - id: 37080630561857536
         - id: 14365975204847616
         - id: 14390237093421056
+        - id: 39631354629971968

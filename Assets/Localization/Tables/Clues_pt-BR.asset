@@ -34,12 +34,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
-  - m_Id: 1687770585096192
-    m_Localized: '{0} estava em um tapete'
-    m_Metadata:
-      m_Items: []
   - m_Id: 1689794882035712
-    m_Localized: '{0} estava em um tapete {color}'
+    m_Localized: '{0} estava em um tapete{color: {}|}'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
@@ -123,7 +119,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 36477824872210432
-    m_Localized: Tinha apenas um adulto por cada linha e coluna
+    m_Localized: Tinha apenas um Adulto por cada linha e coluna
     m_Metadata:
       m_Items: []
   - m_Id: 41892628617224192
@@ -167,12 +163,18 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 41892628642390023
-    m_Localized: "A V\xEDtima foi encontrada ao lado do bonsai"
+    m_Localized: "A V\xEDtima foi encontrada ao lado de um bonsai"
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 41892628642390024
     m_Localized: "{0} n\xE3o passou do capacho"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 45168987275780096
+    m_Localized: "{useArticle:{gender:choose(male|female):O|A|O(A)} |}{0} \xE9 uma
+      pessoa Adulta"
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
@@ -206,3 +208,4 @@ MonoBehaviour:
         - id: 41892628642390022
         - id: 41892628642390023
         - id: 41892628642390024
+        - id: 45168987275780096

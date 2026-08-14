@@ -33,12 +33,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
-  - m_Id: 1687770585096192
-    m_Localized: '{0} was on a carpet'
-    m_Metadata:
-      m_Items: []
   - m_Id: 1689794882035712
-    m_Localized: '{0} was on a {color} carpet'
+    m_Localized: '{0} was on a {color:{} |}carpet'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
@@ -120,7 +116,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 36477824872210432
-    m_Localized: There was only one adult in each row and column
+    m_Localized: There was only one Adult in each row and column
     m_Metadata:
       m_Items: []
   - m_Id: 41892628617224192
@@ -164,12 +160,17 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 41892628642390023
-    m_Localized: The Victim was found next to the bonsai tree
+    m_Localized: The Victim was found next to a bonsai tree
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 41892628642390024
     m_Localized: '{0} never stepped past the doormat'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
+  - m_Id: 45168987275780096
+    m_Localized: '{useArticle:The |}{0} is an Adult'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
@@ -203,3 +204,4 @@ MonoBehaviour:
         - id: 41892628642390022
         - id: 41892628642390023
         - id: 41892628642390024
+        - id: 45168987275780096

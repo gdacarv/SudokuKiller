@@ -11,7 +11,7 @@ using UnityEngine;
 public static class PuzzleUniquenessVerifier
 {
     const int MaxRecordedLayouts = 20;
-    const int MaxRecordedPerKillerSet = 3;
+    const int MaxRecordedPerKillerSet = 5;
     const long MaxVisits = 5_000_000;
 
     public enum Outcome { Unique, KillerUnique, NotUnique, Broken, Inconclusive, Error }

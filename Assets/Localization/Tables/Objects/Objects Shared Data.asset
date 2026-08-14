@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: object.object
     m_Metadata:
       m_Items: []
+  - m_Id: 39631354629971968
+    m_Key: object.bonsai
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

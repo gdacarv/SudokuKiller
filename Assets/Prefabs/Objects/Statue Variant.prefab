@@ -88,7 +88,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4139153105663959308, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.47999978
+      value: -0.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 4139153105663959308, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -131,8 +131,16 @@ PrefabInstance:
       value: BlockedGridCell
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: col
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: row
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Row
@@ -236,7 +244,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4139153105663959308, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.47999978
+      value: -0.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 4139153105663959308, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -279,8 +287,16 @@ PrefabInstance:
       value: BlockedGridCell
       objectReference: {fileID: 0}
     - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: col
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113511028189110157, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: row
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
+      propertyPath: Col
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8916534460792245156, guid: 6a04bc3a673444691adc449fcf350b6e, type: 3}
       propertyPath: Row
@@ -310,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2677911764091203969, guid: 4964c96c41ca948a3b6b2bc08fc408f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48000002
+      value: -0.48000008
       objectReference: {fileID: 0}
     - target: {fileID: 2677911764091203969, guid: 4964c96c41ca948a3b6b2bc08fc408f5, type: 3}
       propertyPath: m_LocalPosition.z

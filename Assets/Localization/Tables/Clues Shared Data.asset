@@ -27,10 +27,6 @@ MonoBehaviour:
     m_Key: clue.killerClosestToObject
     m_Metadata:
       m_Items: []
-  - m_Id: 1687770585096192
-    m_Key: clue.onCarpet
-    m_Metadata:
-      m_Items: []
   - m_Id: 1689794882035712
     m_Key: clue.onCarpetColor
     m_Metadata:
@@ -145,6 +141,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 41892628642390024
     m_Key: clue.neverPastDoormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45168987275780096
+    m_Key: clue.isAnAdult
     m_Metadata:
       m_Items: []
   m_Metadata:
