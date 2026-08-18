@@ -8022,7 +8022,7 @@ MonoBehaviour:
   preventInvalidPlacement: 0
   highlightRuleViolations: 1
   startAtSolutionPositions: 0
-  showGridOverlay: 0
+  showGridOverlay: 1
 --- !u!114 &368987999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8044,7 +8044,7 @@ MonoBehaviour:
   sortingOrder: 5
   sortingLayerName: UI
   offset: {x: -0.01, y: -1.19}
-  _linesVisible: 0
+  _linesVisible: 1
 --- !u!114 &368988000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15111,6 +15111,10 @@ PrefabInstance:
       value: Unity.Localization UnityEngine.Localization.LocalizedString
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'managedReferences[8674857901673939068]'
+      value: Unity.Localization UnityEngine.Localization.SmartFormat.PersistentVariables.StringVariable
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_WaitForCompletion
       value: 1
       objectReference: {fileID: 0}
@@ -15133,6 +15137,10 @@ PrefabInstance:
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[5529504029161029635].m_Value
       value: female
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[8674857901673939068].m_Value
+      value: male
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_LocalVariables.Array.size
@@ -15256,7 +15264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[5529504029161029636].m_LocalVariables.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[5529504029161029636].m_TableEntryReference.m_Key
@@ -15303,6 +15311,10 @@ PrefabInstance:
       value: object
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[5529504029161029636].m_LocalVariables.Array.data[0].name
+      value: gender
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[5529503938356183119].m_TableReference.m_TableCollectionName
       value: GUID:0a5774bb68d1344c19dbf32e38051e53
       objectReference: {fileID: 0}
@@ -15333,6 +15345,10 @@ PrefabInstance:
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[5529504029161029632].m_LocalVariables.Array.data[3].variable
       value: 5529504029161029637
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[5529504029161029636].m_LocalVariables.Array.data[0].variable
+      value: 8674857901673939068
       objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingLayer
@@ -25169,6 +25185,14 @@ PrefabInstance:
       value: Unity.Localization UnityEngine.Localization.LocalizedString
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: 'managedReferences[8674857901673939070]'
+      value: Unity.Localization UnityEngine.Localization.SmartFormat.PersistentVariables.StringVariable
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[8674857901673939070].m_Value
+      value: male
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: lines.Array.data[0].m_LocalVariables.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -25202,7 +25226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[8674857901673939045].m_LocalVariables.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[8674857901673939045].m_TableEntryReference.m_Key
@@ -25213,8 +25237,16 @@ PrefabInstance:
       value: 3842761676546048
       objectReference: {fileID: 0}
     - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[8674857901673939045].m_LocalVariables.Array.data[0].name
+      value: gender
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: managedReferences[8674857901673939045].m_TableReference.m_TableCollectionName
       value: GUID:7c35782a1924e446eaea05fbf4566661
+      objectReference: {fileID: 0}
+    - target: {fileID: 757144604920681236, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: managedReferences[8674857901673939045].m_LocalVariables.Array.data[0].variable
+      value: 8674857901673939070
       objectReference: {fileID: 0}
     - target: {fileID: 1572826340931408289, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: m_SortingLayer

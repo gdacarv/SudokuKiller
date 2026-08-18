@@ -76,6 +76,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962331
+  - m_Id: 41086838067159040
+    m_Localized: '{useArticle:uma |}almofada'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
   references:
     version: 2
     RefIds:
@@ -93,3 +98,4 @@ MonoBehaviour:
         - id: 14365975204847616
         - id: 14390237093421056
         - id: 39631354629971968
+        - id: 41086838067159040

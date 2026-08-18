@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 6722194805398962277
   m_TableData:
   - m_Id: 121356935168
-    m_Localized: amarel{gender:choose(male|female):o|a}
+    m_Localized: amarel{gender:choose(male|female):o|a|o}
     m_Metadata:
       m_Items:
       - rid: 6722194805398962277

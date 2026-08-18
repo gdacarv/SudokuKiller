@@ -35,6 +35,14 @@ public class LevelRulesWindow : EditorWindow
     private bool    _tipsFoldout  = false;
     private bool    _gridSizeFoldout = false;
 
+    // Height of the rules-editing pane above the resize handle. Serialized so a
+    // user's preferred split survives domain reloads, like the verify result does.
+    [SerializeField] private float _rulesPaneHeight = 400f;
+    private bool _resizingSplit;
+    private const float MinRulesPaneHeight = 100f;
+    private const float MinVerifyPaneHeight = 150f;
+    private const float SplitHandleHeight = 6f;
+
     // ── Uniqueness verification state ─────────────────────────────────
     // Serialized so the last result survives domain reloads (play mode, recompiles).
     [SerializeField] private PuzzleUniquenessVerifier.VerificationResult _verifyResult;
@@ -254,7 +262,14 @@ public class LevelRulesWindow : EditorWindow
         EditorGUILayout.HelpBox("Use Refresh after adding or removing suspects from the scene. Scene changes are detected automatically.", MessageType.None);
 
         DrawSeparator();
-        _scroll = EditorGUILayout.BeginScrollView(_scroll);
+
+        // GetLastRect reflects the previous Repaint's layout, which is stable frame-to-frame
+        // for this static header — the standard IMGUI idiom for "space used so far".
+        float headerHeight = GUILayoutUtility.GetLastRect().yMax;
+        float maxRulesPaneHeight = Mathf.Max(MinRulesPaneHeight, position.height - headerHeight - MinVerifyPaneHeight);
+        _rulesPaneHeight = Mathf.Clamp(_rulesPaneHeight, MinRulesPaneHeight, maxRulesPaneHeight);
+
+        _scroll = EditorGUILayout.BeginScrollView(_scroll, GUILayout.Height(_rulesPaneHeight));
 
         DrawGridSection();
         EditorGUILayout.Space(6);
@@ -264,7 +279,36 @@ public class LevelRulesWindow : EditorWindow
 
         EditorGUILayout.EndScrollView();
 
+        DrawSplitHandle(maxRulesPaneHeight);
+
         DrawVerifySection();
+    }
+
+    // Drag handle between the rules-editing pane and the verify-uniqueness panel below it.
+    private void DrawSplitHandle(float maxRulesPaneHeight)
+    {
+        Rect handleRect = GUILayoutUtility.GetRect(position.width, SplitHandleHeight, GUILayout.ExpandWidth(true));
+        EditorGUIUtility.AddCursorRect(handleRect, MouseCursor.ResizeVertical);
+
+        if (Event.current.type == EventType.Repaint)
+            EditorGUI.DrawRect(handleRect, ColorSeparator);
+
+        switch (Event.current.type)
+        {
+            case EventType.MouseDown when handleRect.Contains(Event.current.mousePosition):
+                _resizingSplit = true;
+                Event.current.Use();
+                break;
+            case EventType.MouseDrag when _resizingSplit:
+                _rulesPaneHeight = Mathf.Clamp(_rulesPaneHeight + Event.current.delta.y, MinRulesPaneHeight, maxRulesPaneHeight);
+                Event.current.Use();
+                Repaint();
+                break;
+            case EventType.MouseUp when _resizingSplit:
+                _resizingSplit = false;
+                Event.current.Use();
+                break;
+        }
     }
 
     // ── Puzzle uniqueness footer ──────────────────────────────────────

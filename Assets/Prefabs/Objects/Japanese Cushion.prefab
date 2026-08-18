@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 4272189498978358070}
   - component: {fileID: 6347920482901323091}
   - component: {fileID: 1158472046963921639}
+  - component: {fileID: 8958194697860642055}
+  - component: {fileID: 8711982028178209433}
+  - component: {fileID: 7831850937333083954}
   m_Layer: 0
   m_Name: Japanese Cushion
   m_TagString: Untagged
@@ -28,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3768684368478583307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.23999985, y: 0.24000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1076271790, guid: 8e6ceea8b5fe9440a9ef61e8ac8031e5, type: 3}
+  m_Sprite: {fileID: -232211267, guid: 8e6ceea8b5fe9440a9ef61e8ac8031e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,8 +114,8 @@ MonoBehaviour:
   - key: name
     value: cushion
   inheritTagsFromParent: 0
-  Row: -1
-  Col: -1
+  Row: 3
+  Col: 4
 --- !u!114 &1158472046963921639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,5 +130,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TagMarker
   gridManager: {fileID: 0}
   hideAtRuntime: 0
-  row: 0
-  col: 0
+  row: 3
+  col: 4
+--- !u!58 &8958194697860642055
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768684368478583307}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.06}
+  m_Radius: 0.18
+--- !u!114 &8711982028178209433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768684368478583307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3016a775f268c4854b58b6352c91d966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteOutline
+  outlineColor: {r: 1, g: 0.4, b: 0, a: 1}
+  outlinePixels: 2
+  outlineMode: 1
+  inputProvider: {fileID: 0}
+  suppressWhileDragging: 1
+--- !u!114 &7831850937333083954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768684368478583307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9e046f4b1ff4f92b14491f6e26024c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedHoverTooltip
+  message: 
+  hoverDelay: 0.2
+  tooltipOffset: {x: 0, y: 60}
+  inputProvider: {fileID: 0}
+  tooltipUI: {fileID: 0}
+  messageLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:dc78d4cea0a8045cd9cc33a34bef791f
+    m_TableEntryReference:
+      m_KeyId: 41086838067159040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
