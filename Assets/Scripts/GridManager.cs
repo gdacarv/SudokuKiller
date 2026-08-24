@@ -214,6 +214,61 @@ public class GridManager : MonoBehaviour
     public bool HasMatchInSection(int sectionId, List<GridEntity.TagEntry> pattern, Draggable exclude)
         => CountMatchesInSection(sectionId, pattern, exclude) > 0;
 
+    /// <summary>
+    /// All occupants sharing 'row'/'col's row, column, or section (per scope), excluding 'exclude'.
+    /// Mirrors the exclude-self convention of CountMatchesInRow/Col/Section — callers that need the
+    /// dragged entity itself included must fold it in manually using the (row, col) passed to CanPlace.
+    /// </summary>
+    public List<Draggable> GetOccupantsInRegion(RegionScope scope, int row, int col, Draggable exclude)
+    {
+        var result = new List<Draggable>();
+        if (scope == RegionScope.Board)
+        {
+            for (int r = 0; r < gridOverlay.rows; r++)
+                for (int c = 0; c < gridOverlay.cols; c++)
+                {
+                    var occ = _occupants[r, c];
+                    if (occ != null && occ != exclude)
+                        result.Add(occ);
+                }
+            return result;
+        }
+
+        if (scope == RegionScope.Section)
+        {
+            int section = GetSection(row, col);
+            if (section == -1) return result;
+            for (int r = 0; r < gridOverlay.rows; r++)
+                for (int c = 0; c < gridOverlay.cols; c++)
+                {
+                    var occ = _occupants[r, c];
+                    if (occ != null && occ != exclude && _cellSection[r, c] == section)
+                        result.Add(occ);
+                }
+            return result;
+        }
+
+        if (scope == RegionScope.Row)
+        {
+            for (int c = 0; c < gridOverlay.cols; c++)
+            {
+                var occ = _occupants[row, c];
+                if (occ != null && occ != exclude)
+                    result.Add(occ);
+            }
+            return result;
+        }
+
+        // Column
+        for (int r = 0; r < gridOverlay.rows; r++)
+        {
+            var occ = _occupants[r, col];
+            if (occ != null && occ != exclude)
+                result.Add(occ);
+        }
+        return result;
+    }
+
     
     public void HideGridCell(int row, int col)
     {

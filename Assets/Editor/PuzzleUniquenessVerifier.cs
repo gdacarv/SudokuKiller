@@ -324,11 +324,23 @@ public static class PuzzleUniquenessVerifier
     /// can never recover — while EqualTo n&gt;0 and GreaterThan are legitimately
     /// unsatisfied mid-search and must wait for a complete layout.
     /// </summary>
+    /// <summary>
+    /// SectionSumRule is deliberately absent here: an upper-bound sum is only prune-safe if every
+    /// summed tag value is non-negative, and that can't be verified from the Rule asset alone (the
+    /// values live on arbitrary scene entities). Excluding it just costs search speed; including it
+    /// wrongly could silently prune away valid layouts, which is the exact failure mode this file
+    /// exists to prevent — so when in doubt, leave a rule out of this switch.
+    /// </summary>
     static bool IsPruneSafe(Rule rule) => rule switch
     {
-        NPerRowRule r     => IsUpperBound(r.comparison, r.n),
-        NPerColumnRule r  => IsUpperBound(r.comparison, r.n),
-        NPerSectionRule r => IsUpperBound(r.comparison, r.n),
+        NPerRowRule r        => IsUpperBound(r.comparison, r.n),
+        NPerColumnRule r     => IsUpperBound(r.comparison, r.n),
+        NPerSectionRule r    => IsUpperBound(r.comparison, r.n),
+        NeighborCountRule nc => IsUpperBound(nc.comparison, nc.n),
+        UniqueByTagKeyRule   => true, // a duplicate, once created, can never be un-created by further placements
+        AnyOfRule any        => any.options.Count > 0 && any.options.All(r => r != null && IsPruneSafe(r)),
+        // AND: if it's currently false, at least one prune-safe child is false and stays false forever.
+        AllOfRule all        => all.options.All(r => r != null && IsPruneSafe(r)),
         _ => false,
     };
 
@@ -338,18 +350,70 @@ public static class PuzzleUniquenessVerifier
     /// <summary>A rule is dynamic if its outcome can depend on where other draggables are placed.</summary>
     static bool IsDynamic(Rule rule, List<Draggable> draggables)
     {
-        if (rule is NPerRowRule || rule is NPerColumnRule || rule is NPerSectionRule)
-            return true;
-
-        List<GridEntity.TagEntry> targets = rule switch
+        switch (rule)
         {
-            DistanceToTagRule dt => dt.targetTags,
-            PositionObjectRule po => po.targetTags,
-            SameSectionAsTagRule ss => ss.targetTags,
-            _ => null,
-        };
-        if (targets == null) return false; // TagRule, InSectionRule, RequireTaggedCellRule
+            case null:
+                return false; // empty inspector slot — a common authoring slip, no dynamic behavior possible
 
-        return draggables.Any(d => d.Entity != null && d.Entity.MatchesAll(targets));
+            // Position-independent / cell-only rules — never depend on other draggables.
+            case TagRule:
+            case InSectionRule:
+            case RequireTaggedCellRule:
+                return false;
+
+            // Always depend on where other draggables land.
+            case NPerRowRule:
+            case NPerColumnRule:
+            case NPerSectionRule:
+            case SectionSumRule:
+            case UniqueByTagKeyRule:
+                return true;
+
+            // Dynamic only if some draggable actually matches the rule's target tag set(s).
+            case DistanceToTagRule dt:
+                return MatchesAnyDraggable(dt.targetTags, draggables);
+            case PositionObjectRule po:
+                return MatchesAnyDraggable(po.targetTags, draggables);
+            case SameSectionAsTagRule ss:
+                return MatchesAnyDraggable(ss.targetTags, draggables);
+            case NumericTagCompareRule nt:
+                return MatchesAnyDraggable(nt.targetTags, draggables);
+            case DirectionalOffsetRule dof:
+                return MatchesAnyDraggable(dof.targetTags, draggables);
+            case NeighborCountRule nc:
+                return MatchesAnyDraggable(nc.neighborTags, draggables);
+            case LineOfSightRule los:
+                return MatchesAnyDraggable(los.targetTags, draggables) || MatchesAnyDraggable(los.blockerTags, draggables);
+            case BetweenRule bt:
+                return MatchesAnyDraggable(bt.endpointATags, draggables) || MatchesAnyDraggable(bt.endpointBTags, draggables);
+
+            // Combinators are dynamic iff any child they can actually evaluate is dynamic.
+            case AnyOfRule any:
+                return any.options.Any(r => r != null && IsDynamic(r, draggables));
+            case AllOfRule all:
+                return all.options.Any(r => r != null && IsDynamic(r, draggables));
+            case NotRule not:
+                return not.inner != null && IsDynamic(not.inner, draggables);
+            case IfThenRule ift:
+                return (ift.condition != null && IsDynamic(ift.condition, draggables))
+                    || (ift.consequence != null && IsDynamic(ift.consequence, draggables));
+            case CountOfRule cnt:
+                return cnt.options.Any(r => r != null && IsDynamic(r, draggables));
+
+            // Re-anchors 'inner' onto a tagged subject instead of this rule's own target. Dynamic if
+            // the subject could itself be one of the draggables being placed (its cell then varies
+            // across the search), or if 'inner' is dynamic in its own right.
+            case AsTaggedEntityRule ate:
+                return MatchesAnyDraggable(ate.subjectTags, draggables)
+                    || (ate.inner != null && IsDynamic(ate.inner, draggables));
+
+            default:
+                // Unknown rule type added without updating this switch: assume dynamic so the
+                // search fails safe (slower) instead of silently pruning away valid layouts.
+                return true;
+        }
     }
+
+    static bool MatchesAnyDraggable(List<GridEntity.TagEntry> targets, List<Draggable> draggables)
+        => targets != null && draggables.Any(d => d.Entity != null && d.Entity.MatchesAll(targets));
 }

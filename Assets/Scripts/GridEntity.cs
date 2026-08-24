@@ -70,4 +70,12 @@ public class GridEntity : MonoBehaviour
                 return false;
         return true;
     }
+
+    /// <summary>Parses the tag value at 'key' as an int (e.g. "age", "value"). Returns false if the key is absent or not numeric.</summary>
+    public bool TryGetNumericTag(string key, out int value)
+    {
+        value = 0;
+        var raw = GetTag(key);
+        return raw != null && int.TryParse(raw, out value);
+    }
 }

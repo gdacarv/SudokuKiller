@@ -4,6 +4,7 @@ using UnityEngine.Serialization;
 
 public enum ComparisonMode { LessThan, EqualTo, GreaterThan }
 public enum PositionComparison { Less, LessOrEqual, Equal, GreaterOrEqual, Greater }
+public enum RegionScope { Row, Column, Section, Board }
 
 public abstract class Rule : ScriptableObject
 {
