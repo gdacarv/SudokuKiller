@@ -42,9 +42,9 @@ public class Draggable : MonoBehaviour
     }
 #endif
 
-    void Awake()
+void Awake()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _collider = GetComponent<Collider2D>();
         Entity = GetComponent<GridEntity>();
     }
@@ -183,10 +183,10 @@ private void BeginDrag(Vector3 pointerPos)
         }
     }
 
-    public void SetHighlight(bool highlighted)
+public void SetHighlight(bool highlighted)
     {
         if (_spriteRenderer == null)
-            _spriteRenderer = GetComponent<SpriteRenderer>();
+            _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (_spriteRenderer != null)
             _spriteRenderer.color = highlighted ? new Color(1f, 0.3f, 0.3f, 1f) : Color.white;
     }

@@ -199,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LocalizedHoverTooltip
   message: 
   hoverDelay: 0.2
-  tooltipOffset: {x: 0, y: 60}
+  tooltipOffset: {x: 0, y: 24}
   inputProvider: {fileID: 0}
   tooltipUI: {fileID: 0}
   messageLocalized:
