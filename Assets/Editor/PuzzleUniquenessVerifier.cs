@@ -325,7 +325,7 @@ public static class PuzzleUniquenessVerifier
     /// unsatisfied mid-search and must wait for a complete layout.
     /// </summary>
     /// <summary>
-    /// SectionSumRule is deliberately absent here: an upper-bound sum is only prune-safe if every
+    /// RegionSumRule is deliberately absent here: an upper-bound sum is only prune-safe if every
     /// summed tag value is non-negative, and that can't be verified from the Rule asset alone (the
     /// values live on arbitrary scene entities). Excluding it just costs search speed; including it
     /// wrongly could silently prune away valid layouts, which is the exact failure mode this file
@@ -365,7 +365,7 @@ public static class PuzzleUniquenessVerifier
             case NPerRowRule:
             case NPerColumnRule:
             case NPerSectionRule:
-            case SectionSumRule:
+            case RegionSumRule:
             case UniqueByTagKeyRule:
                 return true;
 

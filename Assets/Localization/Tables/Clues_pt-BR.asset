@@ -178,6 +178,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 49361804038496256
+    m_Localized: "{0} estava no c\xF4modo com {object}"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -209,3 +214,4 @@ MonoBehaviour:
         - id: 41892628642390023
         - id: 41892628642390024
         - id: 45168987275780096
+        - id: 49361804038496256

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Sudoku/Rules/Section Sum")]
-public class SectionSumRule : Rule
+public class RegionSumRule : Rule
 {
     [Tooltip("Tag key holding a numeric value on each summed occupant (e.g. \"age\", \"value\").")]
     public string valueKey = "value";

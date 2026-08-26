@@ -147,6 +147,10 @@ MonoBehaviour:
     m_Key: clue.isAnAdult
     m_Metadata:
       m_Items: []
+  - m_Id: 49361804038496256
+    m_Key: clue.inTheRoomWith
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

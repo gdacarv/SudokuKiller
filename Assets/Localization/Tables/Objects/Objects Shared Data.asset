@@ -67,6 +67,18 @@ MonoBehaviour:
     m_Key: object.cushion
     m_Metadata:
       m_Items: []
+  - m_Id: 43633796589805568
+    m_Key: object.table
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43823578053861376
+    m_Key: object.bathtub
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43833312710483968
+    m_Key: object.brazier
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -81,6 +81,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962331
+  - m_Id: 43633796589805568
+    m_Localized: '{useArticle:uma |}mesa'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 43823578053861376
+    m_Localized: '{useArticle:uma |}banheira'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 43833312710483968
+    m_Localized: '{useArticle:um |}braseiro'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
   references:
     version: 2
     RefIds:
@@ -99,3 +114,6 @@ MonoBehaviour:
         - id: 14390237093421056
         - id: 39631354629971968
         - id: 41086838067159040
+        - id: 43633796589805568
+        - id: 43823578053861376
+        - id: 43833312710483968
