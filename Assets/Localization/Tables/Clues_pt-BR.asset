@@ -133,7 +133,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 41892628642390017
-    m_Localized: '{0} estava cozinhando no fogareiro'
+    m_Localized: "{0} estava de p\xE9 junto a {object}"
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31dfe9cf4309349a485939d9595ad520, type: 3}
-  m_Name: NextToBrazier
+  m_Name: OnBrazier
   m_EditorClassIdentifier: Assembly-CSharp::DistanceToTagRule
   killerFailureMessage:
     m_TableReference:
@@ -28,7 +28,7 @@ MonoBehaviour:
     value: brazier
   metric: 0
   comparison: 1
-  distance: 1
+  distance: 0
   requireAll: 0
   references:
     version: 2

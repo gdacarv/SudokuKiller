@@ -130,7 +130,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 41892628642390017
-    m_Localized: '{0} was cooking at the brazier'
+    m_Localized: '{0} was standing by {object}'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
