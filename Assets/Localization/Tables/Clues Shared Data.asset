@@ -123,14 +123,6 @@ MonoBehaviour:
     m_Key: clue.nextToOfficeBonsai
     m_Metadata:
       m_Items: []
-  - m_Id: 41892628642390020
-    m_Key: clue.nappingNextToBed
-    m_Metadata:
-      m_Items: []
-  - m_Id: 41892628642390021
-    m_Key: clue.nextToDresser
-    m_Metadata:
-      m_Items: []
   - m_Id: 41892628642390022
     m_Key: clue.atDiningTable
     m_Metadata:

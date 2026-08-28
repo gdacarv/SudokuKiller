@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 11
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7161523038674222959, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
   m_Color: {r: 0.31500003, g: 0.48570064, b: 0.9, a: 0.55}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SectionMarker
   gridManager: {fileID: 0}
-  hideAtRuntime: 1
+  hideAtRuntime: 0
   row: 6
   col: 9
   sectionId: 1
@@ -123,5 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridEntity
   tags: []
+  inheritTagsFromParent: 0
   Row: 6
   Col: 9

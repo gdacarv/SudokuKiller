@@ -23,13 +23,19 @@ public class GridOverlay : MonoBehaviour
 
     [SerializeField, HideInInspector] private bool _linesVisible = true;
 
+    // Persistent root for the generated line objects. Serialized as a real scene object
+    // so Unity keeps its Scene-view visibility/picking state (the eye / hand icons)
+    // across play mode, domain reload, and editor restarts. Only this root persists;
+    // the Line children are rebuilt every time and stay HideFlags.DontSave.
+    [SerializeField, HideInInspector] private Transform _linesRoot;
+
     private List<LineRenderer> _lines = new List<LineRenderer>();
     private HashSet<Vector2Int> _hiddenCells = new HashSet<Vector2Int>();
-    private GameObject _linesRoot;
 
-    void OnEnable()   => BuildGrid();
-    void OnDisable()  => DestroyGrid();
-void OnValidate()
+    void OnEnable()  => BuildGrid();
+    void OnDisable() => DestroyGrid();
+
+    void OnValidate()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.delayCall += () =>
@@ -39,17 +45,12 @@ void OnValidate()
 #endif
     }
 
-void BuildGrid()
+    void BuildGrid()
     {
         DestroyGrid();
 
-        _linesRoot = new GameObject("_GridLines");
-        _linesRoot.transform.SetParent(transform, false);
-        _linesRoot.transform.localPosition = Vector3.zero;
-        _linesRoot.transform.localRotation = Quaternion.identity;
-        _linesRoot.transform.localScale    = Vector3.one;
-        _linesRoot.hideFlags = HideFlags.DontSave;
-        _linesRoot.SetActive(_linesVisible);
+        EnsureLinesRoot();
+        _linesRoot.gameObject.SetActive(_linesVisible);
 
         float totalW = cellWidth  * Mathf.Max(cols, 1);
         float totalH = cellHeight * Mathf.Max(rows, 1);
@@ -93,6 +94,10 @@ void BuildGrid()
                 }
             }
         }
+
+#if UNITY_EDITOR
+        PropagateSceneVisibility();
+#endif
     }
 
     public void HideCell(int row, int col) => _hiddenCells.Add(new Vector2Int(col, row));
@@ -103,14 +108,44 @@ void BuildGrid()
     {
         _linesVisible = visible;
         if (_linesRoot != null)
-            _linesRoot.SetActive(visible);
+            _linesRoot.gameObject.SetActive(visible);
+    }
+
+    // Finds or creates the persistent "_GridLines" child. Kept as a normal (saved) scene
+    // object so Unity persists its Scene visibility / picking toggles on its own.
+    void EnsureLinesRoot()
+    {
+        if (_linesRoot == null)
+        {
+            var existing = transform.Find("_GridLines");
+            if (existing != null)
+                _linesRoot = existing;
+        }
+
+        if (_linesRoot == null)
+        {
+            var go = new GameObject("_GridLines");
+            _linesRoot = go.transform;
+            _linesRoot.SetParent(transform, false);
+#if UNITY_EDITOR
+            if (!Application.isPlaying)
+            {
+                UnityEditor.EditorUtility.SetDirty(this);
+                UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(gameObject.scene);
+            }
+#endif
+        }
+
+        _linesRoot.localPosition = Vector3.zero;
+        _linesRoot.localRotation = Quaternion.identity;
+        _linesRoot.localScale    = Vector3.one;
     }
 
     void CreateLine(Vector3 start, Vector3 end)
     {
         var go = new GameObject("Line");
         go.hideFlags = HideFlags.DontSave;
-        go.transform.SetParent(_linesRoot.transform, false);
+        go.transform.SetParent(_linesRoot, false);
 
         var lr = go.AddComponent<LineRenderer>();
         lr.useWorldSpace    = true;
@@ -128,36 +163,60 @@ void BuildGrid()
         _lines.Add(lr);
     }
 
-void DestroyGrid()
+    void DestroyGrid()
     {
         _lines.Clear();
-        if (_linesRoot != null)
-        {
-            if (Application.isPlaying)
-                Destroy(_linesRoot);
-            else
-            {
-#if UNITY_EDITOR
-                DestroyImmediate(_linesRoot);
-#endif
-            }
-            _linesRoot = null;
-        }
-        // Also destroy any stale _GridLines children left from previous runs
+
+        // Remove any stale "_GridLines" siblings from older builds, but keep the
+        // persistent root we now reuse.
         for (int i = transform.childCount - 1; i >= 0; i--)
         {
             var child = transform.GetChild(i);
-            if (child.name == "_GridLines")
-            {
-                if (Application.isPlaying)
-                    Destroy(child.gameObject);
-                else
-                {
+            if (child.name == "_GridLines" && child != _linesRoot)
+                DestroyObject(child.gameObject);
+        }
+
+        if (_linesRoot == null)
+            return;
+
+        // Clear the root's children (the generated Line objects); keep the root itself.
+        for (int i = _linesRoot.childCount - 1; i >= 0; i--)
+            DestroyObject(_linesRoot.GetChild(i).gameObject);
+    }
+
+    static void DestroyObject(GameObject go)
+    {
+        if (go == null)
+            return;
+        if (Application.isPlaying)
+        {
+            Destroy(go);
+        }
+        else
+        {
 #if UNITY_EDITOR
-                    DestroyImmediate(child.gameObject);
+            DestroyImmediate(go);
+#else
+            Destroy(go);
 #endif
-                }
-            }
         }
     }
+
+#if UNITY_EDITOR
+    // Mirror the root's own (Unity-persisted) Scene visibility / picking state onto the
+    // freshly created Line children, which are what actually render and receive picks.
+    void PropagateSceneVisibility()
+    {
+        if (_linesRoot == null)
+            return;
+
+        var svm = UnityEditor.SceneVisibilityManager.instance;
+        var go  = _linesRoot.gameObject;
+
+        if (svm.IsHidden(go))
+            svm.Hide(go, true);
+        if (svm.IsPickingDisabled(go))
+            svm.DisablePicking(go, true);
+    }
+#endif
 }

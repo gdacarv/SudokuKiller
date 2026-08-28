@@ -35,13 +35,14 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194805398962331
   - m_Id: 356883700375552
-    m_Localized: "est\xE1tua"
+    m_Localized: "{useArticle:uma |}est\xE1tua"
     m_Metadata:
       m_Items: []
   - m_Id: 370241929469952
-    m_Localized: tapete
+    m_Localized: '{useArticle:um |}tapete'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962331
   - m_Id: 6425924303052800
     m_Localized: "f\xF3sseis"
     m_Metadata:
@@ -117,3 +118,4 @@ MonoBehaviour:
         - id: 43633796589805568
         - id: 43823578053861376
         - id: 43833312710483968
+        - id: 370241929469952

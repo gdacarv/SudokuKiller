@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: color.greenish
     m_Metadata:
       m_Items: []
+  - m_Id: 48402766119297024
+    m_Key: color.reddish
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -42,6 +42,10 @@ MonoBehaviour:
     m_Localized: greenish
     m_Metadata:
       m_Items: []
+  - m_Id: 48402766119297024
+    m_Localized: reddish
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

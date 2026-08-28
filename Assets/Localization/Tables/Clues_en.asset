@@ -144,16 +144,6 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
-  - m_Id: 41892628642390020
-    m_Localized: '{0} was napping next to a bed'
-    m_Metadata:
-      m_Items:
-      - rid: 6722194458415989152
-  - m_Id: 41892628642390021
-    m_Localized: '{0} was next to the dresser'
-    m_Metadata:
-      m_Items:
-      - rid: 6722194458415989152
   - m_Id: 41892628642390022
     m_Localized: '{0} was sitting at the dining table'
     m_Metadata:
@@ -204,8 +194,6 @@ MonoBehaviour:
         - id: 41892628642390017
         - id: 41892628642390018
         - id: 41892628642390019
-        - id: 41892628642390020
-        - id: 41892628642390021
         - id: 41892628642390022
         - id: 41892628642390023
         - id: 41892628642390024

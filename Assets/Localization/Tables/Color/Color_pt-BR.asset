@@ -46,6 +46,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962277
+  - m_Id: 48402766119297024
+    m_Localized: avermelhad{gender:choose(male|female):o|a|o}
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962277
   references:
     version: 2
     RefIds:
@@ -57,3 +62,4 @@ MonoBehaviour:
         - id: 3842761676546048
         - id: 121356935168
         - id: 34763845359624192
+        - id: 48402766119297024
