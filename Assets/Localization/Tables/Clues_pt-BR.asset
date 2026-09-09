@@ -122,11 +122,6 @@ MonoBehaviour:
     m_Localized: Tinha apenas um Adulto por cada linha e coluna
     m_Metadata:
       m_Items: []
-  - m_Id: 41892628617224192
-    m_Localized: '{0} estava ouvindo o gramofone'
-    m_Metadata:
-      m_Items:
-      - rid: 6722194458415989153
   - m_Id: 41892628642390016
     m_Localized: '{0} estava em uma almofada'
     m_Metadata:
@@ -148,7 +143,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 41892628642390022
-    m_Localized: "{0} estava \xE0 mesa de jantar"
+    m_Localized: '{0} estava sentado numa mesa de jantar'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
@@ -173,6 +168,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 54589417149423616
+    m_Localized: "{0} estava sozinh{gender:choose(male|female|other):o|a|a} no c\xF4modo
+      ou pelo menos {steps} passos de dist\xE2ncia de outra pessoa"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -193,7 +194,6 @@ MonoBehaviour:
         - id: 15982772018470912
         - id: 599727119785984
         - id: 36468701376012288
-        - id: 41892628617224192
         - id: 41892628642390016
         - id: 41892628642390017
         - id: 41892628642390018
@@ -203,3 +203,4 @@ MonoBehaviour:
         - id: 41892628642390024
         - id: 45168987275780096
         - id: 49361804038496256
+        - id: 54589417149423616

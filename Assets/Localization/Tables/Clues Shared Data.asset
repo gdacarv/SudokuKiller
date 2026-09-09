@@ -103,10 +103,6 @@ MonoBehaviour:
     m_Key: clue.onlyOneAdultInRowAndColumn
     m_Metadata:
       m_Items: []
-  - m_Id: 41892628617224192
-    m_Key: clue.listeningGramophone
-    m_Metadata:
-      m_Items: []
   - m_Id: 41892628642390016
     m_Key: clue.onCushion
     m_Metadata:
@@ -141,6 +137,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 49361804038496256
     m_Key: clue.inTheRoomWith
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54589417149423616
+    m_Key: clue.aloneOrAwayFromOthers
     m_Metadata:
       m_Items: []
   m_Metadata:

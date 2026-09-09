@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public enum DistanceMetric
@@ -27,20 +28,29 @@ public class DistanceToTagRule : Rule
     [Tooltip("True: condition must hold against ALL matching entities. False: against ANY.")]
     public bool requireAll = false;
 
+    [Tooltip("True: only consider target entities in the same section as the placed cell.")]
+    public bool sameSectionOnly = false;
+
     public override bool CanPlace(GridManager manager, Draggable target, int row, int col)
     {
-        var targets = manager.FindEntitiesWithTags(targetTags);
-        if (targets.Count == 0) return false;
+        var targets = manager.FindEntitiesWithTags(targetTags).Where(t => t != target.Entity);
+        if (sameSectionOnly)
+        {
+            int section = manager.GetSection(row, col);
+            targets = targets.Where(t => manager.GetSection(t.Row, t.Col) == section);
+        }
+        var targetList = targets.ToList();
+        if (targetList.Count == 0) return false;
 
         if (requireAll)
         {
-            foreach (var t in targets)
+            foreach (var t in targetList)
                 if (!CompareDistance(ComputeDistance(row, col, t))) return false;
             return true;
         }
         else
         {
-            foreach (var t in targets)
+            foreach (var t in targetList)
                 if (CompareDistance(ComputeDistance(row, col, t))) return true;
             return false;
         }

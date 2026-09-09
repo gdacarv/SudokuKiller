@@ -89,6 +89,11 @@ MonoBehaviour:
     m_Localized: Museum
     m_Metadata:
       m_Items: []
+  - m_Id: 59744731570102272
+    m_Localized: '{object1} or {object2}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962274
   references:
     version: 2
     RefIds:
@@ -98,3 +103,4 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 10670133193203712
+        - id: 59744731570102272

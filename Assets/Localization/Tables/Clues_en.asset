@@ -119,11 +119,6 @@ MonoBehaviour:
     m_Localized: There was only one Adult in each row and column
     m_Metadata:
       m_Items: []
-  - m_Id: 41892628617224192
-    m_Localized: '{0} was listening to the gramophone'
-    m_Metadata:
-      m_Items:
-      - rid: 6722194458415989152
   - m_Id: 41892628642390016
     m_Localized: '{0} was sitting on a cushion'
     m_Metadata:
@@ -145,7 +140,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 41892628642390022
-    m_Localized: '{0} was sitting at the dining table'
+    m_Localized: '{0} was sitting at a dining table'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
@@ -169,6 +164,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
+  - m_Id: 54589417149423616
+    m_Localized: '{0} was either alone in the room or at least {steps} steps away
+      from someone else'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
   references:
     version: 2
     RefIds:
@@ -189,7 +190,6 @@ MonoBehaviour:
         - id: 36118547489873920
         - id: 599727119785984
         - id: 36468701376012288
-        - id: 41892628617224192
         - id: 41892628642390016
         - id: 41892628642390017
         - id: 41892628642390018
@@ -199,3 +199,4 @@ MonoBehaviour:
         - id: 41892628642390024
         - id: 45168987275780096
         - id: 49361804038496256
+        - id: 54589417149423616
