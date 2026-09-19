@@ -79,6 +79,10 @@ MonoBehaviour:
     m_Key: object.brazier
     m_Metadata:
       m_Items: []
+  - m_Id: 52780374126747648
+    m_Key: object.mat
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

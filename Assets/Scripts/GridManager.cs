@@ -50,9 +50,11 @@ public class GridManager : MonoBehaviour
     private void InitializeGridState()
     {
         _entities.Clear();
+        _tagQueryCache?.Clear();
         _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
         _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
         _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
+        _sectionCells = null;
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
                 _cellSection[r, c] = -1;
@@ -105,17 +107,63 @@ public class GridManager : MonoBehaviour
 
     public void RegisterEntity(GridEntity entity)
     {
-        if (entity != null) _entities.Add(entity);
+        if (entity != null && _entities.Add(entity)) _tagQueryCache?.Clear();
     }
 
     public void UnregisterEntity(GridEntity entity)
     {
-        _entities.Remove(entity);
+        if (_entities.Remove(entity)) _tagQueryCache?.Clear();
+    }
+
+    // Tag-match results memoized per pattern-list *reference* (rule assets hold stable lists).
+    // Only active between BeginTagQueryCache/EndTagQueryCache, so gameplay and editing never see
+    // stale results. Caches tag matching only — IsOnGrid changes during a search and is applied per call.
+    private Dictionary<List<GridEntity.TagEntry>, List<GridEntity>> _tagQueryCache;
+
+    /// <summary>
+    /// Start memoizing tag queries. Only valid while entity tags and registrations are fixed
+    /// (e.g. a verifier search that moves draggables but never edits tags). Must be paired with EndTagQueryCache.
+    /// </summary>
+    public void BeginTagQueryCache()
+    {
+        _tagQueryCache = new Dictionary<List<GridEntity.TagEntry>, List<GridEntity>>();
+        GridEntity.SetParentCacheEnabled(true);
+    }
+
+    public void EndTagQueryCache()
+    {
+        _tagQueryCache = null;
+        GridEntity.SetParentCacheEnabled(false);
+    }
+
+    /// <summary>
+    /// Registered entities matching 'pattern', regardless of IsOnGrid. While the tag query cache is
+    /// active the returned list is shared — callers MUST NOT mutate it and must check IsOnGrid themselves.
+    /// </summary>
+    public List<GridEntity> GetTaggedEntities(List<GridEntity.TagEntry> pattern)
+    {
+        if (_tagQueryCache != null && _tagQueryCache.TryGetValue(pattern, out var cached))
+            return cached;
+
+        var results = new List<GridEntity>();
+        foreach (var entity in _entities)
+            if (entity.MatchesAll(pattern))
+                results.Add(entity);
+        _tagQueryCache?.Add(pattern, results);
+        return results;
     }
 
     public List<GridEntity> FindEntitiesWithTags(List<GridEntity.TagEntry> pattern)
     {
         var results = new List<GridEntity>();
+        if (_tagQueryCache != null)
+        {
+            foreach (var entity in GetTaggedEntities(pattern))
+                if (entity.IsOnGrid)
+                    results.Add(entity);
+            return results;
+        }
+
         foreach (var entity in _entities)
             if (entity.IsOnGrid && entity.MatchesAll(pattern))
                 results.Add(entity);
@@ -165,7 +213,31 @@ public class GridManager : MonoBehaviour
     public void RegisterSection(int row, int col, int sectionId)
     {
         if (row >= 0 && row < gridOverlay.rows && col >= 0 && col < gridOverlay.cols)
+        {
             _cellSection[row, col] = sectionId;
+            _sectionCells = null; // section→cells index is rebuilt lazily
+        }
+    }
+
+    // section id → its cells. Lets per-section counting touch only that section's cells instead of the whole grid.
+    private Dictionary<int, List<Vector2Int>> _sectionCells;
+
+    private List<Vector2Int> GetSectionCells(int sectionId)
+    {
+        if (_sectionCells == null)
+        {
+            _sectionCells = new Dictionary<int, List<Vector2Int>>();
+            for (int r = 0; r < gridOverlay.rows; r++)
+                for (int c = 0; c < gridOverlay.cols; c++)
+                {
+                    int s = _cellSection[r, c];
+                    if (s < 0) continue;
+                    if (!_sectionCells.TryGetValue(s, out var list))
+                        _sectionCells[s] = list = new List<Vector2Int>();
+                    list.Add(new Vector2Int(r, c));
+                }
+        }
+        return _sectionCells.TryGetValue(sectionId, out var cells) ? cells : null;
     }
 
     public int GetSection(int row, int col)
@@ -207,6 +279,19 @@ public class GridManager : MonoBehaviour
     public int CountMatchesInSection(int sectionId, List<GridEntity.TagEntry> pattern, Draggable exclude)
     {
         int count = 0;
+        if (sectionId >= 0)
+        {
+            var cells = GetSectionCells(sectionId);
+            if (cells == null) return 0;
+            foreach (var cell in cells)
+            {
+                var occ = _occupants[cell.x, cell.y];
+                if (occ != null && occ != exclude && occ.Entity.MatchesAll(pattern))
+                    count++;
+            }
+            return count;
+        }
+
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
             {
@@ -323,6 +408,13 @@ public class GridManager : MonoBehaviour
         => CountMatchesInCol(col, pattern, exclude) > 0;
 
     
+    /// <summary>O(1) release for callers that already know the cell the object occupies.</summary>
+    public void Release(Draggable obj, int row, int col)
+    {
+        if (row >= 0 && row < gridOverlay.rows && col >= 0 && col < gridOverlay.cols && _occupants[row, col] == obj)
+            _occupants[row, col] = null;
+    }
+
     public void Release(Draggable obj)
     {
         for (int r = 0; r < gridOverlay.rows; r++)

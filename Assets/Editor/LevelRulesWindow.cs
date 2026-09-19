@@ -40,7 +40,9 @@ public class LevelRulesWindow : EditorWindow
     [SerializeField] private float _rulesPaneHeight = 400f;
     private bool _resizingSplit;
     private const float MinRulesPaneHeight = 100f;
-    private const float MinVerifyPaneHeight = 150f;
+    private const float MinVerifyPaneHeightBase = 150f;
+    private const float VerifyOptionsExtraHeight = 142f;  // room for the expanded Options foldout
+    private float MinVerifyPaneHeight => MinVerifyPaneHeightBase + (_verifyOptionsOpen ? VerifyOptionsExtraHeight : 0f);
     private const float SplitHandleHeight = 6f;
 
     // ── Uniqueness verification state ─────────────────────────────────
@@ -53,6 +55,11 @@ public class LevelRulesWindow : EditorWindow
     [SerializeField] private string _verifyScriptStamp;
     private Vector2 _verifyScroll;
     private bool    _suppressChangeEvents = false;
+
+    // Verifier limits the user can change before running. Persisted by the verifier itself
+    // (EditorPrefs) rather than serialized here, so the Tools menu item shares the same values.
+    [SerializeField] private bool _verifyOptionsOpen;
+    [System.NonSerialized] private PuzzleUniquenessVerifier.Options _verifyOptions = PuzzleUniquenessVerifier.Options.Default;
 
     // Last-write stamp of the compiled script assemblies. Changes only when code
     // recompiles, so play-mode domain reloads keep a result fresh while script
@@ -91,6 +98,8 @@ public class LevelRulesWindow : EditorWindow
         Selection.selectionChanged                      += OnSelectionChanged;
         ObjectChangeEvents.changesPublished             += OnObjectsChanged;
         Undo.undoRedoPerformed                          += OnUndoRedo;
+
+        _verifyOptions = PuzzleUniquenessVerifier.Options.Load();
 
         // Coming back from a domain reload: drop a result that belongs to another
         // scene; mark it stale if scripts recompiled since it was computed.
@@ -317,27 +326,17 @@ public class LevelRulesWindow : EditorWindow
     {
         DrawSeparator();
 
-        using (new EditorGUI.DisabledScope(Application.isPlaying))
+        DrawVerifyOptions();
+
+        using (new EditorGUI.DisabledScope(Application.isPlaying || _verifyQueued))
         {
-            if (GUILayout.Button("Verify Puzzle Uniqueness", GUILayout.Height(24)))
+            if (GUILayout.Button(_verifyQueued ? "Verifying…" : "Verify Puzzle Uniqueness", GUILayout.Height(24)))
             {
-                // The verifier temporarily rearranges occupancy state, which can
-                // publish object-change events — don't let it mark its own result stale.
-                _suppressChangeEvents = true;
-                try
-                {
-                    _verifyResult      = PuzzleUniquenessVerifier.Run();
-                    _hasVerifyResult   = true;
-                    _verifyStale       = false;
-                    _verifyScenePath   = SceneManager.GetActiveScene().path;
-                    _verifyScriptStamp = CurrentScriptStamp();
-                    _verifyDetails     = _verifyResult.outcome != PuzzleUniquenessVerifier.Outcome.Unique;
-                    Debug.Log(_verifyResult.report);
-                }
-                finally
-                {
-                    ReleaseChangeSuppression();
-                }
+                // Never run the search inside OnGUI: it blocks for as long as the search takes, in the
+                // middle of a repaint, with layout/control state half-built. Defer to the editor's
+                // idle loop so the click returns immediately.
+                _verifyQueued = true;
+                EditorApplication.delayCall += RunVerification;
             }
         }
         if (Application.isPlaying)
@@ -354,6 +353,7 @@ public class LevelRulesWindow : EditorWindow
             PuzzleUniquenessVerifier.Outcome.Unique       => MessageType.Info,
             PuzzleUniquenessVerifier.Outcome.KillerUnique => MessageType.Warning,
             PuzzleUniquenessVerifier.Outcome.Inconclusive => MessageType.Warning,
+            PuzzleUniquenessVerifier.Outcome.Cancelled    => MessageType.Warning,
             _                                             => MessageType.Error,
         };
         using (new EditorGUI.DisabledScope(_verifyStale))
@@ -376,6 +376,89 @@ public class LevelRulesWindow : EditorWindow
             EditorGUILayout.EndScrollView();
         }
         EditorGUILayout.Space(2);
+    }
+
+    private void DrawVerifyOptions()
+    {
+        _verifyOptionsOpen = EditorGUILayout.Foldout(_verifyOptionsOpen,
+            _verifyOptions.IsDefault ? "Options" : "Options (customized)", true);
+        if (!_verifyOptionsOpen) return;
+
+        using (new EditorGUI.DisabledScope(_verifyQueued))
+        {
+            // Delayed fields commit on Enter/blur, not per keystroke — otherwise clamping to the minimum
+            // would fight the user mid-typing (typing "5000000" would snap to the floor at the first "5").
+            EditorGUI.BeginChangeCheck();
+            var o = _verifyOptions;
+            EditorGUI.indentLevel++;
+            o.maxSeconds = EditorGUILayout.DelayedDoubleField(new GUIContent("Time budget (s)",
+                $"Wall-clock limit. When exceeded the run stops as INCONCLUSIVE. Default {PuzzleUniquenessVerifier.DefaultMaxSeconds:0.#}, minimum {PuzzleUniquenessVerifier.Options.MinSeconds:0.#}."),
+                o.maxSeconds);
+            double visits = EditorGUILayout.DelayedDoubleField(new GUIContent("Node budget",
+                $"Placement attempts the search may make before stopping as INCONCLUSIVE. Default {PuzzleUniquenessVerifier.DefaultMaxVisits:N0}, minimum {PuzzleUniquenessVerifier.Options.MinVisits:N0}."),
+                o.maxVisits);
+            o.maxVisits = visits >= long.MaxValue ? long.MaxValue : (long)visits;
+            o.maxRecordedLayouts = EditorGUILayout.DelayedIntField(new GUIContent("Layouts listed",
+                $"How many valid layouts are kept and listed below. Counting and killer analysis always cover EVERY layout. Default {PuzzleUniquenessVerifier.DefaultMaxRecordedLayouts}, maximum {PuzzleUniquenessVerifier.Options.MaxRecordedCap} (each listed layout is drawn every repaint)."),
+                o.maxRecordedLayouts);
+            o.maxRecordedPerKillerSet = EditorGUILayout.DelayedIntField(new GUIContent("Listed per killer set",
+                $"Cap on listed layouts sharing the same killer(s), so the list shows variety instead of one killer's layouts. Default {PuzzleUniquenessVerifier.DefaultMaxRecordedPerKillerSet}, maximum {PuzzleUniquenessVerifier.Options.MaxRecordedCap}."),
+                o.maxRecordedPerKillerSet);
+            o.stopWhenNotUnique = EditorGUILayout.Toggle(new GUIContent("Stop once NOT UNIQUE is proven",
+                "Faster on under-constrained puzzles: stops as soon as 2+ layouts exist AND the killer rules already fail (none, several, or differing killers) — the final verdict can't change after that. " +
+                "UNIQUE, KILLER-UNIQUE and BROKEN still need the full search. Trade-off: layout counts become 'at least N' and fewer layouts are listed. Default off."),
+                o.stopWhenNotUnique);
+            EditorGUI.indentLevel--;
+            if (EditorGUI.EndChangeCheck())
+            {
+                _verifyOptions = o.Sanitized(); // show the clamped value back to the user
+                _verifyOptions.Save();
+                GUI.FocusControl(null);
+            }
+
+            using (new EditorGUI.DisabledScope(_verifyOptions.IsDefault))
+            {
+                if (GUILayout.Button("Reset to defaults", GUILayout.Width(120)))
+                {
+                    _verifyOptions = PuzzleUniquenessVerifier.Options.Default;
+                    _verifyOptions.Save();
+                    GUI.FocusControl(null);
+                }
+            }
+        }
+        EditorGUILayout.Space(2);
+    }
+
+    [System.NonSerialized] private bool _verifyQueued;
+
+    private void RunVerification()
+    {
+        // The window may have been closed, or play mode entered, between the click and this callback.
+        if (this == null || Application.isPlaying)
+        {
+            _verifyQueued = false;
+            return;
+        }
+
+        // The verifier temporarily rearranges occupancy state, which can
+        // publish object-change events — don't let it mark its own result stale.
+        _suppressChangeEvents = true;
+        try
+        {
+            _verifyResult      = PuzzleUniquenessVerifier.Run(_verifyOptions, interactive: true);
+            _hasVerifyResult   = true;
+            _verifyStale       = false;
+            _verifyScenePath   = SceneManager.GetActiveScene().path;
+            _verifyScriptStamp = CurrentScriptStamp();
+            _verifyDetails     = _verifyResult.outcome != PuzzleUniquenessVerifier.Outcome.Unique;
+            Debug.Log(_verifyResult.report);
+        }
+        finally
+        {
+            _verifyQueued = false;
+            ReleaseChangeSuppression();
+            Repaint();
+        }
     }
 
     private void DrawLayoutRow(int index, PuzzleUniquenessVerifier.LayoutInfo layout)

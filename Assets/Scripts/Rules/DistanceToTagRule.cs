@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public enum DistanceMetric
@@ -33,27 +32,28 @@ public class DistanceToTagRule : Rule
 
     public override bool CanPlace(GridManager manager, Draggable target, int row, int col)
     {
-        var targets = manager.FindEntitiesWithTags(targetTags).Where(t => t != target.Entity);
-        if (sameSectionOnly)
-        {
-            int section = manager.GetSection(row, col);
-            targets = targets.Where(t => manager.GetSection(t.Row, t.Col) == section);
-        }
-        var targetList = targets.ToList();
-        if (targetList.Count == 0) return false;
+        // Hot path for the puzzle verifier: one pass, no LINQ, no per-call list. The tagged list may be
+        // shared (see GridManager.GetTaggedEntities), so it is only read, and IsOnGrid is checked inline.
+        var tagged = manager.GetTaggedEntities(targetTags);
+        int section = sameSectionOnly ? manager.GetSection(row, col) : 0;
 
-        if (requireAll)
+        bool sawTarget = false;
+        for (int i = 0; i < tagged.Count; i++)
         {
-            foreach (var t in targetList)
-                if (!CompareDistance(ComputeDistance(row, col, t))) return false;
-            return true;
+            var t = tagged[i];
+            if (!t.IsOnGrid || t == target.Entity) continue;
+            if (sameSectionOnly && manager.GetSection(t.Row, t.Col) != section) continue;
+
+            sawTarget = true;
+            bool passes = CompareDistance(ComputeDistance(row, col, t));
+            if (requireAll) { if (!passes) return false; }
+            else if (passes) return true;
         }
-        else
-        {
-            foreach (var t in targetList)
-                if (CompareDistance(ComputeDistance(row, col, t))) return true;
-            return false;
-        }
+
+        // No matching target on the grid is a failure (deliberately not "vacuously true" — see the
+        // verifier's non-monotonicity note). With targets present: requireAll survived every check,
+        // any-mode found no passing target.
+        return sawTarget && requireAll;
     }
 
     float ComputeDistance(int row, int col, GridEntity b)

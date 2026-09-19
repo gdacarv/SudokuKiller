@@ -23,8 +23,35 @@ public class GridEntity : MonoBehaviour
 
     static readonly List<TagEntry> _empty = new();
 
-    public GridEntity ParentEntity =>
-        transform.parent != null ? transform.parent.GetComponentInParent<GridEntity>() : null;
+    // ParentEntity is a GetComponentInParent walk that sits inside the innermost tag-matching loop.
+    // Memoizing it is only safe while the hierarchy is frozen, so it is scoped to a window opened by
+    // GridManager.BeginTagQueryCache (e.g. a verifier search) and dropped when the window closes.
+    static bool s_parentCacheEnabled;
+    static int s_parentCacheEpoch;
+    GridEntity _cachedParent;
+    int _cachedParentEpoch = -1;
+
+    public static void SetParentCacheEnabled(bool enabled)
+    {
+        s_parentCacheEnabled = enabled;
+        s_parentCacheEpoch++; // invalidates every entity's memo, so a later window never sees an old one
+    }
+
+    public GridEntity ParentEntity
+    {
+        get
+        {
+            if (!s_parentCacheEnabled)
+                return transform.parent != null ? transform.parent.GetComponentInParent<GridEntity>() : null;
+
+            if (_cachedParentEpoch != s_parentCacheEpoch)
+            {
+                _cachedParent = transform.parent != null ? transform.parent.GetComponentInParent<GridEntity>() : null;
+                _cachedParentEpoch = s_parentCacheEpoch;
+            }
+            return _cachedParent;
+        }
+    }
 
     public List<TagEntry> ResolvedTags
     {
