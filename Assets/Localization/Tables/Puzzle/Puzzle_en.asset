@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 4af7bbab842694a17bf1b59daa179f12, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2766302417759764888
   m_TableData:
   - m_Id: 1087788089860096
     m_Localized: Wrong! {0} is not in the same room as the Victim!
@@ -50,6 +51,17 @@ MonoBehaviour:
     m_Localized: The Killer is not a Kid!
     m_Metadata:
       m_Items: []
+  - m_Id: 63471659753922560
+    m_Localized: '{0} is not on the same {object} as the Victim!'
+    m_Metadata:
+      m_Items:
+      - rid: 2766302417759764888
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2766302417759764888
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 63471659753922560

@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 4af7bbab842694a17bf1b59daa179f12, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2766302417759764889
   m_TableData:
   - m_Id: 1087788089860096
     m_Localized: "Errado! {0} n\xE3o est\xE1 no mesmo c\xF4modo da V\xEDtima!"
@@ -50,6 +51,18 @@ MonoBehaviour:
     m_Localized: "O Assassino n\xE3o \xE9 uma Crian\xE7a!"
     m_Metadata:
       m_Items: []
+  - m_Id: 63471659753922560
+    m_Localized: "{0} n\xE3o est\xE1 n{objectGender:choose(male|female):o|a|o} mesm{objectGender:choose(male|female):o|a|o}
+      {object} da V\xEDtima!"
+    m_Metadata:
+      m_Items:
+      - rid: 2766302417759764889
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2766302417759764889
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 63471659753922560

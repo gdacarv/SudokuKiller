@@ -903,6 +903,10 @@ public static class PuzzleUniquenessVerifier
                 AddMatching(bt.endpointATags, all, acc);
                 AddMatching(bt.endpointBTags, all, acc);
                 return;
+            case MatchingCellTagRule mc:
+                AddMatching(mc.referenceTags, all, acc);  // the reference (e.g. the victim) moves during the search
+                AddMatching(mc.cellEntityTags, all, acc); // a searched draggable could itself be a tile's object
+                return;
 
             // Combinators depend on whatever any child depends on.
             case AnyOfRule any:

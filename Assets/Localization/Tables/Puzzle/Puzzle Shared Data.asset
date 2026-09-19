@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: killer.notAKid
     m_Metadata:
       m_Items: []
+  - m_Id: 63471659753922560
+    m_Key: killer.notOnSameObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

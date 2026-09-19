@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145b34e887d8c482aaae341eb8c7079e, type: 3}
+  m_Name: Solution
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::BoardLayoutPreset
+  sceneName: GymScene
+  capturedUtc: 2026-09-19 22:33:40
+  note: 
+  placements:
+  - objectName: Alice
+    row: 4
+    col: 0
+    worldPosition: {x: 0.7220001, y: -0.2379998, z: 0}
+  - objectName: Blake
+    row: 1
+    col: 1
+    worldPosition: {x: 1.2020001, y: -1.6779997, z: 0}
+  - objectName: Charles
+    row: 0
+    col: 6
+    worldPosition: {x: 3.602, y: -2.1579998, z: 0}
+  - objectName: Diana
+    row: 7
+    col: 7
+    worldPosition: {x: 4.0820003, y: 1.202, z: 0}
+  - objectName: Ethan
+    row: 5
+    col: 3
+    worldPosition: {x: 2.1620002, y: 0.24200022, z: 0}
+  - objectName: Felix
+    row: 8
+    col: 2
+    worldPosition: {x: 1.682, y: 1.682, z: 0}
+  - objectName: Gloria
+    row: 2
+    col: 4
+    worldPosition: {x: 2.642, y: -1.1979998, z: 0}
+  - objectName: Hugo
+    row: 3
+    col: 8
+    worldPosition: {x: 4.562, y: -0.7179998, z: 0}
+  - objectName: Victim
+    row: 6
+    col: 5
+    worldPosition: {x: 3.122, y: 0.72200024, z: 0}

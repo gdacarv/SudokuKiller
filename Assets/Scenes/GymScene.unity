@@ -4865,10 +4865,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5cfeb21a6eb0545eb9ef1aac58986e4b, type: 2}
   - {fileID: 11400000, guid: 956570d07481a4ebb879181d8dac0399, type: 2}
   - {fileID: 11400000, guid: 849a69b1236a243db8c52c4b60e27e96, type: 2}
-  killerRules: []
+  killerRules:
+  - {fileID: 11400000, guid: d8da7c7e0bb054c539af34ba2ea6d80b, type: 2}
+  - {fileID: 11400000, guid: 46234a5eb16ed4525aa49147c5f43fae, type: 2}
   preventInvalidPlacement: 0
   highlightRuleViolations: 1
-  startAtSolutionPositions: 0
+  startAtSolutionPositions: 1
   showGridOverlay: 1
 --- !u!114 &368987999
 MonoBehaviour:
@@ -5903,15 +5905,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: Col
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: Row
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: tags.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
+      propertyPath: tags.Array.data[1].key
+      value: name
       objectReference: {fileID: 0}
     - target: {fileID: 8082419719887491220, guid: e923cb0dd43eb40c2979b52c66e69f37, type: 3}
       propertyPath: tags.Array.data[3].key
@@ -26285,12 +26291,12 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: rules.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: 'rules.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 8b60cfe3beecb451b93f2f88b19cfd0c, type: 2}
+      objectReference: {fileID: 11400000, guid: 129f16104a74f48dfaabc20ff4fdfde6, type: 2}
     - target: {fileID: 5824487254868341983, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: 'rules.Array.data[1]'
       value: 

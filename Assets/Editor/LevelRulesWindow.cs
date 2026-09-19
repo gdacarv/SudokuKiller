@@ -491,59 +491,17 @@ public class LevelRulesWindow : EditorWindow
     // Fully undoable in a single step.
     private void ApplyLayout(PuzzleUniquenessVerifier.LayoutInfo layout)
     {
-        var gm = FindFirstObjectByType<GridManager>();
-        if (gm == null)
-        {
-            Debug.LogWarning("[LevelRules] Cannot apply layout — no GridManager in scene.");
-            return;
-        }
-
-        // Layouts address suspects by name, so duplicates are unresolvable — report
-        // them the same way a missing suspect is reported instead of throwing.
-        var byName = new Dictionary<string, Draggable>();
-        foreach (var d in FindObjectsByType<Draggable>(FindObjectsSortMode.None))
-        {
-            if (d.GetComponent<SolutionPosition>() == null) continue;
-            if (byName.ContainsKey(d.name))
-            {
-                Debug.LogWarning($"[LevelRules] Cannot apply layout — more than one suspect is named '{d.name}'. Give them distinct names and re-verify.");
-                return;
-            }
-            byName[d.name] = d;
-        }
-
-        foreach (var p in layout.placements)
-            if (!byName.ContainsKey(p.suspect))
-            {
-                Debug.LogWarning($"[LevelRules] Cannot apply layout — suspect '{p.suspect}' not found in scene (was it renamed?).");
-                return;
-            }
+        var entries = layout.placements
+            .Select(p => new BoardLayoutEntry { objectName = p.suspect, row = p.row, col = p.col })
+            .ToList();
 
         // Applying doesn't invalidate the verdict: layouts don't depend on
         // current suspect positions — keep the result fresh.
         _suppressChangeEvents = true;
         try
         {
-            // Close whatever group is still open, so collapsing below cannot swallow
-            // the user's previous edit into this one undo step.
-            Undo.IncrementCurrentGroup();
-            Undo.SetCurrentGroupName("Apply Puzzle Layout");
-            int undoGroup = Undo.GetCurrentGroup();
-
-            foreach (var p in layout.placements)
-            {
-                var d = byName[p.suspect];
-                var sp = d.GetComponent<SolutionPosition>();
-                Undo.RecordObject(d.transform, "Apply Puzzle Layout");
-                Undo.RecordObject(sp, "Apply Puzzle Layout");
-                d.transform.position = gm.GetCellCenter(p.row, p.col);
-                sp.solutionRow = p.row;
-                sp.solutionCol = p.col;
-                EditorUtility.SetDirty(sp);
-            }
-
-            Undo.CollapseUndoOperations(undoGroup);
-            gm.RefreshEditModeViolations();
+            var report = BoardLayoutIO.Apply(entries, "Apply Puzzle Layout", strict: true, logTag: "LevelRules");
+            if (report.aborted) return;
 
             if (_hasVerifyResult && _verifyResult.layouts != null)
                 foreach (var li in _verifyResult.layouts)

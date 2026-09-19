@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74568650ede342cbb88cf7efe31f31d, type: 3}
+  m_Name: KillerOnSameMatAsVictim
+  m_EditorClassIdentifier: Assembly-CSharp::MatchingCellTagRule
+  killerFailureMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+    m_TableEntryReference:
+      m_KeyId: 63471659753922560
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables:
+    - name: object
+      variable:
+        rid: 2766302417759764890
+    - name: objectGender
+      variable:
+        rid: 2766302417759764891
+  referenceTags:
+  - key: role
+    value: Victim
+  cellEntityTags:
+  - key: type
+    value: object
+  - key: name
+    value: carpet
+  compareKeys: []
+  requireAll: 0
+  passWhenReferenceCellUntagged: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2766302417759764890
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:dc78d4cea0a8045cd9cc33a34bef791f
+        m_TableEntryReference:
+          m_KeyId: 52780374126747648
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 2766302417759764891
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: male
