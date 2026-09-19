@@ -124,6 +124,12 @@ public class GridManager : MonoBehaviour
 
     private void ApplyEntityMarkers()
     {
+        // Rebuild the overlay's hidden-cell set from scratch every pass. _blockedByMarker
+        // is already reallocated in InitializeGridState, but the overlay's hidden set is
+        // owned by GridOverlay and only ever appended to, so without this a cell stays
+        // carved out of the grid even after its BlockedCellMarker is deleted or moved.
+        gridOverlay.ClearHiddenCells();
+
         var markers = Object.FindObjectsByType<GridEntityMarker>(FindObjectsInactive.Exclude);
         Debug.Log($"[GridManager] Found {markers.Length} entity marker(s).");
         foreach (var marker in markers)

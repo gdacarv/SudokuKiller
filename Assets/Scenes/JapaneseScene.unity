@@ -53372,6 +53372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4367020371927835974, guid: ccae6c5737fda4b21af8afddf693e4ef, type: 3}
+      propertyPath: m_SortingOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7343105041349360168, guid: ccae6c5737fda4b21af8afddf693e4ef, type: 3}
       propertyPath: m_Name
       value: BathtubObjectGrid

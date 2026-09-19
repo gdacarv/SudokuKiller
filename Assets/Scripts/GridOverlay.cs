@@ -102,6 +102,12 @@ public class GridOverlay : MonoBehaviour
 
     public void HideCell(int row, int col) => _hiddenCells.Add(new Vector2Int(col, row));
 
+    // Forgets every previously hidden cell. Callers that mutate the hidden set are
+    // responsible for calling RefreshGrid() afterwards (mirrors HideCell). Without this
+    // the hidden set only ever grew: once a BlockedCellMarker hid a cell, deleting or
+    // moving that marker never restored the drawn grid for the lifetime of the component.
+    public void ClearHiddenCells() => _hiddenCells.Clear();
+
     public void RefreshGrid() => BuildGrid();
 
     public void SetVisible(bool visible)
