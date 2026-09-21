@@ -143,6 +143,18 @@ MonoBehaviour:
     m_Key: clue.aloneOrAwayFromOthers
     m_Metadata:
       m_Items: []
+  - m_Id: 58755139756875776
+    m_Key: clue.everyoneOneStepAway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58756247778746368
+    m_Key: clue.killerOnSameObjectAsVictim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58760012636348416
+    m_Key: clue.onObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

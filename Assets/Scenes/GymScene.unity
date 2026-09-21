@@ -4916,18 +4916,55 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:02306047dfa66470a83d9d6433c37f1d
+    m_TableEntryReference:
+      m_KeyId: 58755139756875776
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:02306047dfa66470a83d9d6433c37f1d
+    m_TableEntryReference:
+      m_KeyId: 58756247778746368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables:
+    - name: object
+      variable:
+        rid: 2766302463795396608
+    - name: objectGender
+      variable:
+        rid: 2766302463795396609
   columns: 2
   contentRoot: {fileID: 434366410}
   startLocalPosition: {x: -5.71, y: 0}
-  columnWidth: 5.91
-  columnSpacing: -0.4
+  columnWidth: 5.77
+  columnSpacing: 0.05
   fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   fontSize: 2
   textColor: {r: 0.24528301, g: 0.018070446, b: 0.015040946, a: 1}
   bulletPrefix: "\u2022 "
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2766302463795396608
+      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
+      data:
+        m_TableReference:
+          m_TableCollectionName: GUID:dc78d4cea0a8045cd9cc33a34bef791f
+        m_TableEntryReference:
+          m_KeyId: 52780374126747648
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - rid: 2766302463795396609
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: male
 --- !u!1 &369473994
 GameObject:
   m_ObjectHideFlags: 0
@@ -11435,8 +11472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.2000002, y: 0}
-  m_SizeDelta: {x: 5.91, y: 10}
+  m_AnchoredPosition: {x: 0.10999994, y: 0}
+  m_SizeDelta: {x: 5.77, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &756611060
 MonoBehaviour:
@@ -11458,7 +11495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\u2022 The Killer was on the same mat as the Victim"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23840,7 +23877,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -5.71, y: 0}
-  m_SizeDelta: {x: 5.91, y: 10}
+  m_SizeDelta: {x: 5.77, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1646274263
 MonoBehaviour:
@@ -23862,7 +23899,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 There was only one person in each row and column"
+  m_text: "\u2022 There was only one person in each row and column\n\u2022 Everyone
+    was at least one step away from each other"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26215,11 +26253,27 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: 'managedReferences[2766302463795396688]'
+      value: Unity.Localization UnityEngine.Localization.LocalizedString
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: 'managedReferences[2766302463795396689]'
+      value: Unity.Localization UnityEngine.Localization.SmartFormat.PersistentVariables.BoolVariable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396689].m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: lines.Array.data[0].m_LocalVariables.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[0].m_TableEntryReference.m_KeyId
-      value: 41892628642390023
+      value: 58760012636348416
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[1].m_TableEntryReference.m_KeyId
@@ -26228,6 +26282,14 @@ PrefabInstance:
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[2].m_TableEntryReference.m_KeyId
       value: 4658726513401856
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_FallbackState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: lines.Array.data[0].m_LocalVariables.Array.data[0].name
+      value: object
       objectReference: {fileID: 0}
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[0].m_TableReference.m_TableCollectionName
@@ -26240,6 +26302,38 @@ PrefabInstance:
     - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: lines.Array.data[2].m_TableReference.m_TableCollectionName
       value: GUID:4af7bbab842694a17bf1b59daa179f12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_WaitForCompletion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: lines.Array.data[0].m_LocalVariables.Array.data[0].variable
+      value: 2766302463795396688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_LocalVariables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_TableEntryReference.m_Key
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_TableEntryReference.m_KeyId
+      value: 52780374126747648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_LocalVariables.Array.data[0].name
+      value: useArticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_TableReference.m_TableCollectionName
+      value: GUID:dc78d4cea0a8045cd9cc33a34bef791f
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451667758791918452, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: managedReferences[2766302463795396688].m_LocalVariables.Array.data[0].variable
+      value: 2766302463795396689
       objectReference: {fileID: 0}
     - target: {fileID: 3875278182876665019, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_Name

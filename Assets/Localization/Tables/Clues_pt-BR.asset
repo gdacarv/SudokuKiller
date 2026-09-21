@@ -66,7 +66,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989153
   - m_Id: 7564429460758530
-    m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o Assassino"
+    m_Localized: "A V\xEDtima era a \xFAnica pessoa no c\xF4modo com o(a) Assassino(a)"
     m_Metadata:
       m_Items: []
   - m_Id: 7564429460758531
@@ -174,6 +174,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 58755139756875776
+    m_Localized: "Todos estavam a pelo menos um passo de dist\xE2ncia uns dos outros"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58756247778746368
+    m_Localized: "O(a) Assassino(a) estava n{objectGender:choose(male|female):o|a|o}
+      mesm{objectGender:choose(male|female):o|a|o} {object} da V\xEDtima"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
+  - m_Id: 58760012636348416
+    m_Localized: '{0} estava em {object}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -204,3 +219,5 @@ MonoBehaviour:
         - id: 45168987275780096
         - id: 49361804038496256
         - id: 54589417149423616
+        - id: 58756247778746368
+        - id: 58760012636348416
