@@ -256,23 +256,66 @@ public class GridManager : MonoBehaviour
         return true;
     }
 
-    // Checks whether placing 'incoming' at (row,col) would violate any existing occupant's rules.
+    // Temporarily places 'incoming' at (row, col) in BOTH position stores: _occupants and the entity's
+    // Row/Col. Occupancy-based rules (NPerRow/Col/Section, UniqueByTagKey, RegionSum) read the former;
+    // entity-based rules (DistanceToTag, NeighborCount, LineOfSight, Between...) read the latter and skip
+    // anything !IsOnGrid, so simulating only one hides the incoming suspect from half the rules.
+    // Dispose restores both. A default instance (out-of-bounds cell) is a no-op.
+    private readonly struct SimulatedPlacement : System.IDisposable
+    {
+        private readonly Draggable[,] _grid;
+        private readonly Draggable _incoming;
+        private readonly Draggable _previousOccupant;
+        private readonly int _row, _col, _previousRow, _previousCol;
+
+        public SimulatedPlacement(Draggable[,] grid, Draggable incoming, int row, int col)
+        {
+            _grid = grid;
+            _incoming = incoming;
+            _row = row;
+            _col = col;
+            _previousOccupant = grid[row, col];
+            _previousRow = incoming.Entity.Row;
+            _previousCol = incoming.Entity.Col;
+
+            grid[row, col] = incoming;
+            incoming.Entity.Row = row;
+            incoming.Entity.Col = col;
+        }
+
+        public void Dispose()
+        {
+            if (_incoming == null) return;
+            _grid[_row, _col] = _previousOccupant;
+            _incoming.Entity.Row = _previousRow;
+            _incoming.Entity.Col = _previousCol;
+        }
+    }
+
+    private SimulatedPlacement SimulatePlacement(Draggable incoming, int row, int col)
+    {
+        if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
+            return default;
+        return new SimulatedPlacement(_occupants, incoming, row, col);
+    }
+
+    // Checks whether placing 'incoming' at (row,col) would violate any existing occupant's own rules or
+    // the board rules as seen from that occupant (the reverse of what the incoming suspect's own check covers).
     public bool CheckAllOccupantRules(Draggable incoming, int row, int col)
     {
-        var previous = _occupants[row, col];
-        _occupants[row, col] = incoming;
-        bool ok = true;
-        for (int r = 0; r < gridOverlay.rows && ok; r++)
-            for (int c = 0; c < gridOverlay.cols && ok; c++)
+        using var sim = SimulatePlacement(incoming, row, col);
+        for (int r = 0; r < gridOverlay.rows; r++)
+            for (int c = 0; c < gridOverlay.cols; c++)
             {
                 var occ = _occupants[r, c];
                 if (occ == null || occ == incoming) continue;
                 foreach (var rule in occ.rules)
                     if (rule != null && !rule.CanPlace(this, occ, r, c))
-                    { ok = false; break; }
+                        return false;
+                if (!CheckBoardRules(occ, r, c))
+                    return false;
             }
-        _occupants[row, col] = previous;
-        return ok;
+        return true;
     }
 
     
@@ -581,20 +624,9 @@ public void UpdateDragHighlights(Draggable incoming, Vector2Int? targetCell)
         }
 
         // Simulate incoming at targetCell so occupant rule checks see it as a neighbour
-        bool simulated = false;
-        int simRow = -1, simCol = -1;
-        Draggable previous = null;
-        if (targetCell.HasValue)
-        {
-            simRow = targetCell.Value.y;
-            simCol = targetCell.Value.x;
-            if (simRow >= 0 && simRow < gridOverlay.rows && simCol >= 0 && simCol < gridOverlay.cols)
-            {
-                previous = _occupants[simRow, simCol];
-                _occupants[simRow, simCol] = incoming;
-                simulated = true;
-            }
-        }
+        using var sim = targetCell.HasValue
+            ? SimulatePlacement(incoming, targetCell.Value.y, targetCell.Value.x)
+            : default;
 
         for (int r = 0; r < gridOverlay.rows; r++)
             for (int c = 0; c < gridOverlay.cols; c++)
@@ -611,9 +643,6 @@ public void UpdateDragHighlights(Draggable incoming, Vector2Int? targetCell)
 
                 occ.SetHighlight(!valid);
             }
-
-        if (simulated)
-            _occupants[simRow, simCol] = previous;
     }
 
 }

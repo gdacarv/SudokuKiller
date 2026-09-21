@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: gray
     m_Metadata:
       m_Items: []
+  - m_Id: 57285539668156416
+    m_Localized: green
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

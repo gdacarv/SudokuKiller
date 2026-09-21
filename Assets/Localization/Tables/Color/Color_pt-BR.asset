@@ -55,6 +55,10 @@ MonoBehaviour:
     m_Localized: cinza
     m_Metadata:
       m_Items: []
+  - m_Id: 57285539668156416
+    m_Localized: verde
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -37,23 +37,22 @@ public class DistanceToTagRule : Rule
         var tagged = manager.GetTaggedEntities(targetTags);
         int section = sameSectionOnly ? manager.GetSection(row, col) : 0;
 
-        bool sawTarget = false;
         for (int i = 0; i < tagged.Count; i++)
         {
             var t = tagged[i];
             if (!t.IsOnGrid || t == target.Entity) continue;
             if (sameSectionOnly && manager.GetSection(t.Row, t.Col) != section) continue;
 
-            sawTarget = true;
             bool passes = CompareDistance(ComputeDistance(row, col, t));
             if (requireAll) { if (!passes) return false; }
             else if (passes) return true;
         }
 
-        // No matching target on the grid is a failure (deliberately not "vacuously true" — see the
-        // verifier's non-monotonicity note). With targets present: requireAll survived every check,
-        // any-mode found no passing target.
-        return sawTarget && requireAll;
+        // Nothing failed or passed. requireAll ("far from ALL of them") is vacuously true when there is no
+        // other target on the grid, so a lone suspect is not flagged for being too close to nobody. Any-mode
+        // ("near ONE of them") still fails with no target: a missing object must not satisfy "next to X".
+        // The verifier stays sound either way — it defers this rule until its dependencies are placed.
+        return requireAll;
     }
 
     float ComputeDistance(int row, int col, GridEntity b)
