@@ -5571,6 +5571,11 @@ MonoBehaviour:
   highlightRuleViolations: 1
   startAtSolutionPositions: 0
   showGridOverlay: 1
+  enableUserBlockers: 1
+  userBlockerSprite: {fileID: 2632163617867790044, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
+  userBlockerColor: {r: 1, g: 0, b: 0, a: 1}
+  userBlockerSortingOrder: 15
+  inputProvider: {fileID: 519420033}
 --- !u!114 &368987999
 MonoBehaviour:
   m_ObjectHideFlags: 0

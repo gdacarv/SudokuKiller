@@ -571,6 +571,7 @@ public class LevelRulesWindow : EditorWindow
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("highlightRuleViolations"));
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("startAtSolutionPositions"));
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("showGridOverlay"));
+                    EditorGUILayout.PropertyField(_soGridManager.FindProperty("enableUserBlockers"));
                     _soGridManager.ApplyModifiedProperties();
 
                     if (_soGridOverlay != null)

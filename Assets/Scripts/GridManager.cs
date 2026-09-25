@@ -23,13 +23,23 @@ public class GridManager : MonoBehaviour
     [Header("Display")]
     public bool showGridOverlay = true;
 
+    [Header("User Blockers")]
+    public bool enableUserBlockers = false;
+    public Sprite userBlockerSprite;
+    public Color userBlockerColor = new(0.85f, 0.2f, 0.2f, 0.8f);
+    public int userBlockerSortingOrder = 15;
+    public DragInputProvider inputProvider;
+
     private Draggable[,] _occupants;
 #if UNITY_EDITOR
     [System.NonSerialized] private bool _prevHighlightRuleViolations;
 #endif
     private bool[,] _blockedByMarker;
+    private bool[,] _blockedByUser;
     private int[,] _cellSection;
     private readonly HashSet<GridEntity> _entities = new();
+    private UserBlockerPainter _userBlockerPainter;
+    private bool _prevEnableUserBlockers;
 
     void Awake()
     {
@@ -47,12 +57,29 @@ public class GridManager : MonoBehaviour
         Debug.Log($"[GridManager] Awake: rows={gridOverlay.rows}, cols={gridOverlay.cols}");
     }
 
+    void Update()
+    {
+        if (!Application.isPlaying) return;
+
+        if (_userBlockerPainter == null)
+            _userBlockerPainter = new UserBlockerPainter(this, inputProvider);
+
+        if (enableUserBlockers != _prevEnableUserBlockers)
+        {
+            _prevEnableUserBlockers = enableUserBlockers;
+            _userBlockerPainter.SetEnabled(enableUserBlockers);
+        }
+
+        _userBlockerPainter.Tick();
+    }
+
     private void InitializeGridState()
     {
         _entities.Clear();
         _tagQueryCache?.Clear();
         _occupants = new Draggable[gridOverlay.rows, gridOverlay.cols];
         _blockedByMarker = new bool[gridOverlay.rows, gridOverlay.cols];
+        _blockedByUser = new bool[gridOverlay.rows, gridOverlay.cols];
         _cellSection = new int[gridOverlay.rows, gridOverlay.cols];
         _sectionCells = null;
         for (int r = 0; r < gridOverlay.rows; r++)
@@ -69,7 +96,35 @@ public class GridManager : MonoBehaviour
         if (_blockedByMarker != null && _blockedByMarker[row, col])
             return false;
 
+        if (enableUserBlockers && _blockedByUser != null && _blockedByUser[row, col])
+            return false;
+
         return _occupants[row, col] == null;
+    }
+
+    public bool IsUserBlocked(int row, int col)
+    {
+        if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
+            return false;
+        return _blockedByUser != null && _blockedByUser[row, col];
+    }
+
+    // Level-blocked cells are still allowed to carry a user mark (they can never become occupied,
+    // so IsCellAvailable's own _blockedByMarker check keeps them unavailable regardless).
+    public bool CanUserBlock(int row, int col)
+    {
+        if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
+            return false;
+        if (_occupants[row, col] != null)
+            return false;
+        return true;
+    }
+
+    public void SetUserBlocked(int row, int col, bool blocked)
+    {
+        if (row < 0 || row >= gridOverlay.rows || col < 0 || col >= gridOverlay.cols)
+            return;
+        _blockedByUser[row, col] = blocked;
     }
 
     public Vector3 GetCellCenter(int row, int col)
@@ -507,6 +562,9 @@ public bool AreAllDraggablesInSolutionCells()
 #if UNITY_EDITOR
     private void OnValidate()
     {
+        if (inputProvider == null)
+            inputProvider = FindFirstObjectByType<DragInputProvider>();
+
         if (Application.isPlaying) return;
 
         EditorApplication.delayCall += () =>
