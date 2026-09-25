@@ -189,6 +189,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 60384149616189440
+    m_Localized: '{0} estava n{objectGender:choose(male|female):o|a|o} mesm{objectGender:choose(male|female):o|a|o}
+      {object} que outra pessoa'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -221,3 +227,4 @@ MonoBehaviour:
         - id: 54589417149423616
         - id: 58756247778746368
         - id: 58760012636348416
+        - id: 60384149616189440

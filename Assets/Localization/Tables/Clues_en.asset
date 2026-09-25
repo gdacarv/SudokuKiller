@@ -184,6 +184,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
+  - m_Id: 60384149616189440
+    m_Localized: '{0} was on the same {object} as another person'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
   references:
     version: 2
     RefIds:
@@ -216,3 +221,4 @@ MonoBehaviour:
         - id: 54589417149423616
         - id: 58756247778746368
         - id: 58760012636348416
+        - id: 60384149616189440

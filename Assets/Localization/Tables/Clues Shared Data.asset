@@ -155,6 +155,10 @@ MonoBehaviour:
     m_Key: clue.onObject
     m_Metadata:
       m_Items: []
+  - m_Id: 60384149616189440
+    m_Key: clue.onSameObjectAsPerson
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -9,23 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b4053a1704024eb8afbe0749583bd66, type: 3}
-  m_Name: KillerIsNotVictim
-  m_EditorClassIdentifier: Assembly-CSharp::KillerTagRule
+  m_Script: {fileID: 11500000, guid: d6519ca577ade4c6a8a02a9c20339ffc, type: 3}
+  m_Name: SameSectionAsVictim
+  m_EditorClassIdentifier: Assembly-CSharp::KillerSameSectionAsTagRule
   killerFailureMessage:
     m_TableReference:
       m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
     m_TableEntryReference:
-      m_KeyId: 1095141786902528
+      m_KeyId: 1087788089860096
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  tags:
+  targetTags:
   - key: role
     value: Victim
-  matchMode: 0
-  expectMode: 1
   references:
     version: 2
     RefIds: []

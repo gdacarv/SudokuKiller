@@ -9,21 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6519ca577ade4c6a8a02a9c20339ffc, type: 3}
-  m_Name: KillerSameSectionAsVictim
-  m_EditorClassIdentifier: Assembly-CSharp::KillerSameSectionAsTagRule
+  m_Script: {fileID: 11500000, guid: a8f82d58ec72d44898b2f8d2f93c1f71, type: 3}
+  m_Name: OnCarpetGray
+  m_EditorClassIdentifier: Assembly-CSharp::RequireTaggedCellRule
   killerFailureMessage:
     m_TableReference:
-      m_TableCollectionName: GUID:4af7bbab842694a17bf1b59daa179f12
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 1087788089860096
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  targetTags:
-  - key: role
-    value: Victim
+  cellTags:
+  - key: type
+    value: object
+  - key: name
+    value: carpet
+  - key: color
+    value: gray
+  negated: 0
   references:
     version: 2
     RefIds: []
