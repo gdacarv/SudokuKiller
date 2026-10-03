@@ -25,6 +25,9 @@ public class Draggable : MonoBehaviour
     public bool IsDragging => _isDragging;
     private Vector3 _dragOffset;
     private IdentifyKillerButton _identifyKillerButton;
+    private DraftHolder _draftHolder;
+
+    public SpriteRenderer MainRenderer => _spriteRenderer;
 
 #if UNITY_EDITOR
     private void OnValidate()
@@ -75,6 +78,7 @@ void Awake()
 
         gridManager?.RegisterEntity(Entity);
         _identifyKillerButton = FindFirstObjectByType<IdentifyKillerButton>();
+        _draftHolder = FindFirstObjectByType<DraftHolder>();
     }
 
     void OnDestroy()
@@ -157,6 +161,9 @@ private void BeginDrag(Vector3 pointerPos)
         _isDragging = true;
         _dragOffset = transform.position - pointerPos;
 
+        if (_draftHolder != null && _draftHolder.Held == this)
+            _draftHolder.Release(this);
+
         if (gridManager != null)
         {
             Vector2Int? cell = gridManager.WorldToCell(transform.position);
@@ -183,7 +190,18 @@ private void BeginDrag(Vector3 pointerPos)
         }
     }
 
-public void SetHighlight(bool highlighted)
+// Pulls this suspect off the grid (if placed) and sends it back to where it started.
+    // Used when DraftHolder swaps out its held suspect for a new one.
+    public void ReturnToSpawn()
+    {
+        gridManager?.Release(this);
+        Entity.Row = -1;
+        Entity.Col = -1;
+        transform.position = _spawnPosition;
+        gridManager?.RefreshViolationHighlights();
+    }
+
+    public void SetHighlight(bool highlighted)
     {
         if (_spriteRenderer == null)
             _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -221,6 +239,13 @@ public void SetHighlight(bool highlighted)
         if (gridManager == null) return;
 
         Vector2Int? cell = gridManager.WorldToCell(transform.position);
+
+        if (!cell.HasValue && _draftHolder != null && _draftHolder.Accepts && _draftHolder.Contains(transform.position))
+        {
+            _draftHolder.Hold(this);
+            gridManager.RefreshViolationHighlights();
+            return;
+        }
 
         bool rulesPass = true;
         if (cell.HasValue && gridManager.preventInvalidPlacement)

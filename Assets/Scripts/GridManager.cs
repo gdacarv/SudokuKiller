@@ -28,6 +28,7 @@ public class GridManager : MonoBehaviour
     public Sprite userBlockerSprite;
     public Color userBlockerColor = new(0.85f, 0.2f, 0.2f, 0.8f);
     public int userBlockerSortingOrder = 15;
+    public float draftMarkerAlpha = 0.45f;
     public DragInputProvider inputProvider;
 
     private Draggable[,] _occupants;
@@ -472,6 +473,7 @@ public class GridManager : MonoBehaviour
             return false;
 
         _occupants[row, col] = obj;
+        _userBlockerPainter?.ClearCell(row, col);
         return true;
     }
 

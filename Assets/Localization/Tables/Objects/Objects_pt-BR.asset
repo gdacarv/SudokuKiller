@@ -102,6 +102,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962331
+  - m_Id: 54971449910222848
+    m_Localized: "{useArticle:um |}r\xE1dio"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 54977370774298624
+    m_Localized: '{useArticle:uns |}espelhos'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 54980204676767744
+    m_Localized: '{useArticle:uma |}bola'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
   references:
     version: 2
     RefIds:
@@ -125,3 +140,6 @@ MonoBehaviour:
         - id: 43833312710483968
         - id: 370241929469952
         - id: 52780374126747648
+        - id: 54971449910222848
+        - id: 54977370774298624
+        - id: 54980204676767744

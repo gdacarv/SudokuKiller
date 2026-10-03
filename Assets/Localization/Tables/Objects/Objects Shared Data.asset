@@ -83,6 +83,18 @@ MonoBehaviour:
     m_Key: object.mat
     m_Metadata:
       m_Items: []
+  - m_Id: 54971449910222848
+    m_Key: object.radio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54977370774298624
+    m_Key: object.mirrors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54980204676767744
+    m_Key: object.ball
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
