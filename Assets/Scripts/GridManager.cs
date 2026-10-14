@@ -44,6 +44,14 @@ public class GridManager : MonoBehaviour
 
     void Awake()
     {
+#if UNITY_EDITOR
+        // Set by the "Play (Solution)" toolbar button; consumed so a normal Play is unaffected
+        if (SessionState.GetBool("PlayAtSolutionPositions", false))
+        {
+            startAtSolutionPositions = true;
+            SessionState.SetBool("PlayAtSolutionPositions", false);
+        }
+#endif
         if (gridOverlay == null)
             gridOverlay = GetComponent<GridOverlay>();
 
