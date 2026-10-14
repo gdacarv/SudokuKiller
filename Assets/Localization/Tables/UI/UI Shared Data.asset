@@ -87,6 +87,18 @@ MonoBehaviour:
     m_Key: objectOrObject
     m_Metadata:
       m_Items: []
+  - m_Id: 72416248778973184
+    m_Key: scope.row
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72416532448141312
+    m_Key: scope.column
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72416601264087040
+    m_Key: scope.section
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

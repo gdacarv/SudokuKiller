@@ -95,6 +95,22 @@ MonoBehaviour:
     m_Key: object.ball
     m_Metadata:
       m_Items: []
+  - m_Id: 58276251670929408
+    m_Key: object.stepper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61709185291640832
+    m_Key: object.bench_press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61710532275593216
+    m_Key: object.equipment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61738797635723264
+    m_Key: object.weight_rack
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

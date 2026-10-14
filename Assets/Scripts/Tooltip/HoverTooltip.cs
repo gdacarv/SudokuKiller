@@ -16,7 +16,7 @@ public class HoverTooltip : MonoBehaviour
     public TooltipUI tooltipUI;
 
     protected Collider2D[] _colliders;
-    protected Renderer _sortingRenderer;
+    protected Renderer[] _renderers;
     private float _hoverTimer;
     protected bool _isShowing;
     private Canvas _tooltipCanvas;
@@ -38,7 +38,7 @@ public class HoverTooltip : MonoBehaviour
     void Awake()
     {
         _colliders = GetComponentsInChildren<Collider2D>(true);
-        _sortingRenderer = GetComponentInChildren<Renderer>(true);
+        _renderers = GetComponentsInChildren<Renderer>(true);
     }
 
     protected virtual void OnEnable()
@@ -102,12 +102,7 @@ public class HoverTooltip : MonoBehaviour
         {
             if (!instance.AnyColliderOverlaps(pointerWorldPos)) continue;
 
-            int layerValue = instance._sortingRenderer != null
-                ? SortingLayer.GetLayerValueFromID(instance._sortingRenderer.sortingLayerID)
-                : int.MinValue;
-            int order = instance._sortingRenderer != null
-                ? instance._sortingRenderer.sortingOrder
-                : int.MinValue;
+            instance.GetSortingAt(pointerWorldPos, out int layerValue, out int order);
             int id = instance.GetInstanceID();
 
             if (layerValue > topmostLayerValue ||
@@ -122,6 +117,37 @@ public class HoverTooltip : MonoBehaviour
         }
 
         return topmost == this;
+    }
+
+    // Multi-part objects have renderers with different sort orders; use the topmost one under the pointer.
+    private void GetSortingAt(Vector2 worldPoint, out int layerValue, out int order)
+    {
+        layerValue = int.MinValue;
+        order = int.MinValue;
+        bool anyUnderPointer = false;
+
+        for (int pass = 0; pass < 2 && !anyUnderPointer; pass++)
+        {
+            for (int i = 0; i < _renderers.Length; i++)
+            {
+                var r = _renderers[i];
+                if (r == null || !r.enabled) continue;
+                if (pass == 0)
+                {
+                    var b = r.bounds;
+                    if (worldPoint.x < b.min.x || worldPoint.x > b.max.x ||
+                        worldPoint.y < b.min.y || worldPoint.y > b.max.y) continue;
+                    anyUnderPointer = true;
+                }
+
+                int l = SortingLayer.GetLayerValueFromID(r.sortingLayerID);
+                if (l > layerValue || (l == layerValue && r.sortingOrder > order))
+                {
+                    layerValue = l;
+                    order = r.sortingOrder;
+                }
+            }
+        }
     }
 
     private bool AnyColliderOverlaps(Vector2 worldPoint)

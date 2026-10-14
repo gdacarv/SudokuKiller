@@ -117,6 +117,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962331
+  - m_Id: 58276251670929408
+    m_Localized: "{useArticle:uma |}escada ergom\xE9trica"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 61709185291640832
+    m_Localized: '{useArticle:um |}banco de supino'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 61710532275593216
+    m_Localized: '{useArticle:um |}equipamento'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
+  - m_Id: 61738797635723264
+    m_Localized: '{useArticle:um |}suporte de halteres'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
   references:
     version: 2
     RefIds:
@@ -143,3 +163,7 @@ MonoBehaviour:
         - id: 54971449910222848
         - id: 54977370774298624
         - id: 54980204676767744
+        - id: 58276251670929408
+        - id: 61709185291640832
+        - id: 61710532275593216
+        - id: 61738797635723264

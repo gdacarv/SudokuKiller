@@ -224,7 +224,7 @@ public class SpriteOutline : MonoBehaviour
         {
             if (!instance.AnyColliderOverlaps(pointerWorldPos)) continue;
 
-            instance.GetSortingKey(out int layerValue, out int order);
+            instance.GetSortingKey(pointerWorldPos, out int layerValue, out int order);
             int id = instance.GetInstanceID();
 
             if (layerValue > topmostLayerValue ||
@@ -241,14 +241,27 @@ public class SpriteOutline : MonoBehaviour
         return topmost == this;
     }
 
-    void GetSortingKey(out int layerValue, out int order)
+    // Multi-part objects have sprites with different sort orders; rank by the topmost one under the
+    // pointer, falling back to all sprites if none's bounds contain it.
+    void GetSortingKey(Vector2 worldPoint, out int layerValue, out int order)
     {
         if (_spriteSrcs != null && _spriteSrcs.Length > 0)
         {
             layerValue = int.MinValue;
             order = int.MinValue;
+            bool anyUnderPointer = false;
+            foreach (var sr in _spriteSrcs)
+                if (sr.bounds.Contains(new Vector3(worldPoint.x, worldPoint.y, sr.bounds.center.z)))
+                {
+                    anyUnderPointer = true;
+                    break;
+                }
+
             foreach (var sr in _spriteSrcs)
             {
+                if (anyUnderPointer &&
+                    !sr.bounds.Contains(new Vector3(worldPoint.x, worldPoint.y, sr.bounds.center.z)))
+                    continue;
                 int lv = SortingLayer.GetLayerValueFromID(sr.sortingLayerID);
                 if (lv > layerValue || (lv == layerValue && sr.sortingOrder > order))
                 {
