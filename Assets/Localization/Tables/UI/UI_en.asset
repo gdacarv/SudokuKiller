@@ -102,7 +102,8 @@ MonoBehaviour:
   - m_Id: 72416532448141312
     m_Localized: '{useArticle:a |}column'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6722194805398962274
   - m_Id: 72416601264087040
     m_Localized: '{useArticle:a |}section'
     m_Metadata:
@@ -118,3 +119,4 @@ MonoBehaviour:
         - id: 10670133193203712
         - id: 59744731570102272
         - id: 72416248778973184
+        - id: 72416532448141312
