@@ -99,6 +99,10 @@ MonoBehaviour:
     m_Key: scope.section
     m_Metadata:
       m_Items: []
+  - m_Id: 72771056652247040
+    m_Key: level.gym
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

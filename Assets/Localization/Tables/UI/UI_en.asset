@@ -108,6 +108,10 @@ MonoBehaviour:
     m_Localized: '{useArticle:a |}section'
     m_Metadata:
       m_Items: []
+  - m_Id: 72771056652247040
+    m_Localized: Gym
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

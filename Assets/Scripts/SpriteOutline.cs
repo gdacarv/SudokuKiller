@@ -80,7 +80,13 @@ public class SpriteOutline : MonoBehaviour
         var all = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
         var list = new List<SpriteRenderer>(all.Length);
         foreach (var sr in all)
-            if (sr.gameObject.activeInHierarchy && sr.enabled) list.Add(sr);
+        {
+            if (!sr.gameObject.activeInHierarchy || !sr.enabled) continue;
+            // Markers hide their own renderer in Awake, which may run after ours.
+            var marker = sr.GetComponent<GridEntityMarker>();
+            if (marker != null && marker.hideAtRuntime) continue;
+            list.Add(sr);
+        }
         _spriteSrcs = list.ToArray();
 
         _tilemap = GetComponent<Tilemap>();
