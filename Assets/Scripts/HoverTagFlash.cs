@@ -29,7 +29,7 @@ public class HoverTagFlash : MonoBehaviour
     public bool overrideOutlineColor = true;
     public Color flashColor = Color.yellow;
 
-    SpriteOutline _outline;
+    SpriteOutline[] _outlines;
     GridManager _gridManager;
     float _hoverTimer;
     Coroutine _flashRoutine;
@@ -37,8 +37,28 @@ public class HoverTagFlash : MonoBehaviour
 
     void Awake()
     {
-        _outline = GetComponent<SpriteOutline>();
+        // All outlines on this object: if duplicates exist they tie on sort order and only one ever wins
+        // SpriteOutline's topmost-hover test, so hover must be read from any of them.
+        CacheOutlines();
         _gridManager = FindFirstObjectByType<GridManager>();
+    }
+
+    void CacheOutlines() => _outlines = GetComponents<SpriteOutline>();
+
+    bool IsHovered()
+    {
+        if (_outlines == null || _outlines.Length == 0) CacheOutlines(); // Awake doesn't re-run after a script hot-reload in play mode
+        foreach (var o in _outlines)
+            if (o != null && o.IsHovered) return true;
+        return false;
+    }
+
+    bool IsOwnOutline(SpriteOutline outline)
+    {
+        if (_outlines == null || _outlines.Length == 0) CacheOutlines();
+        foreach (var o in _outlines)
+            if (o == outline) return true;
+        return false;
     }
 
     void Update()
@@ -47,7 +67,7 @@ public class HoverTagFlash : MonoBehaviour
         if (!enabledByManager)
             StopFlash();
 
-        if (!enabledByManager || _outline == null || !_outline.IsHovered)
+        if (!enabledByManager || !IsHovered())
         {
             _hoverTimer = 0f;
             return;
@@ -77,11 +97,25 @@ public class HoverTagFlash : MonoBehaviour
         {
             if (!MatchesAnySet(entity)) continue;
 
-            var outline = entity.GetComponent<SpriteOutline>();
-            if (outline == null) outline = entity.GetComponentInParent<SpriteOutline>();
-            if (outline == null || !outline.enabled || outline == _outline) continue;
-            if (seen.Add(outline)) _targets.Add(outline);
+            var outline = entity.GetComponentInParent<SpriteOutline>();
+            if (outline != null)
+            {
+                AddTarget(outline, seen);
+                continue;
+            }
+
+            // Outline may live on a child (e.g. a visual child under the tagged root). Only take outlines
+            // whose nearest GridEntity is this one, so a container doesn't flash its unrelated contents.
+            foreach (var child in entity.GetComponentsInChildren<SpriteOutline>(false))
+                if (child.GetComponentInParent<GridEntity>() == entity)
+                    AddTarget(child, seen);
         }
+    }
+
+    void AddTarget(SpriteOutline outline, HashSet<SpriteOutline> seen)
+    {
+        if (!outline.enabled || IsOwnOutline(outline)) return;
+        if (seen.Add(outline)) _targets.Add(outline);
     }
 
     bool MatchesAnySet(GridEntity entity)
