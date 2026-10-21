@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2619917107855281601}
   - component: {fileID: 3232116040542156355}
   - component: {fileID: 7286611471585558104}
+  - component: {fileID: 1840878333045446042}
   m_Layer: 0
   m_Name: Victim
   m_TagString: Person
@@ -273,6 +274,25 @@ MonoBehaviour:
   outlineMode: 1
   inputProvider: {fileID: 0}
   suppressWhileDragging: 1
+--- !u!114 &1840878333045446042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875278182876665019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b407a8a5c3a43e2b9ac65674de1431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverTagFlash
+  tagSets: []
+  hoverDelay: 3
+  flashCount: 3
+  flashOnDuration: 0.15
+  flashOffDuration: 0.15
+  overrideOutlineColor: 1
+  flashColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &7208888844455596130
 GameObject:
   m_ObjectHideFlags: 0

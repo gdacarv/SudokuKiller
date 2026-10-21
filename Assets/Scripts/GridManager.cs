@@ -22,6 +22,8 @@ public class GridManager : MonoBehaviour
 
     [Header("Display")]
     public bool showGridOverlay = true;
+    [Tooltip("Master switch for HoverTagFlash: when off, hovering a suspect never flashes related objects.")]
+    public bool enableHoverTagFlash = true;
 
     [Header("User Blockers")]
     public bool enableUserBlockers = false;

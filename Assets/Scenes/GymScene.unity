@@ -342,8 +342,20 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4535092718742012248, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
+      propertyPath: m_TileAnchor.y
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535092718742012248, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
+      propertyPath: m_TileOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535092718742012248, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535092718742012248, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
+      propertyPath: m_TileOrientationMatrix.e13
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 4535092718742012248, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
       propertyPath: m_Tiles.Array.data[0].first.y
@@ -509,6 +521,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[5].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
+    - target: {fileID: 5023978979043952696, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6127860417157758092, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.72200024
@@ -551,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6674916895046696622, guid: e6bd6f26aac6f4b00a5b3abdbb5c7d45, type: 3}
       propertyPath: m_Offset.y
-      value: -0.1
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2061,6 +2077,7 @@ Transform:
   - {fileID: 1708418499}
   - {fileID: 2042632649}
   - {fileID: 1469164745}
+  - {fileID: 1149576348}
   - {fileID: 1672242543}
   - {fileID: 235279481}
   - {fileID: 1709913394}
@@ -4167,6 +4184,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[2].key
+      value: id
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[3].key
+      value: id
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: mirrors
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].value
+      value: carpet
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[2].value
+      value: small green mat 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[3].value
+      value: small green mat 3
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -6038,6 +6115,7 @@ MonoBehaviour:
   highlightRuleViolations: 1
   startAtSolutionPositions: 0
   showGridOverlay: 1
+  enableHoverTagFlash: 1
   enableUserBlockers: 1
   userBlockerSprite: {fileID: 2632163617867790044, guid: 849d0326e45694d3a962ee3fa105e530, type: 3}
   userBlockerColor: {r: 1, g: 0, b: 0, a: 1}
@@ -12904,6 +12982,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: carpet
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].value
+      value: weight_rack
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -16854,6 +16976,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[2].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].key
+      value: subtype
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[2].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[2].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: weight_rack
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].value
+      value: equipment
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[2].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[2].tags.Array.data[1].value
+      value: carpet
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -20082,6 +20268,88 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1149576347
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 170652192}
+    m_Modifications:
+    - target: {fileID: 2354202412055294769, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: Col
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354202412055294769, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: Row
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354202412055294769, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: tags.Array.data[2].value
+      value: blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842963114441386518, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1670922989, guid: 56dafd082ea424d8abf0b31c203bdc1f, type: 3}
+    - target: {fileID: 4352709161077357054, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_Name
+      value: Blue Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457158625047302055, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: managedReferences[2766302564541005937].m_TableEntryReference.m_KeyId
+      value: 3845440096165888
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1620002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1979998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+--- !u!4 &1149576348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8478186796689330724, guid: f241cfc4c4ef44a0ab93155066b9ace1, type: 3}
+  m_PrefabInstance: {fileID: 1149576347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1152255237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20090,6 +20358,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: radio
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -22360,6 +22652,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: carpet
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -22735,6 +23051,74 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[2].key
+      value: color
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[3].key
+      value: id
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[2].key
+      value: color
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: carpet
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[2].value
+      value: gray
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[3].value
+      value: small gray mat 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[1].value
+      value: radio
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[1].tags.Array.data[2].value
+      value: gray
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -31387,6 +31771,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[2].key
+      value: color
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: ball
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[2].value
+      value: red
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 
@@ -32250,6 +32666,30 @@ PrefabInstance:
     - target: {fileID: 1572826340931408289, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_SortingLayerID
       value: 1067757675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840878333045446042, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840878333045446042, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840878333045446042, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840878333045446042, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840878333045446042, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840878333045446042, guid: 20811933df9804611a551356efef706e, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: carpet
       objectReference: {fileID: 0}
     - target: {fileID: 2066006038807832617, guid: 20811933df9804611a551356efef706e, type: 3}
       propertyPath: m_Color.b
@@ -35162,6 +35602,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653546569}
     m_Modifications:
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].key
+      value: type
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].key
+      value: subtype
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[2].key
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[0].value
+      value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[1].value
+      value: equipment
+      objectReference: {fileID: 0}
+    - target: {fileID: -1927966884177406278, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
+      propertyPath: tagSets.Array.data[0].tags.Array.data[2].value
+      value: stepper
+      objectReference: {fileID: 0}
     - target: {fileID: 109610372693376296, guid: 17f9ffeba2b32469093ea7bdaf3a0384, type: 3}
       propertyPath: gridManager
       value: 

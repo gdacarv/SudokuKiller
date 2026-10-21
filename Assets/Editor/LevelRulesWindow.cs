@@ -15,6 +15,7 @@ public class LevelRulesWindow : EditorWindow
         public SerializedObject soDraggable;
         public SerializedObject soName;   // NameLabel — may be null
         public SerializedObject soClues;  // CluesTooltip — may be null
+        public SerializedObject soFlash;  // HoverTagFlash — may be null
     }
 
     // ── Scene refs ────────────────────────────────────────────────────
@@ -218,6 +219,7 @@ public class LevelRulesWindow : EditorWindow
             var go        = d.gameObject;
             var nameLabel = go.GetComponentInChildren<NameLabel>(true);
             var clues     = go.GetComponent<CluesTooltip>();
+            var flash     = go.GetComponent<HoverTagFlash>();
 
             _suspects.Add(new SuspectEntry
             {
@@ -226,6 +228,7 @@ public class LevelRulesWindow : EditorWindow
                 soDraggable = new SerializedObject(d),
                 soName      = nameLabel != null ? new SerializedObject(nameLabel) : null,
                 soClues     = clues     != null ? new SerializedObject(clues)     : null,
+                soFlash     = flash     != null ? new SerializedObject(flash)     : null,
             });
 
             int id = go.GetInstanceID();
@@ -571,6 +574,8 @@ public class LevelRulesWindow : EditorWindow
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("highlightRuleViolations"));
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("startAtSolutionPositions"));
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("showGridOverlay"));
+                    EditorGUILayout.PropertyField(_soGridManager.FindProperty("enableHoverTagFlash"),
+                        new GUIContent("Hover Flash Clue Objects", "Master switch for HoverTagFlash: when off, hovering a suspect never flashes related objects."));
                     EditorGUILayout.PropertyField(_soGridManager.FindProperty("enableUserBlockers"));
                     _soGridManager.ApplyModifiedProperties();
 
@@ -709,6 +714,21 @@ public class LevelRulesWindow : EditorWindow
                 entry.soDraggable.Update();
                 EditorGUILayout.PropertyField(entry.soDraggable.FindProperty("rules"), true);
                 entry.soDraggable.ApplyModifiedProperties();
+
+                EditorGUILayout.Space(2);
+
+                // ── Hover Flash Tags ──────────────────────────────
+                if (entry.soFlash != null)
+                {
+                    GUILayout.Label("Hover Flash Tags", EditorStyles.miniBoldLabel);
+                    entry.soFlash.Update();
+                    EditorGUILayout.PropertyField(entry.soFlash.FindProperty("tagSets"), true);
+                    entry.soFlash.ApplyModifiedProperties();
+                }
+                else
+                {
+                    EditorGUILayout.HelpBox("No HoverTagFlash component.", MessageType.None);
+                }
             }
             EditorGUILayout.Space(2);
         }

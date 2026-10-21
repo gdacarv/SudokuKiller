@@ -19,6 +19,17 @@ public class SpriteOutline : MonoBehaviour
     /// Set to true by external systems (e.g. controller selection) to force the outline visible.
     public bool IsSelected { get; set; }
 
+    /// True while the pointer is over this object and it is the topmost hovered one.
+    public bool IsHovered { get; private set; }
+
+    /// Set by external systems (e.g. HoverTagFlash) to force the outline visible without touching IsSelected.
+    public bool IsFlashing { get; set; }
+
+    /// When set while IsFlashing, replaces outlineColor.
+    public Color? FlashColorOverride { get; set; }
+
+    Color CurrentColor => IsFlashing && FlashColorOverride.HasValue ? FlashColorOverride.Value : outlineColor;
+
     static readonly Vector2[] Dirs4 =
     {
         Vector2.up, Vector2.down, Vector2.left, Vector2.right
@@ -209,7 +220,8 @@ public class SpriteOutline : MonoBehaviour
             if (AnyColliderOverlaps(pointerWorldPos))
                 hovered = IsTopmostHovered(pointerWorldPos);
         }
-        _active = hovered || IsSelected;
+        IsHovered = hovered;
+        _active = hovered || IsSelected || IsFlashing;
     }
 
     bool AnyColliderOverlaps(Vector2 worldPoint)
@@ -338,7 +350,7 @@ void LateUpdateSprite()
                 o.flipY = src.flipY;
                 o.sortingLayerID = minLayerID;
                 o.sortingOrder = minOrder - 1;
-                o.color = outlineColor;
+                o.color = CurrentColor;
                 o.transform.localPosition = (Vector3)(dirs[i] * step);
                 o.transform.localRotation = Quaternion.identity;
                 o.transform.localScale = Vector3.one;
@@ -357,7 +369,7 @@ void LateUpdateSprite()
             tr.enabled = _active;
             tr.sortingLayerID = _tilemapSrc.sortingLayerID;
             tr.sortingOrder = _tilemapSrc.sortingOrder - 1;
-            _tilemapOutlineTMs[i].color = outlineColor;
+            _tilemapOutlineTMs[i].color = CurrentColor;
             _tilemapOutlineGOs[i].transform.localPosition = (Vector3)(dirs[i] * step);
             _tilemapOutlineGOs[i].transform.localRotation = Quaternion.identity;
             _tilemapOutlineGOs[i].transform.localScale = Vector3.one;
