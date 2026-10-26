@@ -150,7 +150,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6722194458415989152
   - m_Id: 41892628642390024
-    m_Localized: '{0} never stepped past the doormat'
+    m_Localized: '{0} never stepped on or past the first doormat'
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
@@ -194,6 +194,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
+  - m_Id: 71637598630567936
+    m_Localized: '{0} was not on top of {object}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
   references:
     version: 2
     RefIds:
@@ -228,3 +233,4 @@ MonoBehaviour:
         - id: 58760012636348416
         - id: 60384149616189440
         - id: 67277241413787648
+        - id: 71637598630567936

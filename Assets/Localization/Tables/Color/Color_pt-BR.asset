@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Localized: verde
     m_Metadata:
       m_Items: []
+  - m_Id: 69942420710612992
+    m_Localized: branc{gender:choose(male|female):o|a|o}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -163,6 +163,10 @@ MonoBehaviour:
     m_Key: clue.onScopeWithObject
     m_Metadata:
       m_Items: []
+  - m_Id: 71637598630567936
+    m_Key: clue.notOnTopObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

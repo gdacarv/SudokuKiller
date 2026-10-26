@@ -137,6 +137,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962331
+  - m_Id: 66101000295931904
+    m_Localized: "{useArticle:um par de |}cal\xE7ados"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
   references:
     version: 2
     RefIds:
@@ -167,3 +172,4 @@ MonoBehaviour:
         - id: 61709185291640832
         - id: 61710532275593216
         - id: 61738797635723264
+        - id: 66101000295931904

@@ -111,6 +111,10 @@ MonoBehaviour:
     m_Key: object.weight_rack
     m_Metadata:
       m_Items: []
+  - m_Id: 66101000295931904
+    m_Key: object.shoes
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145b34e887d8c482aaae341eb8c7079e, type: 3}
+  m_Name: Solution
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::BoardLayoutPreset
+  sceneName: JapaneseScene
+  capturedUtc: 2026-10-26 14:47:32
+  note: 
+  placements:
+  - objectName: Adam
+    row: 5
+    col: 7
+    worldPosition: {x: 3.362, y: -0.23799986, z: 0}
+  - objectName: Bruno
+    row: 7
+    col: 14
+    worldPosition: {x: 6.722, y: 0.7220001, z: 0}
+  - objectName: Courtney
+    row: 10
+    col: 4
+    worldPosition: {x: 1.922, y: 2.1620002, z: 0}
+  - objectName: David
+    row: 0
+    col: 5
+    worldPosition: {x: 2.402, y: -2.6379998, z: 0}
+  - objectName: Edgar
+    row: 6
+    col: 0
+    worldPosition: {x: 0.0020000935, y: 0.2420001, z: 0}
+  - objectName: Fatima
+    row: 9
+    col: 6
+    worldPosition: {x: 2.882, y: 1.682, z: 0}
+  - objectName: Gabriel
+    row: 4
+    col: 11
+    worldPosition: {x: 5.282, y: -0.7179998, z: 0}
+  - objectName: Hannah
+    row: 2
+    col: 3
+    worldPosition: {x: 1.442, y: -1.6779999, z: 0}
+  - objectName: Victim
+    row: 3
+    col: 15
+    worldPosition: {x: 7.202, y: -1.1979998, z: 0}
