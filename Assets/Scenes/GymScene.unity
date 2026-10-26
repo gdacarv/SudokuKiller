@@ -6142,6 +6142,12 @@ MonoBehaviour:
   lineWidth: 0.02
   sortingOrder: 5
   sortingLayerName: UI
+  showAxisNumbers: 0
+  axisNumberStart: 0
+  axisNumberFontSize: 2
+  axisNumberColor: {r: 0.43329477, g: 0.8584906, b: 0.4426331, a: 1}
+  axisNumberMargin: 0.22
+  axisNumberSortingOrder: 11
   offset: {x: 0, y: -0.39}
   _linesVisible: 1
   _linesRoot: {fileID: 1863980461}

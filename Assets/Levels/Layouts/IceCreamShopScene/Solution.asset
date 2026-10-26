@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145b34e887d8c482aaae341eb8c7079e, type: 3}
+  m_Name: Solution
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::BoardLayoutPreset
+  sceneName: IceCreamShopScene
+  capturedUtc: 2026-10-25 19:00:48
+  note: 
+  placements:
+  - objectName: Alice
+    row: 6
+    col: 8
+    worldPosition: {x: 5.963819, y: 1.1437305, z: 0}
+  - objectName: Benjamin
+    row: 0
+    col: 6
+    worldPosition: {x: 5.0038195, y: -1.7362692, z: 0}
+  - objectName: Camille
+    row: 3
+    col: 7
+    worldPosition: {x: 5.4838195, y: -0.2962693, z: 0}
+  - objectName: Daphne
+    row: 2
+    col: 2
+    worldPosition: {x: 3.0838194, y: -0.77626926, z: 0}
+  - objectName: Ernest
+    row: 4
+    col: 9
+    worldPosition: {x: 6.443819, y: 0.18373072, z: 0}
+  - objectName: Frances
+    row: 5
+    col: 1
+    worldPosition: {x: 2.6038194, y: 0.66373074, z: 0}
+  - objectName: Victim
+    row: 1
+    col: 0
+    worldPosition: {x: 2.1238194, y: -1.2562692, z: 0}

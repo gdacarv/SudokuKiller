@@ -17,7 +17,7 @@ using UnityEngine;
 /// It is bounded three ways so it can never hang the Editor: a node budget, a wall-clock budget, and
 /// (when interactive) a cancelable progress bar. Scene state is restored on every exit path.
 /// </summary>
-public static class PuzzleUniquenessVerifier
+public static partial class PuzzleUniquenessVerifier
 {
     // Defaults for the user-adjustable limits (see Options; the Level Rules window edits them).
     public const int DefaultMaxRecordedLayouts = 20;
@@ -48,7 +48,13 @@ public static class PuzzleUniquenessVerifier
         /// lower bounds and fewer layouts are listed.
         /// </summary>
         public bool stopWhenNotUnique;
+        /// <summary>Hardest deduction technique the logical-solution pass may use (see PuzzleLogicSolver.cs).</summary>
+        public LogicTier maxTier;
+        /// <summary>For the Chain tier: how many forced placements a hypothesis may chain through.</summary>
+        public int maxChainDepth;
 
+        public const int MinChainDepth = 1;
+        public const int MaxChainDepthCap = 6;
         public const double MinSeconds = 1.0;
         public const long MinVisits = 1_000;
         public const int MinRecorded = 1;
@@ -62,6 +68,8 @@ public static class PuzzleUniquenessVerifier
             maxRecordedLayouts = DefaultMaxRecordedLayouts,
             maxRecordedPerKillerSet = DefaultMaxRecordedPerKillerSet,
             stopWhenNotUnique = false,
+            maxTier = LogicTier.Contradiction,
+            maxChainDepth = 3,
         };
 
         public Options Sanitized() => new Options
@@ -71,6 +79,8 @@ public static class PuzzleUniquenessVerifier
             maxRecordedLayouts = System.Math.Clamp(maxRecordedLayouts, MinRecorded, MaxRecordedCap),
             maxRecordedPerKillerSet = System.Math.Clamp(maxRecordedPerKillerSet, MinRecorded, MaxRecordedCap),
             stopWhenNotUnique = stopWhenNotUnique,
+            maxTier = (LogicTier)System.Math.Clamp((int)maxTier, (int)LogicTier.Direct, (int)LogicTier.Chain),
+            maxChainDepth = System.Math.Clamp(maxChainDepth == 0 ? 3 : maxChainDepth, MinChainDepth, MaxChainDepthCap),
         };
 
         public bool IsDefault
@@ -82,7 +92,8 @@ public static class PuzzleUniquenessVerifier
                 return s.maxSeconds == d.maxSeconds && s.maxVisits == d.maxVisits
                     && s.maxRecordedLayouts == d.maxRecordedLayouts
                     && s.maxRecordedPerKillerSet == d.maxRecordedPerKillerSet
-                    && s.stopWhenNotUnique == d.stopWhenNotUnique;
+                    && s.stopWhenNotUnique == d.stopWhenNotUnique
+                    && s.maxTier == d.maxTier && s.maxChainDepth == d.maxChainDepth;
             }
         }
 
@@ -101,6 +112,8 @@ public static class PuzzleUniquenessVerifier
                 maxRecordedLayouts = EditorPrefs.GetInt(PrefPrefix + "maxRecordedLayouts", d.maxRecordedLayouts),
                 maxRecordedPerKillerSet = EditorPrefs.GetInt(PrefPrefix + "maxRecordedPerKillerSet", d.maxRecordedPerKillerSet),
                 stopWhenNotUnique = EditorPrefs.GetBool(PrefPrefix + "stopWhenNotUnique", d.stopWhenNotUnique),
+                maxTier = (LogicTier)EditorPrefs.GetInt(PrefPrefix + "maxTier", (int)d.maxTier),
+                maxChainDepth = EditorPrefs.GetInt(PrefPrefix + "maxChainDepth", d.maxChainDepth),
             }.Sanitized();
         }
 
@@ -112,6 +125,8 @@ public static class PuzzleUniquenessVerifier
             EditorPrefs.SetInt(PrefPrefix + "maxRecordedLayouts", s.maxRecordedLayouts);
             EditorPrefs.SetInt(PrefPrefix + "maxRecordedPerKillerSet", s.maxRecordedPerKillerSet);
             EditorPrefs.SetBool(PrefPrefix + "stopWhenNotUnique", s.stopWhenNotUnique);
+            EditorPrefs.SetInt(PrefPrefix + "maxTier", (int)s.maxTier);
+            EditorPrefs.SetInt(PrefPrefix + "maxChainDepth", s.maxChainDepth);
         }
     }
 
@@ -147,6 +162,13 @@ public static class PuzzleUniquenessVerifier
         public string report;   // full text (summary + layout listings + verdict)
         public string summary;  // report without the per-layout listings
         public List<LayoutInfo> layouts;
+
+        // Logical-solution pass (appended last: serialized inside LevelRulesWindow's cached result).
+        public List<SolveStep> steps;        // null when the pass did not run
+        public string logicVerdict;
+        public string logicReport;           // the steps as text
+        public int killerForcedAtStep;       // 1-based index into steps; 0 = the killer was never forced
+        public bool fullyPlaced;             // every suspect was placed by deduction alone
     }
 
     // Verification rearranges live occupancy state, so it is Edit Mode only —
@@ -160,6 +182,9 @@ public static class PuzzleUniquenessVerifier
         var result = Run(Options.Load(), interactive: true);
         Debug.Log(result.report);
         System.IO.File.WriteAllText("Temp/puzzle_verifier_report.txt", result.report);
+        if (!string.IsNullOrEmpty(result.logicReport))
+            System.IO.File.WriteAllText(
+                $"Temp/puzzle_logic_{UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}.txt", result.logicReport);
     }
 
     /// <summary>Programmatic entry point: default limits except the wall-clock budget.</summary>
@@ -252,7 +277,8 @@ public static class PuzzleUniquenessVerifier
         if (!options.IsDefault)
             report.AppendLine($"  Options: {options.maxSeconds:0.#}s budget, {options.maxVisits:N0} node budget, "
                 + $"keep up to {options.maxRecordedLayouts} layout(s) ({options.maxRecordedPerKillerSet} per killer set)"
-                + (options.stopWhenNotUnique ? ", stop early once NOT UNIQUE is proven." : "."));
+                + (options.stopWhenNotUnique ? ", stop early once NOT UNIQUE is proven" : "")
+                + $", deduction up to {options.maxTier}" + (options.maxTier == LogicTier.Chain ? $" (depth {options.maxChainDepth})." : "."));
 
         var solver = new Solver(gm, draggables, originalCells, rows, cols, freeCells, report, interactive, options);
         solver.Prepare();
@@ -281,6 +307,11 @@ public static class PuzzleUniquenessVerifier
                 + $"killers seen: [{string.Join(", ", killerNames)}]");
         if (validCount > recordedLayouts.Count)
             report.AppendLine($"(showing first {recordedLayouts.Count} layouts)");
+
+        // Deduction-only pass: valid whenever the search finished and found at least one layout.
+        LogicSolver.Result logic = null;
+        if (!aborted && validCount > 0)
+            logic = new LogicSolver(gm, solver, options).Run(recordedLayouts);
 
         var layoutsText = new StringBuilder();
         foreach (var info in recordedLayouts)
@@ -339,8 +370,8 @@ public static class PuzzleUniquenessVerifier
                 : $"NOT UNIQUE: {validCount} layouts — {string.Join("; ", problems)}";
         }
 
-        string summary = report.ToString() + "VERDICT: " + verdict;
-        string fullReport = report.ToString() + layoutsText + "VERDICT: " + verdict;
+        string summary = report.ToString() + (logic != null ? logic.verdict + "\n" : "") + "VERDICT: " + verdict;
+        string fullReport = report.ToString() + layoutsText + (logic != null ? logic.text : "") + "VERDICT: " + verdict;
         return new VerificationResult
         {
             outcome = outcome,
@@ -348,6 +379,11 @@ public static class PuzzleUniquenessVerifier
             report = fullReport,
             summary = summary,
             layouts = recordedLayouts,
+            steps = logic?.steps,
+            logicVerdict = logic?.verdict,
+            logicReport = logic?.text,
+            killerForcedAtStep = logic?.killerForcedAtStep ?? 0,
+            fullyPlaced = logic?.fullyPlaced ?? false,
         };
     }
 
@@ -373,7 +409,7 @@ public static class PuzzleUniquenessVerifier
         readonly GridManager gm;
         readonly List<Draggable> allDraggables;
         public readonly Draggable[] ds;
-        readonly int n, rows, cols;
+        internal readonly int n, rows, cols;
         readonly Dictionary<Draggable, Vector2Int> originalCells;
         readonly List<int> freeCells;
         readonly StringBuilder report;
@@ -383,10 +419,11 @@ public static class PuzzleUniquenessVerifier
         readonly double maxSeconds;
 
         // Per suspect: own clues first (ownCount), then the board rules.
-        Rule[][] rules;
-        bool[][] safe;          // monotone => may prune before its dependencies are all placed
-        int[][][] deps;         // OTHER suspects (indices) whose position can change the verdict
-        int[] ownCount;
+        internal Rule[][] rules;
+        internal bool[][] safe;          // monotone => may prune before its dependencies are all placed
+        internal int[][][] deps;         // OTHER suspects (indices) whose position can change the verdict
+        internal int[] ownCount;
+        internal int[][] initialDomains; // static candidates per suspect, as computed by Prepare
         int[] staticOwn, dynamicOwn;
         List<RuleRef>[] affected;   // affected[x] = rules whose verdict can change when x is placed
 
@@ -506,6 +543,8 @@ public static class PuzzleUniquenessVerifier
                 d.Entity.Col = -1;
 
                 dom[i] = cells.ToArray();
+                initialDomains ??= new int[n][];
+                initialDomains[i] = (int[])dom[i].Clone();
                 size[i] = initSize[i] = dom[i].Length;
                 pos[i] = new int[rows * cols];
                 for (int k = 0; k < pos[i].Length; k++) pos[i][k] = int.MaxValue;

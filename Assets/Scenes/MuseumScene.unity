@@ -8083,6 +8083,12 @@ MonoBehaviour:
   lineWidth: 0.02
   sortingOrder: 5
   sortingLayerName: UI
+  showAxisNumbers: 0
+  axisNumberStart: 0
+  axisNumberFontSize: 2
+  axisNumberColor: {r: 1, g: 1, b: 1, a: 1}
+  axisNumberMargin: 0.2
+  axisNumberSortingOrder: 11
   offset: {x: -0.01, y: -1.19}
   _linesVisible: 1
   _linesRoot: {fileID: 2012505269}

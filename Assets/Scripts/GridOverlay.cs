@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -17,6 +18,17 @@ public class GridOverlay : MonoBehaviour
     public float  lineWidth        = 0.002f;
     public int    sortingOrder     = 10;
     public string sortingLayerName = "Default";
+
+    [Header("Axis Numbers")]
+    [Tooltip("Draw a number beside every row (left edge) and every column (bottom edge).")]
+    public bool showAxisNumbers = false;
+    [Tooltip("Number of the first row/column. 0 matches the (row, col) coordinates used by rules and the verifier; row 0 is the bottom row.")]
+    public int axisNumberStart = 0;
+    public float axisNumberFontSize = 2f;
+    public Color axisNumberColor = Color.white;
+    [Tooltip("Gap between the grid edge and the number's center, in world units.")]
+    public float axisNumberMargin = 0.2f;
+    public int axisNumberSortingOrder = 11;
 
     [Header("Offset (world units, relative to this transform)")]
     public Vector2 offset = Vector2.zero;
@@ -95,9 +107,44 @@ public class GridOverlay : MonoBehaviour
             }
         }
 
+        if (showAxisNumbers)
+            BuildAxisNumbers(left, bottom, z);
+
 #if UNITY_EDITOR
         PropagateSceneVisibility();
 #endif
+    }
+
+    // Rows are labelled along the left edge, columns along the bottom edge. Labels sit under the same
+    // persistent root as the lines, so SetVisible and the Scene visibility toggles cover them too.
+    void BuildAxisNumbers(float left, float bottom, float z)
+    {
+        for (int r = 0; r < rows; r++)
+            CreateAxisLabel((r + axisNumberStart).ToString(),
+                new Vector3(left - axisNumberMargin, bottom + (r + 0.5f) * cellHeight, z));
+
+        for (int c = 0; c < cols; c++)
+            CreateAxisLabel((c + axisNumberStart).ToString(),
+                new Vector3(left + (c + 0.5f) * cellWidth, bottom - axisNumberMargin, z));
+    }
+
+    void CreateAxisLabel(string text, Vector3 position)
+    {
+        var go = new GameObject("Axis " + text);
+        // Hidden + not editable so the text never intercepts Scene-view clicks (see RoomLabel).
+        go.hideFlags = HideFlags.DontSave | HideFlags.HideInHierarchy | HideFlags.NotEditable;
+        go.transform.SetParent(_linesRoot, false);
+        go.transform.position = position;
+
+        var tmp = go.AddComponent<TextMeshPro>();
+        tmp.text            = text;
+        tmp.fontSize        = axisNumberFontSize;
+        tmp.color           = axisNumberColor;
+        tmp.alignment       = TextAlignmentOptions.Center;
+        tmp.enableWordWrapping = false;
+        tmp.overflowMode    = TextOverflowModes.Overflow;
+        tmp.sortingOrder    = axisNumberSortingOrder;
+        tmp.sortingLayerID  = SortingLayer.NameToID(sortingLayerName);
     }
 
     public void HideCell(int row, int col) => _hiddenCells.Add(new Vector2Int(col, row));

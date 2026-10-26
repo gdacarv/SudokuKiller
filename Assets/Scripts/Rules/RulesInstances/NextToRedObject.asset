@@ -26,10 +26,11 @@ MonoBehaviour:
     value: object
   - key: color
     value: red
-  metric: 0
+  metric: 1
   comparison: 1
   distance: 1
   requireAll: 0
+  sameSectionOnly: 0
   references:
     version: 2
     RefIds: []

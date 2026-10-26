@@ -35,48 +35,7 @@ public class LevelRulesWindow : EditorWindow
     private bool    _gridFoldout  = false;
     private bool    _tipsFoldout  = false;
     private bool    _gridSizeFoldout = false;
-
-    // Height of the rules-editing pane above the resize handle. Serialized so a
-    // user's preferred split survives domain reloads, like the verify result does.
-    [SerializeField] private float _rulesPaneHeight = 400f;
-    private bool _resizingSplit;
-    private const float MinRulesPaneHeight = 100f;
-    private const float MinVerifyPaneHeightBase = 150f;
-    private const float VerifyOptionsExtraHeight = 142f;  // room for the expanded Options foldout
-    private float MinVerifyPaneHeight => MinVerifyPaneHeightBase + (_verifyOptionsOpen ? VerifyOptionsExtraHeight : 0f);
-    private const float SplitHandleHeight = 6f;
-
-    // ── Uniqueness verification state ─────────────────────────────────
-    // Serialized so the last result survives domain reloads (play mode, recompiles).
-    [SerializeField] private PuzzleUniquenessVerifier.VerificationResult _verifyResult;
-    [SerializeField] private bool   _hasVerifyResult;
-    [SerializeField] private bool   _verifyDetails;
-    [SerializeField] private bool   _verifyStale;
-    [SerializeField] private string _verifyScenePath;
-    [SerializeField] private string _verifyScriptStamp;
-    private Vector2 _verifyScroll;
-    private bool    _suppressChangeEvents = false;
-
-    // Verifier limits the user can change before running. Persisted by the verifier itself
-    // (EditorPrefs) rather than serialized here, so the Tools menu item shares the same values.
-    [SerializeField] private bool _verifyOptionsOpen;
-    [System.NonSerialized] private PuzzleUniquenessVerifier.Options _verifyOptions = PuzzleUniquenessVerifier.Options.Default;
-
-    // Last-write stamp of the compiled script assemblies. Changes only when code
-    // recompiles, so play-mode domain reloads keep a result fresh while script
-    // edits (which can change rule semantics) mark it stale.
-    private static string CurrentScriptStamp()
-    {
-        long max = 0;
-        var dir = "Library/ScriptAssemblies";
-        if (System.IO.Directory.Exists(dir))
-            foreach (var f in System.IO.Directory.GetFiles(dir, "*.dll"))
-            {
-                long t = System.IO.File.GetLastWriteTimeUtc(f).Ticks;
-                if (t > max) max = t;
-            }
-        return max.ToString();
-    }
+    private bool    _axisNumbersFoldout = false;
 
     // ── Colors ────────────────────────────────────────────────────────
     private static readonly Color ColorVictimHeader  = new(0.65f, 0.22f, 0.22f, 0.30f);
@@ -97,16 +56,7 @@ public class LevelRulesWindow : EditorWindow
         EditorSceneManager.sceneOpened                  += OnSceneOpened;
         EditorSceneManager.activeSceneChangedInEditMode += OnActiveSceneChanged;
         Selection.selectionChanged                      += OnSelectionChanged;
-        ObjectChangeEvents.changesPublished             += OnObjectsChanged;
         Undo.undoRedoPerformed                          += OnUndoRedo;
-
-        _verifyOptions = PuzzleUniquenessVerifier.Options.Load();
-
-        // Coming back from a domain reload: drop a result that belongs to another
-        // scene; mark it stale if scripts recompiled since it was computed.
-        ClearVerifyResultIfSceneChanged();
-        if (_hasVerifyResult && _verifyScriptStamp != CurrentScriptStamp())
-            _verifyStale = true;
 
         Discover();
     }
@@ -116,69 +66,21 @@ public class LevelRulesWindow : EditorWindow
         EditorSceneManager.sceneOpened                  -= OnSceneOpened;
         EditorSceneManager.activeSceneChangedInEditMode -= OnActiveSceneChanged;
         Selection.selectionChanged                      -= OnSelectionChanged;
-        ObjectChangeEvents.changesPublished             -= OnObjectsChanged;
         Undo.undoRedoPerformed                          -= OnUndoRedo;
     }
 
-    // Undo/redo can move suspects (e.g. undoing an applied layout) — keep the
-    // "(authored solution)" tag on layout rows truthful.
+    // Undoing an applied layout (see PuzzleVerifierWindow) moves suspects without SolutionPosition.Update
+    // seeing the mismatch that normally triggers its self-healing refresh — occupancy and violation
+    // highlights would otherwise keep describing the undone layout.
     private void OnUndoRedo()
     {
-        // ApplyLayout records SolutionPosition together with the transform, so undo
-        // restores both at once and SolutionPosition.Update never sees the mismatch
-        // that normally triggers its self-healing refresh — occupancy and violation
-        // highlights would otherwise keep describing the undone layout.
-        if (!Application.isPlaying)
-        {
-            var gm = FindFirstObjectByType<GridManager>();
-            if (gm != null) gm.RefreshEditModeViolations();
-        }
-
-        if (!_hasVerifyResult || _verifyResult.layouts == null) return;
-
-        var solutions = new Dictionary<string, SolutionPosition>();
-        foreach (var d in FindObjectsByType<Draggable>(FindObjectsSortMode.None))
-        {
-            var sp = d.GetComponent<SolutionPosition>();
-            if (sp != null) solutions[d.name] = sp;
-        }
-
-        foreach (var layout in _verifyResult.layouts)
-            layout.matchesAuthored = layout.placements.All(p =>
-                solutions.TryGetValue(p.suspect, out var sp)
-                && sp.solutionRow == p.row && sp.solutionCol == p.col);
-
-        Repaint();
+        if (Application.isPlaying) return;
+        var gm = FindFirstObjectByType<GridManager>();
+        if (gm != null) gm.RefreshEditModeViolations();
     }
 
-    private void OnSceneOpened(Scene scene, OpenSceneMode mode) { ClearVerifyResultIfSceneChanged(); Discover(); }
-    private void OnActiveSceneChanged(Scene prev, Scene next)   { ClearVerifyResultIfSceneChanged(); Discover(); }
-
-    // Exiting play mode re-fires scene-change events for the same scene —
-    // only drop the result when the active scene really is a different one.
-    private void ClearVerifyResultIfSceneChanged()
-    {
-        if (_hasVerifyResult && _verifyScenePath != SceneManager.GetActiveScene().path)
-            ClearVerifyResult();
-    }
-
-    private void ClearVerifyResult()
-    {
-        _hasVerifyResult   = false;
-        _verifyStale       = false;
-        _verifyScenePath   = null;
-        _verifyScriptStamp = null;
-    }
-
-    // Any scene-object or asset modification (inspector edits, moves, undo,
-    // prefab updates, rule-asset changes…) invalidates the last verification.
-    private void OnObjectsChanged(ref ObjectChangeEventStream stream)
-    {
-        if (_suppressChangeEvents || Application.isPlaying) return;
-        if (!_hasVerifyResult || _verifyStale) return;
-        _verifyStale = true;
-        Repaint();
-    }
+    private void OnSceneOpened(Scene scene, OpenSceneMode mode) => Discover();
+    private void OnActiveSceneChanged(Scene prev, Scene next)   => Discover();
 
     // Syncs suspect foldouts with the active Hierarchy/Scene selection:
     // the selected suspect opens, all others collapse.
@@ -269,19 +171,18 @@ public class LevelRulesWindow : EditorWindow
             RebuildGridOverlaySO();
 
         GUILayout.Label("Level Rules", EditorStyles.boldLabel);
-        if (GUILayout.Button("Refresh", GUILayout.Height(22)))
-            Discover();
+        using (new EditorGUILayout.HorizontalScope())
+        {
+            if (GUILayout.Button("Refresh", GUILayout.Height(22)))
+                Discover();
+            if (GUILayout.Button("Puzzle Verifier…", GUILayout.Height(22), GUILayout.Width(120)))
+                PuzzleVerifierWindow.Open();
+        }
         EditorGUILayout.HelpBox("Use Refresh after adding or removing suspects from the scene. Scene changes are detected automatically.", MessageType.None);
 
         DrawSeparator();
 
-        // GetLastRect reflects the previous Repaint's layout, which is stable frame-to-frame
-        // for this static header — the standard IMGUI idiom for "space used so far".
-        float headerHeight = GUILayoutUtility.GetLastRect().yMax;
-        float maxRulesPaneHeight = Mathf.Max(MinRulesPaneHeight, position.height - headerHeight - MinVerifyPaneHeight);
-        _rulesPaneHeight = Mathf.Clamp(_rulesPaneHeight, MinRulesPaneHeight, maxRulesPaneHeight);
-
-        _scroll = EditorGUILayout.BeginScrollView(_scroll, GUILayout.Height(_rulesPaneHeight));
+        _scroll = EditorGUILayout.BeginScrollView(_scroll);
 
         DrawGridSection();
         EditorGUILayout.Space(6);
@@ -290,241 +191,9 @@ public class LevelRulesWindow : EditorWindow
         DrawSuspectsSection();
 
         EditorGUILayout.EndScrollView();
-
-        DrawSplitHandle(maxRulesPaneHeight);
-
-        DrawVerifySection();
-    }
-
-    // Drag handle between the rules-editing pane and the verify-uniqueness panel below it.
-    private void DrawSplitHandle(float maxRulesPaneHeight)
-    {
-        Rect handleRect = GUILayoutUtility.GetRect(position.width, SplitHandleHeight, GUILayout.ExpandWidth(true));
-        EditorGUIUtility.AddCursorRect(handleRect, MouseCursor.ResizeVertical);
-
-        if (Event.current.type == EventType.Repaint)
-            EditorGUI.DrawRect(handleRect, ColorSeparator);
-
-        switch (Event.current.type)
-        {
-            case EventType.MouseDown when handleRect.Contains(Event.current.mousePosition):
-                _resizingSplit = true;
-                Event.current.Use();
-                break;
-            case EventType.MouseDrag when _resizingSplit:
-                _rulesPaneHeight = Mathf.Clamp(_rulesPaneHeight + Event.current.delta.y, MinRulesPaneHeight, maxRulesPaneHeight);
-                Event.current.Use();
-                Repaint();
-                break;
-            case EventType.MouseUp when _resizingSplit:
-                _resizingSplit = false;
-                Event.current.Use();
-                break;
-        }
-    }
-
-    // ── Puzzle uniqueness footer ──────────────────────────────────────
-
-    private void DrawVerifySection()
-    {
-        DrawSeparator();
-
-        DrawVerifyOptions();
-
-        using (new EditorGUI.DisabledScope(Application.isPlaying || _verifyQueued))
-        {
-            if (GUILayout.Button(_verifyQueued ? "Verifying…" : "Verify Puzzle Uniqueness", GUILayout.Height(24)))
-            {
-                // Never run the search inside OnGUI: it blocks for as long as the search takes, in the
-                // middle of a repaint, with layout/control state half-built. Defer to the editor's
-                // idle loop so the click returns immediately.
-                _verifyQueued = true;
-                EditorApplication.delayCall += RunVerification;
-            }
-        }
-        if (Application.isPlaying)
-            EditorGUILayout.HelpBox("Verification runs in Edit Mode only.", MessageType.None);
-
-        if (!_hasVerifyResult) return;
-        var result = _verifyResult;
-
-        if (_verifyStale)
-            EditorGUILayout.HelpBox("Stale — the scene or assets changed since this result. Re-verify.", MessageType.Warning);
-
-        var messageType = result.outcome switch
-        {
-            PuzzleUniquenessVerifier.Outcome.Unique       => MessageType.Info,
-            PuzzleUniquenessVerifier.Outcome.KillerUnique => MessageType.Warning,
-            PuzzleUniquenessVerifier.Outcome.Inconclusive => MessageType.Warning,
-            PuzzleUniquenessVerifier.Outcome.Cancelled    => MessageType.Warning,
-            _                                             => MessageType.Error,
-        };
-        using (new EditorGUI.DisabledScope(_verifyStale))
-            EditorGUILayout.HelpBox(result.verdict, messageType);
-
-        _verifyDetails = EditorGUILayout.Foldout(_verifyDetails, "Details", true);
-        if (_verifyDetails)
-        {
-            _verifyScroll = EditorGUILayout.BeginScrollView(_verifyScroll, GUILayout.MaxHeight(220));
-
-            string summary = result.summary ?? result.report;
-            EditorGUILayout.SelectableLabel(summary,
-                EditorStyles.miniLabel,
-                GUILayout.MinHeight(EditorStyles.miniLabel.CalcHeight(new GUIContent(summary), position.width - 30)));
-
-            if (result.layouts != null)
-                for (int i = 0; i < result.layouts.Count; i++)
-                    DrawLayoutRow(i, result.layouts[i]);
-
-            EditorGUILayout.EndScrollView();
-        }
-        EditorGUILayout.Space(2);
-    }
-
-    private void DrawVerifyOptions()
-    {
-        _verifyOptionsOpen = EditorGUILayout.Foldout(_verifyOptionsOpen,
-            _verifyOptions.IsDefault ? "Options" : "Options (customized)", true);
-        if (!_verifyOptionsOpen) return;
-
-        using (new EditorGUI.DisabledScope(_verifyQueued))
-        {
-            // Delayed fields commit on Enter/blur, not per keystroke — otherwise clamping to the minimum
-            // would fight the user mid-typing (typing "5000000" would snap to the floor at the first "5").
-            EditorGUI.BeginChangeCheck();
-            var o = _verifyOptions;
-            EditorGUI.indentLevel++;
-            o.maxSeconds = EditorGUILayout.DelayedDoubleField(new GUIContent("Time budget (s)",
-                $"Wall-clock limit. When exceeded the run stops as INCONCLUSIVE. Default {PuzzleUniquenessVerifier.DefaultMaxSeconds:0.#}, minimum {PuzzleUniquenessVerifier.Options.MinSeconds:0.#}."),
-                o.maxSeconds);
-            double visits = EditorGUILayout.DelayedDoubleField(new GUIContent("Node budget",
-                $"Placement attempts the search may make before stopping as INCONCLUSIVE. Default {PuzzleUniquenessVerifier.DefaultMaxVisits:N0}, minimum {PuzzleUniquenessVerifier.Options.MinVisits:N0}."),
-                o.maxVisits);
-            o.maxVisits = visits >= long.MaxValue ? long.MaxValue : (long)visits;
-            o.maxRecordedLayouts = EditorGUILayout.DelayedIntField(new GUIContent("Layouts listed",
-                $"How many valid layouts are kept and listed below. Counting and killer analysis always cover EVERY layout. Default {PuzzleUniquenessVerifier.DefaultMaxRecordedLayouts}, maximum {PuzzleUniquenessVerifier.Options.MaxRecordedCap} (each listed layout is drawn every repaint)."),
-                o.maxRecordedLayouts);
-            o.maxRecordedPerKillerSet = EditorGUILayout.DelayedIntField(new GUIContent("Listed per killer set",
-                $"Cap on listed layouts sharing the same killer(s), so the list shows variety instead of one killer's layouts. Default {PuzzleUniquenessVerifier.DefaultMaxRecordedPerKillerSet}, maximum {PuzzleUniquenessVerifier.Options.MaxRecordedCap}."),
-                o.maxRecordedPerKillerSet);
-            o.stopWhenNotUnique = EditorGUILayout.Toggle(new GUIContent("Stop once NOT UNIQUE is proven",
-                "Faster on under-constrained puzzles: stops as soon as 2+ layouts exist AND the killer rules already fail (none, several, or differing killers) — the final verdict can't change after that. " +
-                "UNIQUE, KILLER-UNIQUE and BROKEN still need the full search. Trade-off: layout counts become 'at least N' and fewer layouts are listed. Default off."),
-                o.stopWhenNotUnique);
-            EditorGUI.indentLevel--;
-            if (EditorGUI.EndChangeCheck())
-            {
-                _verifyOptions = o.Sanitized(); // show the clamped value back to the user
-                _verifyOptions.Save();
-                GUI.FocusControl(null);
-            }
-
-            using (new EditorGUI.DisabledScope(_verifyOptions.IsDefault))
-            {
-                if (GUILayout.Button("Reset to defaults", GUILayout.Width(120)))
-                {
-                    _verifyOptions = PuzzleUniquenessVerifier.Options.Default;
-                    _verifyOptions.Save();
-                    GUI.FocusControl(null);
-                }
-            }
-        }
-        EditorGUILayout.Space(2);
-    }
-
-    [System.NonSerialized] private bool _verifyQueued;
-
-    private void RunVerification()
-    {
-        // The window may have been closed, or play mode entered, between the click and this callback.
-        if (this == null || Application.isPlaying)
-        {
-            _verifyQueued = false;
-            return;
-        }
-
-        // The verifier temporarily rearranges occupancy state, which can
-        // publish object-change events — don't let it mark its own result stale.
-        _suppressChangeEvents = true;
-        try
-        {
-            _verifyResult      = PuzzleUniquenessVerifier.Run(_verifyOptions, interactive: true);
-            _hasVerifyResult   = true;
-            _verifyStale       = false;
-            _verifyScenePath   = SceneManager.GetActiveScene().path;
-            _verifyScriptStamp = CurrentScriptStamp();
-            _verifyDetails     = _verifyResult.outcome != PuzzleUniquenessVerifier.Outcome.Unique;
-            Debug.Log(_verifyResult.report);
-        }
-        finally
-        {
-            _verifyQueued = false;
-            ReleaseChangeSuppression();
-            Repaint();
-        }
-    }
-
-    private void DrawLayoutRow(int index, PuzzleUniquenessVerifier.LayoutInfo layout)
-    {
-        EditorGUILayout.BeginVertical(GUI.skin.box);
-
-        EditorGUILayout.BeginHorizontal();
-        string header = $"Layout {index + 1} — killer(s): [{string.Join(", ", layout.killers)}]"
-            + (layout.matchesAuthored ? "  (authored solution)" : "");
-        GUILayout.Label(header, EditorStyles.miniBoldLabel);
-        GUILayout.FlexibleSpace();
-        using (new EditorGUI.DisabledScope(Application.isPlaying))
-            if (GUILayout.Button("Apply", EditorStyles.miniButton, GUILayout.Width(52)))
-                ApplyLayout(layout);
-        EditorGUILayout.EndHorizontal();
-
-        var lines = new System.Text.StringBuilder();
-        foreach (var p in layout.placements)
-            lines.AppendLine($"{p.suspect}: ({p.row},{p.col}) section {p.section}");
-        string text = lines.ToString().TrimEnd('\n');
-        EditorGUILayout.SelectableLabel(text,
-            EditorStyles.miniLabel,
-            GUILayout.MinHeight(EditorStyles.miniLabel.CalcHeight(new GUIContent(text), position.width - 40)));
-
-        EditorGUILayout.EndVertical();
-    }
-
-    // Moves every suspect to the layout's cells and adopts it as the authored
-    // solution (SolutionPosition re-authors on edit-mode moves by design).
-    // Fully undoable in a single step.
-    private void ApplyLayout(PuzzleUniquenessVerifier.LayoutInfo layout)
-    {
-        var entries = layout.placements
-            .Select(p => new BoardLayoutEntry { objectName = p.suspect, row = p.row, col = p.col })
-            .ToList();
-
-        // Applying doesn't invalidate the verdict: layouts don't depend on
-        // current suspect positions — keep the result fresh.
-        _suppressChangeEvents = true;
-        try
-        {
-            var report = BoardLayoutIO.Apply(entries, "Apply Puzzle Layout", strict: true, logTag: "LevelRules");
-            if (report.aborted) return;
-
-            if (_hasVerifyResult && _verifyResult.layouts != null)
-                foreach (var li in _verifyResult.layouts)
-                    li.matchesAuthored = ReferenceEquals(li, layout);
-        }
-        finally
-        {
-            ReleaseChangeSuppression();
-        }
-        Repaint();
     }
 
     // ── Helpers ───────────────────────────────────────────────────────
-
-    // Our own scene writes must not mark the result they just produced stale.
-    // ObjectChangeEvents.changesPublished can flush after the delayCall queue runs,
-    // so hold the guard for one extra tick rather than clearing it on the next one.
-    private void ReleaseChangeSuppression()
-        => EditorApplication.delayCall += ()
-            => EditorApplication.delayCall += () => _suppressChangeEvents = false;
 
     private static void DrawSeparator()
     {
@@ -590,6 +259,22 @@ public class LevelRulesWindow : EditorWindow
                             EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cols"));
                             EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cellWidth"));
                             EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("cellHeight"));
+                            _soGridOverlay.ApplyModifiedProperties();
+                        }
+
+                        _axisNumbersFoldout = EditorGUILayout.Foldout(_axisNumbersFoldout, "Axis Numbers", true, EditorStyles.foldoutHeader);
+                        if (_axisNumbersFoldout)
+                        {
+                            _soGridOverlay.Update();
+                            EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("showAxisNumbers"));
+                            using (new EditorGUI.DisabledScope(!_soGridOverlay.FindProperty("showAxisNumbers").boolValue))
+                            {
+                                EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("axisNumberStart"));
+                                EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("axisNumberFontSize"));
+                                EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("axisNumberColor"));
+                                EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("axisNumberMargin"));
+                                EditorGUILayout.PropertyField(_soGridOverlay.FindProperty("axisNumberSortingOrder"));
+                            }
                             _soGridOverlay.ApplyModifiedProperties();
                         }
                     }
