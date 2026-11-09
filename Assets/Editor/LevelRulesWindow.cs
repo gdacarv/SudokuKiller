@@ -52,7 +52,7 @@ public class LevelRulesWindow : EditorWindow
 
     private void OnEnable()
     {
-        titleContent = new GUIContent("Level Rules", EditorGUIUtility.FindTexture("d_Search Icon"));
+        titleContent = new GUIContent("Level Rules", (EditorGUIUtility.FindTexture("d_UnityEditor.ConsoleWindow") ?? EditorGUIUtility.FindTexture("d_Search Icon")));
         EditorSceneManager.sceneOpened                  += OnSceneOpened;
         EditorSceneManager.activeSceneChangedInEditMode += OnActiveSceneChanged;
         Selection.selectionChanged                      += OnSelectionChanged;

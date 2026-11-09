@@ -112,6 +112,10 @@ MonoBehaviour:
     m_Localized: Gym
     m_Metadata:
       m_Items: []
+  - m_Id: 81697764721811456
+    m_Localized: Drafting
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

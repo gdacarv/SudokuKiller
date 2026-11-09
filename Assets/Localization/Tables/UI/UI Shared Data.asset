@@ -103,6 +103,10 @@ MonoBehaviour:
     m_Key: level.gym
     m_Metadata:
       m_Items: []
+  - m_Id: 81697764721811456
+    m_Key: label.drafting
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

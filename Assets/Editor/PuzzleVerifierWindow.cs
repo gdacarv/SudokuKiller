@@ -54,7 +54,7 @@ public class PuzzleVerifierWindow : EditorWindow
 
     private void OnEnable()
     {
-        titleContent = new GUIContent("Puzzle Verifier", EditorGUIUtility.FindTexture("d_Search Icon"));
+        titleContent = new GUIContent("Puzzle Verifier", (EditorGUIUtility.FindTexture("TestPassed") ?? EditorGUIUtility.FindTexture("d_Search Icon")));
         EditorSceneManager.sceneOpened                  += OnSceneOpened;
         EditorSceneManager.activeSceneChangedInEditMode += OnActiveSceneChanged;
         ObjectChangeEvents.changesPublished             += OnObjectsChanged;

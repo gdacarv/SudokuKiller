@@ -112,6 +112,10 @@ MonoBehaviour:
     m_Localized: Academia
     m_Metadata:
       m_Items: []
+  - m_Id: 81697764721811456
+    m_Localized: "Anota\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

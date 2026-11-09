@@ -70,15 +70,23 @@ public class GridPainterWindow : EditorWindow
 
         Event e = Event.current;
 
-        // Consume left mouse button drag and click events while window is active
-        bool isPaint = (e.type == EventType.MouseDown || e.type == EventType.MouseDrag) && e.button == 0;
+        // Claim default control during Layout so scene selection doesn't steal clicks
+        if (e.type == EventType.Layout)
+            HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
+
+        if (e.type == EventType.MouseUp || e.type == EventType.MouseLeaveWindow)
+            _lastPaintedCell = new Vector2Int(-1, -1);
+
+        bool isPaint = (e.type == EventType.MouseDown || e.type == EventType.MouseDrag) && e.button == 0 && !e.alt;
         if (!isPaint) return;
 
-        // Prevent default scene selection behavior
-        int controlId = GUIUtility.GetControlID(FocusType.Passive);
-        HandleUtility.AddDefaultControl(controlId);
-
-        Vector3 worldPos = HandleUtility.GUIPointToWorldRay(e.mousePosition).origin;
+        // Intersect the mouse ray with the z=0 plane (works for ortho and perspective scene views)
+        Ray ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
+        Vector3 worldPos;
+        if (Mathf.Abs(ray.direction.z) > 1e-5f)
+            worldPos = ray.origin + ray.direction * (-ray.origin.z / ray.direction.z);
+        else
+            worldPos = ray.origin;
         worldPos.z = 0f;
 
         Vector2Int? cellNullable = _gridManager.WorldToCell(worldPos);
