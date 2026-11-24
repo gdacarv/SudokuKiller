@@ -167,6 +167,10 @@ MonoBehaviour:
     m_Key: clue.notOnTopObject
     m_Metadata:
       m_Items: []
+  - m_Id: 81825770471677952
+    m_Key: clue.nextAndSameScopeToColorObject
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

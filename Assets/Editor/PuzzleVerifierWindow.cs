@@ -183,8 +183,8 @@ public class PuzzleVerifierWindow : EditorWindow
         {
             string summary = result.summary ?? result.report;
             EditorGUILayout.SelectableLabel(summary,
-                EditorStyles.miniLabel,
-                GUILayout.MinHeight(EditorStyles.miniLabel.CalcHeight(new GUIContent(summary), position.width - 30)));
+                BodyLabel,
+                GUILayout.MinHeight(BodyLabel.CalcHeight(new GUIContent(summary), position.width - 30)));
 
             if (result.layouts != null)
                 for (int i = 0; i < result.layouts.Count; i++)
@@ -223,7 +223,10 @@ public class PuzzleVerifierWindow : EditorWindow
     private Vector2 _stepsScroll;
 
     private static GUIStyle _wrappedMiniLabel;
-    private static GUIStyle WrappedMiniLabel => _wrappedMiniLabel ??= new GUIStyle(EditorStyles.miniLabel) { wordWrap = true, richText = true };
+    private static GUIStyle WrappedMiniLabel => _wrappedMiniLabel ??= new GUIStyle(EditorStyles.miniLabel) { wordWrap = true, richText = true, fontSize = BodyFontSize };
+    private const int BodyFontSize = 12;
+    private static GUIStyle _bodyLabel;
+    private static GUIStyle BodyLabel => _bodyLabel ??= new GUIStyle(EditorStyles.miniLabel) { fontSize = BodyFontSize };
 
     // The window shows the steps with the headline of each one (who goes where) in bold; the plain
     // logicReport stays untouched for Copy steps and the Temp report files.
@@ -237,10 +240,12 @@ public class PuzzleVerifierWindow : EditorWindow
         sb.AppendLine(firstLineEnd >= 0 ? report.Substring(0, firstLineEnd).TrimEnd('\r') : report);
         foreach (var step in result.steps)
         {
-            string what = step.kind switch
+            // Results cached by an older version have no headline: rebuild it from the fields.
+            string what = !string.IsNullOrEmpty(step.headline) ? step.headline : step.kind switch
             {
                 PuzzleUniquenessVerifier.StepKind.Place     => $"{step.suspect} → ({step.row},{step.col})",
                 PuzzleUniquenessVerifier.StepKind.NotKiller => $"{step.suspect} is NOT the killer",
+                PuzzleUniquenessVerifier.StepKind.Claim     => step.suspect + " claim a region",
                 _                                           => $"KILLER = {step.suspect}",
             };
             sb.Append($"{step.index,2}. [{step.tier}] <b>{what}</b>");
@@ -358,8 +363,8 @@ public class PuzzleVerifierWindow : EditorWindow
             lines.AppendLine($"{p.suspect}: ({p.row},{p.col}) section {p.section}");
         string text = lines.ToString().TrimEnd('\n');
         EditorGUILayout.SelectableLabel(text,
-            EditorStyles.miniLabel,
-            GUILayout.MinHeight(EditorStyles.miniLabel.CalcHeight(new GUIContent(text), position.width - 40)));
+            BodyLabel,
+            GUILayout.MinHeight(BodyLabel.CalcHeight(new GUIContent(text), position.width - 40)));
 
         EditorGUILayout.EndVertical();
     }

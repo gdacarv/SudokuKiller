@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: object.shoes
     m_Metadata:
       m_Items: []
+  - m_Id: 76237960444370944
+    m_Key: object.any_object
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -142,6 +142,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194805398962331
+  - m_Id: 76237960444370944
+    m_Localized: qualquer objeto
+    m_Metadata:
+      m_Items:
+      - rid: 6722194805398962331
   references:
     version: 2
     RefIds:
@@ -173,3 +178,4 @@ MonoBehaviour:
         - id: 61710532275593216
         - id: 61738797635723264
         - id: 66101000295931904
+        - id: 76237960444370944

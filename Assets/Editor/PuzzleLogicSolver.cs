@@ -18,7 +18,7 @@ public static partial class PuzzleUniquenessVerifier
 {
     public enum LogicTier { Direct = 1, Support = 2, Contradiction = 3, Chain = 4 }
 
-    public enum StepKind { Place, NotKiller, KillerForced }
+    public enum StepKind { Place, NotKiller, KillerForced, Claim, RuleOut }
 
     [System.Serializable]
     public struct SolveStep
@@ -29,6 +29,7 @@ public static partial class PuzzleUniquenessVerifier
         public int row, col;     // Place only
         public LogicTier tier;
         public string reason;
+        public string headline;  // what the step concludes ("Alice → (4,0)"); empty in results cached by older versions
     }
 
     sealed class LogicSolver
@@ -195,7 +196,6 @@ public static partial class PuzzleUniquenessVerifier
             {
                 if (Reach(cur, support: false, fixpoint: true, log: true, 0, out _) < 0) { inconsistent = true; break; }
                 if (PlaceNextSingle()) continue;
-                if (KillerSweep(LogicTier.Direct)) continue;
                 if (AllPlaced()) break;
 
                 if (maxTier >= LogicTier.Support)
@@ -203,7 +203,6 @@ public static partial class PuzzleUniquenessVerifier
                     int r = Reach(cur, support: true, fixpoint: false, log: true, claimGroup: 1, out _);
                     if (r < 0) { inconsistent = true; break; }
                     if (r > 0) continue;
-                    if (KillerSweep(LogicTier.Support)) continue;
                 }
                 if (maxTier >= LogicTier.Contradiction)
                 {
@@ -212,15 +211,21 @@ public static partial class PuzzleUniquenessVerifier
                     if (ContradictionPass(0, LogicTier.Contradiction, simple: true)) continue;
                     if (GroupClaimPass()) continue;
                     if (ContradictionPass(0, LogicTier.Contradiction)) continue;
-                    if (KillerSweep(LogicTier.Contradiction)) continue;
                 }
                 if (maxTier >= LogicTier.Chain)
                 {
                     if (ContradictionPass(chainDepth, LogicTier.Chain)) continue;
-                    if (KillerSweep(LogicTier.Chain)) continue;
                 }
                 break; // stuck
             }
+
+            // The killer rules never constrain where anyone stands, so nothing above depends on them: they get a
+            // phase of their own once the placement deduction has run as far as it can. It still works when
+            // placement is stuck — the killer may be forced by the cells that are left.
+            if (inconsistent) return;
+            foreach (var tier in new[] { LogicTier.Direct, LogicTier.Support, LogicTier.Contradiction, LogicTier.Chain })
+                if (tier <= maxTier && !Over())
+                    KillerSweep(tier);
         }
 
         bool Over()
@@ -339,12 +344,13 @@ public static partial class PuzzleUniquenessVerifier
         string RuleLabel(int owner, int j) =>
             j < sv.ownCount[owner] ? sv.rules[owner][j].name : "board: " + sv.rules[owner][j].name;
 
-        void Remove(LState s, int i, int cell, LogicTier tier, string text, bool listCell, bool log)
+        void Remove(LState s, int i, int cell, LogicTier tier, string text, bool listCell, bool log, bool explained = false)
         {
             s.live[i][cell] = false;
             s.cnt[i]--;
             if (!log) return;
             everEliminated[i][cell] = true;
+            if (explained) return;   // a step of its own already states it
             pending[i].Add(new Elim { cell = cell, tier = tier, text = text, listCell = listCell });
         }
 
@@ -558,18 +564,20 @@ public static partial class PuzzleUniquenessVerifier
             string regionName, bool log, ref string fail)
         {
             int removed = 0;
+            var tier = size > 1 ? LogicTier.Contradiction : LogicTier.Support;
+            var parts = new List<string>();
             for (int y = 0; y < n; y++)
             {
                 if (!matches[y] || s.cell[y] >= 0 || System.Array.IndexOf(group, y, 0, size) >= 0) continue;
+                var gone = new List<int>();
                 for (int cell = 0; cell < s.live[y].Length; cell++)
                 {
                     if (!s.live[y][cell]) continue;
                     int r = RegionOf(cr.scope, cell);
                     if (r < 0 || r >= 64 || (mask & (1UL << r)) == 0) continue;
-                    string claimed = RegionList(regionName, mask);
-                    Remove(s, y, cell, size > 1 ? LogicTier.Contradiction : LogicTier.Support,
-                        $"{claimed} {(PopCount(mask) == 1 ? "is" : "are")} already claimed by {GroupNames(group, size)}, whose cells are all there ({cr.label})",
-                        true, log);
+                    // The claim is reported as a step of its own, so the removals are not repeated in later reasons.
+                    Remove(s, y, cell, tier, null, true, log, explained: true);
+                    gone.Add(cell);
                     removed++;
                 }
                 if (s.cnt[y] == 0)
@@ -577,6 +585,22 @@ public static partial class PuzzleUniquenessVerifier
                     fail = $"{ds[y].name} has no cell left ({RegionList(regionName, mask)} claimed by {GroupNames(group, size)})";
                     return removed;
                 }
+                if (gone.Count > 0)
+                    parts.Add(gone.Count <= 3 ? $"{ds[y].name} loses {string.Join(" ", gone.Select(CellText))}" : $"{ds[y].name} loses {gone.Count} cells");
+            }
+
+            if (log && removed > 0)
+            {
+                string regions = RegionList(regionName, mask);
+                string remaining = string.Join("; ", Enumerable.Range(0, size).Select(k =>
+                {
+                    var cells = Enumerable.Range(0, s.live[group[k]].Length).Where(c => s.live[group[k]][c]).ToList();
+                    return $"{ds[group[k]].name} can only be at {string.Join(" ", cells.Take(6).Select(CellText))}{(cells.Count > 6 ? " …" : "")}";
+                }));
+                AddStep(StepKind.Claim, GroupNames(group, size), -1, tier,
+                    $"{remaining}: nothing outside {regions}, so {regions} {(PopCount(mask) == 1 ? "is" : "are")} used up and closed to everyone else: "
+                    + string.Join("; ", parts) + $" ({cr.label})",
+                    $"{GroupNames(group, size)} {(size > 1 ? "claim" : "claims")} {regions}");
             }
             return removed;
         }
@@ -629,7 +653,9 @@ public static partial class PuzzleUniquenessVerifier
                     if (Over()) return any;
                     string why = Hypothesis(i, cell, depth, simple);
                     if (why == null) continue;
-                    Remove(cur, i, cell, tier, why, false, true);
+                    // Stated as a step of its own: later claims and placements build on it.
+                    Remove(cur, i, cell, tier, why, false, true, explained: true);
+                    AddStep(StepKind.RuleOut, ds[i].name, cell, tier, why, $"{ds[i].name} cannot be at {CellText(cell)}");
                     any = true;
                 }
                 if (any) return true;   // restart from the cheap tiers as soon as something changed
@@ -658,7 +684,7 @@ public static partial class PuzzleUniquenessVerifier
             var list = pending[i];
             pending[i] = new List<Elim>();
             if (list.Count == 0)
-                return (LogicTier.Direct, initialCount[i] == 1 ? "the only cell its static clues leave" : "");
+                return (LogicTier.Direct, initialCount[i] == 1 ? "the only cell its static clues leave" : "the only cell left after the steps above");
 
             var tier = list.Max(e => e.tier);
             var groups = list
@@ -679,15 +705,28 @@ public static partial class PuzzleUniquenessVerifier
 
         void AddStep(StepKind kind, int i, int cell, LogicTier tier, string reason)
         {
+            string name = ds[i].name;
+            string headline = kind switch
+            {
+                StepKind.Place     => $"{name} → ({cell / cols},{cell % cols})",
+                StepKind.NotKiller => $"{name} is NOT the killer",
+                _                  => $"KILLER = {name}",
+            };
+            AddStep(kind, name, cell, tier, reason, headline);
+        }
+
+        void AddStep(StepKind kind, string suspect, int cell, LogicTier tier, string reason, string headline)
+        {
             result.steps.Add(new SolveStep
             {
                 index = result.steps.Count + 1,
                 kind = kind,
-                suspect = ds[i].name,
+                suspect = suspect,
                 row = cell >= 0 ? cell / cols : -1,
                 col = cell >= 0 ? cell % cols : -1,
                 tier = tier,
                 reason = reason,
+                headline = headline,
             });
         }
 
@@ -762,13 +801,7 @@ public static partial class PuzzleUniquenessVerifier
                 + (maxTier == LogicTier.Chain ? $", chain depth {chainDepth}" : "") + "):");
             foreach (var s in result.steps)
             {
-                string what = s.kind switch
-                {
-                    StepKind.Place => $"{s.suspect} → ({s.row},{s.col})",
-                    StepKind.NotKiller => $"{s.suspect} is NOT the killer",
-                    _ => $"KILLER = {s.suspect}",
-                };
-                sb.AppendLine($"  {s.index,2}. [{s.tier}] {what}" + (string.IsNullOrEmpty(s.reason) ? "" : " — " + s.reason));
+                sb.AppendLine($"  {s.index,2}. [{s.tier}] {s.headline}" + (string.IsNullOrEmpty(s.reason) ? "" : " — " + s.reason));
             }
 
             var bugs = Crosscheck(layouts);

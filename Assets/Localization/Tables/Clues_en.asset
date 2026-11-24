@@ -199,6 +199,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989152
+  - m_Id: 81825770471677952
+    m_Localized: '{useArticle:The |}{0} was next and on the same {scope} to {colorObject}'
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989152
   references:
     version: 2
     RefIds:
@@ -234,3 +239,4 @@ MonoBehaviour:
         - id: 60384149616189440
         - id: 67277241413787648
         - id: 71637598630567936
+        - id: 81825770471677952

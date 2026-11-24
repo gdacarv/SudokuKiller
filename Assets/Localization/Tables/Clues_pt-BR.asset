@@ -205,6 +205,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 81825770471677952
+    m_Localized: "{useArticle:{gender:choose(male|female):O|A|O(A)} |}{0} estava
+      pr\xF3xim{gender:choose(male|female):o|a|o(a)} e n{scopeGender:choose(male|female):o|a|o}
+      mesm{scopeGender:choose(male|female):o|a|o} {scope} de {colorObject}"
+    m_Metadata:
+      m_Items:
+      - rid: 6722194458415989153
   references:
     version: 2
     RefIds:
@@ -240,3 +247,4 @@ MonoBehaviour:
         - id: 60384149616189440
         - id: 67277241413787648
         - id: 71637598630567936
+        - id: 81825770471677952
