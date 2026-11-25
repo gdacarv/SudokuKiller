@@ -171,6 +171,18 @@ MonoBehaviour:
     m_Key: clue.nextAndSameScopeToColorObject
     m_Metadata:
       m_Items: []
+  - m_Id: 82516453654257664
+    m_Key: clue.isAMan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82516632100921344
+    m_Key: clue.isAWoman
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82517663383805952
+    m_Key: clue.allWomenAboveMen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

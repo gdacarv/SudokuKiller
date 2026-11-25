@@ -63,8 +63,9 @@ void Awake()
         {
             if (gridManager != null && gridManager.startAtSolutionPositions)
             {
-                // Stay at solution cell position for debugging; treat it as the spawn origin
-                _spawnPosition = transform.position;
+                // Start in the solution cell for debugging, but keep the UI position as the
+                // spawn origin so dragging out of the grid returns to the UI, not the solution cell.
+                _spawnPosition = solution.uiPosition;
                 gridManager.TryPlace(this, solution.solutionRow, solution.solutionCol);
                 Entity.Row = solution.solutionRow;
                 Entity.Col = solution.solutionCol;

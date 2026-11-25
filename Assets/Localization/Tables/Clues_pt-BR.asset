@@ -212,6 +212,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6722194458415989153
+  - m_Id: 82516453654257664
+    m_Localized: "{0} \xE9 um Homem"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82516632100921344
+    m_Localized: "{0} \xE9 uma Mulher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82517663383805952
+    m_Localized: Todas as Mulheres estavam acima de todos os Homens
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

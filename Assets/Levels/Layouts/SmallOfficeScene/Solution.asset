@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145b34e887d8c482aaae341eb8c7079e, type: 3}
+  m_Name: Solution
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::BoardLayoutPreset
+  sceneName: SmallOfficeScene
+  capturedUtc: 2026-11-25 15:10:58
+  note: 
+  placements:
+  - objectName: Aaron
+    row: 3
+    col: 0
+    worldPosition: {x: 1.4399999, y: 0.8099998, z: 0}
+  - objectName: Bridget
+    row: 6
+    col: 4
+    worldPosition: {x: 3.36, y: 2.25, z: 0}
+  - objectName: Clara
+    row: 4
+    col: 5
+    worldPosition: {x: 3.84, y: 1.2899998, z: 0}
+  - objectName: Dorothy
+    row: 5
+    col: 3
+    worldPosition: {x: 2.8799999, y: 1.7699999, z: 0}
+  - objectName: Elliot
+    row: 1
+    col: 1
+    worldPosition: {x: 1.92, y: -0.14999998, z: 0}
+  - objectName: Fernando
+    row: 2
+    col: 2
+    worldPosition: {x: 2.3999999, y: 0.33000004, z: 0}
+  - objectName: Victim
+    row: 0
+    col: 6
+    worldPosition: {x: 4.3199997, y: -0.63, z: 0}
